@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>템플릿-웹폼 디자이너</title>
+      <title>폼 빌더 소개</title>
     
       <link rel="stylesheet" href="../_static/pygments.css">
       <link rel="stylesheet" href="../_static/theme.css">
@@ -15,6 +15,7 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
         <script src="../_static/translations.js"></script>
 
       
@@ -23,15 +24,15 @@
     
   <link rel="index" title="색인" href="../genindex.html" />
   <link rel="search" title="검색" href="../search.html" />
-  <link rel="next" title="템플릿-폼 빌더" href="chapter6.html" />
-  <link rel="prev" title="폼 빌더 소개" href="chapter4.html" /> 
+  <link rel="next" title="웹폼 디자이너로 템플릿 만들기" href="chapter6.html" />
+  <link rel="prev" title="웹폼 디자이너 소개" href="chapter4.html" /> 
   </head>
 
   <body>
     <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
   <router-link to="../index.html" class="home-link">
     
-      <span class="site-name">eformsign User Guide</span>
+      <img class="logo" src="../_static/forcs.png" alt="doit logo"/>
     
   </router-link>
 
@@ -80,61 +81,69 @@
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter2.html" class="reference internal ">기본 정보</a>
+          <li class="toctree-l1 "><a href="chapter2.html" class="reference internal ">기본정보</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter3.html" class="reference internal ">웹폼 디자이너 소개</a>
+          <li class="toctree-l1 "><a href="chapter3.html" class="reference internal ">문서 작성하기</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">폼 빌더 소개</a>
+          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">웹폼 디자이너 소개</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 current"><a href="#" class="reference internal current">템플릿-웹폼 디자이너</a>
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">폼 빌더 소개</a>
 
             
               <ul>
                 
-                  <li class="toctree-l2"><a href="#id2" class="reference internal">템플릿 소개</a></li>
+                  <li class="toctree-l2"><a href="#id2" class="reference internal">개요</a></li>
                 
-                  <li class="toctree-l2"><a href="#id5" class="reference internal">템플릿 설정</a></li>
+                  <li class="toctree-l2"><a href="#id5" class="reference internal">컴포넌트 개요</a></li>
                 
-                  <li class="toctree-l2"><a href="#id13" class="reference internal">개별 템플릿 메뉴</a></li>
+                  <li class="toctree-l2"><a href="#id12" class="reference internal">컴포넌트별 사용 방법</a></li>
                 
-                  <li class="toctree-l2"><a href="#id14" class="reference internal">템플릿 검색</a></li>
+                  <li class="toctree-l2"><a href="#id28" class="reference internal">폼 파일 업로드</a></li>
+                
+                  <li class="toctree-l2"><a href="#id29" class="reference internal">업로드한 템플릿 추가 설정하기</a></li>
                 
               </ul>
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">템플릿-폼 빌더</a>
+          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">웹폼 디자이너로 템플릿 만들기</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">문서함</a>
+          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">폼 빌더로 템플릿 만들기</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">커스터마이즈</a>
+          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">문서함</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">외부 서비스 연동 방법</a>
+          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">커스터마이즈</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter10.html" class="reference internal ">외부 서비스 연동 방법</a>
 
             
           </li>
@@ -152,18 +161,18 @@
   <ul class="breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
     
-    <li>템플릿-웹폼 디자이너</li>
+    <li>폼 빌더 소개</li>
   </ul>
   
 
   <ul class="page-nav">
   <li class="prev">
     <a href="chapter4.html"
-       title="이전 장">← 폼 빌더 소개</a>
+       title="이전 장">← 웹폼 디자이너 소개</a>
   </li>
   <li class="next">
     <a href="chapter6.html"
-       title="다음 장">템플릿-폼 빌더 →</a>
+       title="다음 장">웹폼 디자이너로 템플릿 만들기 →</a>
   </li>
 </ul>
   
@@ -171,725 +180,619 @@
 <hr>
           <div class="content" role="main">
             
-  <div class="section" id="template-wd">
-<span id="id1"></span><h1>템플릿-웹폼 디자이너<a class="headerlink" href="#template-wd" title="제목 주소">¶</a></h1>
+  <div class="section" id="formbuilder">
+<span id="id1"></span><h1>폼 빌더 소개<a class="headerlink" href="#formbuilder" title="제목 주소">¶</a></h1>
 <div class="section" id="id2">
-<h2>템플릿 소개<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
-<p>웹폼 디자이너 템플릿 <strong>템플릿</strong>은 이폼사인에서 사용하는 <strong>전자문서
-서식</strong>입니다. 기존에 종이로 작성하던 계약서, 신청서, 동의서와 같이
-기본 서식을 전자문서 형태로 만든 것을 템플릿이라고 합니다. 템플릿은
-이폼사인 서비스내 웹폼 디자이너 또는 이폼사인 폼 빌더를 통해 만들고
-업로드 할 수 있습니다. 폼 빌더를 통한 템플릿 설정 및 관리 방법은
-<a class="reference external" href="#template_fb">???</a>를 참고해 주세요.</p>
+<h2>개요<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+<p>폼 빌더 폼 빌더는 OZ in Office라고도 합니다. OZ in Office는 Microsoft Office로 만든 문서를 입력 기능을 갖춘 전자 문서로 변환하는 폼 에디터입니다. OZ in Office를 사용하면 기존에 Excel, Word, PowerPoint로 만들어진 업무 양식(계약서, 신청서, 동의서, 품의서 등)을 간단하고 쉽게 전자 문서로 변환할 수 있습니다.</p>
+<p>기존에는 기업의 Excel, Word, PowerPoint 문서를 전자 문서로 개발하려면 프로그래밍 개발 수준의 개발자용 문서 개발 도구가 필요했습니다. 그러나, <strong>OZ in Office</strong>을 이용하면 Office 제품을 사용할 수 있는 수준이면 누구나 전자 문서를 손쉽게 만들 수 있습니다.</p>
+<p>OZ in Office는 MS Office에 Add-on되어 리본 메뉴로 나타나서 사용이 간단하며, 전자 서명, 체크 박스, 텍스트 박스, 카메라, 녹음 등 OZ의 다양한
+입력 기능을 제공하고 있습니다.</p>
+<p>OZ in Office의 입력 기능을 이용하여 전자 문서를 만드는 과정은 다음과 같습니다.</p>
+<div class="figure align-default" id="id30">
+<a class="reference internal image-reference" href="../_images/ozinoffice-flow_1.png"><img alt="OZ in Office 사용 흐름" src="../_images/ozinoffice-flow_1.png" style="width: 750px;" /></a>
+<p class="caption"><span class="caption-text">OZ in Office 사용 흐름</span><a class="headerlink" href="#id30" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
 <div class="section" id="id3">
-<h3>템플릿 개요<a class="headerlink" href="#id3" title="제목 주소">¶</a></h3>
-<p>이폼사인을 통해 전자문서를 작성 및 전송하려면 전자문서를 생성할 수 있는
-템플릿을 우선 만들어서 배포해야 합니다.</p>
-<p><strong>웹폼 디자이너로 템플릿 만드는 방법</strong></p>
-<p>온라인에서 바로 문서를 업로드하여 템플릿을 만들 수 있습니다.</p>
-<div class="admonition note">
-<p class="admonition-title">참고</p>
-<p>웹폼 디자이너에 대한 상세한 설명은 <a class="reference external" href="#webform">???</a>를 참고하시기
-바랍니다.</p>
-</div>
-<p>기존 문서서식 파일을 PDF파일로 변환하고 웹폼 디자이너에 업로드하여 쉽게
-템플릿을 만들수 있습니다.</p>
+<h3>폼 빌더 다운로드 및 설치 폼 빌더 다운로드<a class="headerlink" href="#id3" title="제목 주소">¶</a></h3>
 <ol class="arabic">
-<li><p>템플릿으로 만들 PDF 파일을 <strong>템플릿 관리</strong> 화면에 직접 드래그하거나
-<strong>내 컴퓨터에서 파일 선택</strong>을 클릭하여 해당 파일 선택 후 업로드
-합니다.</p>
-<div class="figure align-default" id="id15">
-<a class="reference internal image-reference" href="../_images/template-manage-upload.png"><img alt="템플릿 관리&gt;파일 업로드(1)" src="../_images/template-manage-upload.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">템플릿 관리&gt;파일 업로드(1)</span><a class="headerlink" href="#id15" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-<div class="figure align-default" id="id16">
-<a class="reference internal image-reference" href="../_images/template-manage-upload-popup.png"><img alt="템플릿 관리&gt;파일 업로드(2)" src="../_images/template-manage-upload-popup.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">템플릿 관리&gt;파일 업로드(2)</span><a class="headerlink" href="#id16" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
+<li><p>이폼사인 로그인 후 대시보드 화면 왼쪽 상단의 메뉴 아이콘(<img alt="image1" src="../_images/menu_icon.png" />)을 클릭하면 나타나는 사이드바 메뉴 중 가장 하단의 <strong>eformsign 폼 빌더 다운로드</strong> 버튼을 클릭합니다.</p>
+<p><a class="reference internal" href="../_images/formbuilder_download.png"><img alt="image2" src="../_images/formbuilder_download.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>업로드된 파일에 원하는 입력항목 종류를 선택한 후 원하는 위치를
-클릭합니다.</p>
-<div class="figure align-default" id="id17">
-<a class="reference internal image-reference" href="../_images/web-form-designer1.png"><img alt="입력항목 드래그 방법" src="../_images/web-form-designer1.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">입력항목 드래그 방법</span><a class="headerlink" href="#id17" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
+<li><p>다음과 같은 eformsign 폼 빌더 다운로드 페이지가 나타납니다. 페이지 하단의 <strong>폼 빌더 다운로드</strong> 버튼을 클릭합니다.</p>
+<p><a class="reference internal" href="../_images/formbuilder_download_2.png"><img alt="image3" src="../_images/formbuilder_download_2.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>입력항목의 크기와 위치를 조정합니다.</p></li>
-<li><p>해당 입력항목의 <strong>속성</strong>에서 상세 설정을 합니다.</p></li>
-<li><p><strong>미리보기</strong> 버튼을 클릭해 문서를 확인합니다.</p></li>
-<li><p>폼 디자인을 마친 후 <strong>다음</strong>을 클릭하여 템플릿 설정으로 이동합니다.</p></li>
+<li><p>다운로드된 폼 빌더 실행파일을 클릭하면 다음과 같은 설치 화면이 나타납니다. 옵션 중 <strong>전체 설치</strong>(C)를 선택하고 <strong>다음(N) &gt;</strong> 버튼을 클릭합니다</p>
+<p><a class="reference internal" href="../_images/formbuilder_wizard_1.png"><img alt="image4" src="../_images/formbuilder_wizard_1.png" style="width: 400px;" /></a></p>
+</li>
+<li><p>설치가 진행되면 다음과 같은 화면이 나타납니다.</p>
+<p><a class="reference internal" href="../_images/formbuilder_wizard_2.png"><img alt="image5" src="../_images/formbuilder_wizard_2.png" style="width: 400px;" /></a></p>
+</li>
+<li><p>설치가 완료되면 <strong>완료</strong> 버튼을 클릭해 설치 화면을 닫습니다.</p>
+<p><a class="reference internal" href="../_images/formbuilder_wizard_3.png"><img alt="image6" src="../_images/formbuilder_wizard_3.png" style="width: 400px;" /></a></p>
+</li>
+<li><p>MS Office (Word, Excel, PowerPoint)를 실행해 폼 빌더가 제대로 설치되었는지를 확인합니다. 다음과 같이 <strong>OZ in Word/Excel/PowerPoint</strong>가 나타나면 정상적으로 설치된 것입니다.</p>
+<p><a class="reference internal" href="../_images/formbuilder-ozinword-menu1.png"><img alt="image7" src="../_images/formbuilder-ozinword-menu1.png" style="width: 750px;" /></a></p>
+</li>
 </ol>
-<p><strong>템플릿 설정</strong></p>
-<p>생성할 템플릿에 대한 상세 설정을 할 수 있습니다.</p>
-<ul>
-<li><p><strong>일반 설정</strong></p>
-<p>템플릿 이름, 약칭, 문서 제목, 문서 번호 등을 설정합니다.</p>
-</li>
-<li><p><strong>권한 설정</strong></p>
-<p>해당 템플릿을 사용해 문서를 생성할 수 있는 템플릿 사용 권한과 생성된
-문서를 관리할 멤버 또는 그룹을 지정합니다.</p>
-</li>
-<li><p><strong>워크플로우 설정</strong></p>
-<p>문서의 작성부터 완료까지 작성된 문서가 처리될 단계를 설정합니다.</p>
-</li>
-<li><p><strong>필드 설정</strong></p>
-<p>필드의 기본값, 자동 입력 값 등을 설정합니다.</p>
-</li>
-<li><p><strong>알림 설정</strong></p>
-<p>해당 템플릿을 통해 생성되는 문서의 요청 또는 상태 변경시 알림을
-수신할 채널, 수신자, 또는 알림 메시지 내용 등을 설정합니다</p>
-</li>
-</ul>
 </div>
 <div class="section" id="id4">
-<h3>워크플로우 개요<a class="headerlink" href="#id4" title="제목 주소">¶</a></h3>
-<p>워크플로우 <strong>워크플로우</strong>란 문서가 작성되어 완료되기까지의 문서의 요청
-및 처리 과정을 말합니다.</p>
-<p>워크플로우는 템플릿 관리자가 템플릿 별로 <strong>템플릿 설정</strong> &gt; <strong>워크플로우
-설정</strong>에서 설정할 수 있습니다.</p>
-<p>워크플로우는 <strong>시작 - 완료</strong>가 기본 단계이며, 아래와 같이 <strong>결재자</strong>,
-<strong>내부 수신자</strong>, <strong>외부 수신자</strong> 3가지 단계를 원하는 대로 추가하여
-워크플로우를 생성할 수 있습니다.</p>
-<div class="figure align-default" id="id18">
-<img alt="워크플로우 단계" src="../_images/workflow-step-basic.PNG" />
-<p class="caption"><span class="caption-text">워크플로우 단계</span><a class="headerlink" href="#id18" title="이 이미지에 대한 퍼머링크">¶</a></p>
+<h3>폼 빌더 메뉴 구성<a class="headerlink" href="#id4" title="제목 주소">¶</a></h3>
+<p>폼 빌더를 설치한 후 MS Office의 엑셀, 워드, 파워포인트를 실행하면 상단의 OZ in Office 리본 메뉴에 <strong>OZ in Excel, OZ in Word, OZ in PowerPoint</strong>
+탭이 추가된 것을 확인할 수 있습니다.</p>
+<div class="figure align-default" id="id31">
+<a class="reference internal image-reference" href="../_images/formbuilder-ozinword-menu.png"><img alt="MS Office의 OZ in Office 리본 메뉴" src="../_images/formbuilder-ozinword-menu.png" style="width: 750px;" /></a>
+<p class="caption"><span class="caption-text">MS Office의 OZ in Office 리본 메뉴</span><a class="headerlink" href="#id31" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
-<ul>
-<li><p><strong>결재자</strong></p>
-<p>동일한 회사에 소속된 멤버에게 문서의 결재를 요청하는 단계입니다.</p>
-</li>
-<li><p><strong>내부 수신자</strong></p>
-<p>멤버에게 문서의 처리를 요청하는 단계입니다.</p>
-</li>
-<li><p><strong>외부 수신자</strong></p>
-<p>회사 소속 멤버가 아닌 외부 사용자에게 문서 처리를 요청하는
-단계입니다.</p>
-<div class="admonition important">
-<p class="admonition-title">중요</p>
-<p><strong>결재자와 내부 수신자의 차이!</strong></p>
-<p>결재자와 내부 수신자는 모두 요청받은 문서에 대한 승인 또는 반려할
-수 있지만, 내부 수신자로 요청 받은 멤버의 경우 문서 검토 및 작성
-후 다음 담당자를 지정할 수 있습니다.</p>
-<p>즉, 내부 수신자 단계 이후의 외부 수신자, 내부 수신자 또는 결재자를
-지정할 수 있습니다.</p>
-<p>예를 들어, 타 부서의 결재라인을 지정하지 않은 상태에서 해당 문서에
-대해 타 부서에 협조 요청을 할 경우, 내부 수신자 단계로 해당 타
-부서의 담당자를 지정하면 됩니다. 문서 처리시 타 부서의 담당자가
-해당 부서의 결재라인을 따로 설정하여 문서를 처리할 수 있습니다.</p>
-</div>
-</li>
-</ul>
+<ol class="arabic simple">
+<li><p><strong>파일:</strong> 작성한 문서를 전자서식으로 실행해보고 이폼사인에 템플릿으로 업로드하거나 이폼사인에서 다운로드 받을 수 있습니다.</p></li>
+<li><p><strong>속성:</strong> 컴포넌트에 대한 ID, 항목 등 속성을 설정합니다.</p></li>
+<li><p><strong>입력:</strong> 템플릿에 사용할 컴포넌트를 추가합니다.</p></li>
+<li><p><strong>정보:</strong> 템플릿에 자동으로 멤버나 사용일 정보를 기입하기 위해 사용자, 사용일 정보 컴포넌트를 추가합니다.</p></li>
+<li><p><strong>그리기:</strong> 컴포넌트를 선택하여 원하는 위치와 크기로 추가합니다. <strong>그리기</strong>는 워드, 파워포인트에서만 지원됩니다.</p></li>
+<li><p><strong>삭제:</strong> 컴포넌트를 선택한 뒤 삭제 버튼을 클릭하면 컴포넌트가 삭제됩니다.</p></li>
+<li><p><strong>창:</strong> 컴포넌트 속성창을 열거나 컴포넌트를 선택합니다.</p></li>
+<li><p><strong>도움말:</strong> 폼 빌더 버전을 확인하고 업데이트를 실행합니다.</p></li>
+</ol>
 </div>
 </div>
 <div class="section" id="id5">
-<h2>템플릿 설정<a class="headerlink" href="#id5" title="제목 주소">¶</a></h2>
-<p>업로드한 파일로 생성될 템플릿에 대한 상세 내용을 설정할 수 있습니다.</p>
-<div class="admonition note">
-<p class="admonition-title">참고</p>
-<p>이 작업은 <strong>대표 관리자</strong> 또는 <strong>템플릿 관리</strong> 권한이 필요합니다.</p>
-<p>이 작업은 PC, 모바일, 애플리케이션에서 진행할 수 있습니다.</p>
-</div>
+<h2>컴포넌트 개요<a class="headerlink" href="#id5" title="제목 주소">¶</a></h2>
+<p>컴포넌트 컴포넌트는 전자 문서에서 사용자가 내용을 입력할 수 있는 입력란을 만들어주는 역할을 합니다. 서명, 체크, 날짜, 텍스트 등의 다양한
+형식의 컴포넌트가 있으며 각각의 컴포넌트는 속성창을 통해 세부 사항을 설정할 수 있습니다.</p>
 <div class="section" id="id6">
-<h3>일반 설정<a class="headerlink" href="#id6" title="제목 주소">¶</a></h3>
-<div class="figure align-default" id="id19">
-<a class="reference internal image-reference" href="../_images/template-setting-general.png"><img alt="템플릿 설정 &gt; 일반 설정" src="../_images/template-setting-general.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">템플릿 설정 &gt; 일반 설정</span><a class="headerlink" href="#id19" title="이 이미지에 대한 퍼머링크">¶</a></p>
+<h3>컴포넌트 종류<a class="headerlink" href="#id6" title="제목 주소">¶</a></h3>
+<p>eformsign은 다음의 컴포넌트를 지원합니다.</p>
+<div class="figure align-default" id="id32">
+<img alt="컴포넌트 종류" src="../_images/components-in-word.png" />
+<p class="caption"><span class="caption-text">컴포넌트 종류</span><a class="headerlink" href="#id32" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
-<dl>
-<dt><strong>템플릿 기본정보 설정</strong></dt><dd><p>템플릿 이름, 카테고리, 유효기간 등 템플릿에 대한 기본 정보를
-설정합니다.</p>
-</dd>
-<dt><strong>① 템플릿 이름</strong></dt><dd><p><strong>템플릿 관리</strong>, <strong>새 문서 작성</strong> 메뉴 화면에 나타날 템플릿의
-이름입니다.</p>
-<p><strong>템플릿 이름</strong>은 공백 포함 11글자 정도를 권장합니다. 11글자 이상
-입력할 경우 전체 템플릿 이름은 이름 위에 마우스를 위치시킨 뒤 잠시
-기다리면 확인할 수 있습니다.</p>
-<div class="figure align-default" id="id20">
-<a class="reference internal image-reference" href="../_images/template-name.png"><img alt="템플릿 이름" src="../_images/template-name.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">템플릿 이름</span><a class="headerlink" href="#id20" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-</dd>
-<dt><strong>② 템플릿 약칭</strong></dt><dd><p>템플릿을 간단히 표시하는 짧은 이름입니다. 2~3글자 정도의 짧은 단어를
-권장합니다.</p>
-<p><strong>탬플릿 약칭</strong>은 문서번호, 문서 제목, 메일 템플릿 등에서
-<strong>$$</strong>를 입력해 사용할 수 있습니다.</p>
-<div class="figure align-default" id="id21">
-<img alt="템플릿 약칭" src="../_images/template-short-name.png" />
-<p class="caption"><span class="caption-text">템플릿 약칭</span><a class="headerlink" href="#id21" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-</dd>
-<dt><strong>③ 카테고리</strong></dt><dd><p>템플릿을 종류별로 구분할 때 사용합니다. 카테고리 이름으로 <strong>템플릿
-관리</strong> 화면의 템플릿이나 <strong>문서함</strong>, <strong>문서 관리</strong> 메뉴의 문서들을
-필터링할 수 있습니다. 기존의 카테고리에서 선택하거나 새로운 이름을
-입력해 새로운 카테고리를 생성할 수 있습니다.</p>
-<p>구분자( <strong>/</strong> )를 사용하면 다단계 카테고리를 설정할 수 있습니다. 예를
-들어, 카테고리를 <strong>인사팀/휴가관련</strong>으로 설정하면 1단계 카테고리인
-<strong>인사팀</strong> 안에 2단계 카테고리인 <strong>휴가관련</strong> 카테고리가 생성됩니다.</p>
-</dd>
-<dt><strong>④ 설명</strong></dt><dd><p>템플릿에 대한 추가적인 설명을 입력합니다. 이 설명 내용은 목록 및 <strong>새
-문서 작성</strong>의 템플릿 이름 하단에 나타납니다.</p>
-</dd>
-<dt><strong>⑤ 문서작성 유효기간</strong></dt><dd><p>템플릿으로 문서를 생성할 수 있는 기한을 설정합니다. 시작일은 템플릿을
-업로드한 날로 기본 설정되며 날짜를 변경할 수 있습니다.</p>
-<p><strong>기간 제한 없음</strong>을 체크하면 계속해서 문서를 작성할 수 있습니다.
-<strong>기간 제한 없음</strong> 체크를 해제한 후 날짜를 설정하면 설정된 날짜까지만
-문서 생성이 가능합니다.</p>
-</dd>
-<dt><strong>문서 설정</strong></dt><dd><p>템플릿으로 생성한 문서에 대한 제목 설정 규칙 등 추가 설정을 합니다.</p>
-</dd>
-<dt><strong>⑥ 문서 제목 자동 설정 규칙</strong></dt><dd><p>템플릿으로 문서를 작성할 때 입력된 문서의 제목을 설정합니다. 문서
-제목 규칙을 설정하지 않을 경우 템플릿 이름이 문서 제목이 됩니다.</p>
-<p>문서 제목에는 <strong>$$</strong> 와 <strong>{{</strong> 를 사용하여 예약어를 추가할 수
-있습니다.</p>
-</dd>
-<dt><strong>⑦ 문서 제목 변경 허용</strong></dt><dd><p><strong>문서 제목 변경 허용</strong>을 체크하면 <strong>작성</strong> 단계의 문서 작성자가
-문서 제목을 수정할 수 있습니다.</p>
-</dd>
-<dt><strong>⑧ 문서 번호 자동 부여</strong></dt><dd><p>템플릿 문서 번호 자동 부여 <strong>문서 번호 자동 부여</strong>를 체크하면
-생성된 문서에 대해 자동으로 문서번호가 부여됩니다. 문서번호 표현식 중
-원하는 표현식을 선택하고, 언제 문서번호를 생성할 지 문서번호 채번
-시점을 선택합니다.</p>
-<p><img alt="image1" src="../_images/template-setting-general-doc-numering.png" /></p>
-</dd>
-<dt><strong>⑨ 문서 전송 시 팝업 생략</strong></dt><dd><p>문서를 빨리 작성하고 제출하는 일이 많을 때 사용합니다. 이 설정을
-체크하지 않으면 문서 전송 시 <strong>확인 메시지 입력</strong> 팝업창이
-나타납니다. <strong>문서 전송 시 팝업 생략</strong>을 체크하면 <strong>메시지 입력</strong>
-팝업창이 나타나지 않고 바로 다음 단계로 진행됩니다.</p>
-</dd>
-</dl>
+<ul class="simple">
+<li><p><a class="reference external" href="#check">체크</a><strong>:</strong> 체크할 항목이 있을 때 사용합니다.</p></li>
+<li><p><a class="reference external" href="#select">선택</a><strong>:</strong> 여러가지 항목 중 한가지를 선택합니다. 다중 선택도 설정 가능합니다.</p></li>
+<li><p><a class="reference external" href="#text">텍스트</a><strong>:</strong> 1~2단어의 짧은 텍스트를 입력합니다.</p></li>
+<li><p><a class="reference external" href="#text">멀티라인</a><strong>:</strong> 여러 줄의 긴 텍스트를 입력합니다.</p></li>
+<li><p><a class="reference external" href="#combo">콤보</a><strong>:</strong> 클릭하면 드롭다운 메뉴가 나타나며 여러 항목 중 하나를 선택합니다.</p></li>
+<li><p><a class="reference external" href="#date">날짜</a><strong>:</strong> 특정 날짜를 입력합니다.</p></li>
+<li><p><a class="reference external" href="#numeric">숫자</a><strong>:</strong> 숫자를 입력합니다.</p></li>
+<li><p><a class="reference external" href="#toggle">토글</a><strong>:</strong> 2개 이상의 값을 입력하면 버튼을 클릭할 때마다 다른 값으로 전환됩니다.</p></li>
+<li><p><a class="reference external" href="#signature">서명</a><strong>:</strong> 서명을 입력합니다.</p></li>
+<li><p><a class="reference external" href="#camera">카메라</a><strong>:</strong> 카메라가 연결된 기기(스마트폰, 태블릿 등)에서는 카메라로 사진을 찍거나 사진첩에서 사진을 선택합니다. 카메라가 없는 기기(일반 PC)에서는 이미지 파일을 선택합니다.</p></li>
+<li><p><a class="reference external" href="#record">녹음</a><strong>:</strong> 녹음 기능이 있는 기기에서 버튼을 클릭해 녹음을 진행합니다.</p></li>
+<li><p><a class="reference external" href="#attach">첨부</a><strong>:</strong> 파일 첨부 기능을 추가합니다.</p></li>
+<li><p><a class="reference external" href="#user">사용자</a>: 문서를 작성 또는 수정한 멤버의 정보를 입력합니다.</p></li>
+<li><p><a class="reference external" href="#usedate">사용일</a><strong>:</strong> 문서를 작성하거나 수정한 날짜를 입력합니다.</p></li>
+<li><p><a class="reference external" href="#document">문서</a><strong>:</strong> 문서 내에 문서 번호나 문서 ID를 입력합니다.</p></li>
+<li><p><a class="reference external" href="#label">레이블</a><strong>:</strong> 별도의 설정값을 문서에 입력할 때 사용합니다.</p></li>
+</ul>
 </div>
 <div class="section" id="id7">
-<h3>일반 설정 &gt; 문서 제목 규칙 만들기<a class="headerlink" href="#id7" title="제목 주소">¶</a></h3>
-<p><strong>템플릿 설정</strong>에서 해당 템플릿으로 생성되는 문서의 제목 규칙을 설정할
-수 있습니다. 템플릿 문서 제목 규칙</p>
-<p>문서에 입력된 내용, 또는 문서 작성 관련 정보가 문서 제목에 자동으로
-입력되도록 설정할 수 있습니다. 문서 제목 규칙을 설정하면 문서 작성
-시점의 정보를 바탕으로 문서 제목이 생성되며 이 제목은 모든 문서함(<strong>진행
-중 문서함, 처리할 문서함, 완료 문서함</strong>)과 <strong>문서 관리</strong> 메뉴의 문서
-목록에서 확인할 수 있습니다</p>
+<h3>컴포넌트 속성 확인하는 방법<a class="headerlink" href="#id7" title="제목 주소">¶</a></h3>
+<p>모든 컴포넌트는 속성 창에서 각각 세부 설정을 할 수 있습니다. 속성은 속성 아이콘 또는 속성 메뉴를 클릭하여 설정 및 확인할 수 있습니다.</p>
+<div class="figure align-default" id="id33">
+<a class="reference internal image-reference" href="../_images/checking-components-properties.png"><img alt="컴포넌트 속성 확인" src="../_images/checking-components-properties.png" style="width: 750px;" /></a>
+<p class="caption"><span class="caption-text">컴포넌트 속성 확인</span><a class="headerlink" href="#id33" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">참고</p>
-<p>이 작업은 <strong>대표 관리자</strong> 또는 <strong>템플릿 관리</strong> 권한이 필요합니다.</p>
-</div>
-<div class="figure align-default" id="id22">
-<a class="reference internal image-reference" href="../_images/document-list.png"><img alt="문서 관리 &gt; 문서 목록" src="../_images/document-list.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">문서 관리 &gt; 문서 목록</span><a class="headerlink" href="#id22" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-<p><strong>문서 제목 규칙 설정하는 방법</strong></p>
-<div class="figure align-default" id="id23">
-<a class="reference internal image-reference" href="../_images/template-setting-general-doc-numering_rule.png"><img alt="템플릿 설정 &gt; 문서 제목 규칙 설정" src="../_images/template-setting-general-doc-numering_rule.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-text">템플릿 설정 &gt; 문서 제목 규칙 설정</span><a class="headerlink" href="#id23" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-<ol class="arabic simple">
-<li><p>사이드바 메뉴에서 <strong>템플릿 관리</strong>로 이동합니다.</p></li>
-<li><p>템플릿의 <strong>설정</strong> 아이콘(<img alt="image2" src="../_images/config-icon.PNG" />)을 클릭하여 <strong>템플릿 설정</strong>
-화면으로 이동합니다.</p></li>
-<li><p><strong>일반 설정</strong> 화면의 <strong>문서 제목 자동 설정 규칙</strong> 입력란에 원하는
-제목 규칙을 입력합니다.</p></li>
-<li><p>오른쪽 상단에 <strong>저장</strong> 버튼을 클릭하여 변경 사항을 저장합니다.</p></li>
-</ol>
-<p><strong>예약어 사용하는 방법 템플릿 예약어</strong></p>
-<div class="figure align-default" id="id24">
-<img alt="예약어 사용해서 문서 제목 규칙 설정" src="../_images/template-setting-general-doc-numering_rule_reserved.png" />
-<p class="caption"><span class="caption-text">예약어 사용해서 문서 제목 규칙 설정</span><a class="headerlink" href="#id24" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-<dl>
-<dt><strong>{{</strong></dt><dd><p>문서에 입력된 내용을 문서 제목에 추가하고자 할 때</p>
-<p><strong>문서 제목 규칙</strong> 입력란에 <strong>{{</strong> 를 입력하면 템플릿의 입력항목 ID
-리스트가 나타나며, 원하는 ID를 선택하면 해당 입력항목에 입력된 내용이
-문서 제목에 추가됩니다.</p>
-</dd>
-<dt><strong>$$</strong></dt><dd><p>문서와 관련된 정보를 제목에 추가하고자 할 때</p>
-<p><strong>문서 제목 규칙</strong> 입력란에 <strong>$$</strong> 를 입력하면 드롭다운 메뉴가
-나타나며 아래 정보 중 원하는 정보를 선택할 수 있습니다.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 32%" />
-<col style="width: 68%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>정보 종류</p></th>
-<th class="head"><p>설명</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>현재_날짜</p></td>
-<td><p>문서 작성 시점의 날짜 (예: 2020년 02월 20일)</p></td>
-</tr>
-<tr class="row-odd"><td><p>현재_시간</p></td>
-<td><p>문서 작성 시점의 시간 (예: 오후 02:59)</p></td>
-</tr>
-<tr class="row-even"><td><p>현재_날짜시간</p></td>
-<td><p>문서 작성 시점의 날짜와 시간 (예: 2020년 02월
-20일 오후 02:59)</p></td>
-</tr>
-<tr class="row-odd"><td><p>최초_작성자_ID</p></td>
-<td><p>문서를 작성한 멤버의 ID</p></td>
-</tr>
-<tr class="row-even"><td><p>최초_작성자_이름</p></td>
-<td><p>문서를 작성한 멤버의 이름</p></td>
-</tr>
-<tr class="row-odd"><td><p>최초_작성자_부서</p></td>
-<td><p>문서를 작성한 멤버의 부서</p></td>
-</tr>
-<tr class="row-even"><td><p>최초_작성자_회사명</p></td>
-<td><p>문서를 작성한 멤버의 회사명</p></td>
-</tr>
-<tr class="row-odd"><td><p>템플릿명</p></td>
-<td><p>템플릿 설정 &gt; 일반설정에 입력된 템플릿명</p></td>
-</tr>
-<tr class="row-even"><td><p>템플릿_약칭</p></td>
-<td><p>템플릿 설정 &gt; 일반설정에 입력된 템플릿 약칭</p></td>
-</tr>
-<tr class="row-odd"><td><p>회사명</p></td>
-<td><p>회사 관리 &gt; 회사 정보에 입력된 회사명</p></td>
-</tr>
-<tr class="row-even"><td><p>회사_주소</p></td>
-<td><p>회사 관리 &gt; 회사 정보에 입력된 주소</p></td>
-</tr>
-<tr class="row-odd"><td><p>회사_연락처</p></td>
-<td><p>회사 관리 &gt; 회사 정보에 입력된 연락처</p></td>
-</tr>
-<tr class="row-even"><td><p>회
-사_사업자_등록_번호</p></td>
-<td><p>회사 관리 &gt; 회사 정보에 입력된 사업자등록번호</p></td>
-</tr>
-<tr class="row-odd"><td><p>회사_홈페이지</p></td>
-<td><p>회사 관리 &gt; 회사 정보에 입력된 홈페이지 URL</p></td>
-</tr>
-</tbody>
-</table>
-</dd>
-</dl>
-<div class="admonition tip">
-<p class="admonition-title">팁</p>
-<p><strong>문서 제목 변경 허용</strong> 여부를 확인하세요!</p>
-<p>문서 제목 규칙을 설정해 놓더라도 <strong>문서 제목 변경 허용</strong>이 체크되어
-있으면 문서 작성자가 임의로 문서 제목을 변경할 수 있습니다. 문서
-제목이 변경되는 것을 원하지 않는 경우, <strong>문서 제목 변경 허용</strong>을
-체크 해지하세요.</p>
-</div>
-<div class="figure align-default" id="id25">
-<img alt="문서 제목 변경 허용 여부 확인" src="../_images/template-setting-general-doc-numering_rule_allow_change.png" />
-<p class="caption"><span class="caption-text">문서 제목 변경 허용 여부 확인</span><a class="headerlink" href="#id25" title="이 이미지에 대한 퍼머링크">¶</a></p>
+<p>모든 컴포넌트는 ID를 가지고 있어야 합니다. ID는 컴포넌트를 추가하면 자동으로 생성되기는 하지만, 컴포넌트에 무엇이 입력되는 지를 보여줄 수
+있는 직관적인 단어로 변경하는 것이 좋습니다. 예를 들어, 홍길동, 이순신 등이 입력되는 컴포넌트의 ID는 ‘이름’으로 설정할 수 있습니다.</p>
 </div>
 </div>
-<div class="section" id="docnumber-wd">
-<span id="id8"></span><h3>일반 설정 &gt; 문서번호 생성 및 확인하기<a class="headerlink" href="#docnumber-wd" title="제목 주소">¶</a></h3>
-<p>이폼사인에서 생성되는 문서에 연속되는 문서번호를 부여할 수 있습니다.
-템플릿 별로 문서 번호 자동 생성 여부를 설정할 수 있으며 번호 형식 4가지
-중 한 가지를 선택해야 합니다. 문서 번호는 문서 입력항목을 사용하여 문서
-내에 입력할 수 있습니다. 또한 문서 목록에서 별도의 컬럼으로 확인할 수
-있으며 문서 번호로 문서를 검색할 수 있습니다.</p>
-<p><strong>문서번호 생성하는 방법 템플릿 문서 번호 자동 부여</strong></p>
-<div class="admonition note">
-<p class="admonition-title">참고</p>
-<p>이 작업은 <strong>대표 관리자</strong> 또는 <strong>템플릿 관리</strong> 권한이 필요합니다.</p>
-</div>
-<div class="figure align-default" id="id26">
-<a class="reference internal image-reference" href="../_images/template-setting-general-doc-numering1.png"><img alt="문서번호 설정하기" src="../_images/template-setting-general-doc-numering1.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-text">문서번호 설정하기</span><a class="headerlink" href="#id26" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-<ol class="arabic">
-<li><p>사이드바 메뉴에서 <strong>템플릿 관리</strong>로 이동합니다.</p></li>
-<li><p>템플릿의 <strong>설정</strong> 아이콘(<img alt="image3" src="../_images/config-icon.PNG" />)을 클릭하여 <strong>템플릿 설정</strong>
-화면으로 이동합니다.</p></li>
-<li><p><strong>일반 설정</strong> 화면의 <strong>문서 번호 자동 부여</strong>를 체크합니다.</p>
-<ul class="simple">
-<li><p><strong>문서번호 규칙 선택하기</strong></p></li>
-</ul>
-<div class="figure align-default" id="id27">
-<img alt="문서번호 규칙 선택" src="../_images/template-setting-general-doc-numering1_1.png" />
-<p class="caption"><span class="caption-text">문서번호 규칙 선택</span><a class="headerlink" href="#id27" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-<dl>
-<dt><strong>▪ 일련번호</strong></dt><dd><p>문서 생성 순서대로 1번부터 생성</p>
-<p>예) 1, 2, 3…</p>
-</dd>
-<dt><strong>▪ 년도 일련번호</strong></dt><dd><p>문서가 생성된 년도 + 번호 1번부터 생성</p>
-<p>예) 2020_1, 2020_2…</p>
-</dd>
-<dt><strong>▪ 템플릿약칭 일련번호</strong></dt><dd><p>템플릿 약칭 + 번호 1번부터 생성</p>
-<p>예) 신청서 1, 신청서 2…</p>
-</dd>
-<dt><strong>▪ 템플릿약칭 년도 일련번호</strong></dt><dd><p>템플릿 약칭 + 문서가 생성된 년도 + 번호 1번부터 생성</p>
-<p>예) 신청서 2020_1, 신청서 2020_2…</p>
-</dd>
-</dl>
-<ul class="simple">
-<li><p><strong>문서 번호 부여 시점 선택하기</strong></p></li>
-</ul>
-<dl class="simple">
-<dt>▪ <strong>시작</strong></dt><dd><p>문서를 작성하기 시작할 때 문서번호를 생성합니다.</p>
-</dd>
-<dt>▪ <strong>완료</strong></dt><dd><p>문서가 모든 워크플로우를 거쳐 완료가 될 때 문서번호를 생성합니다.</p>
-</dd>
-</dl>
-</li>
-<li><p>오른쪽 상단의 <strong>저장</strong> 버튼을 클릭해 설정을 저장합니다.</p></li>
-</ol>
-<p><strong>문서번호 확인하는 방법</strong></p>
-<p>생성된 문서번호는 문서 입력항목을 사용하여 문서 내에 입력하거나 문서
-목록에서 확인할 수 있습니다.</p>
-<ul>
-<li><p><strong>문서 내에 문서번호 표시하기</strong></p>
-<p>문서번호는 문서 입력항목을 사용하여 문서 내에 입력할 수 있습니다.</p>
-<ol class="arabic">
-<li><p>이폼사인의 <strong>템플릿 관리</strong> 화면에서 PDF 파일을 업로드 합니다.</p></li>
-<li><p>문서번호가 들어갈 위치에 문서 입력항목을 추가합니다.</p>
-<p><a class="reference internal" href="../_images/web-form-designer-document-component.png"><img alt="image4" src="../_images/web-form-designer-document-component.png" style="width: 750px;" /></a></p>
-</li>
-<li><p><strong>다음</strong> 버튼을 눌러 <strong>템플릿 설정</strong>으로 이동합니다.</p></li>
-<li><p><strong>템플릿 설정 &gt; 일반 설정</strong>에서 <strong>문서 번호 자동 부여</strong>를
-체크합니다.</p></li>
-<li><p>문서 번호 규칙을 선택합니다.</p></li>
-<li><p><strong>저장</strong> 버튼을 눌러 설정을 저장합니다.</p></li>
-</ol>
-</li>
-<li><p><strong>문서 목록에서 문서번호 확인하기</strong></p>
-<div class="figure align-default" id="id28">
-<a class="reference internal image-reference" href="../_images/documentlist-doc-num.png"><img alt="완료 문서함 - 문서 목록" src="../_images/documentlist-doc-num.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">완료 문서함 - 문서 목록</span><a class="headerlink" href="#id28" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-<div class="figure align-default" id="id29">
-<a class="reference internal image-reference" href="../_images/documentlist-doc-num1.png"><img alt="완료 문서함 - 문서 목록 - 문서번호 확인" src="../_images/documentlist-doc-num1.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">완료 문서함 - 문서 목록 - 문서번호 확인</span><a class="headerlink" href="#id29" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-<p>문서번호는 문서 목록을 볼 수 있는 문서함(진행 중 문서함, 처리할
-문서함, 완료 문서함) 및 문서 관리 메뉴(문서 관리 권한 필요)에서
-확인할 수 있습니다.</p>
-<ol class="arabic">
-<li><p>사이드바 메뉴에서 <strong>문서함</strong> 또는 <strong>문서 관리</strong> 메뉴로 이동합니다.</p></li>
-<li><p>오른쪽 상단의 <strong>컬럼 설정</strong> 아이콘을 클릭합니다.</p></li>
-<li><p>컬럼 리스트의 <strong>문서번호</strong>를 체크합니다.</p>
-<p><img alt="image5" src="../_images/documentlist-doc-num-sel.png" /></p>
-</li>
-<li><p>문서 목록에 <strong>문서번호</strong> 컬럼이 추가된 것을 확인합니다.</p></li>
-</ol>
-</li>
-<li><p><strong>문서번호로 문서 검색하기</strong></p>
-<p><a class="reference internal" href="../_images/documentlist-search-doc-num.png"><img alt="image6" src="../_images/documentlist-search-doc-num.png" style="width: 600px;" /></a></p>
-<p>문서번호 검색은 상세 검색 기능을 통해 확인할 수 있습니다.</p>
-<ol class="arabic simple">
-<li><p><strong>문서함</strong> 또는 <strong>문서 관리</strong> 메뉴로 이동합니다.</p></li>
-<li><p>문서 목록 상단의 <strong>상세</strong> 버튼을 클릭합니다.</p></li>
-<li><p>검색 기준 중 <strong>문서번호</strong>를 선택합니다.</p></li>
-<li><p>검색할 단어 또는 숫자를 입력합니다.</p></li>
-<li><p>검색 결과를 확인합니다.</p></li>
-</ol>
-</li>
-</ul>
-</div>
+<div class="section" id="id8">
+<h3>컴포넌트 추가하는 방법<a class="headerlink" href="#id8" title="제목 주소">¶</a></h3>
+<p>컴포넌트는 크게 엑셀에서 추가하는 방법과 워드 또는 파워포인트에서 추가하는 방법이 있습니다. 워드 또는 파워포인트에서 컴포넌트를 추가하는 방법은 각각 다음과 같습니다.</p>
 <div class="section" id="id9">
-<h3>권한 설정<a class="headerlink" href="#id9" title="제목 주소">¶</a></h3>
-<p>권한 설정 화면에서는 <strong>템플릿 사용 권한</strong>과 <strong>문서 관리 권한</strong>을
-설정할 수 있습니다.</p>
-<div class="figure align-default" id="id30">
-<a class="reference internal image-reference" href="../_images/template-setting-auth-new.PNG"><img alt="템플릿 설정 &gt; 권한 설정" src="../_images/template-setting-auth-new.PNG" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">템플릿 설정 &gt; 권한 설정</span><a class="headerlink" href="#id30" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-<p><strong>템플릿 사용 권한</strong></p>
-<p>템플릿 사용 권한 템플릿을 사용해서 문서를 생성할 수 있는 권한을
-설정하며, 회사에 속한 모든 멤버가 사용할 수 있도록 <strong>전체</strong> 설정을
-하거나 <strong>그룹 또는 멤버</strong>를 검색하여 선택할 수 있습니다.</p>
-<p><strong>문서 관리 권한</strong></p>
-<p>문서 관리 권한 그룹 또는 멤버를 선택하여 템플릿을 사용해서 생성된 문서를
-열람하거나 완료 문서에 대한 취소 요청을 승인하거나, 문서를 영구적으로
-제거할 수 있는 권한을 모두 또는 각각 설정할 수 있습니다.</p>
-<ul class="simple">
-<li><p><strong>모든 문서 열람</strong>(기본권한): 문서 관리자의 기본 권한으로 선택에
-관계없이 문서 관리 권한이 부여된 그룹 또는 멤버는 모든 문서를 열람할
-수 있는 권한이 부여됩니다.</p></li>
-<li><p><strong>완료 문서 취소 승인</strong>(선택시): 완료된 문서에 대해 문서 작성자가
-취소를 요청할 경우 문서 취소 승인을 할 수 있는 권한이 부여됩니다.</p></li>
-<li><p><strong>문서 영구 제거</strong>(선택시): 시스템에서 문서를 영구적으로 제거할 수
-있는 권한이 부여됩니다.</p></li>
-</ul>
-<p><a class="reference internal" href="../_images/template-setting-auth-doc-new.PNG"><img alt="image7" src="../_images/template-setting-auth-doc-new.PNG" style="width: 700px;" /></a></p>
+<h4>엑셀에서 추가하기<a class="headerlink" href="#id9" title="제목 주소">¶</a></h4>
+<ol class="arabic">
+<li><p>엑셀 파일을 열고 <strong>OZ in Excel</strong> 리본 메뉴로 이동합니다.</p>
+<p><img alt="image8" src="../_images/ozinexcel_1.png" /></p>
+</li>
+<li><p>컴포넌트를 추가할 셀을 선택합니다.</p>
+<p><img alt="image9" src="../_images/ozinexcel_2.png" /></p>
+</li>
+<li><p>원하는 컴포넌트를 클릭합니다.</p>
+<p><img alt="image10" src="../_images/ozinexcel_3.png" /></p>
+</li>
+<li><p>컴포넌트 속성에서 세부 사항을 설정합니다.</p></li>
+</ol>
 </div>
 <div class="section" id="id10">
-<h3>워크플로우 설정<a class="headerlink" href="#id10" title="제목 주소">¶</a></h3>
-<p><strong>템플릿 설정</strong> 화면에서 <strong>워크플로우 설정</strong> 탭을 클릭해 해당 템플릿의
-워크플로우를 생성 또는 수정할 수 있습니다. 워크플로우</p>
-<div class="figure align-default" id="id31">
-<a class="reference internal image-reference" href="../_images/workflow-setting_new.PNG"><img alt="템플릿 설정 &gt; 워크플로우 설정" src="../_images/workflow-setting_new.PNG" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">템플릿 설정 &gt; 워크플로우 설정</span><a class="headerlink" href="#id31" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-<p><strong>워크플로우 단계 추가하는 방법</strong></p>
+<h4>워드 또는 파워포인트에서 추가하기<a class="headerlink" href="#id10" title="제목 주소">¶</a></h4>
+<p><strong>방법 1: 컴포넌트 클릭하여 추가하기</strong></p>
 <ol class="arabic">
-<li><p><strong>워크플로우 설정</strong> 탭을 클릭해 이동합니다.</p></li>
-<li><p>시작과 완료 사이의 단계 추가(<img alt="image8" src="../_images/workflow-addstep-plus-button.png" />) 버튼을 클릭합니다.</p></li>
-<li><p><strong>수신자 타입 선택</strong>에서 추가하고자 하는 <strong>수신자 타입</strong>을
-선택합니다.</p>
-<p><a class="reference internal" href="../_images/workflow-addstep-type2.png"><img alt="image9" src="../_images/workflow-addstep-type2.png" style="width: 700px;" /></a></p>
+<li><p>워드 또는 파워포인트 파일을 열고 컴포넌트를 추가할 위치를 선택합니다.</p>
+<p><img alt="image11" src="../_images/ozinword_1.png" /></p>
 </li>
-<li><p>선택 시 워크플로우에 단계가 추가됩니다</p></li>
+<li><p><strong>OZ in Word</strong> 또는 <strong>OZ in PowerPoint</strong> 리본 메뉴에서 추가하고자 하는 컴포넌트를 클릭합니다.</p>
+<p><img alt="image12" src="../_images/ozinword_2.png" /></p>
+</li>
+<li><p>추가된 컴포넌트의 크기를 조절합니다.</p>
+<p><img alt="image13" src="../_images/ozinword_3.png" /></p>
+</li>
 </ol>
-<div class="admonition tip">
-<p class="admonition-title">팁</p>
-<p>워크플로우 단계는 개수 제한없이 추가할 수 있습니다. 워크플로우 단계
-옆에 위치한 화살표를 클릭하여 단계의 순서를 조정할 수 있습니다.</p>
-<p>단계를 삭제하려면 단계 버튼 오른쪽에 위치한 <strong>X</strong>를 클릭하면
-삭제됩니다.</p>
-<p><a class="reference internal" href="../_images/workflow-step-added.png"><img alt="image10" src="../_images/workflow-step-added.png" style="width: 700px;" /></a></p>
+<p><strong>방법 2: 컴포넌트를 그려서 추가하기</strong></p>
+<ol class="arabic">
+<li><p>워드 또는 파워포인트를 열고 <strong>OZ in Word</strong> 또는 <strong>OZ in PowerPoint</strong> 리본 메뉴로 이동합니다.</p></li>
+<li><p>컴포넌트 <strong>그리기</strong> 아이콘을 클릭하여 나타나는 드롭다운 목록에서 추가할 컴포넌트를 선택합니다.</p>
+<p><img alt="image14" src="../_images/ozinword_2_1.png" /></p>
+</li>
+<li><p>원하는 위치와 크기로 컴포넌트를 추가합니다.</p>
+<p><img alt="image15" src="../_images/ozinword_2_2.png" /></p>
+</li>
+</ol>
 </div>
-<p><strong>워크플로우 단계별 상세 설정</strong></p>
-<p>단계를 클릭하여 각 워크플로우 단계별로 속성, 항목 제어 등 상세 내용을
-설정할 수 있습니다.</p>
-<ul>
-<li><p><strong>속성</strong>은 단계 이름, 상태 설정 외에도 단계별로 설정이 필요한
-항목을 세부적으로 설정할 수 있습니다.</p></li>
-<li><p><strong>항목 제어</strong>는 워크플로우 각 단계별로 수신자가 편집할 수 있도록
-허용하는 <strong>편집 허용</strong> 필드와 필수로 입력해야 하는 <strong>입력 필수</strong>
-필드를 설정할 수 있습니다.</p>
-<div class="admonition note">
-<p class="admonition-title">참고</p>
-<p><strong>입력 필수</strong> 필드로 선택하면 문서 작성 시 해당 필드에 빨간색으로
-표시되며, 입력하지 않을시 문서 전송이 되지 않습니다.</p>
-</div>
-<p><a class="reference internal" href="../_images/workflow-step-item-manage.png"><img alt="image11" src="../_images/workflow-step-item-manage.png" style="width: 700px;" /></a></p>
-</li>
-</ul>
-<dl>
-<dt><strong>시작: 문서를 작성하는 단계입니다. 워크플로우 시작</strong></dt><dd><p><a class="reference internal" href="../_images/workflow-step-start-property.png"><img alt="image12" src="../_images/workflow-step-start-property.png" style="width: 700px;" /></a></p>
-<ul class="simple">
-<li><p><strong>단계 이름</strong>(공통): 기본 이름으로 설정된 단계의 이름을 변경할
-수 있습니다..</p></li>
-<li><p><strong>문서 생성 수 제한</strong>: 체크하여 해당 템플릿으로 생성되는 최대 문서
-개수를 설정할 수 습니다.</p></li>
-<li><p><strong>URL로 문서 생성 허용</strong>: 멤버가 아닌 외부 사용자에게 요청시
-이폼사인에 로그인하지 않고 URL을 통해 바로 접속하여 문서를 처리할
-수 있는 공개 링크를 생성합니다.</p></li>
-<li><p><strong>문서 중복 전송 방지</strong>: 문서를 중복으로 전송하는 것을 방지하며,
-필드를 선택해 해당 필드를 기준으로 중복 여부를 확인합니다.</p></li>
-</ul>
-</dd>
-<dt><strong>결재자: 회사 내부 결재자에게 문서 결재를 요청하는 단계입니다. 워크플로우 결재자</strong></dt><dd><p><a class="reference internal" href="../_images/workflow-step-approval-property.png"><img alt="image13" src="../_images/workflow-step-approval-property.png" style="width: 700px;" /></a></p>
-<ul>
-<li><p><strong>표시 이름</strong>: 문서 작성 후 결재 또는 외부자 처리시 표시되는
-이름을 설정합니다. 입력을 안할 경우 아래와 같이 기본값으로
-나타납니다.</p>
-<p><a class="reference internal" href="../_images/template-approval-property-displayname.png"><img alt="image14" src="../_images/template-approval-property-displayname.png" style="width: 250px;" /></a></p>
-</li>
-</ul>
-</dd>
-<dt><strong>내부 수신자(멤버): 회사 내부 멤버에게 문서 처리를 요청하는 단계입니다. 워크플로우 내부 수신자(멤버)</strong></dt><dd><p><a class="reference internal" href="../_images/workflow-step-internal-recipient-property.png"><img alt="image15" src="../_images/workflow-step-internal-recipient-property.png" style="width: 700px;" /></a></p>
-<ul class="simple">
-<li><p><strong>수신자</strong>: 내부 수신자 단계를 처리할 멤버를 설정합니다.</p>
-<ul>
-<li><p><strong>이전 단계 처리자</strong>: 시작 단계 포함 이전 단계의 내부 수신자가
-문서를 처리하도록 설정합니다. 단계를 선택할 수 있습니다.</p></li>
-<li><p><strong>그룹 및 멤버</strong>: 그룹 또는 멤버 중 한 사람이 문서를 처리하도록
-설정합니다. 그룹 또는 멤버는 여러 명을 선택할 수 있습니다.</p></li>
-</ul>
-</li>
-</ul>
-</dd>
-<dt><strong>외부 수신자: 멤버가 아닌 외부 사용자에게 문서 처리를 요청하는 단계입니다. 워크플로우 외부 수신자</strong></dt><dd><p><a class="reference internal" href="../_images/workflow-step-external-recipient-property.png"><img alt="image16" src="../_images/workflow-step-external-recipient-property.png" style="width: 700px;" /></a></p>
-<ul>
-<li><p><strong>문서 전송 기한</strong>: 일정 기간이 지나면 외부 수신자에게 보낸 URL
-링크가 만료되도록 설정합니다.</p></li>
-<li><p><strong>수신자 정보 자동 설정</strong>: 외부 수신자에게 문서 요청시 문서에
-입력된 정보를 바탕으로 외부 수신자의 이름 및 연락처를 자동으로
-설정할 수 있습니다.</p></li>
-<li><p><strong>문서 열람 전 비밀번호 설정</strong>: 수신자의 이름, 보내는 사람이 직접
-입력 또는 입력항목 중 하나를 선택하여 사용 등의 방법으로 외부
-수신자가 문서 처리시 입력해야 할 인증 비밀번호를 설정할 수
-있습니다.</p></li>
-<li><p><strong>비밀번호 힌트</strong>: 외부 수신자가 문서 열람시 비밀번호를 입력할때
-표시될 안내 문구를 설정할 수 있습니다.</p>
-<p><a class="reference internal" href="../_images/workflow-step-external-recipient-property-pw.png"><img alt="image17" src="../_images/workflow-step-external-recipient-property-pw.png" style="width: 400px;" /></a></p>
-</li>
-<li><p><strong>문서 검토 전 휴대폰 본인확인:</strong> 외부 수신자가 문서 열람을 위해
-휴대폰 본인확인을 하도록 설정합니다. 본 기능은 추가 요금이
-발생합니다.</p></li>
-</ul>
-</dd>
-<dt><strong>완료: 문서가 모든 워크플로우 단계를 거쳐 최종 완료되는 단계입니다. 워크플로우 완료</strong></dt><dd><p><a class="reference internal" href="../_images/workflow-step-complete-property.png"><img alt="image18" src="../_images/workflow-step-complete-property.png" style="width: 700px;" /></a></p>
-<ul class="simple">
-<li><p><strong>별도의 파일 저장소에 완료 문서 저장하기</strong>: 대표 관리자 또는 회사
-관리자가 별도로 설정한 외부 클라우드 저장소에 완료된 문서가
-저장되도록 설정합니다.</p></li>
-<li><p><strong>완료 문서에 타임스탬프 찍기</strong>: 완료된 문서가 그 이후 변경되지
-않았음을 증명하는 타임스탬프가 적용되도록 설정합니다. 본 기능은
-추가 요금이 발생합니다.</p></li>
-</ul>
-</dd>
-</dl>
 </div>
 <div class="section" id="id11">
-<h3>필드 설정<a class="headerlink" href="#id11" title="제목 주소">¶</a></h3>
-<p><strong>템플릿 필드 설정 필드 설정</strong>에서는 템플릿에 들어가는 필드의 기본값
-또는 자동입력 값을 설정하고 필드의 순서를 조정할 수 있습니다.</p>
-<div class="figure align-default" id="id32">
-<a class="reference internal image-reference" href="../_images/template-field-setting.png"><img alt="템플릿 설정 &gt; 필드 설정" src="../_images/template-field-setting.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">템플릿 설정 &gt; 필드 설정</span><a class="headerlink" href="#id32" title="이 이미지에 대한 퍼머링크">¶</a></p>
+<h3>컴포넌트 삭제하는 방법<a class="headerlink" href="#id11" title="제목 주소">¶</a></h3>
+<p>삭제하고자 하는 컴포넌트를 선택하고 <strong>OZ in Office</strong> 메뉴의 <strong>삭제</strong>(<img alt="image16" src="../_images/delete-icon.png" />) 아이콘을 클릭합니다. 여러 개의 컴포넌트를 선택해서 한 번에 삭제하는 것도 가능합니다.</p>
 </div>
-<p>필드의 기본값은 <strong>사용자 정의 필드 관리</strong>에 저장되어 있는
-회사/그룹/멤버 정보를 입력되도록 설정하거나, <strong>최근 입력값</strong> 선택 또는
-사용자가 <strong>직접 입력</strong>하도록 설정할 수 있습니다.</p>
-<p><strong>자동 입력 설정하는 방법</strong></p>
-<p>문서에 자주 입력하는 정보를 미리 저장하고 자동으로 입력되도록 설정할 수
-있습니다.</p>
-<p>예를 들어, 작성자의 이름, 연락처 등 작성자 정보, 부서명, 책임자, 회사
-대표 번호 등 회사 또는 그룹에 대한 정보를 미리 저장하여 자동으로
-입력되도록 설정할 수 있습니다. 관련 필드의 항목 추가 및 기본 값 설정은
-<strong>회사 관리 &gt; 사용자 정의 필드 관리</strong>에서 할 수 있습니다.</p>
-<ol class="arabic simple">
-<li><p><strong>회사 관리 &gt; 사용자 정의 필드 관리</strong> 화면에서 필드를 추가합니다.</p></li>
-<li><p><strong>템플릿 관리</strong> 메뉴로 이동합니다.</p></li>
-<li><p><strong>템플릿 설정</strong> 아이콘을 클릭합니다.</p></li>
-<li><p><strong>필드 설정</strong> 메뉴로 이동합니다.</p></li>
-<li><p>자동 입력이 되도록 설정할 필드의 기본값을 입력합니다.</p></li>
-<li><p>모든 설정을 완료한 후 <strong>저장</strong> 버튼을 클릭합니다</p></li>
-</ol>
 </div>
 <div class="section" id="id12">
-<h3>알림 설정<a class="headerlink" href="#id12" title="제목 주소">¶</a></h3>
-<p>템플릿 알림 설정 템플릿으로 생성되는 문서의 요청 또는 상태 알림을 수신할
-채널, 수신자 설정 및 내용 확인, 편집 등을 할 수 있습니다.</p>
-<p><strong>알림 채널 설정</strong></p>
-<p>내부 수신자 및 외부 수신자에게 보낼 알림 채널을 설정합니다. <strong>이메일</strong>
-또는 <strong>SMS</strong> 중 하나 또는 모두를 선택할 수 있습니다.</p>
-<div class="admonition note">
-<p class="admonition-title">참고</p>
-<p><strong>SMS</strong>는 유료 기능으로, 선택시 추가 요금이 발생됩니다.</p>
-</div>
-<p>SMS 선택 시, <strong>문자로 보내기</strong>와 <strong>카카오톡으로 보내고 전송 실패시
-문자로 보내기</strong>가 활성화 됩니다.</p>
+<h2>컴포넌트별 사용 방법<a class="headerlink" href="#id12" title="제목 주소">¶</a></h2>
+<p>eformsign은 MS Office의 <strong>OZ in Office</strong> 리본 메뉴를 통해 체크박스, 콤보박스, 텍스트, 서명 등 다양한 컴포넌트를 지원하고 있습니다.</p>
+<p><strong>OZ in Office</strong>의 모든 컴포넌트는 공통 속성과 고유 속성을 가지고 있으며, <strong>OZ 컴포넌트 속성</strong> 창에서 공통 속성과 각 입력 기능의 고유 속성을 확인할 수 있습니다. 공통 속성으로는 ID와 툴팁 텍스트가 있으며, 각 속성의 의미는 다음과 같습니다.</p>
 <ul class="simple">
-<li><p><strong>문자로 보내기</strong>: 수신자에게 SMS로 알림 메시지를 전송합니다.</p></li>
-<li><p><strong>카카오톡으로 보내고 전송 실패시 문자로 보내기</strong>: 수신자에게
-카카오톡으로 알림 메시지를 전송하고 카카오톡을 사용하지 않는
-수신자에게는 SMS로 전송됩니다.</p></li>
+<li><p><strong>ID:</strong> 컴포넌트 ID 각각의 컴포넌트를 식별할 수 있는 고유한 ID 입니다. 워크플로우 또는 필드 설정 단계에서 필수 입력 또는 편집 제한 시 컴포넌트 ID로 확인하여 지정할 수 있으며, CSV로 입력 데이터를 추출하여 확인하고자 할때 컴포넌트 ID로 구분할 수 있습니다.</p></li>
+<li><p><strong>툴팁 텍스트:</strong> 컴포넌트 툴립 텍스트 수신자가 문서 열람 시 Windows 환경에서는 컴포넌트에 마우스를 위치하면 툴팁 텍스트가 말풍선 형태로 표시되며, 모바일 환경에서는 컴포넌트가 다이얼로그로 실행될 때 툴팁 텍스트가 다이얼로그의 제목으로 표시됩니다.</p></li>
 </ul>
-<div class="figure align-default" id="id33">
-<img alt="알림 채널 설정" src="../_images/template-setting-notification-channel.png" />
-<p class="caption"><span class="caption-text">알림 채널 설정</span><a class="headerlink" href="#id33" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-<p><strong>요청 알림 설정</strong></p>
-<p>해당 템플릿으로 생성된 문서를 수신자에게 요청시 발송되는 알림 메시지를
-확인하고 편집할 수 있습니다. 각 알림 템플릿 메시지는 <strong>회사 관리 &gt; 알림
-템플릿 관리</strong> 페이지에 설정된 내용에 따라 기본 반영되어 있으며, <strong>편집</strong>
-버튼을 클릭해 직접 메시지를 편집할 수 있습니다.</p>
 <div class="admonition note">
 <p class="admonition-title">참고</p>
-<p>SMS 템플릿 편집 기능은 유료 요금제 구독 회사에게만 제공되는
-기능입니다.</p>
+<p>OZ 컴포넌트 속성 창은 입력 기능이 적용된 위치를 선택한 후 OZ in Office 메뉴의 <strong>속성</strong> 아이콘(<img alt="image17" src="../_images/property-icon.png" /> )을 클릭하면 표시됩니다.</p>
 </div>
-<p>각 알림 템플릿 메시지는 <strong>회사 관리 &gt; 알림 템플릿 관리</strong> 페이지에 설정된
-내용에 따라 기본적으로 반영되어 있으며, <strong>편집</strong> 버튼을 클릭해 직접
-메시지를 편집할 수 있습니다.</p>
-<p><img alt="image19" src="../_images/template-setting-notification-edit.png" /></p>
-<p><a class="reference internal" href="../_images/template-setting-notification-edit-email.png"><img alt="image20" src="../_images/template-setting-notification-edit-email.png" style="width: 700px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>정보 타입인 사용자, 사용일, 문서, 레이블에는 툴팁이 없습니다.</p>
+</div>
+<p>eformsign OZ in Office의 각 컴포넌트에 대한 설명은 다음과 같습니다.</p>
+<div class="section" id="check">
+<span id="id13"></span><h3>체크<a class="headerlink" href="#check" title="제목 주소">¶</a></h3>
+<p><strong>체크</strong> 컴포넌트는 각 항목의 체크 여부를 확인하고자 할때 사용합니다. 비슷한 컴포넌트로 <strong>선택</strong> 컴포넌트가 있으며, 체크 컴포넌트는 해당 항목의 체크 여부를 확인할 때 사용하고, 선택 컴포넌트는 선택한 항목이 무엇인지 알아야 할 때 사용한다는 차이가 있습니다.</p>
+<p><img alt="image18" src="../_images/form-builder-components_check.png" /></p>
+<p>체크 컴포넌트의 입력값은 데이터 다운로드 시 다음과 같이 나타납니다.</p>
 <ul class="simple">
-<li><p><strong>문서 검토 및 작성 요청 &gt; 내부</strong>: 내부 수신자에게 문서 검토 및 작성
-요청 시 내부 수신자에게 전송하는 요청 알림 메시지를 편집할 수
-있습니다.</p></li>
-<li><p><strong>문서 검토 및 작성 요청 &gt; 외부</strong>: 외부 수신자에게 문서 검토 및 작성
-요청 시 외부 수신자에게 전송하는 요청 알림 메시지를 편집할 수
-있습니다.</p></li>
-<li><p><strong>문서 결재 요청</strong>: 결재자에게 문서 결재 요청 시 결재자에게 전송하는
-요청 알림 메시지를 편집할 수 있습니다</p></li>
-<li><p><strong>문서 반려로 인한 수정 요청</strong>: 결재자, 내부 수신자, 외부 수신자가
-문서 반려 시 문서 요청자에게 전송하는 요청 알림 메시지를 편집할 수
-있습니다.</p></li>
+<li><p>항목에 체크한 경우: true</p></li>
+<li><p>항목에 체크하지 않은 경우: false</p></li>
 </ul>
-<p><strong>상태 알림 설정</strong></p>
-<p>해당 템플릿으로 생성된 문서의 진행 상태 알림의 수신자를 설정하고 알림
-메시지의 미리보기(문서 승인/검토 및 작성/반려/취소/수정 알림) 또는
-편집(문서 최종 완료 알림)이 가능합니다.</p>
+<p>워드, 파워포인트에서는 체크 컴포넌트가 직사각형 도형처럼 나타납니다.
+항목의 내용은 컴포넌트 도형 안에 입력해야 합니다.</p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id34">
+<a class="reference internal image-reference" href="../_images/check-component-properties-1.png"><img alt="선택 컴포넌트 속성 설정하기" src="../_images/check-component-properties-1.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">선택 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id34" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>선택 컴포넌트는 각 항목별로 다른 ID를 부여해야 합니다. 여러 개의 선택 컴포넌트에 같은 ID가 부여될 경우 해당 컴포넌트 중 마지막 컴포넌트의 입력값만 표시됩니다.</p>
+<p><strong>② 체크 스타일</strong></p>
+<p>선택 컴포넌트는 속성에서 스타일을 지정할 수 있습니다. 체크를 선택하면 속성에서 체크박스가 기본으로 설정되어 있으며, 이외에 라디오 버튼, 빨간 원 표시를 선택할 수 있습니다.</p>
+<p>다음의 예시를 보면, 왼쪽부터 체크 / 라디오 / 원 선택 시 각각 체크박스가 어떻게 표시되는지를 알 수 있습니다.</p>
+<p><a class="reference internal" href="../_images/check-component-style-settings.png"><img alt="image19" src="../_images/check-component-style-settings.png" style="width: 700px;" /></a></p>
+</div>
+<div class="section" id="select">
+<span id="id14"></span><h3>선택<a class="headerlink" href="#select" title="제목 주소">¶</a></h3>
+<p>선택 컴포넌트는 여러 항목 중 어떤 항목을 선택했는지 확인해야 할 때 사용합니다. 선택 컴포넌트의 선택값은 데이터 다운로드 시 여러 항목 중 선택한 항목명이 나타납니다.</p>
+<p><img alt="image20" src="../_images/form-builder-components.png" /></p>
+<p>워드, 파워포인트에서는 선택 컴포넌트가 직사각형 도형으로 표시됩니다.
+항목의 내용은 컴포넌트 도형 안에 입력해야 합니다.</p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id35">
+<a class="reference internal image-reference" href="../_images/Radio-component-properties.png"><img alt="선택 컴포넌트 속성 설정하기" src="../_images/Radio-component-properties.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">선택 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id35" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>선택 컴포넌트의 선택 항목에는 선택 그룹마다 모두 같은 ID를 부여해야 합니다.</p>
+<p>예를 들어, 1번 문제에 대해 1, 2, 3, 4, 5의 보기가 있는 경우 1, 2, 3, 4, 5 항목에 같은 ID ‘1번’을 부여합니다. 2번 문제의 1, 2, 3, 4, 5 보기에는 ‘2번’ ID를 부여합니다. 다음 예시 화면의 모든 선택 항목에 대한 ID는 ‘나이 선택’으로 지정합니다.</p>
+<div class="figure align-default" id="id36">
+<a class="reference internal image-reference" href="../_images/radio-items-should-have-same-ID.png"><img alt="선택 컴포넌트의 설정 예" src="../_images/radio-items-should-have-same-ID.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">선택 컴포넌트의 설정 예</span><a class="headerlink" href="#id36" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>② 선택 스타일</strong></p>
+<p>선택 컴포넌트는 속성에서 스타일을 지정할 수 있습니다. 빨간 동그라미가 나타나는 ‘원’이 기본으로 설정되어 있으며 이외에 체크박스, 라디오 버튼 표시를 선택할 수 있습니다.</p>
+<p><strong>③ 다중 선택 가능</strong></p>
+<p><strong>다중 선택 가능</strong>을 체크하면 1개 이상의 항목을 선택할 수 있습니다. 1개 이상의 항목을 선택한 경우 데이터 저장 시 선택된 여러 개의 항목이 콤마(,)로 구분되어 저장됩니다.</p>
+<p><strong>④ 선택 안 함 가능</strong></p>
+<p><strong>선택 안 함 가능</strong>을 체크하면 선택한 항목을 다시 클릭해 선택 해제를 할 수 있습니다.</p>
+<p><strong>⑤ 툴팁 텍스트</strong></p>
+<p>해당 입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
+</div>
+<div class="section" id="combo">
+<span id="id15"></span><h3>콤보<a class="headerlink" href="#combo" title="제목 주소">¶</a></h3>
+<p>여러가지 항목 중에서 한 항목을 선택해야 할 때, 콤보 컴포넌트를 사용합니다.</p>
+<p><img alt="image21" src="../_images/form-builder-components_Combo.png" /></p>
+<p>다음과 같이 선택란을 클릭하면 항목 리스트가 나타납니다.</p>
+<p><img alt="image22" src="../_images/combo-1.png" /></p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id37">
+<a class="reference internal image-reference" href="../_images/combo-component-properties.png"><img alt="콤보 컴포넌트 속성 설정하기" src="../_images/combo-component-properties.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">콤보 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id37" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>콤보 컴포넌트의 ID를 입력합니다. 예를 들어, 좋아하는 색을 고르는
+컴포넌트의 ID는 ‘좋아하는 색’으로 합니다.</p>
+<p><strong>② Items</strong></p>
+<p>선택 항목들을 입력합니다. 엔터(Enter)로 여러 항목을 구분합니다.</p>
 <div class="admonition note">
 <p class="admonition-title">참고</p>
-<p>문서 반려 알림, 문서 취소 알림, 문서 수정 알림은 이메일 템플릿만
-제공되고 SMS으로는 전송되지 않습니다.</p>
-<p>문서 최종 완료 알림(내부/외부)의 SMS 템플릿은 유료 요금제 구독 회사만
-편집할 수 있습니다.</p>
+<p>콤보 컴포넌트의 선택란에 ‘선택하세요’를 표시하려면, Items 항목 가장위에 ‘선택하세요’를 입력하고 컴포넌트 안에도 동일하게 ‘선택하세요’를 입력합니다.</p>
 </div>
-<p><a class="reference internal" href="../_images/template-setting-notification-status.png"><img alt="image21" src="../_images/template-setting-notification-status.png" style="width: 500px;" /></a></p>
-<div class="admonition note">
-<p class="admonition-title">참고</p>
-<p><strong>최초 작성자</strong> 옵션에 체크, <strong>단계별 처리자</strong> 옵션 체크 해제 시,
-문서를 최초 작성한 사람에게 상태 알림을 전송합니다.</p>
-<p><strong>최초 작성자</strong> 옵션 체크 해제, <strong>단계별 처리자</strong> 옵션에 체크 시,
-최초 작성한 사람을 제외하고 현재 단계 이전에 문서를 처리한 사람들에게
-상태 알림을 전송합니다.</p>
-<p><strong>최초 작성자</strong>, <strong>단계별 처리자</strong> 옵션 모두 체크 시, 최초 작성한
-사람, 현재 단계 이전에 문서를 처리한 사람 모두에게 상태 알림을
-전송합니다.</p>
-<p><strong>최초 작성자</strong>, <strong>단계별 처리자</strong> 옵션 모두 체크 해제 시, 해당
-단계의 상태 알림을 전송하지 않습니다.</p>
-</div>
-<ul>
-<li><p><strong>문서 승인 알림</strong>: 결재자가 문서 승인 시, 문서가 승인되었다는 알림을
-전송합니다.</p></li>
-<li><p><strong>문서 검토 및 작성 알림</strong>: 내부 수신자 또는 외부 수신자가 문서 처리
-시, 문서가 검토 및 작성되었다는 알림을 전송합니다.</p></li>
-<li><p><strong>문서 반려 알림</strong>: 결재자, 내부 수신자, 외부 수신자가 문서 반려 시,
-문서가 반려되었다는 알림을 전송합니다.</p></li>
-<li><p><strong>문서 취소 알림</strong>: 취소 요청된 문서에 대해 취소가 승인되었을 경우,
-문서가 취소되었다는 알림을 전송합니다.</p></li>
-<li><p><strong>문서 수정 알림</strong>: 최초 작성자가 문서를 수정한 경우, 문서가
-수정되었다는 알림을 전송합니다.</p></li>
-<li><p><strong>문서 최종 완료 알림 &gt; 내부</strong>: 문서가 최종 완료된 경우, 해당 문서의
-최초 작성자, 결재자, 내부 수신자에게 문서가 최종 완료되었다는 알림을
-전송합니다.</p></li>
-<li><p><strong>문서 최종 완료 알림 &gt; 외부</strong>: 문서가 최종 완료된 경우, 외부
-수신자에게 문서가 최종 완료되었다는 알림을 전송합니다.</p>
-<div class="admonition note">
-<p class="admonition-title">참고</p>
-<p><strong>문서 최종 완료 알림 &gt; 외부</strong>의 <strong>최초 작성자</strong> 옵션에 체크된
-경우, 외부 사용자가 URL을 통해 문서를 생성 후 제출할 때, 최종 완료
-알림을 수신할 정보를 입력해야 하며, 입력한 외부 수신자에게 상태
-알림을 전송합니다.</p>
-</div>
-</li>
+<p><strong>③ 입력 데이터 초기화 가능</strong></p>
+<p><strong>입력 데이터 초기화 가능</strong>에 체크하면 선택한 항목을 선택 해제할 수 있습니다. 입력 데이터 초기화는 다음과 같이 실행할 수 있습니다.</p>
+<ul class="simple">
+<li><p>PC 환경: 컴포넌트를 오른쪽 마우스로 클릭하면 나타나는 팝업 메뉴에서 ‘입력 데이터 초기화’를 선택합니다.</p></li>
+<li><p>모바일 환경: 휴지통 아이콘을 클릭합니다.</p></li>
 </ul>
+<p><strong>④ 툴팁 텍스트</strong></p>
+<p>선택란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
+</div>
+<div class="section" id="text">
+<span id="id16"></span><h3>텍스트와 멀티라인<a class="headerlink" href="#text" title="제목 주소">¶</a></h3>
+<p>텍스트 컴포넌트와 멀티라인 컴포넌트 모두 텍스트 입력란을 만들 때에 사용합니다. 텍스트 컴포넌트은 1~2 단어의 짧은 텍스트, 멀티라인은 1줄 이상의 긴 텍스트에 적합합니다.</p>
+<p><img alt="image23" src="../_images/text-and-muliline-components.png" /></p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id38">
+<a class="reference internal image-reference" href="../_images/text-component-properties.png"><img alt="텍스트와 멀티라인 컴포넌트 속성 설정하기" src="../_images/text-component-properties.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">텍스트와 멀티라인 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id38" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>텍스트/멀티라인 컴포넌트의 ID를 입력합니다. 예를 들어, 홍길동, 이순신 등이 입력되는 컴포넌트 ID는 ‘이름’으로 합니다.</p>
+<p><strong>② 입력 가능 최대 글자 수</strong></p>
+<p>입력 가능한 최대 글자 수(공백 포함)를 설정할 수 있습니다. 기본으로 ‘0’이 설정되어 있으며 이 경우 글자 수 제한이 없습니다.</p>
+<p><strong>③ 키보드 타입</strong></p>
+<p>컴포넌트에 입력할 때 실행할 키보드 타입을 선택합니다. 키보드 타입은 스마트폰, 태블릿과 같은 모바일 환경에서만 동작합니다.</p>
+<p><strong>④ 패스워드 문자로 표시</strong></p>
+<p>텍스트 컴포넌트에서만 설정 가능한 속성입니다. 텍스트 입력 시 입력한 내용이 패스워드 문자(●)로 입력되어 입력 내용을 숨길 수 있습니다. 입력된 내용은 PDF에서도 패스워드 문자로 숨겨지며, CSV 데이터를 다운로드 받을 때에만 확인할 수 있습니다.</p>
+<p><strong>⑤ 툴팁 텍스트</strong></p>
+<p>해당 입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
+</div>
+<div class="section" id="date">
+<span id="id17"></span><h3>날짜<a class="headerlink" href="#date" title="제목 주소">¶</a></h3>
+<p>날짜를 입력해야 할 때 사용합니다. 입력란을 클릭하면 날짜 선택창이 나타나며 원하는 날짜를 선택할 수 있습니다.</p>
+<p><img alt="image24" src="../_images/form-builder-components_datetime.png" /></p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id39">
+<a class="reference internal image-reference" href="../_images/datetime-component-properties_02.png"><img alt="날짜 컴포넌트 속성 설정하기" src="../_images/datetime-component-properties_02.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">날짜 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id39" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>날짜 컴포넌트의 ID를 입력합니다. 예를 들어, 휴가 시작일을 선택하는 컴포넌트의 ID는 ‘휴가 시작일’로 합니다.</p>
+<p><strong>② 표시형식</strong></p>
+<p>날짜가 표시되는 형식을 지정합니다.</p>
+<ul class="simple">
+<li><p><strong>yyyy:</strong> <strong>연도</strong>를 표시합니다. (yyyy년 = 2020년)</p></li>
+<li><p><strong>MM:</strong> <strong>월</strong>을 표시합니다. 반드시 대문자로 표기해야 합니다. (MM월 = 8월)</p></li>
+<li><p><strong>dd:</strong> <strong>일</strong>을 표시합니다. (dd일 = 10일)</p></li>
+</ul>
+<p>‘2020년 2월 5일’처럼 나타나게 하려면, 표시형식에 ‘yyyy년 MM월 dd일’로 입력합니다.</p>
+<p><strong>③ 입력 가능 최소/최대 날짜</strong></p>
+<p>날짜 선택 시 선택할 수 있는 최소, 최대 날짜를 지정하여 입력 가능한 날짜의 범위를 설정합니다.</p>
+<p><strong>④ 빈 값일 때 오늘 날짜 표시</strong></p>
+<p>문서를 열었을 때 자동으로 오늘 날짜가 입력되도록 설정합니다. 날짜 컴포넌트 추가 시 기본으로 체크되어 있습니다. 오늘 날짜가 입력된 입력란을 다시 클릭하면 다른 날짜를 선택할 수 있습니다.</p>
+<p><strong>⑤ 입력 데이터 초기화 가능</strong></p>
+<p>입력 데이터 초기화 가능을 체크하면 선택한 날짜를 삭제할 수 있습니다. 날짜 컴포넌트는 한 번 날짜를 선택하면 다른 날짜로 변경할 수는 있으나 날짜 선택을 취소할 수는 없습니다. 그러나 입력 데이터 초기화 가능 속성을 체크하면 아무것도 선택되지 않은 상태로 변경할 수 있습니다. 단, 아무것도 선택되지 않은 상태일 때 <strong>빈 값일 때 오늘 날짜 표시</strong> 속성이 체크된 경우 오늘 날짜로 선택됩니다.</p>
+<ul class="simple">
+<li><p>PC 환경: 컴포넌트를 오른쪽 마우스로 클릭하면 나타나는 팝업 메뉴에서 ‘입력 데이터 초기화’를 선택합니다.</p></li>
+<li><p>모바일 환경: 휴지통 아이콘을 클릭합니다.</p></li>
+</ul>
+<p><strong>⑥ 툴팁 텍스트</strong></p>
+<p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
+</div>
+<div class="section" id="numeric">
+<span id="id18"></span><h3>숫자<a class="headerlink" href="#numeric" title="제목 주소">¶</a></h3>
+<p>숫자를 입력해야 할 때 사용합니다. 입력란을 클릭하면 오른쪽에 두 개의 화살표가 나타나며, 위 아래 화살표 버튼을 눌러 숫자를
+증감시킬 수 있습니다. PC 키보드 환경에서는 입력란에 직접 원하는 숫자를 입력할 수 있습니다. 스마트폰, 태블릿 환경에서는 입력 범위 숫자 리스트에서 스크롤하여 원하는 숫자를 선택할 수 있습니다.</p>
+<p><img alt="image25" src="../_images/form-builder-components_numeric.png" /></p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id40">
+<a class="reference internal image-reference" href="../_images/number-component-properties.png"><img alt="숫자 컴포넌트 속성 설정하기" src="../_images/number-component-properties.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">숫자 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id40" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>숫자 컴포넌트의 ID를 입력합니다. 예를 들어, 예약 인원을 입력하는 경우 ID는 ‘예약 인원’으로 설정합니다.</p>
+<p><strong>② 증감 단위</strong></p>
+<p>입력란의 증가/감소 아이콘을 클릭할 때마다 현재 입력된 값에서 증감시킬 값을 입력합니다. 예를 들어, 증감 단위를 100으로 설정하고 문서를 작성할 때 입력란 오른쪽의 위 화살표(▲)를 클릭하면 입력된 값에서 200, 300, …으로 증가합니다.</p>
+<p><strong>③ 입력 가능 최솟값/최댓값</strong></p>
+<p>입력 가능 최솟값/최댓값을 지정하여 입력 가능한 숫자의 범위를 설정합니다.
+예를 들어, 생년월일의 경우 보통 최솟값을 1900, 최댓값을 현재 년도, 증감 단위를 1로 지정합니다. 최솟값 또는 최댓값이 지정된 상태에서 범위 외의 숫자를 입력하면 자동으로 최솟값 또는 최댓값이 입력됩니다. 즉, 최댓값이 100으로 지정되었을 때, 입력란에 101을 입력하면 숫자가 자동으로 최댓값인 100으로 변경됩니다.</p>
+<p><strong>④ 입력 데이터 초기화 가능</strong></p>
+<p>입력 데이터 초기화 가능을 체크하면 입력된 숫자를 삭제할 수 있습니다. 숫자 컴포넌트는 한 번 숫자를 입력하면 다른 숫자로 변경할 수는 있으나 숫자를 삭제할 수는 없습니다. 그러나 입력 데이터 초기화 가능을 체크하면 아무것도 입력되지 않은 상태로 변경할 수 있습니다.</p>
+<ul class="simple">
+<li><p>PC 환경: 컴포넌트를 오른쪽 마우스로 클릭하면 나타나는 팝업 메뉴에서 <strong>입력 데이터 초기화</strong>’를 선택합니다.</p></li>
+<li><p>모바일 환경: 휴지통 아이콘을 클릭합니다.</p></li>
+</ul>
+<p><strong>⑤ 툴팁 텍스트</strong></p>
+<p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
+</div>
+<div class="section" id="toggle">
+<span id="id19"></span><h3>토글<a class="headerlink" href="#toggle" title="제목 주소">¶</a></h3>
+<p>켜짐(ON), 꺼짐(OFF)과 같은 특정한 상태를 나타낼 때 사용합니다. 토글 컴포넌트를 사용하면 컴포넌트를 클릭할 때마다 미리 설정한 항목의 순서대로 입력값이 전환됩니다.</p>
+<p><img alt="image26" src="../_images/form-builder-components_toggle.png" /></p>
+<p>다음과 같이 컴포넌트를 클릭하여 <strong>양호</strong>, <strong>불량</strong> 상태로 변경할 수 있습니다.</p>
+<p><img alt="image27" src="../_images/toggle.png" /></p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id41">
+<a class="reference internal image-reference" href="../_images/toggle-component-properties.png"><img alt="토글 컴포넌트 속성" src="../_images/toggle-component-properties.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">토글 컴포넌트 속성</span><a class="headerlink" href="#id41" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>토글 컴포넌트의 ID를 입력합니다. 예를 들어, 첫번째 점검 항목에 대한 컴포넌트인 경우 ‘점검 1’로 합니다.</p>
+<p><strong>② Items</strong></p>
+<p>토글 컴포넌트를 클릭할 때마다 전환될 항목 리스트를 입력합니다. 엔터(Enter)로 여러 항목을 구분합니다.</p>
+<p><strong>③ 입력 데이터 초기화 가능</strong></p>
+<p>입력 데이터 초기화 가능을 체크하면 입력된 항목을 삭제할 수 있습니다. 토글 컴포넌트는 한 번 항목을 선택하면 다른 항목으로 변경할 수는 있으나 항목 선택을 취소할 수는 없습니다. 그러나 입력 데이터 초기화 가능을 체크하면 아무것도 입력되지 않은 상태로 변경할 수 있습니다.</p>
+<ul class="simple">
+<li><p>PC 환경: 컴포넌트를 오른쪽 마우스로 클릭하면 나타나는 팝업 메뉴에서 <strong>입력 데이터 초기화</strong>를 선택합니다.</p></li>
+<li><p>모바일 환경: 휴지통 아이콘을 클릭합니다.</p></li>
+</ul>
+<p><strong>④ 툴팁 텍스트</strong></p>
+<p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
+</div>
+<div class="section" id="signature">
+<span id="id20"></span><h3>서명<a class="headerlink" href="#signature" title="제목 주소">¶</a></h3>
+<p>서명 컴포넌트는 문서에 서명을 받아야 할 때 사용합니다.</p>
+<p><img alt="image28" src="../_images/form-builder-components_signature.png" /></p>
+<p>서명 컴포넌트를 추가하면 서명이 필요한 문서에서 아래와 같이 <strong>서명</strong> 팝업이 뜨고 서명을 직접 그리거나 텍스트를 입력해 서명을 입력할 수 있으며, 기존에 등록한 서명이 있는 경우 이를 사용할 수도 있습니다.</p>
+<p><img alt="image29" src="../_images/signature.png" /></p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id42">
+<a class="reference internal image-reference" href="../_images/Signature-component-properties.png"><img alt="서명 컴포넌트 속성 설정하기" src="../_images/Signature-component-properties.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">서명 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id42" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>서명 컴포넌트의 ID를 입력합니다. 예를 들어, 계약자의 서명인 경우 컴포넌트 ID는 ‘계약자 서명’으로 합니다.</p>
+<p><strong>② 서명 유형</strong></p>
+<p>서명 시 어떤 서명을 사용할 것인지 선택합니다.</p>
+<ul class="simple">
+<li><p><strong>직접 서명:</strong> 서명란을 클릭하면 서명 팝업이 나타나며 그리기, 텍스트, 모바일, 도장, 등록된 서명 탭 중 원하는 방식으로 서명을 입력합니다.</p></li>
+<li><p><strong>등록된 서명:</strong> 문서를 작성하는 사람이 미리 등록해 둔 <strong>내 서명</strong>이 있는 경우 서명란을 클릭하면 등록된 서명이 자동으로
+입력됩니다.</p></li>
+<li><p><strong>등록된 이니셜:</strong> 등록된 서명과 마찬가지로 <strong>내 서명</strong>에 등록된 이니셜이 있는 경우 서명란을 클릭하면 등록된 이니셜이 자동으로 입력됩니다.</p></li>
+<li><p><strong>등록된 도장:</strong> 등록된 서명과 마찬가지로 ‘내 서명’에 등록된 도장이 있는 경우 서명란을 클릭하면 등록된 도장이 자동으로 입력됩니다.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>등록된 서명과 이니셜이 있는 경우에는 해당 서명이 서명란에 자동으로 입력되지만, 등록된 서명과 이니셜이 없는 경우 직접 서명과 동일한 <strong>서명</strong> 팝업이 나타납니다.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>문서에 직접 서명이 아닌 직인이나 개인 도장을 사용해야 하는 경우가 있습니다. eformsign에서는 도장 이미지를 사용해 문서의 서명란에 도장을 찍을 수도 있습니다. 도장 이미지를 사용하려면, <strong>서명</strong> 팝업에서 <strong>도장</strong> 탭을 클릭하고 도장 이미지를 선택한 후 확인 버튼을 누릅니다.</p>
+</div>
+<p><strong>③ 서명펜 두께</strong></p>
+<p>서명을 그릴 때 표시되는 선의 두께를 설정합니다.</p>
+<p><strong>④ 서명펜 색</strong></p>
+<p>서명을 그릴 때 표시하는 선의 색을 설정합니다.</p>
+<p><strong>⑤ 툴팁 텍스트</strong></p>
+<p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>전자 계약서, 전자 동의서 등 서명이 들어가는 문서에 서명일이 자동으로 입력되도록 설정할 수 있습니다.</p>
+<ol class="arabic simple">
+<li><p>전자 서식으로 변환할 문서 파일(워드, 엑셀, 파워포인트)을 열거나 혹은 새 문서를 만듭니다.</p></li>
+<li><p>서명할 곳에 서명 컴포넌트를 추가합니다.</p></li>
+<li><p>추가한 서명 컴포넌트의 속성창에 컴포넌트 ID를 입력합니다. 예) 서명</p></li>
+<li><p>서명일이 입력될 곳에 사용일 컴포넌트를 추가합니다.</p></li>
+<li><p>사용일 컴포넌트의 속성창을 엽니다.</p></li>
+<li><p>사용일 표시 유형을 <strong>입력 값을 수정한 날짜</strong>로 선택합니다.</p></li>
+<li><p>하단에 나타나는 컴포넌트 ID 입력란에 서명 컴포넌트 ID인 ‘서명’을 입력합니다.</p></li>
+</ol>
+<p>※ 사용일 컴포넌트의 ‘표시형식’을 설정하여 날짜 표시 형식을 원하는 형태로 변경할 수 있습니다.</p>
 </div>
 </div>
-<div class="section" id="id13">
-<h2>개별 템플릿 메뉴<a class="headerlink" href="#id13" title="제목 주소">¶</a></h2>
-<p><strong>템플릿 관리</strong> 화면에서 템플릿 이름 오른쪽에 위치한 메뉴
-아이콘(<img alt="image22" src="../_images/template-hamburgericon.png" />)을 클릭하면 각 템플릿별 설정할 수 있는 메뉴가
-나타납니다.</p>
-<p><a class="reference internal" href="../_images/template-manage-menu1.png"><img alt="image23" src="../_images/template-manage-menu1.png" style="width: 700px;" /></a></p>
-<ul>
-<li><p><strong>복제</strong>: 템플릿을 복제합니다. 해당 템플릿의 파일과 상세 템플릿
-설정이 복제되며 상세 설정을 변경하여 저장할 수 있습니다.</p></li>
-<li><p><strong>삭제</strong>: 템플릿을 삭제합니다. 템플릿이 삭제되면 더 이상 해당
-템플릿으로 문서를 생성할 수 없습니다.</p></li>
-<li><p><strong>비활성화</strong>: 템플릿을 비활성화하면 다른 멤버의 <strong>새 문서 작성</strong>
-페이지에 표시되지 않습니다.</p></li>
-<li><p><strong>소유자 변경</strong>: 템플릿의 소유자를 변경할 수 있습니다. 기본적으로
-템플릿 소유자는 템플릿을 생성한 사람으로 자동 지정됩니다. 이후
-변경하고자 할 경우, 소유자 변경을 통해 다른 멤버로 소유자를 변경할 수
-있습니다. 템플릿 소유자는 템플릿 관리 권한을 가진 멤버 중에 선택할 수
+<div class="section" id="camera">
+<span id="id21"></span><h3>카메라<a class="headerlink" href="#camera" title="제목 주소">¶</a></h3>
+<p>스마트폰, 태블릿 등 카메라가 있는 기기로 사진을 찍어 문서에 삽입하고자 할 경우 사용합니다. 카메라가 없는 PC 환경에서는 컴포넌트를 클릭하면 이미지 파일을 선택할 수 있는 선택창이 나타납니다.</p>
+<p><img alt="image30" src="../_images/form-builder-components_camera.png" /></p>
+<p>선택한 이미지의 크기가 입력란의 크기보다 클 경우 입력란 안에 들어갈 수 있도록 축소되어 올라갑니다.</p>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>카메라 컴포넌트의 경우 카메라가 연결된 환경에서는 카메라 기능이 실행되고, 카메라가 연결되지 않은 환경에서는 이미지 파일 선택 창이 실행됩니다.</p>
+</div>
+<p><img alt="image31" src="../_images/camera1.png" /></p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id43">
+<a class="reference internal image-reference" href="../_images/Camera-component-properties-.png"><img alt="카메라 컴포넌트 속성 설정하기" src="../_images/Camera-component-properties-.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">카메라 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id43" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>카메라 컴포넌트의 ID를 입력합니다. 예를 들어, 신분증 사진을 촬영하는 컴포넌트의 ID는 ‘신분증 사진’으로 합니다.</p>
+<p><strong>② 툴팁 텍스트</strong></p>
+<p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
+</div>
+<div class="section" id="record">
+<span id="id22"></span><h3>녹음<a class="headerlink" href="#record" title="제목 주소">¶</a></h3>
+<p>문서에 사용자의 녹음 데이터를 저장해야 할 때 사용합니다.
+최대 녹음 시간을 설정할 수 있으며 사용자가 이미 녹음된 내용을 듣기만 할 수 있도록 설정할 수도 있습니다.</p>
+<p>OZ in Office에서 녹음 컴포넌트를 추가하면 뷰어에서 다음과 같이 녹음된 내용을 재생하거나 새로운 녹음을 할 수 있습니다.</p>
+<p><a class="reference internal" href="../_images/record1.png"><img alt="image32" src="../_images/record1.png" style="width: 400px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>녹음 제한시간이 1 이상 설정되어 있는 경우, 설정된 시간(단위:초) 만큼 녹음이 되면 자동으로 녹음 완료가 됩니다.</p>
+<p>ActiveX 뷰어인 경우 녹음 재생 UI는 Windows 8 이상부터 지원합니다.</p>
+<p>녹음 컴포넌트는 PC 환경에서 실행 시 음성 녹음기가 연결된 경우에만 동작합니다.</p>
+</div>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id44">
+<a class="reference internal image-reference" href="../_images/record_component.png"><img alt="녹음 컴포넌트 속성 설정하기" src="../_images/record_component.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">녹음 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id44" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>녹음 컴포넌트의 ID를 입력합니다. 예를 들어, 녹음을 재생하는 컴포넌트의 ID를 ‘녹음’으로 합니다.</p>
+<p><strong>② 툴팁 텍스트</strong></p>
+<p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
+</div>
+<div class="section" id="attach">
+<span id="id23"></span><h3>첨부<a class="headerlink" href="#attach" title="제목 주소">¶</a></h3>
+<p>문서에 별도로 첨부 파일을 추가할 수 있도록 할 경우 사용합니다. 첨부 컴포넌트를 통해 문서를 첨부할 경우 문서의 맨 끝에
+첨부한 문서가 새로운 페이지로 추가됩니다.</p>
+<p><img alt="image33" src="../_images/form-builder-components_attachment.png" /></p>
+<p>첨부 가능한 파일의 종류와 크기는 다음과 같습니다.</p>
+<ul class="simple">
+<li><p>파일 종류: PDF, JPG, PNG, GIF</p></li>
+<li><p>파일 크기: 최대 5MB까지</p></li>
+</ul>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id45">
+<a class="reference internal image-reference" href="../_images/Attachment-component-properties.png"><img alt="첨부 컴포넌트 속성 설정하기" src="../_images/Attachment-component-properties.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">첨부 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id45" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>첨부 컴포넌트의 ID를 입력합니다. 예를 들어, 재직증명서를 첨부하는 컴포넌트의 ID는 ‘재직증명서 첨부’로 합니다.</p>
+<p><strong>② 툴팁 텍스트</strong></p>
+<p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
+</div>
+<div class="section" id="user">
+<span id="id24"></span><h3>사용자<a class="headerlink" href="#user" title="제목 주소">¶</a></h3>
+<p>문서를 작성 또는 수정한 멤버의 정보가 문서에 자동으로 입력되게 할 때 사용합니다. 설정에 따라 이름, 연락처와 같은 멤버의 기본
+정보 또는 사용자 정의 필드 정보가 사용자 컴포넌트에 자동으로 입력됩니다.</p>
+<p><img alt="image34" src="../_images/form-builder-components_user.png" /></p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id46">
+<a class="reference internal image-reference" href="../_images/user-component-properties-.png"><img alt="사용자 컴포넌트 속성 설정하기" src="../_images/user-component-properties-.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">사용자 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id46" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>사용자 컴포넌트의 ID를 입력합니다. 예를 들어, 문서를 작성한 멤버의 이름을 표시하는 컴포넌트의 ID는 ‘작성자 이름’으로 합니다.</p>
+<p><strong>② 사용자 표시 유형</strong></p>
+<ul class="simple">
+<li><p><strong>만든 사람:</strong> 문서를 최초로 작성한 멤버의 정보를 표시합니다.</p></li>
+<li><p><strong>액세스한 사람:</strong> 문서를 가장 최근에 열람하거나 수정한 멤버의 정보를 표시합니다.</p></li>
+<li><p><strong>입력 값을 수정한 사람:</strong> 특정 컴포넌트에 내용을 입력한 멤버의 정보를 표시합니다.</p></li>
+</ul>
+<p><strong>입력 값을 수정한 사람</strong>을 선택하면, 다음과 같이 컴포넌트 ID 입력란이 나타납니다. 여기에 연결할 컴포넌트 ID를 입력합니다.</p>
+<p><a class="reference internal" href="../_images/user-input-certain-component.png"><img alt="image35" src="../_images/user-input-certain-component.png" style="width: 300px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>이 작업을 수행하려면 회사 관리(대표 관리자) 권한 또는 템플릿 관리자 권한이 필요합니다.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>담당자 서명란에 서명한 담당자의 이름을 자동으로 입력되도록 하려면, 먼저 담당자 서명란에 서명 컴포넌트를 생성한 후 서명 컴포넌트의 ID를 ‘담당자 서명’으로 지정합니다. 담당자의 이름을 입력할 사용자 컴포넌트를 하나 더 생성합니다. 사용자 컴포넌트의 사용자 표시 유형 속성을 <strong>입력 값을 수정한 사람</strong>으로 선택하고, 컴포넌트 ID 입력란에 ‘담당자 서명’을 입력합니다.</p>
+</div>
+<p><strong>③ 사용자 표시 정보</strong></p>
+<p>멤버의 정보 중 어떤 정보를 표시할지 선택합니다. 멤버 기본 정보 또는 사용자 정의 필드에 추가로 입력한 정보들 중 원하는 정보를 선택합니다.</p>
+<ul class="simple">
+<li><p>멤버 기본 정보 종류: 이름, ID, 부서, 직책, 휴대폰, 전화번호</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>멤버 기본 정보를 수정하려면 회사 관리*(대표 관리자) 권한이 필요합니다.</p>
+<p>멤버 기본 정보를 수정하려면 eformsign에 로그인한 후 <strong>회사 관리 &gt; 멤버 관리</strong> 메뉴로 이동합니다. 멤버 목록에서 멤버를 선택하고 화면 오른쪽에 나타나는 상세 보기 영역의 정보를 수정한 후 <strong>저장</strong> 버튼을 클릭합니다.</p>
+</div>
+</div>
+<div class="section" id="usedate">
+<span id="id25"></span><h3>사용일<a class="headerlink" href="#usedate" title="제목 주소">¶</a></h3>
+<p>문서를 작성 또는 수정한 날짜가 문서에 자동으로 입력되도록 할 경우 사용합니다. 설정에 따라 문서를 만든 날짜, 문서에 접근한 날짜, 또는 특정 컴포넌트를 입력한 날짜가 자동으로 입력됩니다.</p>
+<p><img alt="image36" src="../_images/form-builder-components_date.png" /></p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id47">
+<a class="reference internal image-reference" href="../_images/date-component-properties_.png"><img alt="사용일 컴포넌트 속성 설정하기" src="../_images/date-component-properties_.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">사용일 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id47" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>사용일 컴포넌트의 ID를 입력합니다. 예를 들어, 문서에 서명한 날짜를 표시하는 컴포넌트의 ID는 ‘서명일’로 합니다.</p>
+<p><strong>② 표시형식</strong></p>
+<p>날짜가 표시되는 형식을 지정합니다.</p>
+<ul class="simple">
+<li><p><strong>yyyy:</strong> <strong>연도</strong>를 표시합니다. (yyyy년 = 2020년)</p></li>
+<li><p><strong>MM:</strong> <strong>월</strong>을 표시합니다. 반드시 대문자로 표기해야 합니다. (MM월 = 8월)</p></li>
+<li><p><strong>dd:</strong> <strong>일</strong>을 표시합니다. (dd일 = 10일)</p></li>
+</ul>
+<p>‘2020년 2월 5일’처럼 나타나게 하려면, 표시형식에 ‘yyyy년 MM월 dd일’로 입력합니다.</p>
+<p><strong>③ 사용일 표시 유형</strong></p>
+<ul class="simple">
+<li><p><strong>만든 날짜:</strong> 문서를 최초 작성한 날짜를 표시합니다.</p></li>
+<li><p><strong>액세스한 날짜:</strong> 문서를 수정하거나 열람한 가장 최근의 날짜를 표시합니다.</p></li>
+<li><p><strong>입력 값을 수정한 날짜:</strong> 특정 컴포넌트에 내용을 입력한 날짜를 표시합니다.</p></li>
+</ul>
+<p>〈입력 값을 수정한 날짜’를 선택하면, 다음과 같이 컴포넌트 ID 입력란이 나타납니다. 여기에 연결할 컴포넌트 ID를 입력합니다.</p>
+<p><a class="reference internal" href="../_images/date-component-connecting-other-component.png"><img alt="image37" src="../_images/date-component-connecting-other-component.png" style="width: 300px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>이 작업을 수행하려면 회사 관리(대표 관리자) 권한 또는 템플릿 관리자 권한이 필요합니다.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>계약자 서명일이 자동으로 입력되도록 하려면, 먼저 계약서 서명란에 서명 컴포넌트를 생성한 후 서명 컴포넌트의 ID를 ‘계약자 서명’으로 지정합니다. 서명일을 입력할 사용일 컴포넌트를 하나 더 생성합니다.
+사용일 컴포넌트의 사용일 표시 유형 속성을 ‘입력 값을 수정한 날짜’로 선택하고, 컴포넌트 ID 입력란에 ‘계약자 서명’을 입력합니다.</p>
+</div>
+</div>
+<div class="section" id="document">
+<span id="id26"></span><h3>문서<a class="headerlink" href="#document" title="제목 주소">¶</a></h3>
+<p>문서 컴포넌트는 문서 내에 문서 관련 정보를 입력해야 할 때 사용합니다. 문서 ID와 문서 번호 중 원하는 정보를 선택해 입력할 수
 있습니다.</p>
-<p><img alt="image24" src="../_images/template-owner-change.PNG" /></p>
-</li>
-<li><p><strong>문서 관리자 설정:</strong> 해당 템플릿으로 작성되는 문서의 관리자를 설정할
-수 있습니다. <strong>템플릿 설정 &gt; 권한 설정</strong>과 동일합니다.</p>
-<p><img alt="image25" src="../_images/document-manager-setting.PNG" /></p>
-</li>
+<p><img alt="image38" src="../_images/document-component-in-list.png" /></p>
+<p>문서 ID는 시스템에서 부여하는 문서 고유의 ID이기 때문에 별도의 설정이 필요하지 않습니다. 문서 번호와 관련된 설정은 템플릿을 업로드한 뒤, <strong>템플릿 설정 &gt; 일반 설정</strong>에서 할 수 있습니다.</p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id48">
+<a class="reference internal image-reference" href="../_images/document-domponent-properties.png"><img alt="문서 컴포넌트 속성 설정하기" src="../_images/document-domponent-properties.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">문서 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id48" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>문서 컴포넌트의 ID를 입력합니다. 예를 들어, 문서 번호를 입력하는 경우 컴포넌트 ID는 ‘문서 번호’로 합니다.</p>
+<p><strong>② 문서 정보 유형</strong></p>
+<p>어떤 문서 정보를 사용할 것인지 선택합니다.</p>
+<ul class="simple">
+<li><p><strong>문서 ID:</strong> 시스템에서 모든 문서에 부여하는 문서의 고유한 ID로, 32자리의 알파벳과 숫자의 조합으로 나타납니다. 예)
+0077af27a98846c8872f5333920679b7</p></li>
+<li><p><strong>문서 번호:</strong> <strong>템플릿 설정 &gt; 일반 설정</strong>에서 설정된 문서 번호입니다. 문서 번호를 설정하는 방법은 <a class="reference external" href="#docnumber_wd">문서 번호 설정 방법</a>를 참고하세요.</p></li>
 </ul>
 </div>
-<div class="section" id="id14">
-<h2>템플릿 검색<a class="headerlink" href="#id14" title="제목 주소">¶</a></h2>
-<p><strong>템플릿 관리</strong> 화면에서는 템플릿 카테고리별 조회, 검색 등을 할 수
-있습니다.</p>
-<p><a class="reference internal" href="../_images/template-manage-search.png"><img alt="image26" src="../_images/template-manage-search.png" style="width: 700px;" /></a></p>
-<dl>
-<dt>① <strong>템플릿 조회</strong></dt><dd><p>클릭하여 템플릿 상태, 카테고리 별로 템플릿을 조회할 수 있습니다.
-<strong>X</strong> 를 클릭하면 전체 카테고리로 돌아갑니다.</p>
-<p>템플릿은 Sample 카테고리에 기본 템플릿이 저장됩니다. 카테고리의
-생성은 <strong>템플릿 설정 &gt; 일반 설정</strong>에서 할 수 있습니다.</p>
-</dd>
-<dt><strong>② 템플릿 검색</strong></dt><dd><p>검색 키워드를 입력하여 템플릿을 검색합니다.</p>
-</dd>
-<dt>③ <strong>정렬</strong></dt><dd><p>템플릿 정렬 순서를 템플릿 이름 또는 카테고리 기준으로 오름차순,
-내림차순을 설정합니다.</p>
-</dd>
-</dl>
+<div class="section" id="label">
+<span id="id27"></span><h3>레이블<a class="headerlink" href="#label" title="제목 주소">¶</a></h3>
+<p>레이블 컴포넌트는 별도로 설정한 값을 문서에 표시하고자 할때 사용합니다.</p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default" id="id49">
+<img alt="레이블 컴포넌트 속성 설정하기" src="../_images/label_property.png" />
+<p class="caption"><span class="caption-text">레이블 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id49" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>레이블 컴포넌트의 ID를 설정합니다.</p>
+</div>
+</div>
+<div class="section" id="id28">
+<h2>폼 파일 업로드<a class="headerlink" href="#id28" title="제목 주소">¶</a></h2>
+<p>OZ in Office를 통해 문서에 컴포넌트를 올려 편집이 완료된 파일은 다음의 순서로 업로드합니다.</p>
+<ol class="arabic">
+<li><p>리본 메뉴의 파일 그룹에 있는 <strong>실행</strong>(<img alt="image39" src="../_images/excute_button.png" />) 아이콘을 클릭하면 다음의 로그인 페이지가 팝업 창으로 표시됩니다.</p>
+<p><a class="reference internal" href="../_images/form_upload_login.png"><img alt="image40" src="../_images/form_upload_login.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>로그인하면 전자문서 서식인 폼으로 변환된 문서가 미리보기 형태로 표시됩니다.</p>
+<p><a class="reference internal" href="../_images/upload_preview.png"><img alt="image41" src="../_images/upload_preview.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>업로드 미리보기 화면에서 <strong>폼 파일 업로드</strong>를 클릭하거나 리본 메뉴의 <strong>업로드</strong>(<img alt="image42" src="../_images/upload_button.png" />) 아이콘을 클릭하면 템플릿 목록과 함께 <strong>새 템플릿</strong> 추가할 수 있는 화면이 나타납니다.</p>
+<p><a class="reference internal" href="../_images/upload_list.png"><img alt="image43" src="../_images/upload_list.png" style="width: 700px;" /></a></p>
+</li>
+<li><p><strong>새 템플릿</strong> 추가를 클릭하면 작성한 폼이 업로드된 상태에서 템플릿을 설정하는 화면이 나타납니다. 좌측 설정 탭을 클릭해 해당 템플릿에 대한 추가 설정을 완료한 후 우측 상단의 <strong>저장</strong> 버튼을 클릭해 템플릿을 저장 및 생성합니다.</p>
+<p><a class="reference internal" href="../_images/upload_save.png"><img alt="image44" src="../_images/upload_save.png" style="width: 700px;" /></a></p>
+</li>
+</ol>
+</div>
+<div class="section" id="id29">
+<h2>업로드한 템플릿 추가 설정하기<a class="headerlink" href="#id29" title="제목 주소">¶</a></h2>
+<p>템플릿을 업로드하고 나면, 템플릿 제목, 문서 번호, 워크플로우 등 템플릿으로 생성되는 문서에 대한 추가 설정을 할 수 있습니다.</p>
+<ol class="arabic simple">
+<li><p>이폼사인에 로그인합니다.</p></li>
+<li><p>템플릿 관리 메뉴로 이동합니다.</p></li>
+<li><p>템플릿 설정 아이콘을 클릭합니다.</p>
+<ul class="simple">
+<li><p><strong>일반 설정:</strong> 템플릿 이름, 약칭, 문서 제목, 문서 번호 등을 설정합니다.</p></li>
+<li><p><strong>권한 설정:</strong>해당 템플릿으로 문서를 생성할 멤버나 그룹, 및 생성된 문서를 관리할 멤버나 그룹을 지정합니다.</p></li>
+<li><p><strong>워크플로우 설정:</strong> 문서의 시작부터 완료까지 작성된 문서가 거쳐갈 단계를 설정합니다.</p></li>
+<li><p><strong>필드 설정:</strong> 필드의 표시 여부, 순서, 기본값, 자동 입력 값 등을 설정합니다.</p></li>
+<li><p><strong>알림 설정:</strong>템플릿으로 생성된 문서에 대한 요청과 알림을 보낼 메시지를 설정합니다.</p></li>
+</ul>
+</li>
+<li><p>모든 설정을 완료한 후 <strong>저장</strong> 버튼을 클릭하고 템플릿을 배포합니다.</p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">중요</p>
+<p>해당 템플릿으로 문서를 작성할 수 있도록 하기 위해서는 템플릿을 저장한 후 반드시 배포해야 합니다.</p>
+<p>템플릿을 배포하지 않고 저장만 할 경우 템플릿 사용 권한이 있는 있는 멤버들의 <strong>템플릿으로 문서 작성 &gt; 템플릿 목록</strong>에 나타나지
+않습니다.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>템플릿에 대한 상세한 설명은 <a class="reference external" href="#template_fb">폼 빌더로 템플릿 만들기</a>를 참고하시기 바랍니다.</p>
+</div>
 </div>
 </div>
 
@@ -899,16 +802,16 @@
             <div class="inner"><ul class="page-nav">
   <li class="prev">
     <a href="chapter4.html"
-       title="이전 장">← 폼 빌더 소개</a>
+       title="이전 장">← 웹폼 디자이너 소개</a>
   </li>
   <li class="next">
     <a href="chapter6.html"
-       title="다음 장">템플릿-폼 빌더 →</a>
+       title="다음 장">웹폼 디자이너로 템플릿 만들기 →</a>
   </li>
 </ul><div class="footer" role="contentinfo">
-      &#169; Copyright 2020, FORCS CO., LTD. All rights reserved..
+      &#169; Copyright 2021, FORCS CO., LTD. All rights reserved..
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.3.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>
