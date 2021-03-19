@@ -8,7 +8,6 @@ eformsign 사용자 안내서
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    help/chapter1
    help/chapter2
