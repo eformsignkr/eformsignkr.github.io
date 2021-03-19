@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="ko">
+<html  lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -16,14 +16,13 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/translations.js"></script>
 
       
       <script src="../_static/theme-vendors.js"></script>
       <script src="../_static/theme.js" defer></script>
     
-  <link rel="index" title="색인" href="../genindex.html" />
-  <link rel="search" title="검색" href="../search.html" />
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
   <link rel="next" title="커스터마이즈" href="chapter9.html" />
   <link rel="prev" title="폼 빌더로 템플릿 만들기" href="chapter7.html" /> 
   </head>
@@ -57,11 +56,11 @@
 
             
           </navlinks><div id="searchbox" class="searchbox" role="search">
-  <div class="caption"><span class="caption-text">빠른 검색</span>
+  <div class="caption"><span class="caption-text">Quick search</span>
     <div class="searchformwrapper">
       <form class="search" action="../search.html" method="get">
         <input type="text" name="q" />
-        <input type="submit" value="검색" />
+        <input type="submit" value="Search" />
         <input type="hidden" name="check_keywords" value="yes" />
         <input type="hidden" name="area" value="default" />
       </form>
@@ -71,11 +70,11 @@
   
     <div class="sidebar-group">
       <p class="caption">
-        <span class="caption-text"><a href="../index.html#eformsign">Contents:</a></span>
+        <span class="caption-text"><a href="../index.html#eformsign">eformsign 사용자 안내서</a></span>
       </p>
       <ul class="current">
         
-          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">개요</a>
+          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">eformsign 소개</a>
 
             
           </li>
@@ -122,9 +121,17 @@
             
               <ul>
                 
-                  <li class="toctree-l2"><a href="#id2" class="reference internal">문서함</a></li>
+                  <li class="toctree-l2"><a href="#category" class="reference internal">카테고리, 키워드 및 필터 검색</a></li>
                 
-                  <li class="toctree-l2"><a href="#drafts" class="reference internal">임시 보관함</a></li>
+                  <li class="toctree-l2"><a href="#additional-work" class="reference internal">문서함별 작업 항목</a></li>
+                
+                  <li class="toctree-l2"><a href="#history" class="reference internal">상태 및 이력보기</a></li>
+                
+                  <li class="toctree-l2"><a href="#document-download" class="reference internal">문서 다운로드</a></li>
+                
+                  <li class="toctree-l2"><a href="#document-delete" class="reference internal">문서 삭제하기</a></li>
+                
+                  <li class="toctree-l2"><a href="#document-column" class="reference internal">문서함 컬럼 설정</a></li>
                 
               </ul>
             
@@ -137,7 +144,7 @@
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter10.html" class="reference internal ">외부 서비스 연동 방법</a>
+          <li class="toctree-l1 "><a href="chapter10.html" class="reference internal ">외부 서비스 연동</a>
 
             
           </li>
@@ -162,11 +169,11 @@
   <ul class="page-nav">
   <li class="prev">
     <a href="chapter7.html"
-       title="이전 장">← 폼 빌더로 템플릿 만들기</a>
+       title="previous chapter">← 폼 빌더로 템플릿 만들기</a>
   </li>
   <li class="next">
     <a href="chapter9.html"
-       title="다음 장">커스터마이즈 →</a>
+       title="next chapter">커스터마이즈 →</a>
   </li>
 </ul>
   
@@ -175,35 +182,32 @@
           <div class="content" role="main">
             
   <div class="section" id="id1">
-<h1>문서함<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
-<div class="section" id="id2">
-<h2>문서함<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
-<p>문서함 작성한 문서는 상태에 따라 다음의 3개의 문서함에 저장됩니다.</p>
+<h1>문서함<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>작성한 문서는 상태에 따라 다음의 3개의 문서함에 저장됩니다.</p>
 <p>문서함에서 각각의 문서의 상태와 이력을 쉽게 확인하고 문서를 관리하며, 필터 및 검색 기능을 통해 문서를 찾고 문서를 다시 보내거나 워크플로우에 있는 문서에 대한 취소/반려 요청 등 추가 작업을 수행할 수 있습니다. 임시 저장한 문서도 문서함에 나타나며 목록에서 다시 작성을 시작할 수 있습니다.</p>
 <p>문서함을 통해 모든 문서 및 관련 작업을 기록하고 저장할 수 있고 문서의 상태와 이력에 대한 상세 정보를 확인할 수 있습니다.</p>
 <ul class="simple">
-<li><p><strong>진행 중 문서함:</strong> 내가 작성 또는 처리한 문서 중 완료되지 않은 문서 목록을 확인할 수 있습니다.</p></li>
 <li><p><strong>처리할 문서함:</strong> 임시 저장한 문서, 내가 처리해야 할 문서(다른 구성원이 나에게 작성 또는 결재 요청한 문서), 또는 외부자에게 보낸 문서 중 처리되지 않은 문서 목록을 확인할 수 있습니다.</p></li>
+<li><p><strong>진행 중 문서함:</strong> 내가 작성 또는 처리한 문서 중 완료되지 않은 문서 목록을 확인할 수 있습니다.</p></li>
 <li><p><strong>완료 문서함:</strong> 내가 작성한 문서 중 완료된 문서 목록을 확인할 수 있습니다.</p></li>
 </ul>
-<p>이 외에도 문서 관리 페이지가 별도로 존재합니다.</p>
+<p>이 외에도 문서 관리 권한이 있는 멤버가 문서를 확인할 수 있는 문서 관리 메뉴가 있습니다.</p>
 <ul class="simple">
 <li><p><strong>문서 관리:</strong> 문서 관리자만 접근 가능한 메뉴입니다. 문서 관리자는 권한이 있는 템플릿에서 만들어진 모든 문서를 조회할 수 있습니다.</p></li>
 </ul>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <p>대표 관리자는 모든 문서를 조회하고 관리할 수 있습니다.</p>
 </div>
 <p><a class="reference internal" href="../_images/inbox_ex1.png"><img alt="image1" src="../_images/inbox_ex1.png" style="width: 700px;" /></a></p>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <p>각각의 문서함과 문서 관리 화면 구성은 거의 동일하지만, 상태 또는 권한에 따라 표시되는 문서에 차이가 있습니다.</p>
 </div>
-<div class="figure align-default" id="id10">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/inbox_layout.png"><img alt="문서함 형태" src="../_images/inbox_layout.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">문서함 형태</span><a class="headerlink" href="#id10" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
-<p>문서함은 크게 다음의 5가지 항목으로 구성되어 있습니다.</p>
+<p>문서함은 다음의 5가지 항목으로 구성되어 있습니다.</p>
 <dl>
 <dt>① 메뉴 및 홈 아이콘, 문서함 이름</dt><dd><p>메뉴(<a class="reference internal" href="../_images/menu_icon_2.png"><img alt="image2" src="../_images/menu_icon_2.png" style="width: 25px;" /></a>)와 홈(<a class="reference internal" href="../_images/home_icon_2.png"><img alt="image3" src="../_images/home_icon_2.png" style="width: 25px;" /></a>) 아이콘을 통해 다른 메뉴로 이동하거나 대시보드로 이동할 수 있습니다. 현재 표시되고 있는 문서함의 이름을
 확인할 수 있습니다.</p>
@@ -227,14 +231,13 @@
 데이터를 다운로드할 수 있습니다.</p>
 <p>문서함에서는 문서 삭제 아이콘이 비활성화되어 있습니다.</p>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
-<p>문서 삭제는 <strong>문서 관리</strong> 메뉴에서만 가능하며, 삭제를 위해서는 문서 관리 권한이 필요합니다. 문서 관리 권한은, 대표 관리자 또는
-템플릿 관리자가 <strong>템플릿 관리 &gt; 템플릿 설정 &gt; 권한 설정 &gt; 문서 관리 권한</strong>에서 부여할 수 있습니다. 문서 관리자는 각 템플릿 별로 지정이 가능하며, 지정되면 <strong>문서 관리</strong> 메뉴에서 해당 템플릿으로 작성된 문서를 열람, 삭제 및 다운로드(PDF, CSV)할 수 있는 권한을 갖게 됩니다.</p>
+<p class="admonition-title">Note</p>
+<p>문서 삭제는 <strong>문서 관리</strong> 메뉴에서만 가능하며, 삭제를 위해서는 문서 관리 권한이 필요합니다. 문서 관리 권한은, 대표 관리자 또는 템플릿 관리자가 <strong>템플릿 관리 &gt; 템플릿 설정 &gt; 권한 설정 &gt; 문서 관리 권한</strong>에서 부여할 수 있습니다. 문서 관리자는 각 템플릿 별로 지정이 가능하며, 지정되면 <strong>문서 관리</strong> 메뉴에서 해당 템플릿으로 작성된 문서를 열람, 삭제 및 다운로드(PDF, CSV)할 수 있는 권한을 갖게 됩니다.</p>
 </div>
 </dd>
 </dl>
 <div class="section" id="category">
-<span id="id3"></span><h3>카테고리, 키워드 및 필터 검색<a class="headerlink" href="#category" title="제목 주소">¶</a></h3>
+<span id="id2"></span><h2>카테고리, 키워드 및 필터 검색<a class="headerlink" href="#category" title="Permalink to this headline">¶</a></h2>
 <p>카테고리, 키워드 및 필터 검색 창은 각 문서함의 왼쪽 상단에 있습니다.
 문서 관리함에만 상태별 필터가 더 추가되어 있습니다.</p>
 <ul>
@@ -245,13 +248,12 @@
 <p>문서함에는 카테고리별 검색창, 문서별/상태별 필터, 검색 키워드 창이 좌측 상단에 배치되어 있습니다.</p>
 </li>
 </ul>
-<p><strong>카테고리 검색 문서함 카테고리 검색</strong></p>
+<p><strong>카테고리 검색</strong></p>
 <p>카테고리 검색 콤보박스를 활용하면 템플릿 관리 메뉴에서 설정한 카테고리별로 문서를 표시하고 이 중 원하는 카테고리나 문서를 확인할 수
 있습니다.</p>
-<p>카테고리 검색 콤보박스의 <strong>X</strong> 아이콘를 누르면 아래와 같이 템플릿에서 설정한 카테고리에 맞춰 분류되어 나타납니다.</p>
-<div class="figure align-default" id="id11">
+<p>콤보박스의 <strong>X</strong> 아이콘를 누르면 아래와 같이 템플릿에서 설정한 카테고리에 맞춰 분류되어 나타납니다.</p>
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/category_search.png"><img alt="카테고리 검색 콤보박스" src="../_images/category_search.png" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-text">카테고리 검색 콤보박스</span><a class="headerlink" href="#id11" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <p><strong>문서 상태별 검색</strong></p>
 <p>각각의 문서함에서 문서의 상태별로 문서를 검색할 수 있습니다.</p>
@@ -272,11 +274,11 @@
 <p><a class="reference internal" href="../_images/documentmanage_status_search.png"><img alt="image9" src="../_images/documentmanage_status_search.png" style="width: 700px;" /></a></p>
 </li>
 </ul>
-<p><strong>키워드 및 필터 검색 문서함 키워드 및 필터 검색</strong></p>
+<p><strong>키워드 및 필터 검색</strong></p>
 <p>검색은 키워드 검색뿐 아니라, 상세 검색을 통해 제목이나 내용을 조합해서 검색하거나, 숫자, 날짜 범위를 지정해 검색, 사용자 지정 필터를 통한 검색 등 다양한 검색 방법을 제공하고 있습니다. 또한, 사용자 지정 필터를 설정해서 문서의 입력필드 값을 상세 검색할 수 있습니다. 또한, 사용자 지정 필터를 통해 숫자의 범위, 날짜의 기간을 설정해서 검색할 수도 있습니다.</p>
 <p>필터를 사용해서 검색 가능한 필터는 다음과 같습니다. 한편, 사용자 지정 필터는 완료 문서함과 문서 관리에서만 사용할 수 있습니다.</p>
-<table class="docutils align-default" id="id12">
-<caption><span class="caption-text">필터 종류 리스트</span><a class="headerlink" href="#id12" title="이 표에 대한 퍼머링크">¶</a></caption>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-text">필터 종류 리스트</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 19%" />
 <col style="width: 28%" />
@@ -352,17 +354,21 @@
 <td></td>
 </tr>
 <tr class="row-even"><td><p>단계의 상태</p></td>
-<td><blockquote>
-<div><p>단계의 상태</p>
-</div></blockquote>
-<p>문서 처리 경과일수</p>
+<td><p>단계의 상태</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li></li>
+</ul>
 </td>
+<td><p>문서 처리 경과일수</p></td>
 <td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<p><strong>사용자 지정 필터 사용 방법 문서함 사용자 지정 필터</strong></p>
+<p><strong>사용자 지정 필터 사용 방법</strong></p>
 <ol class="arabic">
 <li><p>상세 콤보박스에서 <strong>사용자 지정 필터</strong>를 선택합니다.</p>
 <p><img alt="image10" src="../_images/userdefined_search1.png" /></p>
@@ -370,11 +376,11 @@
 <li><p>필드 이름, 필드 타입, 검색 값을 설정합니다.</p>
 <p>필드 이름은 기본 값이 빈 값입니다. 검색하고자 하는 문서 입력 필드의 표시이름(=템플릿의 필드 설정 표시이름)을 직접 입력해야 합니다.</p>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <ol class="arabic simple">
 <li><p>존재하지 않는 문서 입력 필드의 표시이름을 설정해서 검색하면 문서가 조회되지 않습니다.</p></li>
-<li><p>필드 이름에 특수 문자(《, 〈, ;, &lt;, &gt;, \)를 입력할 수는 없습니다.</p></li>
-<li><p>필드 이름의 앞/뒤 공백은 모두 제거되어 추가됩니다. 예) “휴가신청서 ”  “휴가신청서”</p></li>
+<li><p>필드 이름에 특수 문자(“, ‘, ;, &lt;, &gt;, \)를 입력할 수는 없습니다.</p></li>
+<li><p>필드 이름의 앞/뒤 공백은 모두 제거되어 추가됩니다. 예) “휴가신청서 ” → “휴가신청서”</p></li>
 </ol>
 <p>4. 추가/수정 시, 기존에 추가된 사용자 지정 필터와 동일한 필드 이름을 입력하면, 필드 타입, 필드 검색 값이 기존에 설정한 정보로
 표시됩니다. 예) 기존에 사용자 지정 필터 ‘근속연수 : 5~10’가 추가된 상태에서 다시 사용자 지정 필터를 추가할 때, 필드 이름에 동일한
@@ -413,7 +419,7 @@
 <li><p><strong>키워드</strong></p>
 <p>콤마(,)로 구분해서 복수 개의 값을 설정할 수 있습니다. 기본값은 빈 값입니다.</p>
 <p>설정한 텍스트를 포함하는 값이 검색됩니다. 즉, 복수의 값 중 하나 이상을 포함하는 문서를 검색합니다.</p>
-<p>예) 필드 이름: 과일 / 필드 타입: 키워드 / 값1: 딸기 , 사과  과일에 ‘딸기’와 ‘사과’ 둘 중 하나 이상을 포함하는 문서 검색</p>
+<p>예) 필드 이름: 과일 / 필드 타입: 키워드 / 값1: 딸기 , 사과 → 과일에 ‘딸기’와 ‘사과’ 둘 중 하나 이상을 포함하는 문서 검색</p>
 </li>
 <li><p><strong>범위</strong></p>
 <p>숫자나 날짜의 사이값을 검색할 때 사용합니다. 예) 숫자: 100~200 / 기간: 2019/01/01~2019/06/30</p>
@@ -428,7 +434,7 @@
 </li>
 <li><p>검색 추가(<img alt="image11" src="../_images/searchplus.png" />) 버튼을 클릭하면 검색 키워드로 추가되고, 설정한 조건에 따라 문서가 검색됩니다.</p>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <ol class="arabic simple">
 <li><p>사용자 지정 필터를 여러 개 추가할 수 있고, 추가한 사용자 지정 필터를 수정/삭제할 수 있습니다.</p></li>
 <li><p>사용자 지정 필터는 중복된 필드 이름으로 여러 개 추가할 수 없습니다.</p></li>
@@ -452,14 +458,14 @@
 </ol>
 </div>
 <div class="section" id="additional-work">
-<span id="id4"></span><h3>문서함별 작업 항목<a class="headerlink" href="#additional-work" title="제목 주소">¶</a></h3>
+<span id="id3"></span><h2>문서함별 작업 항목<a class="headerlink" href="#additional-work" title="Permalink to this headline">¶</a></h2>
 <p>각 문서함의 문서 리스트에서 수행할 수 있는 추가 작업에는 미리보기, 삭제 요청, 반려 요청 승인하기, 재요청, 완료 문서 전송 등이 있습니다.</p>
 <ul>
-<li><p><strong>진행 중 문서함</strong></p>
-<p>미리보기, 수정, 취소, 완료 문서 전송, 다운로드를 할 수 있습니다.</p>
-</li>
 <li><p><strong>처리할 문서함</strong></p>
 <p>미리보리, 수정, 취소, 재요청, 완료 문서 전송, 다운로드를 할 수 있습니다.</p>
+</li>
+<li><p><strong>진행 중 문서함</strong></p>
+<p>미리보기, 수정, 취소, 완료 문서 전송, 다운로드를 할 수 있습니다.</p>
 </li>
 <li><p><strong>완료 문서함</strong></p>
 <p>미리보기, 취소, 완료 문서 전송, 다운로드를 할 수 있습니다.</p>
@@ -470,39 +476,36 @@
 </ul>
 </div>
 <div class="section" id="history">
-<span id="id5"></span><h3>상태 및 이력보기<a class="headerlink" href="#history" title="제목 주소">¶</a></h3>
+<span id="id4"></span><h2>상태 및 이력보기<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h2>
 <p>문서함 목록에서 문서를 선택하면 해당 문서의 상태와 이력을 화면 오른쪽에서 확인할 수 있습니다.</p>
 <p><strong>문서 상태</strong>에서는 워크플로우 단계별로 문서가 언제, 누구에 의해 작성/처리되었는지 확인할 수 있습니다.</p>
 <p><strong>이력</strong>에서는 작성자 및 수신자 관점에서 시간 순으로 누가 어떤 작업을 수행했는지를 보여줍니다.</p>
-<div class="figure align-default" id="id13">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/document_status.png"><img alt="문서 상태 탭" src="../_images/document_status.png" style="width: 300px;" /></a>
-<p class="caption"><span class="caption-text">문서 상태 탭</span><a class="headerlink" href="#id13" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
-<div class="figure align-default" id="id14">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/document_history.png"><img alt="이력 탭" src="../_images/document_history.png" style="width: 300px;" /></a>
-<p class="caption"><span class="caption-text">이력 탭</span><a class="headerlink" href="#id14" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 </div>
 <div class="section" id="document-download">
-<span id="id6"></span><h3>문서 다운로드 문서함 문서 다운로드<a class="headerlink" href="#document-download" title="제목 주소">¶</a></h3>
+<span id="id5"></span><h2>문서 다운로드<a class="headerlink" href="#document-download" title="Permalink to this headline">¶</a></h2>
 <p>eformsign에서 작성된 문서는 대부분 오랜 기간 안전하게 보관해야 하는 문서들입니다. 모든 문서는 장기 보관용 파일 형식(PDF/A)으로 저장되며
 지정된 관리자만 문서와 데이터를 열람하거나 삭제할 수 있습니다.</p>
 <ol class="arabic simple">
 <li><p>문서 목록에서 오른쪽 상단 다운로드(<img alt="image12" src="../_images/download_icon.png" />) 아이콘을 클릭합니다.</p></li>
 <li><p>다운로드할 문서를 선택하고 <strong>다운로드</strong> 버튼을 클릭합니다.</p></li>
 </ol>
-<div class="figure align-default" id="id15">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/download_popup.png"><img alt="문서 다운로드 팝업" src="../_images/download_popup.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-text">문서 다운로드 팝업</span><a class="headerlink" href="#id15" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <p>CSV 다운로드는 문서에 입력된 데이터를 엑셀 파일로 다운로드 받아 별도로 관리할 수 있습니다. CSV 다운로드를 선택하고 다운받을 데이터를
 확인한 후 다운로드 버튼을 클릭합니다.</p>
 </div>
 </div>
 <div class="section" id="document-delete">
-<span id="id7"></span><h3>문서 삭제하기<a class="headerlink" href="#document-delete" title="제목 주소">¶</a></h3>
+<span id="id6"></span><h2>문서 삭제하기<a class="headerlink" href="#document-delete" title="Permalink to this headline">¶</a></h2>
 <p>eformsign에서는 지정된 관리자만 문서를 삭제할 수 있습니다.</p>
 <ol class="arabic simple">
 <li><p>문서함 리스트의 오른쪽 삭제(<img alt="image13" src="../_images/delete_icon1.png" />) 아이콘을 클릭합니다.</p></li>
@@ -511,16 +514,13 @@
 </ol>
 </div>
 <div class="section" id="document-column">
-<span id="id8"></span><h3>문서함 컬럼 설정<a class="headerlink" href="#document-column" title="제목 주소">¶</a></h3>
+<span id="id7"></span><h2>문서함 컬럼 설정<a class="headerlink" href="#document-column" title="Permalink to this headline">¶</a></h2>
 <p>문서함 오른쪽 상단의 아이콘 중 컬럼(<a class="reference internal" href="../_images/column_icon.png"><img alt="image14" src="../_images/column_icon.png" style="width: 35px;" /></a>) 아이콘을 클릭하면 리스트에 어떤 컬럼을 보여줄 지를 선택할 수 있습니다.</p>
-<div class="figure align-default" id="id16">
+<div class="figure align-default">
 <img alt="문서함 컬럼 설정 아이콘" src="../_images/column_type.png" />
-<p class="caption"><span class="caption-text">문서함 컬럼 설정 아이콘</span><a class="headerlink" href="#id16" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-</div>
 </div>
 <div class="section" id="drafts">
-<span id="id9"></span><h2>임시 보관함<a class="headerlink" href="#drafts" title="제목 주소">¶</a></h2>
+<span id="id8"></span><h3>임시 보관함<a class="headerlink" href="#drafts" title="Permalink to this headline">¶</a></h3>
 <p><strong>임시 보관함</strong>에는 <strong>내 파일로 문서 작성</strong> 과정에서 <strong>문서를 전송하기</strong> 이전에 <strong>임시 보관함에 저장**을 클릭하여 저장한 문서들이 보관됩니다. **임시 보관함</strong>에 저장된 파일은 언제든지 다시 열어 이후 단계를 계속 진행하거나 문서를 삭제할 수 있습니다.</p>
 <ol class="arabic">
 <li><p>사이드바 메뉴에서 <strong>임시 보관함</strong>을 클릭하여 이동합니다.</p>
@@ -533,6 +533,7 @@
 </ol>
 </div>
 </div>
+</div>
 
 
           </div>
@@ -540,11 +541,11 @@
             <div class="inner"><ul class="page-nav">
   <li class="prev">
     <a href="chapter7.html"
-       title="이전 장">← 폼 빌더로 템플릿 만들기</a>
+       title="previous chapter">← 폼 빌더로 템플릿 만들기</a>
   </li>
   <li class="next">
     <a href="chapter9.html"
-       title="다음 장">커스터마이즈 →</a>
+       title="next chapter">커스터마이즈 →</a>
   </li>
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2021, FORCS CO., LTD. All rights reserved..

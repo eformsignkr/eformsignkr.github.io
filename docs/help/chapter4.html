@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="ko">
+<html  lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -16,14 +16,13 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/translations.js"></script>
 
       
       <script src="../_static/theme-vendors.js"></script>
       <script src="../_static/theme.js" defer></script>
     
-  <link rel="index" title="색인" href="../genindex.html" />
-  <link rel="search" title="검색" href="../search.html" />
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
   <link rel="next" title="폼 빌더 소개" href="chapter5.html" />
   <link rel="prev" title="문서 작성하기" href="chapter3.html" /> 
   </head>
@@ -57,11 +56,11 @@
 
             
           </navlinks><div id="searchbox" class="searchbox" role="search">
-  <div class="caption"><span class="caption-text">빠른 검색</span>
+  <div class="caption"><span class="caption-text">Quick search</span>
     <div class="searchformwrapper">
       <form class="search" action="../search.html" method="get">
         <input type="text" name="q" />
-        <input type="submit" value="검색" />
+        <input type="submit" value="Search" />
         <input type="hidden" name="check_keywords" value="yes" />
         <input type="hidden" name="area" value="default" />
       </form>
@@ -71,11 +70,11 @@
   
     <div class="sidebar-group">
       <p class="caption">
-        <span class="caption-text"><a href="../index.html#eformsign">Contents:</a></span>
+        <span class="caption-text"><a href="../index.html#eformsign">eformsign 사용자 안내서</a></span>
       </p>
       <ul class="current">
         
-          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">개요</a>
+          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">eformsign 소개</a>
 
             
           </li>
@@ -98,13 +97,35 @@
             
               <ul>
                 
-                  <li class="toctree-l2"><a href="#id2" class="reference internal">웹폼 디자이너 개요</a></li>
+                  <li class="toctree-l2"><a href="#id2" class="reference internal">웹폼 디자이너 메뉴 구성</a></li>
                 
-                  <li class="toctree-l2"><a href="#id4" class="reference internal">컴포넌트 개요</a></li>
+                  <li class="toctree-l2"><a href="#id4" class="reference internal">컴포넌트 종류</a></li>
                 
-                  <li class="toctree-l2"><a href="#id6" class="reference internal">컴포넌트별 속성 설정</a></li>
+                  <li class="toctree-l2"><a href="#signature2" class="reference internal">서명</a></li>
                 
-                  <li class="toctree-l2"><a href="#id19" class="reference internal">템플릿에 대한 추가 설정하기</a></li>
+                  <li class="toctree-l2"><a href="#text2" class="reference internal">텍스트와 멀티라인</a></li>
+                
+                  <li class="toctree-l2"><a href="#label2" class="reference internal">레이블</a></li>
+                
+                  <li class="toctree-l2"><a href="#check2" class="reference internal">체크</a></li>
+                
+                  <li class="toctree-l2"><a href="#select2" class="reference internal">라디오</a></li>
+                
+                  <li class="toctree-l2"><a href="#combo2" class="reference internal">콤보</a></li>
+                
+                  <li class="toctree-l2"><a href="#toggle2" class="reference internal">토글</a></li>
+                
+                  <li class="toctree-l2"><a href="#date2" class="reference internal">날짜</a></li>
+                
+                  <li class="toctree-l2"><a href="#numeric2" class="reference internal">증감</a></li>
+                
+                  <li class="toctree-l2"><a href="#camera2" class="reference internal">카메라</a></li>
+                
+                  <li class="toctree-l2"><a href="#record2" class="reference internal">녹음</a></li>
+                
+                  <li class="toctree-l2"><a href="#attach2" class="reference internal">첨부</a></li>
+                
+                  <li class="toctree-l2"><a href="#document2" class="reference internal">문서 ID와 문서 번호</a></li>
                 
               </ul>
             
@@ -141,7 +162,7 @@
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter10.html" class="reference internal ">외부 서비스 연동 방법</a>
+          <li class="toctree-l1 "><a href="chapter10.html" class="reference internal ">외부 서비스 연동</a>
 
             
           </li>
@@ -166,11 +187,11 @@
   <ul class="page-nav">
   <li class="prev">
     <a href="chapter3.html"
-       title="이전 장">← 문서 작성하기</a>
+       title="previous chapter">← 문서 작성하기</a>
   </li>
   <li class="next">
     <a href="chapter5.html"
-       title="다음 장">폼 빌더 소개 →</a>
+       title="next chapter">폼 빌더 소개 →</a>
   </li>
 </ul>
   
@@ -179,23 +200,21 @@
           <div class="content" role="main">
             
   <div class="section" id="webform">
-<span id="id1"></span><h1>웹폼 디자이너 소개<a class="headerlink" href="#webform" title="제목 주소">¶</a></h1>
-<div class="section" id="id2">
-<h2>웹폼 디자이너 개요<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
-<p>웹폼 디자이너 웹폼 디자이너는 eformsign 서비스에 기존의 문서 파일을 업로드하여 컴포넌트를 올려 전자서식으로 만들 수 있는 웹폼 에디터입니다.
+<span id="id1"></span><h1>웹폼 디자이너 소개<a class="headerlink" href="#webform" title="Permalink to this headline">¶</a></h1>
+<p>웹폼 디자이너는 eformsign 서비스에 기존의 문서 파일을 업로드하여 컴포넌트를 올려 전자서식으로 만들 수 있는 웹폼 에디터입니다.
 <strong>내 파일로 문서 작성</strong> 메뉴 또는 <strong>템플릿 관리</strong> 메뉴에서 전자문서의 기본 파일이 되는 PDF 파일을 업로드하면 웹폼 디자이너 화면이 나타납니다. 이폼사인에서 제공하는 다양한 컴포넌트 중 원하는 컴포넌트를 클릭해서 문서의 원하는 위치에 배치하고 난 후, 각 컴포넌트에 대한 속성을 설정하면 전자서식을 손쉽게 만들 수 있습니다.</p>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <p>현재는 PDF 파일만 지원하나, 추후 MS Office, 한글, JPG, PNG 등의 이미지 파일 등 다양한 파일 형식을 지원할 예정입니다.</p>
 </div>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
-<p>MS Office에서 바로 전자문서를 생성할 수 있도록 하는 MS Office Add-in 기능(OZ in Office 폼 빌더)도 제공하고 있습니다. 폼 빌더를 사용하려면 <a class="reference external" href="#formbuilder">폼 빌더</a>를 참고하여 폼 빌더를 MS Office에 설치하신 후 사용하시기 바랍니다.</p>
+<p class="admonition-title">Note</p>
+<p>MS Office에서 바로 전자문서를 생성할 수 있도록 하는 MS Office Add-in 기능(OZ in Office 폼 빌더)도 제공하고 있습니다. 폼 빌더를 사용하려면 <a class="reference external" href="chapter5.html#formbuilder">폼 빌더</a>를 참고하여 폼 빌더를 설치하신 후 사용하시기 바랍니다.</p>
 </div>
 <p><strong>내 파일로 문서 작성</strong> 메뉴에서 PDF 파일 업로드</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p>메뉴 중 <strong>내 파일로 문서 작성</strong> 메뉴를 클릭합니다.</p>
+<li><p>메뉴 중 <strong>내 파일로 문서 작성</strong>을 클릭합니다.</p>
 <p><img alt="image1" src="../_images/myfile_create_document.png" /></p>
 </li>
 <li><p>화면에 바로 파일을 드래그하거나 <strong>내 컴퓨터에서 파일 선택</strong>을 클릭해서 자신의 컴퓨터에서 업로드하고자 하는 파일을 선택합니다.</p>
@@ -210,9 +229,8 @@
 <blockquote>
 <div><ol class="arabic">
 <li><p><strong>템플릿 관리</strong> 메뉴로 이동합니다.</p>
-<div class="figure align-default" id="id20">
+<div class="figure align-default">
 <img alt="웹폼 디자이너 화면" src="../_images/web-form_1.png" />
-<p class="caption"><span class="caption-text">웹폼 디자이너 화면</span><a class="headerlink" href="#id20" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 </li>
 <li><p>템플릿 관리 화면에 바로 파일을 드래그하거나 <strong>내 컴퓨터에서 파일 선택</strong>을 클릭해 자신의 컴퓨터에서 업로드하고자 하는 파일을 선택합니다.</p>
@@ -227,39 +245,35 @@
 </li>
 </ol>
 </div></blockquote>
-<div class="section" id="id3">
-<h3>웹폼 디자이너 메뉴 구성<a class="headerlink" href="#id3" title="제목 주소">¶</a></h3>
+<div class="section" id="id2">
+<h2>웹폼 디자이너 메뉴 구성<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>웹폼 디자이너는 문서를 보여주는 화면과 상단 바 외에 왼쪽 및 오른쪽 화면으로 구성되어 있습니다.</p>
-<div class="figure align-default" id="id21">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/web-form_4.png"><img alt="웹폼 디자이너 메뉴 구성-템플릿으로 문서 작성" src="../_images/web-form_4.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">웹폼 디자이너 메뉴 구성-템플릿으로 문서 작성</span><a class="headerlink" href="#id21" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
-<div class="figure align-default" id="id22">
+<div class="figure align-default">
 <img alt="웹폼 디자이너 메뉴 구성-내 파일로 문서 작성" src="../_images/myfile_create_document4.png" />
-<p class="caption"><span class="caption-text">웹폼 디자이너 메뉴 구성-내 파일로 문서 작성</span><a class="headerlink" href="#id22" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
-<ol class="arabic">
-<li><p><strong>문서 표시 창:</strong> 업로드한 문서 파일이 표시됩니다.</p></li>
-<li><p><strong>상단 바:</strong> <strong>템플릿 설정</strong>의 경우 폼 디자인하기, 설정하기의    2단계가 표시되며, 템플릿 관리 리스트 화면으로 돌아가거나 컴포넌트가 추가된 템플릿의 표시 형태를 미리보기할 수 있습니다. <strong>내 파일로 문서 작성</strong>의 경우 폼 디자인하기, 수신자 지정하기, 옵션의 3단계가 표시되며, 디자인을 완료하고 문서 작성을 시작하거나 임시 보관함에 저장하고 나갈 수 있습니다.</p>
-<div class="admonition note">
-<p class="admonition-title">참고</p>
+<p><strong>1. 문서 표시 창:</strong> 업로드한 문서 파일이 표시됩니다.</p>
+<p><strong>2. 상단 바:</strong> <strong>템플릿 설정</strong>의 경우 폼 디자인하기, 설정하기의 2단계가 표시되며, 템플릿 관리 리스트 화면으로 돌아가거나 컴포넌트가 추가된 템플릿의 표시 형태를 미리보기할 수 있습니다. <strong>내 파일로 문서 작성</strong>의 경우 폼 디자인하기, 수신자 지정하기, 옵션의 3단계가 표시되며, 디자인을 완료하고 문서 작성을 시작하거나 임시 보관함에 저장하고 나갈 수 있습니다.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>상단 바에 표시되는 각 단계를 클릭하면 해당 단계의 화면이 표시됩니다. 워크플로우, 권한 등을 설정할 수 있습니다. 템플릿 생성 및 내 파일로 문서 작성을 완료하기 전에 설정을 완료하시기 바랍니다.</p>
 </div>
-</li>
-<li><p><strong>컴포넌트 리스트:</strong> 텍스트, 멀티라인, 서명, 체크, 선택 등 13개의 기본 컴포넌트와 문서 ID, 문서 번호 등 2개의 정보 항목을 현재 지원하고 있으며, 사용자 정의 항목, 도형 등의 신규 항목이 계속해서 추가될 예정입니다.</p></li>
-<li><p><strong>속성:</strong> 서명, 텍스트, 체크 등 컴포넌트를 클릭하여 배경서식의 원하는 위치에 추가하면 각 컴포넌트의 속성을 설정할 수 있습니다.</p></li>
-</ol>
+</div></blockquote>
+<p><strong>3. 컴포넌트 리스트:</strong> 텍스트, 멀티라인, 서명, 체크, 선택 등 13개의 기본 컴포넌트와 문서 ID, 문서 번호 등 2개의 정보 항목을 현재 지원하고 있으며, 사용자 정의 항목, 도형 등의 신규 항목이 계속해서 추가될 예정입니다.</p>
+<p><strong>4. 속성:</strong> 서명, 텍스트, 체크 등 컴포넌트를 클릭하여 배경서식의 원하는 위치에 추가하면 각 컴포넌트의 속성을 설정할 수 있습니다.</p>
+<div class="section" id="id3">
+<h3>컴포넌트 개요<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>컴포넌트 컴포넌트는 전자문서에서 사용자가 내용을 입력할 수 있는 입력란을 만들어주는 역할을 합니다. 서명, 체크, 날짜, 텍스트 등의 다양한 형식의 컴포넌트가 있으며 각각의 컴포넌트는 속성창을 통해 세부 사항을 설정할 수 있습니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/component_web_1.png"><img alt="웹폼 디자이너에 컴포넌트를 배치한 모습" src="../_images/component_web_1.png" style="width: 750px;" /></a>
+</div>
 </div>
 </div>
 <div class="section" id="id4">
-<h2>컴포넌트 개요<a class="headerlink" href="#id4" title="제목 주소">¶</a></h2>
-<p>컴포넌트 컴포넌트는 전자문서에서 사용자가 내용을 입력할 수 있는 입력란을 만들어주는 역할을 합니다. 서명, 체크, 날짜, 텍스트 등의 다양한 형식의 컴포넌트가 있으며 각각의 컴포넌트는 속성창을 통해 세부 사항을 설정할 수 있습니다.</p>
-<div class="figure align-default" id="id23">
-<a class="reference internal image-reference" href="../_images/component_web_1.png"><img alt="웹폼 디자이너에 컴포넌트를 배치한 모습" src="../_images/component_web_1.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">웹폼 디자이너에 컴포넌트를 배치한 모습</span><a class="headerlink" href="#id23" title="이 이미지에 대한 퍼머링크">¶</a></p>
-</div>
-<div class="section" id="id5">
-<h3>컴포넌트 종류<a class="headerlink" href="#id5" title="제목 주소">¶</a></h3>
+<h2>컴포넌트 종류<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>eformsign은 다음의 컴포넌트를 지원합니다.</p>
 <p><strong>기본 컴포넌트</strong></p>
 <ul class="simple">
@@ -282,10 +296,8 @@
 <li><p><a class="reference external" href="#document2">문서 ID</a><strong>:</strong> 문서 내에 문서 ID를 입력합니다.</p></li>
 <li><p><a class="reference external" href="#document2">문서 번호</a><strong>:</strong> 문서 내에 문서 번호를 입력합니다.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="id6">
-<h2>컴포넌트별 속성 설정<a class="headerlink" href="#id6" title="제목 주소">¶</a></h2>
+<div class="section" id="id5">
+<h3>컴포넌트별 속성 설정<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>모든 컴포넌트는 공통 속성과 고유 속성을 가지고 있으며, 속성 창에서 공통 속성과 각 입력 기능의 고유 속성을 확인할 수 있습니다. 공통 속성으로는 ID와 툴팁 텍스트가 있으며, 각 속성의 의미는 다음과 같습니다.</p>
 <ul class="simple">
 <li><p><strong>ID:</strong> 컴포넌트 ID 각각의 컴포넌트를 식별할 수 있는 고유한 ID 입니다. 설정 단계에서 필수 입력 또는 편집 제한 시 컴포넌트 ID로 확인하여 지정할 수 있으며, CSV로 입력 데이터를 추출하여 확인하고자 할때 컴포넌트 ID로 구분할 수 있습니다.</p></li>
@@ -293,19 +305,20 @@
 <li><p><strong>툴팁 텍스트:</strong> 컴포넌트 툴팁 텍스트 수신자가 문서를 열람 시 Windows 환경에서는 컴포넌트에 마우스를 위치하면 툴팁 텍스트가 말풍선 형태로 표시되며, 모바일 환경에서는 컴포넌트가 다이얼로그로 실행될 때 툴팁 텍스트가 다이얼로그의 제목으로 표시됩니다.</p></li>
 </ul>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <p>문서 관련 정보 제공을 위한 컴포넌트인 정보 컴포넌트의 경우, 툴팁 텍스트 속성이 없습니다.</p>
 </div>
 <p>각 컴포넌트에 대한 설명은 다음과 같습니다.</p>
+</div>
+</div>
 <div class="section" id="signature2">
-<span id="id7"></span><h3>서명<a class="headerlink" href="#signature2" title="제목 주소">¶</a></h3>
-<p>컴포넌트 서명 서명 컴포넌트는 문서에 서명을 받아야 할 때 사용합니다.</p>
+<span id="id6"></span><h2>서명<a class="headerlink" href="#signature2" title="Permalink to this headline">¶</a></h2>
+<p>서명 컴포넌트는 문서에 서명을 받아야 할 때 사용합니다.</p>
 <p>서명 컴포넌트를 넣으면 서명이 필요한 문서에서 아래와 같이 서명 팝업이 나타나 서명을 직접 그리거나 텍스트를 입력해 서명을 생성할 수 있으며, 기존에 등록한 서명이 있는 경우 이를 사용할 수도 있습니다.</p>
 <p><img alt="image4" src="../_images/signature.png" /></p>
 <p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default" id="id24">
+<div class="figure align-default">
 <img alt="서명 컴포넌트 속성 설정하기" src="../_images/Signature-component-properties_web.png" />
-<p class="caption"><span class="caption-text">서명 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id24" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <p><strong>① ID</strong></p>
 <p>서명 컴포넌트의 ID를 입력합니다. 예를 들어, 계약자의 서명인 경우
@@ -319,11 +332,11 @@
 <p><strong>등록된 도장:</strong> 등록된 서명과 마찬가지로 <strong>내 서명</strong>에 등록된 도장이 있는 경우 서명란을 클릭하면 등록된 도장이 자동으로 입력됩니다.</p>
 </div></blockquote>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <p>등록된 서명과 이니셜, 도장이 있는 경우에는 해당 서명이 서명란에 자동으로 입력되지만, 등록된 서명과 이니셜, 도장이 없는 경우 직접 서명과 동일한 서명 팝업이 나타납니다.</p>
 </div>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <p>문서에 직접 서명이 아닌 직인이나 개인 도장을 사용해야 하는 경우가 있습니다. eformsign에서는 도장 이미지를 사용해 문서의 서명란에 도장을 찍을 수도 있습니다. 도장 이미지를 사용하려면, 서명 팝업에서 <strong>도장</strong> 탭을 클릭하고 도장 이미지를 선택한 후 확인 버튼을 누릅니다.</p>
 </div>
 <p><strong>③ 서명펜 두께</strong></p>
@@ -336,7 +349,7 @@
 <p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.
 eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 <div class="admonition tip">
-<p class="admonition-title">팁</p>
+<p class="admonition-title">Tip</p>
 <p>서명에 대한 서명일 및 서명인 자동 입력 설정하기</p>
 <p>서명 컴포넌트를 클릭하여 나타나는 아이콘을 클릭하면 서명일 및 서명인을 추가할 수 있습니다.</p>
 <div class="figure align-default">
@@ -344,36 +357,35 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 </div>
 <p><strong>① 서명일:</strong> 서명한 날짜가 자동으로 입력됩니다. 서명일 영역을 클릭하여 우측의 서명일 컴포넌트 속성에서 날짜 표시형식을 설정할 수 있습니다.</p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/Signature-component-properties_web_date.png"><img alt="서명일" src="../_images/Signature-component-properties_web_date.png" style="width: 750px;" /></a>
+<a class="reference internal image-reference" href="../_images/Signature-component-properties_web_date.png"><img alt="서명일" src="../_images/Signature-component-properties_web_date.png" style="width: 700px;" /></a>
 </div>
 <p><strong>② 서명인:</strong> 서명인 정보가 자동으로 입력됩니다. 서명 컴포넌트를 클릭하여 나타나는 사람 모양 아이콘을 클릭하면 ID, 이름, 부서, 직책, 휴대폰 번호, 전화번호 중 서명인 정보에 표시될 정보를 지정할 수 있습니다.</p>
 <div class="figure align-default">
 <img alt="서명인" src="../_images/Signature-component-properties_web_signer.png" />
 </div>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <p>하나의 서명과 연결된 서명일 및 서명인 컴포넌트를 여러 개 추가할 수 있습니다. 계약서 등의 문서 내에 반복적으로 서명일을 입력하거나, 서명인 정보를 자세히 입력하고자 할 때 사용할 수 있습니다.</p>
 </div>
 </div>
 </div>
 <div class="section" id="text2">
-<span id="id8"></span><h3>텍스트와 멀티라인<a class="headerlink" href="#text2" title="제목 주소">¶</a></h3>
+<span id="id7"></span><h2>텍스트와 멀티라인<a class="headerlink" href="#text2" title="Permalink to this headline">¶</a></h2>
 <p>텍스트 컴포넌트와 멀티라인 컴포넌트 모두 텍스트 입력란을 만들 때 사용합니다. 텍스트 컴포넌트는 1~2 단어의 짧은 텍스트, 멀티라인은 1줄 이상의 긴 텍스트에 적합합니다.</p>
 <p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default" id="id25">
+<div class="figure align-default">
 <img alt="텍스트와 멀티라인 컴포넌트 속성 설정하기" src="../_images/text-component-properties_web.png" />
-<p class="caption"><span class="caption-text">텍스트와 멀티라인 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id25" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <p><strong>① ID</strong></p>
 <p>텍스트/멀티라인 컴포넌트의 ID를 입력합니다. 예를 들어, 홍길동, 이순신 등이 입력되는 컴포넌트의 ID는 ‘이름’으로 합니다.</p>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <p>ID는 자동으로도 부여되나, 컴포넌트 배치 후 각 컴포넌트에 대해 수신자에게 입력 요청을 할지 여부를 결정할 때 해당 ID의 명칭이 표시되므로 사용자 자신이 인식하기 쉬운 ID를 설정하는 것을 권장합니다.</p>
 </div>
 <p><strong>② 기본 값</strong></p>
 <p>기본으로 표시될 텍스트를 설정할 수 있습니다.</p>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <p>텍스트 컴포넌트에서만 설정 가능한 속성으로 텍스트 숨기기 기능이 있습니다. 텍스트 입력 시 입력한 내용이 별표(*) 또는 패스워드 문자(●)로 입력되어 입력 내용을 숨길 수 있습니다. 입력된 내용은 PDF에서도 패스워드 문자로 숨겨지며, CSV 데이터를 다운로드 받을 때에만 확인할 수 있습니다.</p>
 </div>
 <p><strong>③ 입력 가능 최대 글자 수</strong></p>
@@ -383,15 +395,14 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 <p><strong>⑤ 플레이스홀더</strong></p>
 <p>입력해야 할 내용에 대한 안내 문구로 값이 입력되지 않았을 때 표시됩니다.</p>
 <p><strong>⑥ 툴팁 텍스트</strong></p>
-<p>해당 입력란에 마우스를 갖다 대면 툴팁 텍스트에 입력한 설명이 나타납니다. eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
+<p>해당 입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다. eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 </div>
 <div class="section" id="label2">
-<span id="id9"></span><h3>레이블<a class="headerlink" href="#label2" title="제목 주소">¶</a></h3>
-<p>컴포넌트 레이블 레이블 컴포넌트는 별도로 설정한 값을 문서에 표시하고자 할때 사용합니다.</p>
+<span id="id8"></span><h2>레이블<a class="headerlink" href="#label2" title="Permalink to this headline">¶</a></h2>
+<p>레이블 컴포넌트는 별도로 설정한 값을 문서에 표시하고자 할때 사용합니다.</p>
 <p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default" id="id26">
+<div class="figure align-default">
 <img alt="레이블 컴포넌트 속성 설정하기" src="../_images/label_property_web.png" />
-<p class="caption"><span class="caption-text">레이블 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id26" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <p><strong>① ID</strong></p>
 <p>레이블 컴포넌트의 ID를 설정합니다.</p>
@@ -399,10 +410,10 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 <p>해당 입력란에 입력한 텍스트가 문서상에 표시됩니다.</p>
 </div>
 <div class="section" id="check2">
-<span id="id10"></span><h3>체크<a class="headerlink" href="#check2" title="제목 주소">¶</a></h3>
-<p>컴포넌트 체크 체크 컴포넌트는 각 항목의 체크 여부를 확인하고자 할때 사용합니다. 비슷한 컴포넌트 중 <strong>라디오</strong> 컴포넌트가 있으며, 체크 컴포넌트는 해당 항목의 체크 여부를 확인할 때 사용하고, 라디오 컴포넌트는 선택한 항목이 무엇인지 알아야 할 때 사용한다는 차이가 있습니다.</p>
+<span id="id9"></span><h2>체크<a class="headerlink" href="#check2" title="Permalink to this headline">¶</a></h2>
+<p>체크 컴포넌트는 각 항목의 체크 여부를 확인하고자 할때 사용합니다. 비슷한 컴포넌트 중 <strong>라디오</strong> 컴포넌트가 있으며, 체크 컴포넌트는 해당 항목의 체크 여부를 확인할 때 사용하고, 라디오 컴포넌트는 선택한 항목이 무엇인지 알아야 할 때 사용한다는 차이가 있습니다.</p>
 <div class="admonition tip">
-<p class="admonition-title">팁</p>
+<p class="admonition-title">Tip</p>
 <p><strong>체크 컴포넌트와 라디오 컴포넌트의 차이</strong></p>
 <p>체크 컴포넌트는 중복입력을 허용하나 라디오 컴포넌트는 중복입력을 허용하지 않습니다.</p>
 </div>
@@ -413,9 +424,8 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 </ul>
 <p>워드, 파워포인트에서는 체크 컴포넌트가 직사각형 도형처럼 나타납니다. 항목의 내용은 컴포넌트 도형 안에 입력해야 합니다.</p>
 <p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default" id="id27">
+<div class="figure align-default">
 <img alt="체크 컴포넌트 속성 설정하기" src="../_images/check-component-properties-1_web.png" />
-<p class="caption"><span class="caption-text">체크 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id27" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <p><strong>① ID</strong></p>
 <p>체크 컴포넌트는 각 항목 별로 다른 ID를 부여해야 합니다. 여러 개의 체크 컴포넌트에 같은 ID가 부여될 경우 해당 컴포넌트 중 마지막 컴포넌트의 입력값만 표시됩니다.</p>
@@ -426,12 +436,10 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 <p>다음의 예시를 보면, 왼쪽부터 체크 / 라디오 / 원 선택 시 각각 체크박스가 어떻게 표시되는지를 알 수 있습니다.</p>
 <p><img alt="image5" src="../_images/check-component-style-settings.png" /></p>
 <div class="admonition tip">
-<p class="admonition-title">팁</p>
+<p class="admonition-title">Tip</p>
 <p>오른쪽 위 아이콘을 눌러 각 스타일의 색상을 지정할 수 있습니다.
 활성화된 아이콘은 아이콘 하단에 현재 표시되는 색상의 선이 나타납니다.
-예를 들어, 체크박스의 경우 박스의 바탕색, 박스의 윤곽선, 체크 색상을
-각각 지정할 수 있고, 라디오 버튼의 경우 원 윤곽선과 중심원 색상을
-각각 지정할 수 있고, 원 표시의 경우 원 색상을 지정할 수 있습니다.</p>
+예를 들어, 체크박스의 경우 박스의 바탕색, 박스의 윤곽선, 체크 색상을 각각 지정할 수 있고, 라디오 버튼의 경우 원 윤곽선과 중심원 색상을 각각 지정할 수 있고, 원 표시의 경우 원 색상을 지정할 수 있습니다.</p>
 <p><img alt="image6" src="../_images/check-component-properties-web-style.png" /></p>
 </div>
 <p><strong>④ 비선택 스타일</strong></p>
@@ -441,27 +449,24 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 </div>
 <div class="section" id="select2">
-<span id="id11"></span><h3>라디오<a class="headerlink" href="#select2" title="제목 주소">¶</a></h3>
-<p>컴포넌트 라디오 라디오 컴포넌트는 여러 항목 중 어떤 항목을 선택했는지 확인해야 할 때 사용합니다. 선택 컴포넌트의 선택값은 데이터 다운로드 시 여러 항목 중 선택한 항목명이 나타납니다.</p>
+<span id="id10"></span><h2>라디오<a class="headerlink" href="#select2" title="Permalink to this headline">¶</a></h2>
+<p>라디오 컴포넌트는 여러 항목 중 어떤 항목을 선택했는지 확인해야 할 때 사용합니다. 라디오 컴포넌트의 선택값은 데이터 다운로드 시 여러 항목 중 선택한 항목명이 나타납니다.</p>
 <p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default" id="id28">
+<div class="figure align-default">
 <img alt="선택 컴포넌트 속성 설정하기" src="../_images/Radio-component-properties_web.png" />
-<p class="caption"><span class="caption-text">선택 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id28" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <p><strong>① ID</strong></p>
-<p>선택 컴포넌트의 선택 항목에는 선택 그룹마다 모두 같은 ID를 부여해야 합니다.</p>
-<p>예를 들어, 1번 문제에 대해 1, 2, 3, 4, 5의 보기가 있는 경우 1, 2, 3, 4, 5 항목에 같은 ID ‘1번’을 부여합니다. 2번 문제의 1, 2, 3, 4, 5 보기에는
-‘2번’ ID를 부여합니다. 다음 예시 화면의 모든 선택 항목의 ID는 ‘나이 선택’으로 지정합니다.</p>
-<div class="figure align-default" id="id29">
+<p>라디오 컴포넌트의 선택 항목에는 선택 그룹마다 모두 같은 ID를 부여해야 합니다.</p>
+<p>예를 들어, 1번 문제에 대해 1, 2, 3, 4, 5의 보기가 있는 경우 1, 2, 3, 4, 5 항목에 같은 ID ‘1번’을 부여합니다. 2번 문제의 1, 2, 3, 4, 5 보기에는 ‘2번’ ID를 부여합니다. 다음 예시 화면의 모든 선택 항목의 ID는 ‘나이 선택’으로 지정합니다.</p>
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/radio-items-should-have-same-ID_web.png"><img alt="선택 컴포넌트의 설정 예" src="../_images/radio-items-should-have-same-ID_web.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">선택 컴포넌트의 설정 예</span><a class="headerlink" href="#id29" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <p><strong>② 아이템 리스트</strong></p>
 <p>같은 ID를 부여한 항목은 컴포넌트 속성 창의 아이템 리스트에 일괄 표시되며, 아이템 리스트에서 편리하게 텍스트를 수정할 수 있습니다.</p>
 <p><strong>③ 선택 스타일</strong></p>
-<p>선택 컴포넌트는 속성에서 스타일을 지정할 수 있습니다. 검정색 이중 원 형태가 기본으로 설정되어 있으며 드롭박스 메뉴에서 스타일을 변경할 수 있습니다.</p>
+<p>라디오 컴포넌트는 속성에서 스타일을 지정할 수 있습니다. 검정색 이중 원 형태가 기본으로 설정되어 있으며 드롭박스 메뉴에서 스타일을 변경할 수 있습니다.</p>
 <div class="admonition tip">
-<p class="admonition-title">팁</p>
+<p class="admonition-title">Tip</p>
 <p>오른쪽 위 아이콘을 클릭해 상세 스타일을 변경할 수도 있습니다. 활성화된 아이콘은 아이콘 하단에 현재 표시되는 색상의 선이 나타나며, 윤곽선과 중심원의 색상을 별도로 설정할 수 있습니다.</p>
 <p><img alt="image7" src="../_images/Radio-component-properties_web-style.png" /></p>
 </div>
@@ -472,14 +477,13 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 </div>
 <div class="section" id="combo2">
-<span id="id12"></span><h3>콤보<a class="headerlink" href="#combo2" title="제목 주소">¶</a></h3>
-<p>컴포넌트 콤보 여러가지 항목 중에서 한 항목을 선택해야 할 때 콤보 컴포넌트를 사용합니다.</p>
+<span id="id11"></span><h2>콤보<a class="headerlink" href="#combo2" title="Permalink to this headline">¶</a></h2>
+<p>여러가지 항목 중에서 한 항목을 선택해야 할 때 콤보 컴포넌트를 사용합니다.</p>
 <p>다음과 같이 선택란을 클릭하면 항목 리스트가 나타납니다.</p>
 <p><img alt="image8" src="../_images/combo-1.png" /></p>
 <p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default" id="id30">
+<div class="figure align-default">
 <img alt="콤보 컴포넌트 속성 설정하기" src="../_images/combo-component-properties_web.png" />
-<p class="caption"><span class="caption-text">콤보 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id30" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <p><strong>① ID</strong></p>
 <p>콤보 컴포넌트의 ID를 입력합니다. 예를 들어, 좋아하는 색을 고르는 컴포넌트의 ID는 ‘좋아하는 색’으로 합니다.</p>
@@ -490,7 +494,7 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 <p><strong>④ 플레이스홀더</strong></p>
 <p>입력해야 할 내용에 대한 안내 문구로 값이 입력되지 않았을 때 표시됩니다.</p>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <p>콤보 컴포넌트의 선택란에 ‘선택하세요’를 표시하려면, 플레이스 홀더에 ‘선택하세요’를 입력하고 기본 선택 아이템으로 ‘선택하세요’를 설정합니다.</p>
 </div>
 <p><strong>⑤ 툴팁 텍스트</strong></p>
@@ -498,15 +502,14 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 </div>
 <div class="section" id="toggle2">
-<span id="id13"></span><h3>토글<a class="headerlink" href="#toggle2" title="제목 주소">¶</a></h3>
-<p>컴포넌트 토글 켜짐(ON), 꺼짐(OFF)과 같은 특정한 상태를 나타낼 때 사용합니다. 토글 컴포넌트를 사용하면 컴포넌트를 클릭할 때마다 미리
+<span id="id12"></span><h2>토글<a class="headerlink" href="#toggle2" title="Permalink to this headline">¶</a></h2>
+<p>켜짐(ON), 꺼짐(OFF)과 같은 특정한 상태를 나타낼 때 사용합니다. 토글 컴포넌트를 사용하면 컴포넌트를 클릭할 때마다 미리
 설정한 항목의 순서대로 입력값이 전환됩니다.</p>
 <p>다음과 같이 컴포넌트를 클릭하여 양호, 불량 상태로 변경할 수 있습니다.</p>
 <p><img alt="image9" src="../_images/toggle.png" /></p>
 <p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default" id="id31">
+<div class="figure align-default">
 <img alt="토글 컴포넌트 속성" src="../_images/toggle-component-properties_web.png" />
-<p class="caption"><span class="caption-text">토글 컴포넌트 속성</span><a class="headerlink" href="#id31" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <p><strong>① ID</strong></p>
 <p>토글 컴포넌트의 ID를 입력합니다. 예를 들어, 첫번째 점검 항목에 대한 컴포넌트인 경우 ‘점검항목 1’로 합니다.</p>
@@ -519,12 +522,11 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 </div>
 <div class="section" id="date2">
-<span id="id14"></span><h3>날짜<a class="headerlink" href="#date2" title="제목 주소">¶</a></h3>
-<p>컴포넌트 날짜 날짜를 입력해야 할 때 사용합니다. 입력란을 클릭하면 날짜 선택창이 나타나며 원하는 날짜를 선택할 수 있습니다.</p>
+<span id="id13"></span><h2>날짜<a class="headerlink" href="#date2" title="Permalink to this headline">¶</a></h2>
+<p>날짜를 입력해야 할 때 사용합니다. 입력란을 클릭하면 날짜 선택창이 나타나며 원하는 날짜를 선택할 수 있습니다.</p>
 <p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default" id="id32">
+<div class="figure align-default">
 <img alt="날짜 컴포넌트 속성 설정하기" src="../_images/datetime-component-properties_02_web.png" />
-<p class="caption"><span class="caption-text">날짜 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id32" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <p><strong>① ID</strong></p>
 <p>날짜 컴포넌트의 ID를 입력합니다. 예를 들어, 휴가 시작일을 선택하는 컴포넌트의 ID는 ‘휴가 시작일’로 합니다.</p>
@@ -547,12 +549,11 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 </div>
 <div class="section" id="numeric2">
-<span id="id15"></span><h3>증감<a class="headerlink" href="#numeric2" title="제목 주소">¶</a></h3>
-<p>컴포넌트 증감 숫자를 입력해야 할 때 사용합니다. 입력란을 클릭하면 오른쪽에 두 개의 화살표가 나타나며, 위 아래 화살표 버튼을 눌러 숫자를 증감시킬 수 있습니다. PC 키보드 환경에서는 입력란에 직접 원하는 숫자를 입력할 수 있습니다. 스마트폰, 태블릿 환경에서는 입력 범위 숫자 리스트에서 스크롤하여 원하는 숫자를 선택할 수 있습니다.</p>
+<span id="id14"></span><h2>증감<a class="headerlink" href="#numeric2" title="Permalink to this headline">¶</a></h2>
+<p>숫자를 입력해야 할 때 사용합니다. 입력란을 클릭하면 오른쪽에 두 개의 화살표가 나타나며, 위 아래 화살표 버튼을 눌러 숫자를 증감시킬 수 있습니다. PC 키보드 환경에서는 입력란에 직접 원하는 숫자를 입력할 수 있습니다. 스마트폰, 태블릿 환경에서는 입력 범위 숫자 리스트에서 스크롤하여 원하는 숫자를 선택할 수 있습니다.</p>
 <p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default" id="id33">
+<div class="figure align-default">
 <img alt="증감 컴포넌트 속성 설정하기" src="../_images/number-component-properties_web.png" />
-<p class="caption"><span class="caption-text">증감 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id33" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <p><strong>① ID</strong></p>
 <p>증감 컴포넌트의 ID를 입력합니다. 예를 들어, 예약 인원을 입력하는 컴포넌트의 ID는 ‘예약 인원’으로 합니다.</p>
@@ -561,8 +562,7 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 <p><strong>③ 증감 단위</strong></p>
 <p>입력란의 증가/감소 아이콘을 클릭할 때마다 현재 입력된 값에서 증감시킬 값을 입력합니다. 예를 들어, 증감 단위를 100으로 설정하고 문서를 작성할 때 입력란 오른쪽의 위 화살표(▲)를 클릭하면 입력된 값에서 200, 300, …으로 증가합니다.</p>
 <p><strong>④ 입력 가능 최솟값/최댓값</strong></p>
-<p>입력 가능 최솟값/최댓값을 지정하여 입력 가능한 숫자의 범위를 설정합니다. 예를 들어, 생년월일의 경우 보통 최솟값을 1900, 최댓값을 현재 년도, 증감
-단위를 1로 지정합니다. 최솟값 또는 최댓값이 지정된 상태에서 범위 외의 숫자를 입력하면 자동으로 최솟값 또는 최댓값이 입력됩니다. 즉, 최댓값이 100으로 지정되었을 때, 입력란에 101을 입력하면 숫자가 자동으로 최댓값인 100으로 변경됩니다.</p>
+<p>입력 가능 최솟값/최댓값을 지정하여 입력 가능한 숫자의 범위를 설정합니다. 예를 들어, 생년월일의 경우 보통 최솟값을 1900, 최댓값을 현재 년도, 증감 단위를 1로 지정합니다. 최솟값 또는 최댓값이 지정된 상태에서 범위 외의 숫자를 입력하면 자동으로 최솟값 또는 최댓값이 입력됩니다. 즉, 최댓값이 100으로 지정되었을 때, 입력란에 101을 입력하면 숫자가 자동으로 최댓값인 100으로 변경됩니다.</p>
 <p><strong>⑤ 플레이스홀더</strong></p>
 <p>입력해야 할 내용에 대한 안내 문구로 값이 입력되지 않았을 때 표시됩니다.</p>
 <p><strong>⑥ 툴팁 텍스트</strong></p>
@@ -570,18 +570,17 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 </div>
 <div class="section" id="camera2">
-<span id="id16"></span><h3>카메라<a class="headerlink" href="#camera2" title="제목 주소">¶</a></h3>
-<p>컴포넌트 카메라 스마트폰, 태블릿 등 카메라가 있는 기기로 사진을 찍어 문서에 삽입하고자 할 경우 사용합니다. 카메라가 없는 PC 환경에서는 컴포넌트를 클릭하면 이미지 파일을 선택할 수 있는 선택창이 나타납니다.
+<span id="id15"></span><h2>카메라<a class="headerlink" href="#camera2" title="Permalink to this headline">¶</a></h2>
+<p>스마트폰, 태블릿 등 카메라가 있는 기기로 사진을 찍어 문서에 삽입하고자 할 경우 사용합니다. 카메라가 없는 PC 환경에서는 컴포넌트를 클릭하면 이미지 파일을 선택할 수 있는 선택창이 나타납니다.
 선택한 이미지의 크기가 입력란의 크기보다 클 경우 입력란 안에 들어갈 수 있도록 축소되어 올라갑니다.</p>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <p>카메라 컴포넌트의 경우 카메라가 연결된 환경에서는 카메라 기능이 실행되고, 카메라가 연결되지 않은 환경에서는 이미지 파일 선택 창이 실행됩니다.</p>
 </div>
 <p><img alt="image10" src="../_images/camera1.png" /></p>
 <p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default" id="id34">
+<div class="figure align-default">
 <img alt="카메라 컴포넌트 속성 설정하기" src="../_images/Camera-component-properties_web.png" />
-<p class="caption"><span class="caption-text">카메라 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id34" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <p><strong>① ID</strong></p>
 <p>카메라 컴포넌트의 ID를 입력합니다. 예를 들어, 신분증 사진을 촬영하는 컴포넌트의 ID는 ‘신분증 사진’으로 합니다.</p>
@@ -591,24 +590,23 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 <p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.
 eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 <div class="admonition tip">
-<p class="admonition-title">팁</p>
+<p class="admonition-title">Tip</p>
 <p>카메라 아이콘 표시에 체크하면 카메라 영역에 카메라 아이콘이 표시됩니다.</p>
 <p><img alt="image11" src="../_images/Camera-component-properties_web_icon.png" /></p>
 </div>
 </div>
 <div class="section" id="record2">
-<span id="id17"></span><h3>녹음<a class="headerlink" href="#record2" title="제목 주소">¶</a></h3>
-<p>컴포넌트 녹음 문서에 사용자의 녹음 데이터를 저장해야 할 때 사용합니다. 녹음 컴포넌트를 추가하면 뷰어에서 다음과 같이 녹음된 내용을 재생하거나
+<span id="id16"></span><h2>녹음<a class="headerlink" href="#record2" title="Permalink to this headline">¶</a></h2>
+<p>문서에 사용자의 녹음 데이터를 저장해야 할 때 사용합니다. 녹음 컴포넌트를 추가하면 뷰어에서 다음과 같이 녹음된 내용을 재생하거나
 새로운 녹음을 할 수 있습니다.</p>
 <p><a class="reference internal" href="../_images/record1.png"><img alt="image12" src="../_images/record1.png" style="width: 400px;" /></a></p>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <p>녹음은 eformsign 앱에서만 동작되는 기능입니다.</p>
 </div>
 <p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default" id="id35">
+<div class="figure align-default">
 <img alt="녹음 컴포넌트 속성 설정하기" src="../_images/record_component_web.png" />
-<p class="caption"><span class="caption-text">녹음 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id35" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <p><strong>① ID</strong></p>
 <p>녹음 컴포넌트의 ID를 입력합니다. 예를 들어, 음성 동의를 녹음하는 컴포넌트의 ID는 ‘음성 동의’로 합니다.</p>
@@ -618,23 +616,22 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 <p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.
 eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 <div class="admonition tip">
-<p class="admonition-title">팁</p>
+<p class="admonition-title">Tip</p>
 <p>녹음 아이콘 표시에 체크하면 녹음 영역에 마이크 아이콘이 표시됩니다.</p>
 <p><img alt="image13" src="../_images/record_component_web_icon.png" /></p>
 </div>
 </div>
 <div class="section" id="attach2">
-<span id="id18"></span><h3>첨부<a class="headerlink" href="#attach2" title="제목 주소">¶</a></h3>
-<p>컴포넌트 첨부 문서에 별도로 첨부 파일을 추가할 수 있도록 할 경우 사용합니다. 첨부 컴포넌트를 통해 문서를 첨부할 경우 문서의 맨 끝에 첨부한 문서가 새로운 페이지로 추가됩니다.</p>
+<span id="id17"></span><h2>첨부<a class="headerlink" href="#attach2" title="Permalink to this headline">¶</a></h2>
+<p>문서에 별도로 첨부 파일을 추가할 수 있도록 할 경우 사용합니다. 첨부 컴포넌트를 통해 문서를 첨부할 경우 문서의 맨 끝에 첨부한 문서가 새로운 페이지로 추가됩니다.</p>
 <p>첨부 가능한 파일의 종류와 크기는 다음과 같습니다.</p>
 <ul class="simple">
 <li><p>파일 종류: PDF, JPG, PNG, GIF</p></li>
 <li><p>파일 크기: 최대 5MB까지</p></li>
 </ul>
 <p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default" id="id36">
+<div class="figure align-default">
 <img alt="첨부 컴포넌트 속성 설정하기" src="../_images/Attachment-component-properties_web.png" />
-<p class="caption"><span class="caption-text">첨부 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id36" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <p><strong>① ID</strong></p>
 <p>첨부 컴포넌트의 ID를 입력합니다. 예를 들어, 재직증명서를 첨부하는 컴포넌트의 ID는 ‘재직증명서 첨부’로 합니다.</p>
@@ -644,35 +641,32 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 <p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.
 eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 <div class="admonition tip">
-<p class="admonition-title">팁</p>
+<p class="admonition-title">Tip</p>
 <p>첨부 아이콘 표시에 체크하면 첨부 영역에 클립 아이콘이 표시됩니다.</p>
 <p><img alt="image14" src="../_images/Attachment-component-properties_web_icon.png" /></p>
 </div>
 </div>
 <div class="section" id="document2">
-<span id="id"></span><h3>문서 ID와 문서 번호<a class="headerlink" href="#document2" title="제목 주소">¶</a></h3>
-<p>문서 ID와 문서 번호 정보 컴포넌트는 문서 내에 문서 관련 정보를 입력해야 할 때 사용합니다. 문서 ID, 문서 번호를 입력할 수 있습니다.</p>
+<span id="id"></span><h2>문서 ID와 문서 번호<a class="headerlink" href="#document2" title="Permalink to this headline">¶</a></h2>
+<p>정보 컴포넌트는 문서 내에 문서 관련 정보를 입력해야 할 때 사용합니다. 문서 ID, 문서 번호를 입력할 수 있습니다.</p>
 <ul>
 <li><p><strong>문서 ID:</strong> 시스템에서 모든 문서에 부여하는 문서의 고유한 ID로, 32자리의 알파벳과 숫자의 조합으로 나타납니다. 예) 0077af27a98846c8872f5333920679b7</p></li>
-<li><p><strong>문서 번호:</strong> <strong>템플릿 설정 &gt; 일반 설정</strong>에서 설정된 문서 번호입니다. 문서 번호를 설정하는 방법은 <a class="reference external" href="#docnumber_wd">문서 번호 설정 방법</a>를
-참고하세요.</p>
+<li><p><strong>문서 번호:</strong> <strong>템플릿 설정 &gt; 일반 설정</strong>에서 설정된 문서 번호입니다. 문서 번호를 설정하는 방법은 <a class="reference external" href="chapter5.html#docnumber_wd">문서 번호 설정 방법</a>을 참고하세요.</p>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
+<p class="admonition-title">Note</p>
 <p>문서 ID는 시스템에서 부여하는 문서 고유의 ID이기 때문에 별도의 설정이 필요하지 않습니다. 문서 번호와 관련된 설정은 템플릿을 업로드한 뒤 <strong>템플릿 설정 &gt; 일반 설정</strong>에서 할 수 있습니다.</p>
 </div>
 </li>
 </ul>
 <p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default" id="id37">
+<div class="figure align-default" id="id19">
 <img alt="문서 컴포넌트 속성 설정하기" src="../_images/document-domponent-properties_web.png" />
-<p class="caption"><span class="caption-text">문서 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id37" title="이 이미지에 대한 퍼머링크">¶</a></p>
+<p class="caption"><span class="caption-text">문서 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
 </div>
 <p><strong>① ID</strong></p>
 <p>문서 컴포넌트의 ID를 입력합니다. 예를 들어, 문서 번호를 입력하는 경우 컴포넌트 ID는 ‘문서 번호’로 합니다.</p>
-</div>
-</div>
-<div class="section" id="id19">
-<h2>템플릿에 대한 추가 설정하기<a class="headerlink" href="#id19" title="제목 주소">¶</a></h2>
+<div class="section" id="id18">
+<h3>템플릿에 대한 추가 설정하기<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
 <p>문서에 컴포넌트를 배치하고 나면 템플릿 제목, 문서 번호, 워크플로우 등 템플릿으로 생성되는 문서에 대한 추가 설정을 할 수 있습니다.</p>
 <p>폼 디자인하기 화면에서 <strong>설정하기</strong> 버튼을 눌러 설정하기 화면으로 이동합니다. 설정하기 화면에서는 다음의 5가지 설정을 하여 템플릿을 설정할 수 있습니다.</p>
 <ul class="simple">
@@ -682,18 +676,18 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
 <li><p><strong>필드 설정:</strong> 필드의 표시 여부, 순서, 기본값, 자동 입력 값 등을 설정합니다.</p></li>
 <li><p><strong>알림 설정:</strong> 템플릿으로 생성된 문서에 대한 요청과 알림을 보낼 메시지를 설정합니다.</p></li>
 </ul>
-<div class="figure align-default" id="id38">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/component_web_2.png"><img alt="템플릿의 5가지 설정 항목" src="../_images/component_web_2.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">템플릿의 5가지 설정 항목</span><a class="headerlink" href="#id38" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <div class="admonition important">
-<p class="admonition-title">중요</p>
+<p class="admonition-title">Important</p>
 <p>해당 템플릿으로 문서를 작성할 수 있도록 하기 위해서는 템플릿을 저장한 후 반드시 배포해야 합니다.</p>
 <p>템플릿을 배포하지 않고 저장만 할 경우 템플릿 사용 권한이 있는 있는 멤버들의 <strong>템플릿으로 문서 작성</strong> 화면에 나타나지 않습니다.</p>
 </div>
 <div class="admonition note">
-<p class="admonition-title">참고</p>
-<p>템플릿에 대한 상세한 설명은 <a class="reference external" href="#template_wd">웹폼 디자이너로 템플릿 만들기</a>를 참고하시기 바랍니다.</p>
+<p class="admonition-title">Note</p>
+<p>템플릿에 대한 상세한 설명은 <a class="reference external" href="chapter6.html#template_wd">웹폼 디자이너로 템플릿 만들기</a>를 참고하시기 바랍니다.</p>
+</div>
 </div>
 </div>
 </div>
@@ -704,11 +698,11 @@ eformsign 앱에서는 키패드 상단 중앙에 표시됩니다.</p>
             <div class="inner"><ul class="page-nav">
   <li class="prev">
     <a href="chapter3.html"
-       title="이전 장">← 문서 작성하기</a>
+       title="previous chapter">← 문서 작성하기</a>
   </li>
   <li class="next">
     <a href="chapter5.html"
-       title="다음 장">폼 빌더 소개 →</a>
+       title="next chapter">폼 빌더 소개 →</a>
   </li>
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2021, FORCS CO., LTD. All rights reserved..
