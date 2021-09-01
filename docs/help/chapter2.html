@@ -95,6 +95,8 @@
                 
                   <li class="toctree-l2"><a href="#id17" class="reference internal">내 서명 관리</a></li>
                 
+                  <li class="toctree-l2"><a href="#id20" class="reference internal">회사 도장 관리</a></li>
+                
               </ul>
             
           </li>
@@ -185,8 +187,11 @@
 <h2>대시보드<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id3">
 <h3>메뉴 구성<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<p>이폼사인 로그인 후 대시보드 대시보드 화면 왼쪽 상단의 메뉴(<img alt="image1" src="../_images/menu_icon.png" />)를 클릭하면, 아래와 같은 사이드바 메뉴가 나타납니다. 메뉴는 사용자의 권한에
-따라 다르게 나타날 수 있습니다. 대표 관리자는 모든 메뉴를 볼 수 있으며, 모든 권한이 있습니다.</p>
+<p>이폼사인 로그인 후 대시보드 대시보드 화면 왼쪽 상단의 메뉴(<img alt="image1" src="../_images/menu_icon.png" />)를 클릭하면, 아래와 같은 사이드바 메뉴가 나타납니다.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>메뉴는 사용자의 권한에 따라 다르게 나타납니다. 대표 관리자는 모든 메뉴를 볼 수 있으며, 모든 권한이 있습니다.</p>
+</div>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/dashboard_menu_expand.png"><img alt="이폼사인 메뉴 구성" src="../_images/dashboard_menu_expand.png" style="width: 700px;" /></a>
 </div>
@@ -194,17 +199,17 @@
 <ul class="simple">
 <li><p><strong>새 문서 작성:</strong> 내 PC에 저장된 문서 파일 또는 eformsign에 등록된 작성 가능한 템플릿 중 선택하여 문서를 작성합니다.</p>
 <ul>
-<li><p><strong>내 파일로 문서 작성:</strong> 미리 저장된 템플릿이 없더라도 내 PC의 파일(PDF)을 eformsign에 바로 업로드한 후 필요한 컴포넌트를 문서
-위에 배치하여 수신자에게 전송합니다.</p></li>
+<li><p><strong>내 파일로 문서 작성:</strong> 미리 저장된 템플릿이 없더라도 내 PC에 저장된 문서 파일을 eformsign에 바로 업로드한 후 필요한 컴포넌트를 문서 위에 추가하여 수신자에게 전송합니다.</p></li>
 <li><p><strong>템플릿으로 문서 작성:</strong> 문서를 작성할 수 있는 템플릿 목록이 조회되고, 템플릿을 선택하여 문서를 작성합니다.</p></li>
 </ul>
 </li>
 <li><p><strong>임시 보관함</strong>: <strong>내 파일로 문서 작성</strong> 중 <strong>문서 시작하기</strong> 전 단계에서 임시 저장한 문서 목록을 볼 수 있습니다.</p></li>
 <li><p><strong>문서함:</strong> 나와 관련된 문서 목록을 확인합니다.</p>
 <ul>
-<li><p><strong>처리할 문서함:</strong> 내가 작성 또는 처리한 문서 중 결재, 작성, 요청 등 내가 처리할 사항이 있는 문서 목록을 볼 수 있습니다.</p></li>
-<li><p><strong>진행 중 문서함:</strong> 내가 작성 또는 처리한 문서 중 완료되지 않은 문서 목록을 볼 수 있습니다.</p></li>
-<li><p><strong>완료 문서함:</strong> 내가 작성 또는 처리한 문서 중 완료된 문서 목록을 볼 수 있습니다.</p></li>
+<li><p><strong>처리할 문서함:</strong> 내가 처리해야 할 문서(다른 멤버가 나에게 요청한 문서), 또는 멤버가 아닌 수신자에게 보낸 문서 중 처리되지 않은 문서 목록을 볼 수 있습니다.</p></li>
+<li><p><strong>진행 중 문서함:</strong> 내가 작성 또는 처리한 문서 중 아직 완료되지 않은 문서 목록을 볼 수 있습니다.</p></li>
+<li><p><strong>완료 문서함:</strong> 내가 작성한 문서 중 완료된 모든 문서 목록을 볼 수 있습니다.</p></li>
+<li><p><strong>일괄 작성 문서함:</strong> 내가 일괄로 작성한 문서의 진행 상태 등 일괄 작성 문서에 대한 현황을 확인할 수 있습니다.</p></li>
 </ul>
 </li>
 <li><p><strong>문서 관리:</strong> 문서 관리 권한이 있어야만 접근 가능한 메뉴입니다. 문서 관리 권한이 있는 템플릿으로 만들어진 모든 문서를
@@ -216,9 +221,10 @@
 <li><p><strong>회사 정보:</strong> 회사 정보 회사 정보를 확인 및 수정하고 대시보드, 이메일 등에 적용되는 브랜드 이미지를 설정할 수 있습니다.</p></li>
 <li><p><strong>그룹 관리:</strong> 멤버 그룹을 생성하거나 그룹 정보를 수정할 수 있습니다.</p></li>
 <li><p><strong>멤버 관리:</strong> 멤버를 초대하거나 멤버 정보를 수정할 수 있습니다.</p></li>
-<li><p><strong>사용자 정의 필드 관리:</strong> 회사, 그룹, 멤버에 대한 추가 정보를 입력하거나 수정할 수 있습니다.</p></li>
-<li><p><strong>알림 템플릿 관리:</strong> eformsign에서 발송되는 이메일, SMS 알림 템플릿 목록을 확인하고 수정할 수 있습니다.</p></li>
+<li><p><strong>회사 도장 관리:</strong> 법인인감, 사용인감 등 회사의 공식 도장을 등록하고 각 도장 별 사용 권한을 설정할 수 있으며, 도장 사용 내역을 확인할 수 있습니다.</p></li>
 <li><p><strong>서명 설정:</strong> 그리기, 텍스트, 도장 중 서명하는 방식을 설정할 수 있습니다.</p></li>
+<li><p><strong>알림 템플릿 관리:</strong> eformsign에서 발송되는 이메일, SMS 알림 템플릿 목록을 확인하고 수정할 수 있습니다.</p></li>
+<li><p><strong>사용자 정의 필드 관리:</strong> 회사, 그룹, 멤버에 대한 추가 정보를 입력하거나 수정할 수 있습니다.</p></li>
 </ul>
 </li>
 <li><p><strong>커넥트:</strong> 대표 관리자만 접근 가능한 메뉴입니다. 외부 서비스와 연계하여 사용하는 기능들을 확인할 수 있습니다.</p>
@@ -242,7 +248,7 @@
 <div class="section" id="id4">
 <h3>대시보드 화면 구성<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>이폼사인 로그인 후 나타나는 대시보드 화면은 권한에 관계없이 모두 동일하게 나타납니다 . 내가 처리해야 할 문서, 진행 중인 문서 등을
-한눈에 확인할 수 있으며, <strong>새 문서 작성하기</strong> 등 주요 메뉴로 바로가기를 제공합니다.</p>
+한눈에 확인할 수 있으며, <strong>새 문서 작성하기</strong>, <strong>문서함</strong> 등 주요 메뉴로 바로가기를 제공합니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/dashboard_main.png"><img alt="대시보드 화면" src="../_images/dashboard_main.png" style="width: 700px;" /></a>
 </div>
@@ -401,7 +407,7 @@
 </div>
 <div class="section" id="id9">
 <h2>권한 구분<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
-<p>이폼사인은 멤버에게 권한을 부여할 수 있으며, 총 5단계로 세분화된 권한별 관리가 가능합니다. 사용자별 권한은 다음과 같이 구분됩니다.</p>
+<p>이폼사인은 멤버에게 권한을 부여할 수 있으며, 총 6단계로 세분화된 권한별 관리가 가능합니다. 사용자별 권한은 다음과 같이 구분됩니다.</p>
 <ul>
 <li><p><strong>대표 관리자</strong></p>
 <p>회사의 대표자로 이폼사인 사용에 대한 모든 권한이 있습니다.</p>
@@ -412,12 +418,19 @@
 <li><p><strong>템플릿 관리</strong></p>
 <p><strong>템플릿 관리</strong> 메뉴에 접근할 수 있습니다. 폼 빌더를 사용하여 폼파일을 만들거나 웹폼 디자이너로 파일을 업로드하여 새로운 템플릿을 등록할 수 있으며, 템플릿을 수정, 배포 및 삭제할 수 있습니다.</p>
 </li>
+<li><p><strong>템플릿별 권한</strong></p>
+<p>템플릿별로 멤버 또는 그룹에게 다음과 같은 권한을 부여할 수 있습니다.</p>
+<ul>
 <li><p><strong>템플릿 사용 권한</strong></p>
-<p>템플릿 사용 권한은 템플릿으로 문서를 작성할 수 있는 권한을 말합니다. 템플릿 별로 <strong>템플릿 사용 권한(문서 작성 권한)</strong>을 부여할 수 있습니다. 권한을 부여 받은 멤버의 <strong>템플릿으로 문서 작성</strong> 화면에 해당 템플릿이 나타나며 문서를 작성할 수 있습니다.</p>
+<p>템플릿 사용 권한은 템플릿으로 문서를 작성할 수 있는 권한을 말합니다. 권한을 부여 받은 멤버의 <strong>템플릿으로 문서 작성</strong> 화면에 해당 템플릿이 나타나며 문서를 작성할 수 있습니다.</p>
 </li>
-<li><p><strong>문서 관리</strong></p>
+<li><p><strong>템플릿 수정 권한</strong></p>
+<p>템플릿 수정 권한은 해당 템플릿을 수정할 수 있는 권한입니다.</p>
+</li>
+<li><p><strong>문서 관리 권한</strong></p>
 <p><strong>문서 관리</strong> 메뉴에 접근하여 템플릿 별로 생성된 문서를 열람하고 다운로드 받을 수 있습니다.</p>
-<p><strong>문서 관리 권한</strong>은 템플릿 별로 다르게 지정할 수 있습니다.</p>
+</li>
+</ul>
 </li>
 </ul>
 <div class="section" id="id10">
@@ -473,7 +486,7 @@
 </div>
 <div class="section" id="id12">
 <h3>템플릿 관리 권한<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
-<p>템플릿 관리 권한 템플릿 관리자는 <strong>템플릿 관리</strong> 메뉴에 접근 권한을 가지며, 템플릿을 등록, 수정, 배포, 삭제할 수 있습니다.</p>
+<p>템플릿 관리자는 <strong>템플릿 관리</strong> 메뉴에 접근 권한을 가지며, 템플릿을 등록, 수정, 배포, 삭제할 수 있습니다.</p>
 <p>템플릿을 등록한 템플릿 관리자는 해당 템플릿의 템플릿 소유자가 됩니다. 한 회사에 여러 명의 템플릿 관리자가 있는 경우 템플릿 소유자와 템플릿 관리자가 다를 수 있습니다.</p>
 <p>템플릿 관리자가 템플릿 소유자가 아닌 경우 해당 템플릿의 설정 보기와 템플릿 복제만 할 수 있습니다.</p>
 <p><strong>템플릿 관리 권한 부여하는 방법</strong></p>
@@ -493,11 +506,14 @@
 </ol>
 </div>
 <div class="section" id="id13">
-<h3>템플릿 사용(=문서 생성) 및 문서 관리 권한<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
-<p>각 템플릿 별로 문서를 생성할 수 있는 권한과 생성된 문서와 문서에 입력된 데이터를 관리하는 권한을 부여할 수 있습니다.</p>
-<p><strong>템플릿 사용 권한</strong>이 부여된 멤버는 <strong>새 문서 작성</strong> 메뉴 화면에서 해당 템플릿으로 문서를 작성할 수 있습니다.</p>
-<p><strong>문서 관리 권한</strong>이 부여된 멤버는 <strong>문서 관리</strong> 메뉴 화면에서 해당 템플릿으로 작성된 문서를 열람, 삭제, 다운로드할 수 있습니다.</p>
-<p><strong>문서 작성을 위한 템플릿 사용 권한 및 문서 관리 권한 부여하는 방법</strong></p>
+<h3>템플릿별 권한<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>각 템플릿 별로 문서를 생성할 수 있는 <strong>템플릿 사용 권한</strong>과 템플릿을 수정할 수 있는 <strong>수정 권한</strong>, 그리고 템플릿으로 생성된 문서와 문서에 입력된 데이터를 관리하는 <strong>문서 관리 권한</strong>을 부여할 수 있습니다.</p>
+<ul class="simple">
+<li><p><strong>템플릿 사용 권한</strong>이 부여된 멤버는 <strong>새 문서 작성</strong> 메뉴 화면에서 해당 템플릿으로 문서를 작성할 수 있습니다.</p></li>
+<li><p><strong>템플릿 수정 권한</strong>이 부여된 멤버는 <strong>템플릿 관리</strong>에서 해당 템플릿을 수정할 수 있습니다.</p></li>
+<li><p><strong>문서 관리 권한</strong>이 부여된 멤버는 <strong>문서 관리</strong> 메뉴 화면에서 해당 템플릿으로 작성된 문서를 열람, 삭제, 다운로드할 수 있습니다.</p></li>
+</ul>
+<p><strong>권한 부여하는 방법</strong></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>이 작업은 <strong>대표 관리자</strong> 또는 <strong>템플릿 관리</strong> 권한이 필요합니다.</p>
@@ -576,8 +592,9 @@
 </div>
 <div class="section" id="id17">
 <h2>내 서명 관리<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
-<p><strong>내 서명</strong> 메뉴에서 <strong>서명, 이니셜, 도장</strong>을 등록해두면 문서 처리시 등록된 서명으로 간편하게 처리할 수 있습니다.</p>
-<p><strong>서명/이니셜 등록하는 방법</strong></p>
+<p><strong>내 서명</strong> 메뉴에서 <strong>서명, 이니셜, 도장</strong>을 등록해두면 문서 작성 시 등록된 서명을 간편하게 사용할 수 있습니다.</p>
+<div class="section" id="id18">
+<h3><strong>서명/이니셜 등록하는 방법</strong><a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>작업은 <strong>PC, 모바일, 애플리케이션</strong>에서 진행할 수 있습니다.</p>
@@ -599,26 +616,49 @@
 <li><p><strong>텍스트</strong></p>
 <p>내 이름을 입력하여 원하는 스타일의 폰트가 적용된 서명을 선택합니다.</p>
 </li>
-<li><p><strong>QR 코드로 서명</strong></p>
-<p>QR 코드로 서명 스마트폰 카메라를 통해 QR 코드를 인식하면 서명 패드 화면으로 연결됩니다. 서명 패드에 직접 서명을 그려서 입력합니다.</p>
+<li><p><strong>모바일</strong></p>
+<p>모바일 기기의 카메라로 QR 코드를 인식하면 서명 패드 화면으로 연결됩니다. 서명 패드에 직접 서명을 그려서 입력합니다.</p>
 </li>
-<li><p><strong>앱에서 서명</strong></p>
-<p>앱에서 서명 연결하고자 하는 모바일 기기를 선택한 뒤 <strong>전송</strong> 버튼을 누르면 해당 기기의 이폼사인 앱에서 서명을 입력할 수 있습니다.</p>
+<li><p><strong>eformsign</strong></p>
+<p>연결하고자 하는 모바일 기기를 선택한 뒤 <strong>전송</strong> 버튼을 누르면 해당 기기의 이폼사인 앱에서 서명을 입력할 수 있습니다.</p>
 </li>
 </ul>
 </li>
 <li><p><strong>확인</strong> 버튼을 클릭해 서명을 저장합니다.</p></li>
-<li><p><strong>편집, 삭제</strong> 버튼으로 서명을 편집하거나 삭제합니다.</p></li>
+<li><p><strong>편집, 삭제</strong> 버튼으로 서명을 편집하거나 삭제합니다.</p>
+<blockquote>
+<div><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>전자문서에 첨부될 서명 방식을 설정할 수 있습니다.</p>
+<p><strong>회사 관리</strong> &gt; <strong>서명 설정</strong> 에서 그리기, 텍스트 중 문서의 서명란에 표시될 서명 방식을 제한하거나 허용할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/signature-method.png"><img alt="서명 방식 설정 화면" src="../_images/signature-method.png" style="width: 400px;" /></a>
+</div>
+</div></blockquote>
+</div>
+</div></blockquote>
+</li>
 </ol>
-<p><strong>도장 등록하는 방법</strong></p>
-<p>도장 등록 문서에 직접 서명이 아닌 직인이나 개인 도장을 사용해야 하는 경우가 있습니다. 이폼사인에서는 도장 이미지를 사용해 문서의 서명란에 도장을 찍을 수 있습니다.</p>
-<div class="admonition note">
+</div>
+<div class="section" id="id19">
+<h3><strong>도장 등록하는 방법</strong><a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><blockquote>
+<div><p>문서에 직접 서명이 아닌 직인이나 도장을 사용해야 하는 경우가 있습니다. 이폼사인에서는 도장 이미지를 등록하거나, 실물 도장을 실물 크기 그대로 스캔하여 등록한 후 문서의 서명란에 도장을 찍을 수 있습니다.</p>
+</div></blockquote>
+<ul>
+<li><p><strong>도장 이미지 등록</strong></p>
+<blockquote>
+<div><div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>도장 이미지를 미리 준비해야 합니다.</p>
-<ul class="simple">
+<blockquote>
+<div><ul class="simple">
 <li><p>이미지 형식: PNG, JPG</p></li>
 <li><p>파일 크기: 최대 300KB</p></li>
 </ul>
+</div></blockquote>
 </div>
 <ol class="arabic">
 <li><p>사이드바 메뉴에서 <strong>내 서명</strong>으로 이동합니다.</p></li>
@@ -635,10 +675,72 @@
 <li><p><strong>확인</strong> 버튼을 클릭해 도장을 저장합니다.</p></li>
 <li><p><strong>편집, 삭제</strong> 버튼으로 등록된 도장을 편집 또는 삭제합니다.</p></li>
 </ol>
+</div></blockquote>
+</li>
+<li><p><strong>실물 도장 스캔</strong></p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>실제 등록하고 싶은 도장과 이폼사인에서 제공하는 <strong>도장 스캔 용지</strong>를 다운로드 및 출력해 준비합니다.</p>
+</div>
+<ol class="arabic">
+<li><p><strong>내 서명**에서 **도장 등록</strong> 버튼을 클릭 후 <strong>실물 도장 스캔</strong> 탭을 클릭합니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/signature-stamp-scan-popup.png"><img alt="도장 등록 버튼" src="../_images/signature-stamp-scan-popup.png" style="width: 700px;" /></a>
+</div>
+</li>
+<li><p><strong>도장 스캔 용지</strong>를 다운로드 후 인쇄합니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/signature-stamp-scan-paper.png"><img alt="도장 스캔 용지" src="../_images/signature-stamp-scan-paper.png" style="width: 700px;" /></a>
+</div>
+</li>
+<li><p><strong>스캔 전용 용지</strong>의 스캔 영역 중앙에 도장을 찍습니다.</p></li>
+<li><p>모바일 기기의 카메라 앱을 사용하여 QR 코드를 인식하면 도장 스캔 화면으로 이동합니다.</p></li>
+<li><p>해당 화면에서 도장이 찍힌 스캔 전용 용지의 스캔 영역을 인식합니다.</p></li>
+<li><p>추출된 도장 이미지를 확인한 후 저장하면 도장이 등록됩니다.</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id20">
+<h2>회사 도장 관리<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<p><strong>회사 도장 관리</strong> 메뉴에서는 회사내에서 사용되는 법인 인감, 사용 인감 등 회사 도장을 여러 개 등록하고 관리할 수 있습니다.
+도장 별로 멤버 또는 그룹에게 도장 사용 권한을 부여하고 도장 사용 내역을 확인할 수 있습니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>전자문서에 첨부될 서명 방식을 설정할 수 있습니다.</p>
-<p><strong>회사 관리</strong> &gt; <strong>서명 설정</strong> 에서 그리기, 텍스트, 도장 중 문서의 서명란에 표시될 서명 방식을 제한하거나 허용할 수 있습니다.</p>
+<p>회사 도장 관리는 대표 관리자 또는 회사 관리 권한이 있어야 합니다.</p>
+</div>
+<div class="section" id="id21">
+<h3><strong>회사 도장</strong><a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<p>회사에서 사용되는 도장을 여러 개 등록하고 관리할 수 있습니다. 도장 별로 사용 권한을 다르게 부여할 수 있으며, 도장에 대한 모든 변경 이력을 확인할 수 있습니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/menu-company-stamp.png"><img alt="회사 도장 관리 화면" src="../_images/menu-company-stamp.png" style="width: 700px;" /></a>
+</div>
+<p>회사 도장을 등록하려면 <strong>회사 도장 등록</strong> 버튼을 클릭하여 도장 이름, 설명, 도장 이미지 업로드 또는 실물 도장 스캔, 도장 사용 권한을 설정합니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/company-stamp-register.png"><img alt="회사 도장 등록 팝업" src="../_images/company-stamp-register.png" style="width: 400px;" /></a>
+</div>
+<ul class="simple">
+<li><p><strong>도장 이름</strong>: 도장 이름을 입력합니다.</p></li>
+<li><p><strong>설명</strong>: 도장 사용 시 참고할 수 있는 내용을 입력합니다.</p></li>
+<li><p><strong>도장 이미지</strong>: 도장 이미지는 <strong>도장 이미지 파일을 업로드</strong> 하거나 <a href="#id22"><span class="problematic" id="id23">**</span></a>실물 도장 스캔**으로 도장 이미지를 등록합니다.</p></li>
+<li><p><strong>도장 사용 권한</strong>: 도장 사용 권한을 멤버 전체 또는 특정 그룹 또는 멤버에게 부여할 수 있습니다.</p></li>
+</ul>
+<p>등록된 도장에 대해서는 편집, 삭제 및 변경 이력 확인이 가능합니다. 도장에 대한 변경 이력은 다음과 같이 나타납니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/company-stamp-register-history.png"><img alt="회사 도장 변경 이력 화면" src="../_images/company-stamp-register-history.png" style="width: 700px;" /></a>
+</div>
+</div>
+<div class="section" id="id24">
+<h3><strong>도장 사용 내역</strong><a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<p>사용된 모든 도장의 이력을 볼 수 있습니다. 도장 별로 도장을 사용한 멤버, 날짜, 문서 등의 정보가 나타납니다.
+사용된 도장을 누가 언제 사용했는지 한눈에 확인할 수 있어 관리가 가능합니다. 도장 사용 내역은 CSV 파일로도 다운로드 가능하여 별도로 관리할 수 있습니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/company-stamp-history.png"><img alt="회사 사용 내역 화면" src="../_images/company-stamp-history.png" style="width: 700px;" /></a>
+</div>
 </div>
 </div>
 </div>
