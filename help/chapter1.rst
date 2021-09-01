@@ -128,7 +128,7 @@ eformsign을 사용하기 전에 숙지하고 있어야 할 eformsign의 기본 
 
    .. figure:: resources/workflow_new.png
       :alt: 워크플로우 단계
-      :width: 300px
+      :width: 600px
 
 
 
