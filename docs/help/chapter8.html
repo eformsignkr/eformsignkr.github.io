@@ -125,9 +125,9 @@
                 
                   <li class="toctree-l2"><a href="#id3" class="reference internal">문서함 구성</a></li>
                 
-                  <li class="toctree-l2"><a href="#bulksend-documents" class="reference internal">일괄 작성 문서함</a></li>
-                
                   <li class="toctree-l2"><a href="#drafts" class="reference internal">임시 보관함</a></li>
+                
+                  <li class="toctree-l2"><a href="#bulksend-documents" class="reference internal">일괄 작성 문서함</a></li>
                 
               </ul>
             
@@ -281,10 +281,10 @@
 </li>
 </ul>
 <p><strong>키워드 및 필터 검색</strong></p>
-<p>검색은 키워드 검색뿐 아니라, 상세 검색을 통해 제목이나 내용을 조합해서 검색하거나, 숫자, 날짜 범위를 지정해 검색, 사용자 지정 필터를 통한 검색 등 다양한 검색 방법을 제공하고 있습니다. 또한, 사용자 지정 필터를 설정해서 문서의 입력필드 값을 상세 검색할 수 있습니다. 또한, 사용자 지정 필터를 통해 숫자의 범위, 날짜의 기간을 설정해서 검색할 수도 있습니다.</p>
+<p>검색은 키워드 검색뿐 아니라, 상세 검색을 통해 제목이나 내용을 조합해서 검색하거나, 숫자, 날짜 범위를 지정해 검색, 사용자 지정 필터를 통한 검색 등 다양한 검색 방법을 제공하고 있습니다. 또한, 사용자 지정 필터를 설정해서 문서의 입력필드 값을 상세 검색할 수 있으며, 숫자의 범위, 날짜의 기간을 설정해서 검색할 수도 있습니다.</p>
 <p>필터를 사용해서 검색 가능한 필터는 다음과 같습니다. 한편, 사용자 지정 필터는 완료 문서함과 문서 관리에서만 사용할 수 있습니다.</p>
 <table class="docutils align-default" id="id12">
-<caption><span class="caption-text">필터 종류 리스트</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text"><strong>필터 종류 리스트</strong></span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 19%" />
 <col style="width: 28%" />
@@ -292,8 +292,8 @@
 <col style="width: 26%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>진행 중 문서함</p></th>
-<th class="head"><p>처리할 문서함</p></th>
+<tr class="row-odd"><th class="head"><p>처리할 문서함</p></th>
+<th class="head"><p>진행 중 문서함</p></th>
 <th class="head"><p>완료 문서함</p></th>
 <th class="head"><p>문서 관리</p></th>
 </tr>
@@ -316,60 +316,55 @@
 </tr>
 <tr class="row-odd"><td><p>문서 ID</p></td>
 <td><p>문서 ID</p></td>
-<td><p>문서 번호</p></td>
-<td><p>문서 번호</p></td>
+<td><p>문서 ID</p></td>
+<td><p>문서 ID</p></td>
 </tr>
 <tr class="row-even"><td><p>문서 번호</p></td>
 <td><p>문서 번호</p></td>
-<td><p>상태</p></td>
-<td><p>단계</p></td>
+<td><blockquote>
+<div><p>문서 번호</p>
+</div></blockquote>
+<p>단계</p>
+</td>
+<td><blockquote>
+<div><p>문서 번호</p>
+</div></blockquote>
+<p>단계
+작성자</p>
+</td>
 </tr>
-<tr class="row-odd"><td><p>상태</p></td>
-<td><p>상태</p></td>
-<td><p>단계</p></td>
-<td><p>작성자</p></td>
-</tr>
-<tr class="row-even"><td><p>템플릿 이름</p></td>
+<tr class="row-odd"><td><p>템플릿 이름</p></td>
 <td><p>템플릿 이름</p></td>
 <td><p>작성자</p></td>
 <td><p>작성일</p></td>
 </tr>
-<tr class="row-odd"><td><p>단계</p></td>
+<tr class="row-even"><td><p>단계</p></td>
 <td><p>단계</p></td>
 <td><p>작성일</p></td>
 <td><p>처리자</p></td>
 </tr>
-<tr class="row-even"><td><p>작성자</p></td>
+<tr class="row-odd"><td><p>작성자</p></td>
 <td><p>작성자</p></td>
 <td><p>처리자</p></td>
 <td><p>처리일</p></td>
 </tr>
-<tr class="row-odd"><td><p>작성일</p></td>
+<tr class="row-even"><td><p>작성일</p></td>
 <td><p>작성일</p></td>
 <td><p>처리일</p></td>
 <td><p>사용자 지정 필터</p></td>
 </tr>
-<tr class="row-even"><td><p>처리자</p></td>
-<td><p>요청자</p></td>
-<td><p>단계의 상태</p></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>처리일</p></td>
-<td><p>요청일</p></td>
-<td><p>사용자 지정 필터</p></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>단계의 상태</p></td>
-<td><p>단계의 상태</p></td>
+<tr class="row-odd"><td><p>요청자</p></td>
+<td><p>처리자</p></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><ul class="simple">
-<li></li>
-</ul>
+<tr class="row-even"><td><p>요청일</p></td>
+<td><blockquote>
+<div><p>처리일</p>
+</div></blockquote>
+<p>문서 처리 경과일수</p>
 </td>
-<td><p>문서 처리 경과일수</p></td>
-<td></td>
+<td><p>사용자 지정 필터</p></td>
 <td></td>
 </tr>
 </tbody>
@@ -468,10 +463,10 @@
 <p>각 문서함의 문서 리스트에서 수행할 수 있는 추가 작업에는 미리보기, 삭제 요청, 반려 요청 승인하기, 재요청, 완료 문서 전송 등이 있습니다.</p>
 <ul>
 <li><p><strong>처리할 문서함</strong></p>
-<p>미리보리, 수정, 취소, 재요청, 완료 문서 전송, 다운로드를 할 수 있습니다.</p>
+<p>편집, 검토하기, 재요청, 미리보기, 수정, 취소, 완료 문서 전송, 다운로드를 할 수 있습니다.</p>
 </li>
 <li><p><strong>진행 중 문서함</strong></p>
-<p>미리보기, 수정, 취소, 완료 문서 전송, 다운로드를 할 수 있습니다.</p>
+<p>재요청, 미리보기, 수정, 취소, 완료 문서 전송, 다운로드를 할 수 있습니다.</p>
 </li>
 <li><p><strong>완료 문서함</strong></p>
 <p>미리보기, 취소, 완료 문서 전송, 다운로드를 할 수 있습니다.</p>
@@ -484,8 +479,8 @@
 <div class="section" id="history">
 <span id="id6"></span><h3>상태 및 이력보기<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h3>
 <p>문서함 목록에서 문서를 선택하면 해당 문서의 상태와 이력을 화면 오른쪽에서 확인할 수 있습니다.</p>
-<p><strong>문서 상태</strong>에서는 워크플로우 단계별로 문서가 언제, 누구에 의해 작성/처리되었는지 확인할 수 있습니다.</p>
-<p><strong>이력</strong>에서는 작성자 및 수신자 관점에서 시간 순으로 누가 어떤 작업을 수행했는지를 보여줍니다.</p>
+<p>-<strong>문서 상태</strong>: 워크플로우 단계별로 문서가 언제, 누구에 의해 작성/처리되었는지 표시
+-<strong>이력</strong>: 작성자 및 수신자 관점에서 시간 순으로 누가 어떤 작업을 수행했는지 표시</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/document_status.png"><img alt="문서 상태 탭" src="../_images/document_status.png" style="width: 300px;" /></a>
 </div>
@@ -506,41 +501,51 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>CSV 다운로드는 문서에 입력된 데이터를 엑셀 파일로 다운로드 받아 별도로 관리할 수 있습니다. CSV 다운로드를 선택하고 다운받을 데이터를
-확인한 후 다운로드 버튼을 클릭합니다.</p>
+<p><strong>CSV 다운로드</strong>는 문서에 입력된 데이터를 엑셀 파일로 다운로드 받아 별도로 관리할 수 있습니다. CSV 다운로드를 선택하고 다운받을 데이터를 확인한 후 <strong>다운로드</strong> 버튼을 클릭합니다.</p>
 </div>
 </div>
 <div class="section" id="document-delete">
 <span id="id8"></span><h3>문서 삭제하기<a class="headerlink" href="#document-delete" title="Permalink to this headline">¶</a></h3>
 <p>eformsign에서는 지정된 관리자만 문서를 삭제할 수 있습니다.</p>
 <ol class="arabic simple">
-<li><p>문서함 리스트의 오른쪽 삭제(<img alt="image13" src="../_images/delete_icon1.png" />) 아이콘을 클릭합니다.</p></li>
-<li><p>삭제할 문서를 선택하고 삭제 버튼을 클릭합니다.</p></li>
+<li><p>문서함 목록에서 오른쪽 상단에 있는 삭제(<img alt="image13" src="../_images/delete_icon1.png" />) 아이콘을 클릭합니다.</p></li>
+<li><p>삭제할 문서를 선택한 후 <strong>삭제</strong> 버튼을 클릭합니다.</p></li>
 <li><p>삭제 확인 팝업창에서 <strong>예</strong>를 클릭하면 문서가 삭제됩니다.</p></li>
 </ol>
 </div>
 <div class="section" id="document-column">
 <span id="id9"></span><h3>문서함 컬럼 설정<a class="headerlink" href="#document-column" title="Permalink to this headline">¶</a></h3>
-<p>문서함 오른쪽 상단의 아이콘 중 컬럼(<a class="reference internal" href="../_images/column_icon.png"><img alt="image14" src="../_images/column_icon.png" style="width: 35px;" /></a>) 아이콘을 클릭하면 리스트에 어떤 컬럼을 보여줄 지를 선택할 수 있습니다.</p>
+<p>문서함 오른쪽 상단의 아이콘 중 컬럼(<a class="reference internal" href="../_images/column_icon.png"><img alt="image14" src="../_images/column_icon.png" style="width: 35px;" /></a>) 아이콘을 클릭하면 목록에서 어떤 컬럼을 보여줄 지 선택할 수 있습니다.</p>
 <div class="figure align-default">
 <img alt="문서함 컬럼 설정 아이콘" src="../_images/column_type.png" />
 </div>
 </div>
 </div>
+<div class="section" id="drafts">
+<span id="id10"></span><h2>임시 보관함<a class="headerlink" href="#drafts" title="Permalink to this headline">¶</a></h2>
+<p><strong>임시 보관함</strong>에는 <strong>내 파일로 문서 작성</strong> 과정에서 <strong>문서를 전송하기</strong> 이전에 <strong>임시 보관함에 저장</strong>을 클릭하여 저장한 문서들이 보관됩니다. <strong>임시 보관함</strong>에 저장된 파일은 언제든지 다시 열어 이후 단계를 계속 진행하거나 문서를 삭제할 수 있습니다.</p>
+<ol class="arabic">
+<li><p>사이드바 메뉴에서 <strong>임시 보관함</strong>을 클릭하여 이동합니다.</p>
+<p><a class="reference internal" href="../_images/draftbox-menu.png"><img alt="image15" src="../_images/draftbox-menu.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>임시 저장된 문서 목록에서 원하는 문서의 <strong>계속</strong> 버튼을 클릭합니다.</p>
+<p><a class="reference internal" href="../_images/draftbox-documentlist.png"><img alt="image16" src="../_images/draftbox-documentlist.png" style="width: 700px;" /></a></p>
+</li>
+<li><p><strong>내 파일로 문서 작성</strong> 화면에서 문서를 수정한 후 전송합니다.</p></li>
+</ol>
+</div>
 <div class="section" id="bulksend-documents">
-<span id="id10"></span><h2>일괄 작성 문서함<a class="headerlink" href="#bulksend-documents" title="Permalink to this headline">¶</a></h2>
+<span id="id11"></span><h2>일괄 작성 문서함<a class="headerlink" href="#bulksend-documents" title="Permalink to this headline">¶</a></h2>
 <p>일괄 작성 문서함에서는 일괄 작성으로 대량 전송한 문서를 한 눈에 볼 수 있습니다. 일괄 작성한 문서의 진행 상황을 확인하고, 예약 전송 변경, 취소 또는 재요청 등을 할 수 있습니다.</p>
 <div class="figure align-default">
 <img alt="일괄 작성 문서함" src="../_images/bulksend-documents.png" />
 </div>
 <p>일괄 작성한 문서 목록에서 상세 보기를 클릭하면 전송된 문서의 응답 여부, 단계 상태 등을 확인할 수 있습니다.</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>문서의 응답/미응답 여부 확인</p></li>
 <li><p>일괄 또는 개별 재요청, 문서 취소, 다운로드(PDF, CSV 파일) 가능</p></li>
 <li><p>문서 별 단계, 상태 및 이력 확인 가능</p></li>
 </ul>
-</div></blockquote>
 <div class="figure align-default">
 <img alt="일괄 작성 문서함-상세보기" src="../_images/bulksend-documents-detail.png" />
 </div>
@@ -552,19 +557,6 @@
 <div class="figure align-default">
 <img alt="일괄 작성 문서함-예약 변경" src="../_images/bulksend-schedule-change.png" />
 </div>
-</div>
-<div class="section" id="drafts">
-<span id="id11"></span><h2>임시 보관함<a class="headerlink" href="#drafts" title="Permalink to this headline">¶</a></h2>
-<p><strong>임시 보관함</strong>에는 <strong>내 파일로 문서 작성</strong> 과정에서 <strong>문서를 전송하기</strong> 이전에 <strong>임시 보관함에 저장</strong>을 클릭하여 저장한 문서들이 보관됩니다. <strong>임시 보관함</strong>에 저장된 파일은 언제든지 다시 열어 이후 단계를 계속 진행하거나 문서를 삭제할 수 있습니다.</p>
-<ol class="arabic">
-<li><p>사이드바 메뉴에서 <strong>임시 보관함</strong>을 클릭하여 이동합니다.</p>
-<p><a class="reference internal" href="../_images/draftbox-menu.png"><img alt="image15" src="../_images/draftbox-menu.png" style="width: 700px;" /></a></p>
-</li>
-<li><p>임시 저장된 문서 목록에서 원하는 문서의 <strong>계속</strong> 버튼을 클릭합니다.</p>
-<p><a class="reference internal" href="../_images/draftbox-documentlist.png"><img alt="image16" src="../_images/draftbox-documentlist.png" style="width: 700px;" /></a></p>
-</li>
-<li><p><strong>내 파일로 문서 작성</strong> 화면에서 문서를 수정 후 전송합니다.</p></li>
-</ol>
 </div>
 </div>
 
