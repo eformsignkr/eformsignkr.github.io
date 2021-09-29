@@ -353,6 +353,11 @@ eformsign에서는 지정된 관리자만 문서를 삭제할 수 있습니다.
 3. **내 파일로 문서 작성** 화면에서 문서를 수정한 후 전송합니다.
 
 
+.. note::
+
+   내 파일로 문서 작성하는 방법은 `내 파일로 문서 작성하기 <chapter3.html#id2>`__ 를 참고하시기 바랍니다.
+
+
 
 .. _bulksend_documents:
 
@@ -376,7 +381,7 @@ eformsign에서는 지정된 관리자만 문서를 삭제할 수 있습니다.
 .. figure:: resources/bulksend-documents-detail.png
    :alt: 일괄 작성 문서함-상세보기
 
-.. note::
+.. tip::
 
    일괄로 재요청 시 수신자 정보는 수정할 수 없으며, 처음 입력한 이메일 주소 또는 휴대폰 번호로 전송됩니다. 수신자 정보를 변경해야 할 경우 개별로 재요청하시기 바랍니다. 
 
@@ -386,6 +391,10 @@ eformsign에서는 지정된 관리자만 문서를 삭제할 수 있습니다.
 .. figure:: resources/bulksend-schedule-change.png
    :alt: 일괄 작성 문서함-예약 변경
 
+
+.. note::
+
+   한번에 대량으로 문서를 전송할 수 있는 문서 일괄 작성 방법은 `일괄 작성으로 문서 대량 전송하기 <chapter3.html#bulksend>`__ 를 참고하시기 바랍니다.
 
 
 .. |image1| image:: resources/inbox_ex1.png
