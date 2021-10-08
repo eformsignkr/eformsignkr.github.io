@@ -120,10 +120,9 @@ eformsign을 사용하면 누구나 쉽게 기존의 문서를 전자문서로 �
 
    -  **문서 전송 기한 설정:** 수신자가 문서를 열람하고 제출할 수 있는 기한을 정할 수 있으며, 설정된 기간이 지나면 문서를 작성할 수 없게 됩니다.
 
-         .. tip::
+      .. tip::
 
          문서 전송 기한이 없도록 설정하려면 **문서 전송 기한을 0일 0시간**\ 으로 설정하시면 됩니다.
-
 
 
    |image12|
@@ -151,8 +150,6 @@ eformsign을 사용하면 누구나 쉽게 기존의 문서를 전자문서로 �
       -  **추가 인증 수단**\ : **이메일 인증** 또는 **휴대폰 본인확인** 후에 문서를 열람하도록 설정합니다. 두 항목 모두 선택할 경우, 수신자가 인증 단계에서 선택할 수 있습니다. 
 
  
-
-   |image13|
 
 
 
@@ -310,7 +307,7 @@ eformsign을 사용하면 누구나 쉽게 기존의 문서를 전자문서로 �
 .. |image11| image:: resources/newfrommyfile-startfromnow-send.png
    :width: 700px
 .. |image12| image:: resources/newformmyfile-recipientoption-member.png
-   :width: 400px
+   :width: 700px
 .. |image13| image:: resources/newformmyfile-recipientoption-external.png
    :width: 400px
 .. |image14| image:: resources/menu-startfromtemplate.png
