@@ -61,9 +61,12 @@
 .. figure:: resources/web-form_2.png
    :alt: 웹폼 디자이너 화면
 
-3. 문서에 참여할 문서 참여자 및 역할을 추가 및 설정하면, 다음과 같이 문서 화면이 나타납니다.
+3. 문서에 참여할 문서 참여자 및 역할을 추가 및 설정하면, 웹폼 디자이너 화면이 나타납니다.
 
 .. figure:: resources/web-form_3.png
+   :alt: 웹폼 디자이너 화면
+
+.. figure:: resources/web-form_5.png
    :alt: 웹폼 디자이너 화면
 
 

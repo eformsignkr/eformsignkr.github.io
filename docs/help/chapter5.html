@@ -109,11 +109,11 @@
                 
                   <li class="toctree-l2"><a href="#id4" class="reference internal">컴포넌트 개요</a></li>
                 
-                  <li class="toctree-l2"><a href="#id9" class="reference internal">컴포넌트별 사용 방법</a></li>
+                  <li class="toctree-l2"><a href="#id11" class="reference internal">컴포넌트별 사용 방법</a></li>
                 
-                  <li class="toctree-l2"><a href="#id25" class="reference internal">폼 파일 업로드</a></li>
+                  <li class="toctree-l2"><a href="#upload-form-file" class="reference internal">폼 파일 업로드</a></li>
                 
-                  <li class="toctree-l2"><a href="#id26" class="reference internal">업로드한 템플릿 추가 설정하기</a></li>
+                  <li class="toctree-l2"><a href="#id28" class="reference internal">업로드한 템플릿 추가 설정하기</a></li>
                 
               </ul>
             
@@ -184,9 +184,8 @@
   <div class="section" id="formbuilder">
 <span id="id1"></span><h1>폼 빌더 소개<a class="headerlink" href="#formbuilder" title="Permalink to this headline">¶</a></h1>
 <p>폼 빌더는 <strong>OZ in Office</strong>라고도 합니다. <strong>OZ in Office</strong>는 Microsoft Office로 만든 문서를 입력 기능을 갖춘 전자 문서로 변환하는 폼 에디터입니다. <strong>OZ in Office</strong>를 사용하면 기존에 Excel, Word, PowerPoint로 만들어진 업무 양식(계약서, 신청서, 동의서, 품의서 등)을 간단하고 쉽게 전자 문서로 변환할 수 있습니다.</p>
-<p>기존에는 기업의 Excel, Word, PowerPoint 문서를 전자 문서로 개발하려면 프로그래밍 개발 수준의 개발자용 문서 개발 도구가 필요했습니다. 그러나, <strong>OZ in Office</strong>을 이용할 경우 office 제품을 사용할 수 있는 수준이면 누구나 전자 문서를 손쉽게 만들 수 있습니다.</p>
-<p><strong>OZ in Office</strong>는 MS Office에 Add-on되어 리본 메뉴로 나타나서 사용이 간단하며, 전자 서명, 체크 박스, 텍스트 박스, 카메라, 녹음 등 OZ의 다양한 입력 기능을 제공하고 있습니다.</p>
-<p><strong>OZ in Office</strong>의 입력 기능을 이용하여 전자 문서를 만드는 과정은 다음과 같습니다.</p>
+<p><strong>OZ in Office</strong>는 Excel, Word, PowerPoint 등 MS Office에 Add-on되어 리본 메뉴로 나타나서 사용이 간단하며, 전자 서명, 체크 박스, 텍스트 박스, 카메라, 녹음 등 OZ의 다양한 입력 기능을 제공하고 있습니다.</p>
+<p><strong>OZ in Office</strong>을 이용하여 전자 문서를 만드는 과정은 다음과 같습니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/ozinoffice-flow_1.png"><img alt="OZ in Office 사용 흐름" src="../_images/ozinoffice-flow_1.png" style="width: 750px;" /></a>
 </div>
@@ -230,46 +229,54 @@
 </div>
 <div class="section" id="id4">
 <h2>컴포넌트 개요<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>컴포넌트는 전자 문서에서 사용자가 내용을 입력할 수 있는 입력란을 만들어주는 역할을 합니다. 서명, 체크, 날짜, 텍스트 등의 다양한
-형식의 컴포넌트가 있으며 각각의 컴포넌트는 속성창을 통해 세부 사항을 설정할 수 있습니다.</p>
+<p>컴포넌트는 전자 문서에서 사용자가 내용을 입력할 수 있는 입력란을 만들어주는 역할을 합니다. 서명, 체크, 날짜, 텍스트 등의 다양한 형식의 컴포넌트가 있으며 각각의 컴포넌트는 속성창을 통해 세부 사항을 설정할 수 있습니다.</p>
 <div class="section" id="id5">
 <h3>컴포넌트 종류<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>eformsign은 다음의 컴포넌트를 지원합니다.</p>
 <div class="figure align-default">
 <img alt="컴포넌트 종류" src="../_images/components-in-word.png" />
 </div>
+<div class="section" id="id6">
+<h4>입력 컴포넌트<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li><p><a class="reference external" href="#check">체크</a><strong>:</strong> 체크할 항목이 있을 때 사용합니다.</p></li>
-<li><p><a class="reference external" href="#select">선택</a><strong>:</strong> 여러가지 항목 중 한가지를 선택합니다. 다중 선택도 설정 가능합니다.</p></li>
+<li><p><a class="reference external" href="#signature">서명</a><strong>:</strong> 서명을 입력합니다.</p></li>
 <li><p><a class="reference external" href="#text">텍스트</a><strong>:</strong> 1~2단어의 짧은 텍스트를 입력합니다.</p></li>
 <li><p><a class="reference external" href="#text">멀티라인</a><strong>:</strong> 여러 줄의 긴 텍스트를 입력합니다.</p></li>
+<li><p><a class="reference external" href="#label">레이블</a><strong>:</strong> 별도의 설정값을 문서에 입력할 때 사용합니다.</p></li>
+<li><p><a class="reference external" href="#check">체크</a><strong>:</strong> 체크할 항목이 있을 때 사용합니다.</p></li>
+<li><p><a class="reference external" href="#select">선택</a><strong>:</strong> 여러가지 항목 중 한 가지를 선택합니다. 다중 선택도 설정 가능합니다.</p></li>
 <li><p><a class="reference external" href="#combo">콤보</a><strong>:</strong> 클릭하면 드롭다운 메뉴가 나타나며 여러 항목 중 하나를 선택합니다.</p></li>
-<li><p><a class="reference external" href="#date">날짜</a><strong>:</strong> 특정 날짜를 입력합니다.</p></li>
-<li><p><a class="reference external" href="#numeric">숫자</a><strong>:</strong> 숫자를 입력합니다.</p></li>
 <li><p><a class="reference external" href="#toggle">토글</a><strong>:</strong> 2개 이상의 값을 입력하면 버튼을 클릭할 때마다 다른 값으로 전환됩니다.</p></li>
-<li><p><a class="reference external" href="#signature">서명</a><strong>:</strong> 서명을 입력합니다.</p></li>
+<li><p><a class="reference external" href="#date">날짜</a><strong>:</strong> 특정 날짜를 입력합니다.</p></li>
+<li><p><a class="reference external" href="#numeric">증감</a><strong>:</strong> 숫자를 입력합니다.</p></li>
 <li><p><a class="reference external" href="#camera">카메라</a><strong>:</strong> 카메라가 연결된 기기(스마트폰, 태블릿 등)에서는 카메라로 사진을 찍거나 사진첩에서 사진을 선택합니다. 카메라가 없는 기기(일반 PC)에서는 이미지 파일을 선택합니다.</p></li>
 <li><p><a class="reference external" href="#record">녹음</a><strong>:</strong> 녹음 기능이 있는 기기에서 버튼을 클릭해 녹음을 진행합니다.</p></li>
 <li><p><a class="reference external" href="#attach">첨부</a><strong>:</strong> 파일 첨부 기능을 추가합니다.</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h4>정보 컴포넌트<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
 <li><p><a class="reference external" href="#user">사용자</a><strong>:</strong> 문서를 작성 또는 수정한 멤버의 정보를 입력합니다.</p></li>
 <li><p><a class="reference external" href="#usedate">사용일</a><strong>:</strong> 문서를 작성하거나 수정한 날짜를 입력합니다.</p></li>
 <li><p><a class="reference external" href="#document">문서</a><strong>:</strong> 문서 내에 문서 번호나 문서 ID를 입력합니다.</p></li>
-<li><p><a class="reference external" href="#label">레이블</a><strong>:</strong> 별도의 설정값을 문서에 입력할 때 사용합니다.</p></li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h3>컴포넌트 속성 확인하는 방법<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id8">
+<h3>컴포넌트 속성 확인하는 방법<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>모든 컴포넌트는 속성 창에서 각각 세부 설정을 할 수 있습니다. 속성은 속성 아이콘 또는 속성 메뉴를 클릭하여 설정 및 확인할 수 있습니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/checking-components-properties.png"><img alt="컴포넌트 속성 확인" src="../_images/checking-components-properties.png" style="width: 750px;" /></a>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>모든 컴포넌트는 ID를 가지고 있어야 합니다. ID는 컴포넌트를 추가하면 자동으로 생성되기는 하지만, 컴포넌트에 무엇이 입력되는 지를 보여줄 수 있는 직관적인 단어로 변경하는 것이 좋습니다. 예를 들어, 홍길동, 이순신 등이 입력되는 컴포넌트의 ID는 ‘이름’으로 설정할 수 있습니다.</p>
+<p>모든 컴포넌트는 ID를 가지고 있어야 합니다.
+ID는 컴포넌트를 추가하면 자동으로 설정되지만, 컴포넌트에 무엇이 입력되는 지를 보여줄 수 있는 직관적인 단어로 변경하는 것이 좋습니다. 예를 들어, 홍길동, 이순신 등이 입력되는 텍스트 컴포넌트의 ID는 ‘이름’으로 설정합니다.</p>
 </div>
 </div>
-<div class="section" id="id7">
-<h3>컴포넌트 추가하는 방법<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h3>컴포넌트 추가하는 방법<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <p>컴포넌트는 크게 엑셀에서 추가하는 방법과 워드 또는 파워포인트에서 추가하는 방법이 있습니다. 워드 또는 파워포인트에서 컴포넌트를 추가하는 방법은 각각 다음과 같습니다.</p>
 <ul>
 <li><p><strong>엑셀에서 추가하기</strong></p>
@@ -302,7 +309,7 @@
 <p><strong>방법 2: 컴포넌트를 그려서 추가하기</strong></p>
 <ol class="arabic">
 <li><p>워드 또는 파워포인트를 열고 <strong>OZ in Word</strong> 또는 <strong>OZ in PowerPoint</strong> 리본 메뉴로 이동합니다.</p></li>
-<li><p>컴포넌트 <strong>그리기</strong> 아이콘을 클릭하여 나타나는 드롭다운 목록에서 추가할 컴포넌트를 선택합니다.</p>
+<li><p><strong>컴포넌트 그리기</strong> 아이콘을 클릭하여 나타나는 드롭다운 목록에서 추가할 컴포넌트를 선택합니다.</p>
 <p><img alt="image14" src="../_images/ozinword_2_1.png" /></p>
 </li>
 <li><p>원하는 위치와 크기로 컴포넌트를 추가합니다.</p>
@@ -312,13 +319,13 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id8">
-<h3>컴포넌트 삭제하는 방법<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
-<p>삭제하고자 하는 컴포넌트를 선택하고 <strong>OZ in Office</strong> 메뉴의 <strong>삭제</strong>(<img alt="image16" src="../_images/delete-icon.png" />) 아이콘을 클릭합니다. 여러 개의 컴포넌트를 선택해서 한 번에 삭제하는 것도 가능합니다.</p>
+<div class="section" id="id10">
+<h3>컴포넌트 삭제하는 방법<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>삭제하려는 컴포넌트를 선택하고 <strong>OZ in Office</strong> 메뉴의 <strong>삭제</strong>(<img alt="image16" src="../_images/delete-icon.png" />) 아이콘을 클릭합니다. 여러 개의 컴포넌트를 선택해서 한 번에 삭제할 수도 있습니다.</p>
 </div>
 </div>
-<div class="section" id="id9">
-<h2>컴포넌트별 사용 방법<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h2>컴포넌트별 사용 방법<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <p>eformsign은 MS Office의 <strong>OZ in Office</strong> 리본 메뉴를 통해 체크박스, 콤보박스, 텍스트, 서명 등 다양한 컴포넌트를 지원하고 있습니다.</p>
 <p><strong>OZ in Office</strong>의 모든 컴포넌트는 공통 속성과 고유 속성을 가지고 있으며, <strong>OZ 컴포넌트 속성</strong> 창에서 공통 속성과 각 입력 기능의 고유 속성을 확인할 수 있습니다. 공통 속성으로는 ID와 툴팁 텍스트가 있으며, 각 속성의 의미는 다음과 같습니다.</p>
 <ul class="simple">
@@ -333,12 +340,101 @@
 <p class="admonition-title">Note</p>
 <p>정보 타입인 사용자, 사용일, 문서, 레이블에는 툴팁이 없습니다.</p>
 </div>
-<p>eformsign OZ in Office의 각 컴포넌트에 대한 설명은 다음과 같습니다.</p>
+<div class="section" id="signature">
+<span id="id12"></span><h3>서명<a class="headerlink" href="#signature" title="Permalink to this headline">¶</a></h3>
+<p>서명 컴포넌트는 문서에 서명을 받아야 할 때 사용합니다.</p>
+<p><img alt="image28" src="../_images/form-builder-components_signature.png" /></p>
+<p>서명 컴포넌트를 추가하면 서명이 필요한 문서에서 아래와 같이 <strong>서명</strong> 팝업이 뜨고 서명을 직접 그리거나 텍스트를 입력해 서명을 입력할 수 있으며, 기존에 등록한 서명이 있는 경우 이를 사용할 수도 있습니다.</p>
+<p><img alt="image29" src="../_images/signature.png" /></p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/Signature-component-properties.png"><img alt="서명 컴포넌트 속성 설정하기" src="../_images/Signature-component-properties.png" style="width: 300px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>서명 컴포넌트의 ID를 입력합니다. 예를 들어, 계약자의 서명인 경우 컴포넌트 ID는 ‘계약자 서명’으로 합니다.</p>
+<p><strong>② 서명 유형</strong></p>
+<p>서명 시 어떤 서명을 사용할 것인지 선택합니다.</p>
+<ul class="simple">
+<li><p><strong>서명:</strong> 문서를 작성하는 사람이 미리 등록해 둔 <strong>내 서명</strong>이 있는 경우 서명란을 클릭 또는 서명 입력 버튼을 클릭하면 등록된 서명이 자동으로 입력됩니다.</p></li>
+<li><p><strong>이니셜:</strong> <strong>내 서명</strong>에 등록된 이니셜이 있는 경우 서명란을 클릭 또는 이니셜 입력 버튼을 클릭하면 등록된 이니셜이 자동으로 입력됩니다.</p></li>
+<li><p><strong>도장:</strong> <strong>내 서명</strong>에 등록된 도장이 있는 경우 서명란을 클릭 또는 도장 입력 버튼을 클릭하면 등록된 도장이 자동으로 입력됩니다.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>등록된 서명과 이니셜, 도장이 있는 경우에는 해당 서명이 서명란에 자동으로 입력되지만, 등록된 서명과 이니셜, 도장이 없는 경우 서명을 직접 입력할 수 있는 팝업이 나타납니다.
+서명 유형을 한 가지만 선택할 경우 서명란을 클릭하면 해당 서명 유형이 바로 입력되며, 서명 유형을 두 가지 이상 선택할 경우 서명란을 클릭하면 다음과 같이 선택할 수 있는 서명 유형 버튼이 표시됩니다.</p>
+<div class="figure align-default">
+<img alt="서명 유형 선택" src="../_images/select-signature-type.png" />
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>문서에 직접 서명이 아닌 직인이나 개인 도장을 사용해야 하는 경우가 있습니다. eformsign에서는 도장 이미지를 사용해 문서의 서명란에 도장을 찍을 수 있습니다. 도장 이미지를 사용하려면, 서명 팝업에서 <strong>도장</strong> 탭을 클릭하고 도장 이미지를 선택한 후 <strong>확인</strong> 버튼을 누릅니다. 회사 법인 인감 등 회사 직인이 있을 경우, 회사 도장으로 등록해 놓으면, 회사 도장 컴포넌트로 안전하고 간편하게 사용할 수 있습니다.</p>
+</div>
+<p><strong>③ 서명 방법</strong></p>
+<p><strong>직접 입력만 허용</strong>을 체크하면 태블릿 PC 등으로 서명란에 직접 서명을 할 수 있도록 설정합니다. 서명란을 클릭하면 서명 팝업이 나타나며 <strong>그리기, 텍스트, 모바일, eformsign 앱</strong> 탭 중 원하는 방식으로 서명을 입력합니다.</p>
+<p><strong>④ 서명펜 두께</strong></p>
+<p>서명을 그릴 때 표시되는 선의 두께를 설정합니다.</p>
+<p><strong>⑤ 서명펜 색</strong></p>
+<p>서명을 그릴 때 표시하는 선의 색을 설정합니다.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>전자 계약서, 전자 동의서 등 서명이 들어가는 문서에 서명일이 자동으로 입력되도록 설정할 수 있습니다.</p>
+<ol class="arabic simple">
+<li><p>전자 서식으로 변환할 문서 파일(워드, 엑셀, 파워포인트)을 열거나 혹은 새 문서를 만듭니다.</p></li>
+<li><p>서명할 곳에 서명 컴포넌트를 추가합니다.</p></li>
+<li><p>추가한 서명 컴포넌트의 속성창에 컴포넌트 ID를 입력합니다. 예) 서명</p></li>
+<li><p>서명일이 입력될 곳에 <strong>사용일</strong> 컴포넌트를 추가합니다.</p></li>
+<li><p>사용일 컴포넌트의 속성창을 엽니다.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/date-component-properties.png"><img alt="사용일 컴포넌트 속성" src="../_images/date-component-properties.png" style="width: 500px;" /></a>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>사용일 표시 유형을 <strong>입력 값을 수정한 날짜</strong>로 선택합니다.</p></li>
+<li><p>하단에 나타나는 컴포넌트 ID 입력란에 서명 컴포넌트 ID인 ‘서명’을 입력합니다.</p></li>
+</ol>
+<dl class="simple">
+<dt>※ 사용일 컴포넌트의 ‘표시형식’을 설정하여 날짜 표시 형식을 원하는 형태로 변경할 수 있습니다.</dt><dd><p>예) date-yyyy-MM-dd  → date-yyyy년 MM월 dd일</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="text">
+<span id="id13"></span><h3>텍스트와 멀티라인<a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h3>
+<p>텍스트 컴포넌트와 멀티라인 컴포넌트 모두 텍스트 입력란을 만들 때에 사용합니다. 텍스트 컴포넌트은 1~2 단어의 짧은 텍스트, 멀티라인은 1줄 이상의 긴 텍스트에 적합합니다.</p>
+<p><img alt="image23" src="../_images/text-and-muliline-components.png" /></p>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/text-component-properties.png"><img alt="텍스트와 멀티라인 컴포넌트 속성 설정하기" src="../_images/text-component-properties.png" style="width: 300px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>텍스트/멀티라인 컴포넌트의 ID를 입력합니다. 예를 들어, 홍길동, 이순신 등이 입력되는 컴포넌트 ID는 ‘이름’으로 합니다.</p>
+<p><strong>② 입력 가능 최대 글자 수</strong></p>
+<p>입력 가능한 최대 글자 수(공백 포함)를 설정할 수 있습니다. 기본으로 ‘0’이 설정되어 있으며 이 경우 글자 수 제한이 없습니다.</p>
+<p><strong>③ 키보드 타입</strong></p>
+<p>컴포넌트에 입력할 때 실행할 키보드 타입을 선택합니다. 키보드 타입은 스마트폰, 태블릿과 같은 모바일 환경에서만 동작합니다.</p>
+<p><strong>④ 패스워드 문자로 표시</strong></p>
+<p><strong>텍스트</strong> 컴포넌트에서만 설정 가능한 속성입니다. 텍스트 입력 시 입력한 내용이 패스워드 문자(●)로 입력되어 입력 내용을 숨길 수 있습니다. 입력된 내용은 PDF에서도 패스워드 문자로 숨겨지며, CSV 데이터를 다운로드 받을 때에만 확인할 수 있습니다.</p>
+</div>
+<div class="section" id="label">
+<span id="id14"></span><h3>레이블<a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h3>
+<p>레이블 컴포넌트는 별도로 설정한 값을 문서에 표시하고자 할때 사용합니다. 해당 입력란에 텍스트를 입력하면 문서 상에 입력한 텍스트가 표시됩니다.</p>
+<div class="figure align-default">
+<img alt="레이블 컴포넌트 속성" src="../_images/label_property-menu.png" />
+</div>
+<p><strong>컴포넌트 속성</strong></p>
+<div class="figure align-default">
+<img alt="레이블 컴포넌트 속성 설정하기" src="../_images/label_property.png" />
+</div>
+<p><strong>① ID</strong></p>
+<p>레이블 컴포넌트의 ID를 설정합니다.</p>
+</div>
 <div class="section" id="check">
-<span id="id10"></span><h3>체크<a class="headerlink" href="#check" title="Permalink to this headline">¶</a></h3>
+<span id="id15"></span><h3>체크<a class="headerlink" href="#check" title="Permalink to this headline">¶</a></h3>
 <p><strong>체크</strong> 컴포넌트는 각 항목의 체크 여부를 확인하고자 할때 사용합니다. 비슷한 컴포넌트로 <strong>선택</strong> 컴포넌트가 있으며, 체크 컴포넌트는 해당 항목의 체크 여부를 확인할 때 사용하고, 선택 컴포넌트는 선택한 항목이 무엇인지 알아야 할 때 사용한다는 차이가 있습니다.</p>
 <p><img alt="image18" src="../_images/form-builder-components_check.png" /></p>
-<p>체크 컴포넌트의 입력값은 데이터 다운로드 시 다음과 같이 나타납니다.</p>
+<p>체크 컴포넌트의 입력 값은 데이터 다운로드 시 다음과 같이 나타납니다.</p>
 <ul class="simple">
 <li><p>항목에 체크한 경우: true</p></li>
 <li><p>항목에 체크하지 않은 경우: false</p></li>
@@ -350,14 +446,14 @@
 <a class="reference internal image-reference" href="../_images/check-component-properties-1.png"><img alt="선택 컴포넌트 속성 설정하기" src="../_images/check-component-properties-1.png" style="width: 300px;" /></a>
 </div>
 <p><strong>① ID</strong></p>
-<p>선택 컴포넌트는 각 항목별로 다른 ID를 부여해야 합니다. 여러 개의 선택 컴포넌트에 같은 ID가 부여될 경우 해당 컴포넌트 중 마지막 컴포넌트의 입력값만 표시됩니다.</p>
+<p>선택 컴포넌트는 각 항목별로 다른 ID를 부여해야 합니다. 여러 개의 선택 컴포넌트에 같은 ID가 부여될 경우 해당 컴포넌트 중 마지막 컴포넌트의 입력 값만 표시됩니다.</p>
 <p><strong>② 체크 스타일</strong></p>
 <p>선택 컴포넌트는 속성에서 스타일을 지정할 수 있습니다. 체크를 선택하면 속성에서 체크박스가 기본으로 설정되어 있으며, 이외에 라디오 버튼, 빨간 원 표시를 선택할 수 있습니다.</p>
-<p>다음의 예시를 보면, 왼쪽부터 체크 / 라디오 / 원 선택 시 각각 체크박스가 어떻게 표시되는지를 알 수 있습니다.</p>
+<p>체크 / 라디오 / 원 선택 시 각각 체크박스는 다음과 같이 표시됩니다.</p>
 <p><a class="reference internal" href="../_images/check-component-style-settings.png"><img alt="image19" src="../_images/check-component-style-settings.png" style="width: 700px;" /></a></p>
 </div>
 <div class="section" id="select">
-<span id="id11"></span><h3>선택<a class="headerlink" href="#select" title="Permalink to this headline">¶</a></h3>
+<span id="id16"></span><h3>선택<a class="headerlink" href="#select" title="Permalink to this headline">¶</a></h3>
 <p>선택 컴포넌트는 여러 항목 중 어떤 항목을 선택했는지 확인해야 할 때 사용합니다. 선택 컴포넌트의 선택값은 데이터 다운로드 시 여러 항목 중 선택한 항목명이 나타납니다.</p>
 <p><img alt="image20" src="../_images/form-builder-components.png" /></p>
 <p>워드, 파워포인트에서는 선택 컴포넌트가 직사각형 도형으로 표시됩니다.
@@ -378,11 +474,9 @@
 <p><strong>다중 선택 가능</strong>을 체크하면 1개 이상의 항목을 선택할 수 있습니다. 1개 이상의 항목을 선택한 경우 데이터 저장 시 선택된 여러 개의 항목이 콤마(,)로 구분되어 저장됩니다.</p>
 <p><strong>④ 선택 안 함 가능</strong></p>
 <p><strong>선택 안 함 가능</strong>을 체크하면 선택한 항목을 다시 클릭해 선택 해제를 할 수 있습니다.</p>
-<p><strong>⑤ 툴팁 텍스트</strong></p>
-<p>해당 입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
 </div>
 <div class="section" id="combo">
-<span id="id12"></span><h3>콤보<a class="headerlink" href="#combo" title="Permalink to this headline">¶</a></h3>
+<span id="id17"></span><h3>콤보<a class="headerlink" href="#combo" title="Permalink to this headline">¶</a></h3>
 <p>여러가지 항목 중에서 한 항목을 선택해야 할 때, 콤보 컴포넌트를 사용합니다.</p>
 <p><img alt="image21" src="../_images/form-builder-components_Combo.png" /></p>
 <p>다음과 같이 선택란을 클릭하면 항목 리스트가 나타납니다.</p>
@@ -395,10 +489,10 @@
 <p>콤보 컴포넌트의 ID를 입력합니다. 예를 들어, 좋아하는 색을 고르는
 컴포넌트의 ID는 ‘좋아하는 색’으로 합니다.</p>
 <p><strong>② Items</strong></p>
-<p>선택 항목들을 입력합니다. 엔터(Enter)로 여러 항목을 구분합니다.</p>
+<p>선택 항목들을 입력합니다. 엔터(Enter)로 항목을 구분합니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>콤보 컴포넌트의 선택란에 ‘선택하세요’를 표시하려면, Items 항목 가장위에 ‘선택하세요’를 입력하고 컴포넌트 안에도 동일하게 ‘선택하세요’를 입력합니다.</p>
+<p>콤보 컴포넌트의 선택란에 ‘선택하세요’를 표시하려면, Items 항목 가장 위에 ‘선택하세요’를 입력합니다.</p>
 </div>
 <p><strong>③ 입력 데이터 초기화 가능</strong></p>
 <p><strong>입력 데이터 초기화 가능</strong>에 체크하면 선택한 항목을 선택 해제할 수 있습니다. 입력 데이터 초기화는 다음과 같이 실행할 수 있습니다.</p>
@@ -406,30 +500,30 @@
 <li><p>PC 환경: 컴포넌트를 오른쪽 마우스로 클릭하면 나타나는 팝업 메뉴에서 ‘입력 데이터 초기화’를 선택합니다.</p></li>
 <li><p>모바일 환경: 휴지통 아이콘을 클릭합니다.</p></li>
 </ul>
-<p><strong>④ 툴팁 텍스트</strong></p>
-<p>선택란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
 </div>
-<div class="section" id="text">
-<span id="id13"></span><h3>텍스트와 멀티라인<a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h3>
-<p>텍스트 컴포넌트와 멀티라인 컴포넌트 모두 텍스트 입력란을 만들 때에 사용합니다. 텍스트 컴포넌트은 1~2 단어의 짧은 텍스트, 멀티라인은 1줄 이상의 긴 텍스트에 적합합니다.</p>
-<p><img alt="image23" src="../_images/text-and-muliline-components.png" /></p>
+<div class="section" id="toggle">
+<span id="id18"></span><h3>토글<a class="headerlink" href="#toggle" title="Permalink to this headline">¶</a></h3>
+<p>켜짐(ON), 꺼짐(OFF)과 같은 특정한 상태를 나타낼 때 사용합니다. 토글 컴포넌트를 사용하면 컴포넌트를 클릭할 때마다 미리 설정한 항목의 순서대로 입력값이 전환됩니다.</p>
+<p><img alt="image26" src="../_images/form-builder-components_toggle.png" /></p>
+<p>다음과 같이 컴포넌트를 클릭하여 <strong>양호</strong>, <strong>불량</strong> 상태로 변경할 수 있습니다.</p>
+<p><img alt="image27" src="../_images/toggle.png" /></p>
 <p><strong>컴포넌트 속성</strong></p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/text-component-properties.png"><img alt="텍스트와 멀티라인 컴포넌트 속성 설정하기" src="../_images/text-component-properties.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/toggle-component-properties.png"><img alt="토글 컴포넌트 속성" src="../_images/toggle-component-properties.png" style="width: 300px;" /></a>
 </div>
 <p><strong>① ID</strong></p>
-<p>텍스트/멀티라인 컴포넌트의 ID를 입력합니다. 예를 들어, 홍길동, 이순신 등이 입력되는 컴포넌트 ID는 ‘이름’으로 합니다.</p>
-<p><strong>② 입력 가능 최대 글자 수</strong></p>
-<p>입력 가능한 최대 글자 수(공백 포함)를 설정할 수 있습니다. 기본으로 ‘0’이 설정되어 있으며 이 경우 글자 수 제한이 없습니다.</p>
-<p><strong>③ 키보드 타입</strong></p>
-<p>컴포넌트에 입력할 때 실행할 키보드 타입을 선택합니다. 키보드 타입은 스마트폰, 태블릿과 같은 모바일 환경에서만 동작합니다.</p>
-<p><strong>④ 패스워드 문자로 표시</strong></p>
-<p>텍스트 컴포넌트에서만 설정 가능한 속성입니다. 텍스트 입력 시 입력한 내용이 패스워드 문자(●)로 입력되어 입력 내용을 숨길 수 있습니다. 입력된 내용은 PDF에서도 패스워드 문자로 숨겨지며, CSV 데이터를 다운로드 받을 때에만 확인할 수 있습니다.</p>
-<p><strong>⑤ 툴팁 텍스트</strong></p>
-<p>해당 입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
+<p>토글 컴포넌트의 ID를 입력합니다. 예를 들어, 첫번째 점검항목에 대한 컴포넌트인 경우 ‘점검항목 1’로 합니다.</p>
+<p><strong>② Items</strong></p>
+<p>토글 컴포넌트를 클릭할 때마다 전환될 항목 리스트를 입력합니다. 엔터(Enter)로 여러 항목을 구분합니다.</p>
+<p><strong>③ 입력 데이터 초기화 가능</strong></p>
+<p>입력 데이터 초기화 가능을 체크하면 입력된 항목을 삭제할 수 있습니다. 토글 컴포넌트는 한 번 항목을 선택하면 다른 항목으로 변경할 수는 있으나 항목 선택을 취소할 수는 없습니다. 그러나 입력 데이터 초기화 가능을 체크하면 아무것도 입력되지 않은 상태로 변경할 수 있습니다.</p>
+<ul class="simple">
+<li><p>PC 환경: 컴포넌트를 오른쪽 마우스로 클릭하면 나타나는 팝업 메뉴에서 <strong>입력 데이터 초기화</strong>를 선택합니다.</p></li>
+<li><p>모바일 환경: 휴지통 아이콘을 클릭합니다.</p></li>
+</ul>
 </div>
 <div class="section" id="date">
-<span id="id14"></span><h3>날짜<a class="headerlink" href="#date" title="Permalink to this headline">¶</a></h3>
+<span id="id19"></span><h3>날짜<a class="headerlink" href="#date" title="Permalink to this headline">¶</a></h3>
 <p>날짜를 입력해야 할 때 사용합니다. 입력란을 클릭하면 날짜 선택창이 나타나며 원하는 날짜를 선택할 수 있습니다.</p>
 <p><img alt="image24" src="../_images/form-builder-components_datetime.png" /></p>
 <p><strong>컴포넌트 속성</strong></p>
@@ -460,9 +554,8 @@
 <p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
 </div>
 <div class="section" id="numeric">
-<span id="id15"></span><h3>숫자<a class="headerlink" href="#numeric" title="Permalink to this headline">¶</a></h3>
-<p>숫자를 입력해야 할 때 사용합니다. 입력란을 클릭하면 오른쪽에 두 개의 화살표가 나타나며, 위 아래 화살표 버튼을 눌러 숫자를
-증감시킬 수 있습니다. PC 키보드 환경에서는 입력란에 직접 원하는 숫자를 입력할 수 있습니다. 스마트폰, 태블릿 환경에서는 입력 범위 숫자 리스트에서 스크롤하여 원하는 숫자를 선택할 수 있습니다.</p>
+<span id="id20"></span><h3>증감<a class="headerlink" href="#numeric" title="Permalink to this headline">¶</a></h3>
+<p>숫자를 입력해야 할 때 사용합니다. 입력란을 클릭하면 오른쪽에 두 개의 화살표가 나타나며, 위 아래 화살표 버튼을 눌러 숫자를 증감시킬 수 있습니다. PC 키보드 환경에서는 입력란에 직접 원하는 숫자를 입력할 수 있습니다. 스마트폰, 태블릿 환경에서는 입력 범위 숫자 리스트에서 스크롤하여 원하는 숫자를 선택할 수 있습니다.</p>
 <p><img alt="image25" src="../_images/form-builder-components_numeric.png" /></p>
 <p><strong>컴포넌트 속성</strong></p>
 <div class="figure align-default">
@@ -481,85 +574,9 @@
 <li><p>PC 환경: 컴포넌트를 오른쪽 마우스로 클릭하면 나타나는 팝업 메뉴에서 <strong>입력 데이터 초기화</strong>를 선택합니다.</p></li>
 <li><p>모바일 환경: 휴지통 아이콘을 클릭합니다.</p></li>
 </ul>
-<p><strong>⑤ 툴팁 텍스트</strong></p>
-<p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
-</div>
-<div class="section" id="toggle">
-<span id="id16"></span><h3>토글<a class="headerlink" href="#toggle" title="Permalink to this headline">¶</a></h3>
-<p>켜짐(ON), 꺼짐(OFF)과 같은 특정한 상태를 나타낼 때 사용합니다. 토글 컴포넌트를 사용하면 컴포넌트를 클릭할 때마다 미리 설정한 항목의 순서대로 입력값이 전환됩니다.</p>
-<p><img alt="image26" src="../_images/form-builder-components_toggle.png" /></p>
-<p>다음과 같이 컴포넌트를 클릭하여 <strong>양호</strong>, <strong>불량</strong> 상태로 변경할 수 있습니다.</p>
-<p><img alt="image27" src="../_images/toggle.png" /></p>
-<p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/toggle-component-properties.png"><img alt="토글 컴포넌트 속성" src="../_images/toggle-component-properties.png" style="width: 300px;" /></a>
-</div>
-<p><strong>① ID</strong></p>
-<p>토글 컴포넌트의 ID를 입력합니다. 예를 들어, 첫번째 점검 항목에 대한 컴포넌트인 경우 ‘점검 1’로 합니다.</p>
-<p><strong>② Items</strong></p>
-<p>토글 컴포넌트를 클릭할 때마다 전환될 항목 리스트를 입력합니다. 엔터(Enter)로 여러 항목을 구분합니다.</p>
-<p><strong>③ 입력 데이터 초기화 가능</strong></p>
-<p>입력 데이터 초기화 가능을 체크하면 입력된 항목을 삭제할 수 있습니다. 토글 컴포넌트는 한 번 항목을 선택하면 다른 항목으로 변경할 수는 있으나 항목 선택을 취소할 수는 없습니다. 그러나 입력 데이터 초기화 가능을 체크하면 아무것도 입력되지 않은 상태로 변경할 수 있습니다.</p>
-<ul class="simple">
-<li><p>PC 환경: 컴포넌트를 오른쪽 마우스로 클릭하면 나타나는 팝업 메뉴에서 <strong>입력 데이터 초기화</strong>를 선택합니다.</p></li>
-<li><p>모바일 환경: 휴지통 아이콘을 클릭합니다.</p></li>
-</ul>
-<p><strong>④ 툴팁 텍스트</strong></p>
-<p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
-</div>
-<div class="section" id="signature">
-<span id="id17"></span><h3>서명<a class="headerlink" href="#signature" title="Permalink to this headline">¶</a></h3>
-<p>서명 컴포넌트는 문서에 서명을 받아야 할 때 사용합니다.</p>
-<p><img alt="image28" src="../_images/form-builder-components_signature.png" /></p>
-<p>서명 컴포넌트를 추가하면 서명이 필요한 문서에서 아래와 같이 <strong>서명</strong> 팝업이 뜨고 서명을 직접 그리거나 텍스트를 입력해 서명을 입력할 수 있으며, 기존에 등록한 서명이 있는 경우 이를 사용할 수도 있습니다.</p>
-<p><img alt="image29" src="../_images/signature.png" /></p>
-<p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default" id="id27">
-<a class="reference internal image-reference" href="../_images/Signature-component-properties.png"><img alt="서명 컴포넌트 속성 설정하기" src="../_images/Signature-component-properties.png" style="width: 300px;" /></a>
-<p class="caption"><span class="caption-text">서명 컴포넌트 속성 설정하기</span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>① ID</strong></p>
-<p>서명 컴포넌트의 ID를 입력합니다. 예를 들어, 계약자의 서명인 경우 컴포넌트 ID는 ‘계약자 서명’으로 합니다.</p>
-<p><strong>② 서명 유형</strong></p>
-<p>서명 시 어떤 서명을 사용할 것인지 선택합니다.</p>
-<ul class="simple">
-<li><p><strong>직접 서명:</strong> 서명란을 클릭하면 서명 팝업이 나타나며 그리기, 텍스트, 모바일, 도장, 등록된 서명 탭 중 원하는 방식으로 서명을 입력합니다.</p></li>
-<li><p><strong>등록된 서명:</strong> 문서를 작성하는 사람이 미리 등록해 둔 <strong>내 서명</strong>이 있는 경우 서명란을 클릭하면 등록된 서명이 자동으로
-입력됩니다.</p></li>
-<li><p><strong>등록된 이니셜:</strong> 등록된 서명과 마찬가지로 <strong>내 서명</strong>에 등록된 이니셜이 있는 경우 서명란을 클릭하면 등록된 이니셜이 자동으로 입력됩니다.</p></li>
-<li><p><strong>등록된 도장:</strong> 등록된 서명과 마찬가지로 <strong>내 서명</strong>에 등록된 도장이 있는 경우 서명란을 클릭하면 등록된 도장이 자동으로 입력됩니다.</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>등록된 서명과 이니셜이 있는 경우에는 해당 서명이 서명란에 자동으로 입력되지만, 등록된 서명과 이니셜이 없는 경우 직접 서명과 동일한 <strong>서명</strong> 팝업이 나타납니다.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>문서에 직접 서명이 아닌 직인이나 개인 도장을 사용해야 하는 경우가 있습니다. eformsign에서는 도장 이미지를 사용해 문서의 서명란에 도장을 찍을 수도 있습니다. 도장 이미지를 사용하려면, <strong>서명</strong> 팝업에서 <strong>도장</strong> 탭을 클릭하고 도장 이미지를 선택한 후 확인 버튼을 누릅니다.</p>
-</div>
-<p><strong>③ 서명펜 두께</strong></p>
-<p>서명을 그릴 때 표시되는 선의 두께를 설정합니다.</p>
-<p><strong>④ 서명펜 색</strong></p>
-<p>서명을 그릴 때 표시하는 선의 색을 설정합니다.</p>
-<p><strong>⑤ 툴팁 텍스트</strong></p>
-<p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>전자 계약서, 전자 동의서 등 서명이 들어가는 문서에 서명일이 자동으로 입력되도록 설정할 수 있습니다.</p>
-<ol class="arabic simple">
-<li><p>전자 서식으로 변환할 문서 파일(워드, 엑셀, 파워포인트)을 열거나 혹은 새 문서를 만듭니다.</p></li>
-<li><p>서명할 곳에 서명 컴포넌트를 추가합니다.</p></li>
-<li><p>추가한 서명 컴포넌트의 속성창에 컴포넌트 ID를 입력합니다. 예) 서명</p></li>
-<li><p>서명일이 입력될 곳에 사용일 컴포넌트를 추가합니다.</p></li>
-<li><p>사용일 컴포넌트의 속성창을 엽니다.</p></li>
-<li><p>사용일 표시 유형을 <strong>입력 값을 수정한 날짜</strong>로 선택합니다.</p></li>
-<li><p>하단에 나타나는 컴포넌트 ID 입력란에 서명 컴포넌트 ID인 ‘서명’을 입력합니다.</p></li>
-</ol>
-<p>※ 사용일 컴포넌트의 ‘표시형식’을 설정하여 날짜 표시 형식을 원하는 형태로 변경할 수 있습니다.</p>
-</div>
 </div>
 <div class="section" id="camera">
-<span id="id18"></span><h3>카메라<a class="headerlink" href="#camera" title="Permalink to this headline">¶</a></h3>
+<span id="id21"></span><h3>카메라<a class="headerlink" href="#camera" title="Permalink to this headline">¶</a></h3>
 <p>스마트폰, 태블릿 등 카메라가 있는 기기로 사진을 찍어 문서에 삽입하고자 할 경우 사용합니다. 카메라가 없는 PC 환경에서는 컴포넌트를 클릭하면 이미지 파일을 선택할 수 있는 선택창이 나타납니다.</p>
 <p><img alt="image30" src="../_images/form-builder-components_camera.png" /></p>
 <p>선택한 이미지의 크기가 입력란의 크기보다 클 경우 입력란 안에 들어갈 수 있도록 축소되어 올라갑니다.</p>
@@ -578,9 +595,12 @@
 <p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
 </div>
 <div class="section" id="record">
-<span id="id19"></span><h3>녹음<a class="headerlink" href="#record" title="Permalink to this headline">¶</a></h3>
+<span id="id22"></span><h3>녹음<a class="headerlink" href="#record" title="Permalink to this headline">¶</a></h3>
 <p>문서에 사용자의 녹음 데이터를 저장해야 할 때 사용합니다.
 최대 녹음 시간을 설정할 수 있으며 사용자가 이미 녹음된 내용을 듣기만 할 수 있도록 설정할 수도 있습니다.</p>
+<div class="figure align-default">
+<img alt="녹음 컴포넌트" src="../_images/record_component-menu.png" />
+</div>
 <p>OZ in Office에서 녹음 컴포넌트를 추가하면 뷰어에서 다음과 같이 녹음된 내용을 재생하거나 새로운 녹음을 할 수 있습니다.</p>
 <p><a class="reference internal" href="../_images/record1.png"><img alt="image32" src="../_images/record1.png" style="width: 400px;" /></a></p>
 <div class="admonition note">
@@ -599,7 +619,7 @@
 <p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
 </div>
 <div class="section" id="attach">
-<span id="id20"></span><h3>첨부<a class="headerlink" href="#attach" title="Permalink to this headline">¶</a></h3>
+<span id="id23"></span><h3>첨부<a class="headerlink" href="#attach" title="Permalink to this headline">¶</a></h3>
 <p>문서에 별도로 첨부 파일을 추가할 수 있도록 할 경우 사용합니다. 첨부 컴포넌트를 통해 문서를 첨부할 경우 문서의 맨 끝에
 첨부한 문서가 새로운 페이지로 추가됩니다.</p>
 <p><img alt="image33" src="../_images/form-builder-components_attachment.png" /></p>
@@ -618,7 +638,7 @@
 <p>입력란에 마우스를 위치하면 툴팁 텍스트에 입력한 설명이 나타납니다.</p>
 </div>
 <div class="section" id="user">
-<span id="id21"></span><h3>사용자<a class="headerlink" href="#user" title="Permalink to this headline">¶</a></h3>
+<span id="id24"></span><h3>사용자<a class="headerlink" href="#user" title="Permalink to this headline">¶</a></h3>
 <p>문서를 작성 또는 수정한 멤버의 정보가 문서에 자동으로 입력되게 할 때 사용합니다. 설정에 따라 이름, 연락처와 같은 멤버의 기본
 정보 또는 사용자 정의 필드 정보가 사용자 컴포넌트에 자동으로 입력됩니다.</p>
 <p><img alt="image34" src="../_images/form-builder-components_user.png" /></p>
@@ -638,7 +658,7 @@
 <p><a class="reference internal" href="../_images/user-input-certain-component.png"><img alt="image35" src="../_images/user-input-certain-component.png" style="width: 300px;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>이 작업을 수행하려면 회사 관리(대표 관리자) 권한 또는 템플릿 관리자 권한이 필요합니다.</p>
+<p>이 작업을 수행하려면 <strong>회사 관리(대표 관리자)</strong> 권한 또는 <strong>템플릿 관리</strong> 권한이 필요합니다.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -651,12 +671,12 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>멤버 기본 정보를 수정하려면 대표 관리자 또는 회사 관리 권한이 필요합니다.</p>
+<p>멤버 기본 정보를 수정하려면 <strong>대표 관리자</strong> 또는 <strong>회사 관리</strong> 권한이 필요합니다.</p>
 <p>멤버 기본 정보를 수정하려면 eformsign에 로그인한 후 <strong>회사 관리 &gt; 멤버 관리</strong> 메뉴로 이동합니다. 멤버 목록에서 멤버를 선택하고 화면 오른쪽에 나타나는 상세 보기 영역의 정보를 수정한 후 <strong>저장</strong> 버튼을 클릭합니다.</p>
 </div>
 </div>
 <div class="section" id="usedate">
-<span id="id22"></span><h3>사용일<a class="headerlink" href="#usedate" title="Permalink to this headline">¶</a></h3>
+<span id="id25"></span><h3>사용일<a class="headerlink" href="#usedate" title="Permalink to this headline">¶</a></h3>
 <p>문서를 작성 또는 수정한 날짜가 문서에 자동으로 입력되도록 할 경우 사용합니다. 설정에 따라 문서를 만든 날짜, 문서에 접근한 날짜, 또는 특정 컴포넌트를 입력한 날짜가 자동으로 입력됩니다.</p>
 <p><img alt="image36" src="../_images/form-builder-components_date.png" /></p>
 <p><strong>컴포넌트 속성</strong></p>
@@ -692,13 +712,13 @@
 </div>
 </div>
 <div class="section" id="document">
-<span id="id23"></span><h3>문서<a class="headerlink" href="#document" title="Permalink to this headline">¶</a></h3>
+<span id="id26"></span><h3>문서<a class="headerlink" href="#document" title="Permalink to this headline">¶</a></h3>
 <p>문서 컴포넌트는 문서 내에 문서 관련 정보를 입력해야 할 때 사용합니다. 문서 ID와 문서 번호 중 원하는 정보를 선택해 입력할 수 있습니다.</p>
 <p><img alt="image38" src="../_images/document-component-in-list.png" /></p>
 <p>문서 ID는 시스템에서 부여하는 문서 고유의 ID이기 때문에 별도의 설정이 필요하지 않습니다. 문서 번호와 관련된 설정은 템플릿을 업로드한 뒤, <strong>템플릿 설정 &gt; 일반 설정</strong>에서 할 수 있습니다.</p>
 <p><strong>컴포넌트 속성</strong></p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/document-domponent-properties.png"><img alt="문서 컴포넌트 속성 설정하기" src="../_images/document-domponent-properties.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/document-component-properties.png"><img alt="문서 컴포넌트 속성 설정하기" src="../_images/document-component-properties.png" style="width: 300px;" /></a>
 </div>
 <p><strong>① ID</strong></p>
 <p>문서 컴포넌트의 ID를 입력합니다. 예를 들어, 문서 번호를 입력하는 경우 컴포넌트 ID는 ‘문서 번호’로 합니다.</p>
@@ -710,24 +730,18 @@
 <li><p><strong>문서 번호:</strong> <strong>템플릿 설정 &gt; 일반 설정</strong>에서 설정된 문서 번호입니다. 문서 번호를 설정하는 방법은 <a class="reference external" href="chapter6.html#docnumber_wd">문서 번호 생성 및 확인하기</a>를 참고하세요.</p></li>
 </ul>
 </div>
-<div class="section" id="label">
-<span id="id24"></span><h3>레이블<a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h3>
-<p>레이블 컴포넌트는 별도로 설정한 값을 문서에 표시하고자 할때 사용합니다.</p>
-<p><strong>컴포넌트 속성</strong></p>
-<div class="figure align-default">
-<img alt="레이블 컴포넌트 속성 설정하기" src="../_images/label_property.png" />
 </div>
-<p><strong>① ID</strong></p>
-<p>레이블 컴포넌트의 ID를 설정합니다.</p>
-</div>
-</div>
-<div class="section" id="id25">
-<h2>폼 파일 업로드<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="upload-form-file">
+<span id="id27"></span><h2>폼 파일 업로드<a class="headerlink" href="#upload-form-file" title="Permalink to this headline">¶</a></h2>
 <p>OZ in Office를 통해 문서에 컴포넌트를 올려 편집이 완료된 파일은 다음의 순서로 업로드합니다.</p>
-<ol class="arabic">
-<li><p>리본 메뉴의 파일 그룹에 있는 <strong>실행</strong>(<img alt="image39" src="../_images/excute_button.png" />) 아이콘을 클릭하면 다음의 로그인 페이지가 팝업 창으로 표시됩니다.</p>
-<p><a class="reference internal" href="../_images/form_upload_login.png"><img alt="image40" src="../_images/form_upload_login.png" style="width: 700px;" /></a></p>
-</li>
+<ol class="arabic simple">
+<li><p>리본 메뉴의 파일 그룹에 있는 <strong>실행</strong>(<img alt="image39" src="../_images/excute_button.png" />) 아이콘을 클릭하면 다음의 로그인 페이지가 팝업 창으로 표시됩니다.</p></li>
+</ol>
+<div class="figure align-default" id="id29">
+<a class="reference internal image-reference" href="../_images/ozinword-menu-file.png"><img alt="실행하기" src="../_images/ozinword-menu-file.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../_images/form_upload_login.png"><img alt="image40" src="../_images/form_upload_login.png" style="width: 700px;" /></a></span><a class="headerlink" href="#id29" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic" start="2">
 <li><p>로그인하면 전자문서 서식인 폼으로 변환된 문서가 미리보기 형태로 표시됩니다.</p>
 <p><a class="reference internal" href="../_images/upload_preview.png"><img alt="image41" src="../_images/upload_preview.png" style="width: 700px;" /></a></p>
 </li>
@@ -739,28 +753,26 @@
 </li>
 </ol>
 </div>
-<div class="section" id="id26">
-<h2>업로드한 템플릿 추가 설정하기<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
-<p>템플릿을 업로드하고 나면, 템플릿 제목, 문서 번호, 워크플로우 등 템플릿으로 생성되는 문서에 대한 추가 설정을 할 수 있습니다.</p>
+<div class="section" id="id28">
+<h2>업로드한 템플릿 추가 설정하기<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
+<p>템플릿을 이폼사인에 업로드하고 나면, 템플릿 제목, 문서 번호, 워크플로우 등 템플릿으로 생성되는 문서에 대한 추가 설정을 할 수 있습니다.</p>
 <ol class="arabic simple">
-<li><p>이폼사인에 로그인합니다.</p></li>
-<li><p>템플릿 관리 메뉴로 이동합니다.</p></li>
-<li><p>템플릿 설정 아이콘을 클릭합니다.</p>
+<li><p>이폼사인에 로그인 한 후 <strong>템플릿 관리</strong> 메뉴로 이동합니다.</p></li>
+<li><p><strong>템플릿 설정</strong> 아이콘을 클릭해 템플릿 설정 화면으로 이동합니다.</p>
 <ul class="simple">
-<li><p><strong>일반 설정:</strong> 템플릿 이름, 약칭, 문서 제목, 문서 번호 등을 설정합니다.</p></li>
-<li><p><strong>권한 설정:</strong>해당 템플릿으로 문서를 생성할 멤버나 그룹, 및 생성된 문서를 관리할 멤버나 그룹을 지정합니다.</p></li>
-<li><p><strong>워크플로우 설정:</strong> 문서의 시작부터 완료까지 작성된 문서가 거쳐갈 단계를 설정합니다.</p></li>
+<li><p><strong>일반 설정:</strong> 템플릿 이름, 약칭, 문서 제목 규칙, 문서 번호 등을 설정합니다.</p></li>
+<li><p><strong>권한 설정:</strong>해당 템플릿으로 문서를 생성할 멤버나 그룹, 템플릿을 수정할 수 있는 멤버, 생성된 문서를 관리할 멤버나 그룹을 지정합니다.</p></li>
+<li><p><strong>워크플로우 설정:</strong> 문서의 시작부터 완료까지 작성된 문서의 처리 단계를 설정합니다.</p></li>
 <li><p><strong>필드 설정:</strong> 필드의 표시 여부, 순서, 기본값, 자동 입력 값 등을 설정합니다.</p></li>
-<li><p><strong>알림 설정:</strong>템플릿으로 생성된 문서에 대한 요청과 알림을 보낼 메시지를 설정합니다.</p></li>
+<li><p><strong>알림 설정:</strong>템플릿으로 생성된 문서에 대한 상태 알림의 수신자를 설정하고 최종 완료 알림 메시지를 편집합니다</p></li>
 </ul>
 </li>
 <li><p>모든 설정을 완료한 후 <strong>저장</strong> 버튼을 클릭하고 템플릿을 배포합니다.</p></li>
 </ol>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>해당 템플릿으로 문서를 작성할 수 있도록 하기 위해서는 템플릿을 저장한 후 반드시 배포해야 합니다.</p>
-<p>템플릿을 배포하지 않고 저장만 할 경우 템플릿 사용 권한이 있는 있는 멤버들의 <strong>템플릿으로 문서 작성 &gt; 템플릿 목록</strong>에 나타나지
-않습니다.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>해당 템플릿으로 문서를 작성할 수 있도록 하기 위해서는 <strong>템플릿을 저장한 후 반드시 배포</strong>해야 합니다.</p>
+<p>템플릿을 배포하지 않고 저장만 할 경우 템플릿 사용 권한이 있는 있는 멤버들의 <strong>템플릿으로 문서 작성 &gt; 템플릿 목록</strong>에 나타나지 않습니다.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
