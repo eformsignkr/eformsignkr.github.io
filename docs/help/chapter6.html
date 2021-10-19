@@ -96,35 +96,29 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">웹폼 디자이너로 템플릿 만들기</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id2">템플릿 개요</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id3"><strong>웹폼 디자이너로 템플릿 만드는 방법</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">워크플로우 개요</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">템플릿 설정</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id4">워크플로우 개요</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#template-setting">템플릿 설정</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#general-wd">일반 설정</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id7"><strong>템플릿 기본정보 설정</strong></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id8"><strong>문서 설정</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#document-naming">일반 설정 &gt; 문서 제목 규칙 만들기</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#docnumber-wd">일반 설정 &gt; 문서번호 생성 및 확인하기</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#document-naming">일반 설정 &gt; 문서 제목 규칙 만들기</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id10"><strong>문서 제목 규칙 설정하는 방법</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id11"><strong>예약어 사용하는 방법</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#docnumber-wd">일반 설정 &gt; 문서번호 생성 및 확인하기</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#auth-wd">권한 설정</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#workflow-wd">워크플로우 설정</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id15"><strong>시작: 문서를 작성하는 단계입니다.</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id16"><strong>참여자: 문서의 입력항목에 작성, 서명 등 문서에 참여하는 수신자 단계입니다.</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id17"><strong>검토자: 검토자는 문서를 검토 후 승인 또는 반려할 수 있습니다.</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id18"><strong>완료: 문서가 모든 워크플로우 단계를 거쳐 최종 완료되는 단계입니다.</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id18"><strong>워크플로우 단계 추가하는 방법</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id19"><strong>워크플로우 단계별 상세 설정</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#field-wd">필드 설정</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#noti-wd">알림 설정</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id21">개별 템플릿 메뉴</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id22">템플릿 검색</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id22">개별 템플릿 메뉴</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id23">템플릿 검색</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter7.html">폼 빌더로 템플릿 만들기</a></li>
@@ -262,8 +256,9 @@
 </li>
 </ul>
 </div>
+</div>
 <div class="section" id="id4">
-<h3>워크플로우 개요<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<h2>워크플로우 개요<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>워크플로우란 문서가 작성되어 완료되기까지의 문서의 요청 및 처리 과정을 말합니다.</p>
 <p>워크플로우는 템플릿 관리자가 템플릿 별로 <strong>템플릿 설정</strong> &gt; <strong>워크플로우 설정</strong>에서 설정할 수 있습니다.</p>
 <p>워크플로우는 <strong>시작 - 완료</strong>가 기본 단계이며, 아래와 같이 <strong>검토자</strong>, <strong>참여자</strong> 2가지 단계를 원하는 대로 추가하여 워크플로우를 생성할 수 있습니다.</p>
@@ -279,9 +274,8 @@
 </li>
 </ul>
 </div>
-</div>
-<div class="section" id="id5">
-<h2>템플릿 설정<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="template-setting">
+<span id="id5"></span><h2>템플릿 설정<a class="headerlink" href="#template-setting" title="Permalink to this headline">¶</a></h2>
 <p>업로드한 파일로 생성될 템플릿에 대한 상세 사항을 설정할 수 있습니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -335,10 +329,11 @@
 </dd>
 </dl>
 </div>
-</div>
 <div class="section" id="document-naming">
-<span id="id9"></span><h3>일반 설정 &gt; 문서 제목 규칙 만들기<a class="headerlink" href="#document-naming" title="Permalink to this headline">¶</a></h3>
+<span id="id9"></span><h4>일반 설정 &gt; 문서 제목 규칙 만들기<a class="headerlink" href="#document-naming" title="Permalink to this headline">¶</a></h4>
 <p><strong>템플릿 설정</strong>에서 해당 템플릿으로 생성되는 문서의 제목 규칙을 설정할 수 있습니다.</p>
+<div class="section" id="id10">
+<h5><strong>템플릿 문서 제목 규칙</strong><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h5>
 <p>문서에 입력된 내용, 또는 문서 작성 관련 정보가 문서 제목에 자동으로 입력되도록 설정할 수 있습니다. 문서 제목 규칙을 설정하면 문서 작성 시점의 정보를 바탕으로 문서 제목이 생성되며 이 제목은 모든 문서함(진행 중 문서함, 처리할 문서함, 완료 문서함)과 <strong>문서 관리</strong> 메뉴의 문서 목록에서 확인할 수 있습니다</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -347,8 +342,8 @@
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/document-list.png"><img alt="문서 관리 &gt; 문서 목록" src="../_images/document-list.png" style="width: 700px;" /></a>
 </div>
-<div class="section" id="id10">
-<h4><strong>문서 제목 규칙 설정하는 방법</strong><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id11">
+<h6><strong>문서 제목 규칙 설정하는 방법</strong><a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h6>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/template-setting-general-doc-numering_rule.png"><img alt="템플릿 설정 &gt; 문서 제목 규칙 설정" src="../_images/template-setting-general-doc-numering_rule.png" style="width: 600px;" /></a>
 </div>
@@ -359,8 +354,8 @@
 <li><p>오른쪽 상단에 <strong>저장</strong> 버튼을 클릭하여 변경 사항을 저장합니다.</p></li>
 </ol>
 </div>
-<div class="section" id="id11">
-<h4><strong>예약어 사용하는 방법</strong><a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id12">
+<h6><strong>예약어 사용하는 방법</strong><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h6>
 <div class="figure align-default">
 <img alt="예약어 사용해서 문서 제목 규칙 설정" src="../_images/template-setting-general-doc-numering_rule_reserved.png" />
 </div>
@@ -436,10 +431,13 @@
 </div>
 </div>
 </div>
+</div>
 <div class="section" id="docnumber-wd">
-<span id="id12"></span><h3>일반 설정 &gt; 문서번호 생성 및 확인하기<a class="headerlink" href="#docnumber-wd" title="Permalink to this headline">¶</a></h3>
+<span id="id13"></span><h4>일반 설정 &gt; 문서번호 생성 및 확인하기<a class="headerlink" href="#docnumber-wd" title="Permalink to this headline">¶</a></h4>
 <p>이폼사인에서 생성되는 문서에 연속되는 문서번호를 부여할 수 있습니다.
 템플릿 별로 문서 번호 자동 생성 여부를 설정할 수 있으며 번호 형식 4가지 중 한 가지를 선택해야 합니다. 문서 번호는 문서 컴포넌트를 사용하여 문서 내에 입력할 수 있습니다. 또한 문서 목록에서 별도의 컬럼으로 확인할 수 있으며 문서 번호로 문서를 검색할 수 있습니다.</p>
+<div class="section" id="id14">
+<h5><strong>문서번호 생성하는 방법</strong><a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h5>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>이 작업은 <strong>대표 관리자</strong> 또는 <strong>템플릿 관리</strong> 권한이 필요합니다.</p>
@@ -483,6 +481,9 @@
 </li>
 <li><p>오른쪽 상단의 <strong>저장</strong> 버튼을 클릭해 설정을 저장합니다.</p></li>
 </ol>
+</div>
+<div class="section" id="id15">
+<h5><strong>문서번호 확인하는 방법</strong><a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h5>
 <p>생성된 문서번호는 문서 번호 컴포넌트를 사용하여 문서 내에 입력하거나 문서 목록에서 확인할 수 있습니다.</p>
 <ul>
 <li><p><strong>문서 내에 문서번호 표시하기</strong></p>
@@ -529,8 +530,10 @@
 </li>
 </ul>
 </div>
+</div>
+</div>
 <div class="section" id="auth-wd">
-<span id="id13"></span><h3>권한 설정<a class="headerlink" href="#auth-wd" title="Permalink to this headline">¶</a></h3>
+<span id="id16"></span><h3>권한 설정<a class="headerlink" href="#auth-wd" title="Permalink to this headline">¶</a></h3>
 <p>권한 설정 화면에서는 템플릿 사용 권한과 문서 관리 권한을 설정할 수 있습니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/template-setting-auth-new.PNG"><img alt="템플릿 설정 &gt; 권한 설정" src="../_images/template-setting-auth-new.PNG" style="width: 700px;" /></a>
@@ -548,11 +551,13 @@
 </ul>
 </div>
 <div class="section" id="workflow-wd">
-<span id="id14"></span><h3>워크플로우 설정<a class="headerlink" href="#workflow-wd" title="Permalink to this headline">¶</a></h3>
+<span id="id17"></span><h3>워크플로우 설정<a class="headerlink" href="#workflow-wd" title="Permalink to this headline">¶</a></h3>
 <p><strong>템플릿 설정</strong> 화면에서 <strong>워크플로우 설정</strong> 탭을 클릭해 해당 템플릿의 워크플로우를 생성 또는 수정할 수 있습니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/workflow-setting_new.PNG"><img alt="템플릿 설정 &gt; 워크플로우 설정" src="../_images/workflow-setting_new.PNG" style="width: 600px;" /></a>
 </div>
+<div class="section" id="id18">
+<h4><strong>워크플로우 단계 추가하는 방법</strong><a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
 <ol class="arabic">
 <li><p><strong>워크플로우 설정</strong> 탭을 클릭해 이동합니다.</p></li>
 <li><p>시작과 완료 사이의 단계 추가(<img alt="image8" src="../_images/workflow-addstep-plus-button.png" />) 버튼을 클릭합니다.</p></li>
@@ -567,9 +572,12 @@
 검토자를 포함한 워크플로우 단계는 개수 제한없이 추가할 수 있습니다. 워크플로우 단계를 클릭한 후 드래그해서 순서를 조정할 수 있으며, 단계 오른쪽에 위치한 <strong>-</strong>를 클릭하면 단계가 삭제됩니다.</p>
 <p><a class="reference internal" href="../_images/workflow-step-added.png"><img alt="image10" src="../_images/workflow-step-added.png" style="width: 400px;" /></a></p>
 </div>
+</div>
+<div class="section" id="id19">
+<h4><strong>워크플로우 단계별 상세 설정</strong><a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
 <p>단계를 클릭하여 각 워크플로우 단계별로 상세 속성을 설정할 수 있습니다.</p>
-<div class="section" id="id15">
-<h4><strong>시작: 문서를 작성하는 단계입니다.</strong><a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<p><strong>시작: 문서를 작성하는 단계입니다.</strong></p>
+<hr class="docutils" />
 <p><a class="reference internal" href="../_images/workflow-step-start-property.png"><img alt="image12" src="../_images/workflow-step-start-property.png" style="width: 700px;" /></a></p>
 <ul class="simple">
 <li><p><strong>문서 생성 수 제한</strong>: 체크하여 해당 템플릿으로 생성되는 최대 문서 개수를 설정할 수 있습니다.</p></li>
@@ -577,9 +585,8 @@
 <li><p><strong>문서 작성 가능한 도메인/IP 지정</strong>: 특정 도메인 또는 IP에서만 문서를 전송할 수 있도록 설정할 수 있습니다.</p></li>
 <li><p><strong>문서 중복 전송 방지</strong>: 문서를 중복으로 전송하는 것을 방지하며, 필드를 선택해 해당 필드를 기준으로 중복 여부를 확인합니다.</p></li>
 </ul>
-</div>
-<div class="section" id="id16">
-<h4><strong>참여자: 문서의 입력항목에 작성, 서명 등 문서에 참여하는 수신자 단계입니다.</strong><a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
+<p><strong>참여자: 문서의 입력항목에 작성, 서명 등 문서에 참여하는 수신자 단계입니다.</strong></p>
+<hr class="docutils" />
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/workflow-participant-properties.png"><img alt="워크플로우 설정 &gt; 참여자 단계 속성" src="../_images/workflow-participant-properties.png" style="width: 700px;" /></a>
 </div>
@@ -615,9 +622,8 @@
 <li><p><strong>그룹 또는 멤버</strong>: 그룹 또는 멤버 중 한 사람이 문서를 처리하도록 설정합니다. 그룹 또는 멤버는 여러명을 선택할 수 있으나, 선택된 사람 중 한 사람만 문서를 처리할 수 있습니다.</p></li>
 <li><p><strong>이전 단계 수신자</strong>: 시작 단계 포함 이전 단계의 수신자가 문서를 처리하도록 설정합니다. 단계를 선택할 수 있습니다.</p></li>
 </ul>
-</div>
-<div class="section" id="id17">
-<h4><strong>검토자: 검토자는 문서를 검토 후 승인 또는 반려할 수 있습니다.</strong><a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
+<p><strong>검토자: 검토자는 문서를 검토 후 승인 또는 반려할 수 있습니다.</strong></p>
+<hr class="docutils" />
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/workflow-reviewer-properties.png"><img alt="워크플로우 설정 &gt; 검토자" src="../_images/workflow-reviewer-properties.png" style="width: 700px;" /></a>
 </div>
@@ -631,9 +637,8 @@
 </li>
 <li><p><strong>문서 전송 기한</strong>: 수신자가 문서를 받은 후 다음 단계 수신자에게 문서를 전송하기까지의 기한을 설정합니다. 문서 전송 기한을 설정하지 않으려면 0일 0시간으로 입력하세요.</p></li>
 </ul>
-</div>
-<div class="section" id="id18">
-<h4><strong>완료: 문서가 모든 워크플로우 단계를 거쳐 최종 완료되는 단계입니다.</strong><a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
+<p><strong>완료: 문서가 모든 워크플로우 단계를 거쳐 최종 완료되는 단계입니다.</strong></p>
+<hr class="docutils" />
 <p><a class="reference internal" href="../_images/workflow-step-complete-property.png"><img alt="image18" src="../_images/workflow-step-complete-property.png" style="width: 700px;" /></a></p>
 <ul class="simple">
 <li><p><strong>별도의 파일 저장소에 완료 문서 저장하기</strong>: 대표 관리자 또는 회사 관리자가 별도로 설정한 외부 클라우드 저장소에 완료된 문서가 저장되도록 설정합니다.</p></li>
@@ -643,7 +648,7 @@
 </div>
 </div>
 <div class="section" id="field-wd">
-<span id="id19"></span><h3>필드 설정<a class="headerlink" href="#field-wd" title="Permalink to this headline">¶</a></h3>
+<span id="id20"></span><h3>필드 설정<a class="headerlink" href="#field-wd" title="Permalink to this headline">¶</a></h3>
 <p><strong>템플릿 필드 설정</strong>에서는 문서 목록과 CSV로 데이터 다운로드 시 표시되는 컴포넌트의 컬럼의 표시 여부 및 순서를 설정할 수 있습니다. 또한, 템플릿에 들어가는 필드의 기본값 또는 자동입력 값을 설정할 수 있습니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/template-field-setting.png"><img alt="템플릿 설정 &gt; 필드 설정" src="../_images/template-field-setting.png" style="width: 700px;" /></a>
@@ -665,7 +670,7 @@
 </div>
 </div>
 <div class="section" id="noti-wd">
-<span id="id20"></span><h3>알림 설정<a class="headerlink" href="#noti-wd" title="Permalink to this headline">¶</a></h3>
+<span id="id21"></span><h3>알림 설정<a class="headerlink" href="#noti-wd" title="Permalink to this headline">¶</a></h3>
 <p>템플릿으로 생성되는 문서의 상태 알림을 수신할 수신자 설정 및 알림 내용 확인, 편집 등을 할 수 있습니다.</p>
 <p><strong>상태 알림 설정</strong></p>
 <p>해당 템플릿으로 생성된 문서의 진행 상태에 대한 알림의 수신자를 설정하고 알림 메시지를 미리보기(문서 승인/검토 및 작성/반려/취소/수정 알림) 또는 편집(문서 최종 완료 알림) 할 수 있습니다.</p>
@@ -685,8 +690,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="id21">
-<h2>개별 템플릿 메뉴<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id22">
+<h2>개별 템플릿 메뉴<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
 <p><strong>템플릿 관리</strong> 화면에서 템플릿 이름 오른쪽에 위치한 메뉴 아이콘(⋮)을 클릭하면 각 템플릿별 설정할 수 있는 메뉴가
 나타납니다.</p>
 <p><a class="reference internal" href="../_images/template-manage-menu-wfd.png"><img alt="image23" src="../_images/template-manage-menu-wfd.png" style="width: 500px;" /></a></p>
@@ -709,8 +714,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id22">
-<h2>템플릿 검색<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id23">
+<h2>템플릿 검색<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
 <p><strong>템플릿 관리</strong> 화면에서는 템플릿 카테고리별 조회, 검색 등을 할 수 있습니다.</p>
 <p><a class="reference internal" href="../_images/template-manage-search.png"><img alt="image27" src="../_images/template-manage-search.png" style="width: 700px;" /></a></p>
 <dl>
