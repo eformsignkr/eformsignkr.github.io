@@ -26,7 +26,7 @@ author = 'FORCS'
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = '2021.03.31'
+release = '2021.10.22'
 
 
 # -- General configuration ---------------------------------------------------

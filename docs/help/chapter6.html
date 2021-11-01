@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>웹폼 디자이너로 템플릿 만들기 &mdash; eformsign User Guide 2021.03.31 documentation</title>
+  <title>웹폼 디자이너로 템플릿 만들기 &mdash; eformsign User Guide 2021.10.22 documentation</title>
   
 
   
@@ -301,10 +301,7 @@
 </div>
 </dd>
 <dt><strong>② 템플릿 약칭</strong></dt><dd><p>템플릿을 간단히 표시하는 짧은 이름입니다. 2~3글자 정도의 짧은 단어를 권장합니다.</p>
-<p><strong>탬플릿 약칭</strong>은 문서번호, 문서 제목, 메일 템플릿 등에서 <strong>$$</strong>를 입력해 사용할 수 있습니다.</p>
-<div class="figure align-default">
-<img alt="템플릿 약칭" src="../_images/template-short-name.png" />
-</div>
+<p><strong>탬플릿 약칭</strong>은 문서번호, 문서 제목, 메일 템플릿 등에서 사용할 수 있습니다.</p>
 </dd>
 <dt><strong>③ 카테고리</strong></dt><dd><p>템플릿을 종류별로 구분할 때 사용합니다. 카테고리 이름으로 <strong>템플릿 관리</strong> 화면의 템플릿이나 <strong>문서함</strong>, <strong>문서 관리</strong> 메뉴의 문서들을 필터링할 수 있습니다. 기존의 카테고리에서 선택하거나 새로운 이름을 입력해 새로운 카테고리를 생성할 수 있습니다.</p>
 <p>구분자( <strong>/</strong> )를 사용하면 다단계 카테고리를 설정할 수 있습니다. 예를 들어, 카테고리를 <strong>인사팀/휴가관련</strong>으로 설정하면 1단계 카테고리인 <strong>인사팀</strong> 안에 2단계 카테고리인 <strong>휴가관련</strong> 카테고리가 생성됩니다.</p>
@@ -348,21 +345,21 @@
 <ol class="arabic simple">
 <li><p>사이드바 메뉴에서 <strong>템플릿 관리</strong>로 이동합니다.</p></li>
 <li><p>템플릿의 <strong>설정</strong> 아이콘(<img alt="image2" src="../_images/config-icon.PNG" />)을 클릭하여 <strong>템플릿 설정</strong> 화면으로 이동합니다.</p></li>
-<li><p><strong>일반 설정</strong> 화면의 <strong>문서 제목 자동 설정 규칙</strong> 입력란에 원하는 제목 규칙을 입력합니다.</p></li>
+<li><p><strong>일반 설정</strong> 화면의 <strong>문서 제목 자동 설정 규칙</strong> 입력란에 예약어를 추가하여 원하는 제목 규칙을 입력합니다.</p></li>
 <li><p>오른쪽 상단에 <strong>저장</strong> 버튼을 클릭하여 변경 사항을 저장합니다.</p></li>
 </ol>
 </div>
 <div class="section" id="id12">
-<h6><strong>예약어 사용하는 방법</strong><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h6>
+<h6><strong>예약어 추가하는 방법</strong><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h6>
 <div class="figure align-default">
 <img alt="예약어 사용해서 문서 제목 규칙 설정" src="../_images/template-setting-general-doc-numering_rule_reserved.png" />
 </div>
 <ul>
-<li><p><strong>{{</strong>: 문서에 입력된 내용을 문서 제목에 추가하고자 할 때</p>
-<p><strong>문서 제목 규칙</strong> 입력란에 <strong>{{</strong>를 입력하면 템플릿의 컴포넌트 ID 리스트가 나타나며, 원하는 ID를 선택하면 해당 컴포넌트에 입력된 내용이 문서 제목에 추가됩니다.</p>
+<li><p><strong>문서입력항목</strong>: 문서에 입력된 내용을 문서 제목에 추가합니다.</p>
+<p><strong>예약어 추가</strong> 버튼 클릭 후, <strong>문서입력항목</strong>을 클릭하면 템플릿의 컴포넌트 ID 리스트가 나타나며, 원하는 ID를 선택하면 해당 컴포넌트에 입력된 내용이 문서 제목에 추가됩니다.</p>
 </li>
-<li><p><strong>$$</strong>: 문서와 관련된 정보를 제목에 추가하고자 할 때</p>
-<p><strong>문서 제목 규칙</strong> 입력란에 <strong>$$</strong>를 입력하면 드롭다운 메뉴가 나타나며 아래 정보 중 원하는 정보를 선택할 수 있습니다.</p>
+<li><p><strong>시스템 정보</strong>: 문서와 관련된 정보를 제목에 추가합니다.</p>
+<p><strong>시스템 정보</strong>를 클릭하여 아래 정보 중 선택하여 문서 제목에 표시될 수 있도록 설정합니다.</p>
 </li>
 </ul>
 <table class="docutils align-default">
