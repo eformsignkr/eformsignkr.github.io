@@ -46,11 +46,12 @@
 
 6. **실행** 버튼을 클릭해 입력항목의 동작을 확인합니다.
 
+
 7. **업로드** 버튼을 클릭해 템플릿을 업로드 합니다.
 
 8. 새 템플릿을 선택한 후 템플릿에 대한 상세설정을 합니다. 
 
-.. figure:: resources/formbuilder_wizard_3.png
+.. figure:: resources/formbuilder-execute.png
    :alt: 폼 빌더 리본 메뉴
 
 
