@@ -368,7 +368,7 @@ eformsign은 MS Office의 **OZ in Office** 리본 메뉴를 통해 체크박스,
 
 **컴포넌트 속성**
 
-.. figure:: resources/handwriting-component-properties_web.pnghandwriting-component-properties_fb.png
+.. figure:: resources/handwriting-component-properties_fb.png
    :alt: 손글씨 컴포넌트 속성 설정하기
 
 
