@@ -118,8 +118,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#noti-fb">알림 설정</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id23">개별 템플릿 메뉴</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id24">템플릿 검색</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id22">개별 템플릿 메뉴</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id23">템플릿 검색</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">문서함</a></li>
@@ -211,6 +211,9 @@
 <p class="admonition-title">Note</p>
 <p>폼 빌더에 대한 자세한 설명은 <a class="reference external" href="chapter5.html#formbuilder">폼 빌더</a>를 참고해 주세요.</p>
 </div>
+<div class="figure align-default">
+<img alt="폼 빌더 리본 메뉴" src="../_images/formbuilder-execute.png" />
+</div>
 <ol class="arabic simple">
 <li><p>워드, 엑셀 또는 파워포인트로 만든 문서 파일을 엽니다.</p></li>
 <li><p><strong>OZ in Word(Excel 또는 PPT)</strong> 메뉴로 이동합니다.</p></li>
@@ -221,9 +224,6 @@
 <li><p><strong>업로드</strong> 버튼을 클릭해 템플릿을 업로드 합니다.</p></li>
 <li><p>새 템플릿을 선택한 후 템플릿에 대한 상세설정을 합니다.</p></li>
 </ol>
-<div class="figure align-default">
-<img alt="폼 빌더 리본 메뉴" src="../_images/formbuilder-execute.png" />
-</div>
 <p><strong>템플릿 설정</strong></p>
 <p>템플릿에 대한 상세 설정을 할 수 있습니다.</p>
 <ul>
@@ -421,6 +421,7 @@
 <div class="figure align-default">
 <img alt="문서 제목 변경 허용 여부 확인" src="../_images/template-setting-general-doc-numering_rule_allow_change.png" />
 </div>
+<hr class="docutils" />
 </div>
 </div>
 <div class="section" id="docnumber-fb">
@@ -543,6 +544,7 @@
 </ol>
 </div></blockquote>
 </div></blockquote>
+<hr class="docutils" />
 </div>
 </div>
 </div>
@@ -564,6 +566,7 @@
 <li><p><strong>문서 영구 제거(선택시):</strong> 시스템에서 문서를 영구적으로 제거할 수 있는 권한입니다.</p></li>
 </ul>
 <p><a class="reference internal" href="../_images/template-setting-auth-doc-new.PNG"><img alt="image8" src="../_images/template-setting-auth-doc-new.PNG" style="width: 700px;" /></a></p>
+<hr class="docutils" />
 </div>
 <div class="section" id="workflow-fb">
 <span id="id16"></span><h3>워크플로우 설정<a class="headerlink" href="#workflow-fb" title="Permalink to this headline">¶</a></h3>
@@ -603,7 +606,7 @@
 <li><p><strong>문서 작성 가능한 도메인/IP 지정</strong>: 특정 도메인 또는 IP에서만 문서를 전송할 수 있도록 설정할 수 있습니다.</p></li>
 <li><p><strong>문서 중복 전송 방지</strong>: 문서를 중복으로 전송하는 것을 방지하며, 필드를 선택해 해당 필드를 기준으로 중복 여부를 확인합니다.</p></li>
 </ul>
-<p><strong>수신자: 문서의 입력항목에 작성, 서명 등 문서에 참여하는 문서 수신자 단계입니다.</strong></p>
+<p><strong>수신자: 문서의 입력항목에 작성, 서명 등 문서에 참여하는 수신자 단계입니다.</strong></p>
 <hr class="docutils" />
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/workflow-participant-properties.png"><img alt="워크플로우 설정 &gt; 참여자 단계 속성" src="../_images/workflow-participant-properties.png" style="width: 700px;" /></a>
@@ -650,24 +653,39 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>문서 일부 숨기기</strong></p>
-<p>문서가 여러 개의 시트 또는 구역으로 구성된 파일일 경우 외부 수신자에게 보여지는 문서의 일부를 숨길 수 있습니다.</p>
-<p>업로드한 문서에 여러 개의 시트 또는 구역이 포함된 경우, 워크플로우의 외부 수신자 단계 속성 설정에서 문서 일부 숨김 설정이 나타납니다. 문서에 포함된 시트 또는 구역의 이름이 목록으로 표시되어 각 시트 또는 구역 별로 보이기, 숨기기 또는 이전 단계 요청자가 선택할 수 있도록 설정할 수 있습니다.</p>
+<p>엑셀 또는 워드 파일 문서가 여러 개의 시트 또는 구역으로 구성된 파일일 경우 수신자에게 보여지는 문서의 일부를 숨기도록 설정할 수 있습니다. 즉, 한 템플릿에서 수신자에게 보낼 부분과 보내지 않을 부분을 구분할 수 있습니다.</p>
+<p>업로드한 문서에 여러 개의 시트 또는 구역이 포함된 경우, 워크플로우의 <strong>수신자 단계</strong> 속성 설정에서 <strong>문서 일부 숨김 설정</strong>이 나타납니다. 문서에 포함된 시트 또는 구역의 이름이 목록으로 표시되어 각 시트 또는 구역 별로 <strong>보이기, 숨기기 또는 이전 단계 요청자가 선택</strong>할 수 있도록 설정할 수 있습니다.</p>
+<p><strong>설정 방법</strong></p>
+<ol class="arabic simple">
+<li><p>대시보드 <strong>메뉴 &gt; 템플릿 관리</strong>로 이동합니다.</p></li>
+<li><p>템플릿의 <strong>설정 아이콘(⚙)</strong>을 클릭하여 템플릿 설정 화면으로 이동합니다.</p></li>
+<li><p><strong>워크플로우 설정</strong> 탭으로 이동합니다.</p></li>
+<li><p><strong>수신자</strong> 단계를 추가합니다.</p></li>
+<li><p>오른쪽 속성 영역 하단의 <strong>문서 일부 숨김 설정</strong>을 체크합니다.</p></li>
+<li><p>시트 또는 구역 별 노출 여부를 선택합니다.</p>
+<ul class="simple">
+<li><p><strong>보이기:</strong> 수신자에게 해당 시트 또는 구역이 전송됩니다.</p></li>
+<li><p><strong>선택:</strong> 수신자가 노출 여부를 선택합니다.</p></li>
+<li><p><strong>숨기기:</strong> 수신자에게 해당 시트 또는 구역이 보이지 않습니다.</p></li>
+</ul>
+</li>
+</ol>
 <p><a class="reference internal" href="../_images/template-fb-setting-workflow-outsider-1.png"><img alt="image19" src="../_images/template-fb-setting-workflow-outsider-1.png" style="width: 700px;" /></a></p>
 </div>
-<div class="section" id="id20">
-<h6><strong>완료: 문서가 모든 워크플로우 단계를 거쳐 최종 완료되는 단계입니다.</strong><a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h6>
+<p><strong>완료: 문서가 모든 워크플로우 단계를 거쳐 최종 완료되는 단계입니다.</strong></p>
+<hr class="docutils" />
 <p><a class="reference internal" href="../_images/workflow-step-external-recipient-property-pw.png"><img alt="image18" src="../_images/workflow-step-external-recipient-property-pw.png" style="width: 400px;" /></a></p>
 <ul class="simple">
 <li><p><strong>별도의 파일 저장소에 완료 문서 저장하기</strong>: 대표 관리자 또는 회사 관리자가 별도로 설정한 외부 클라우드 저장소에 완료된 문서가 저장되도록 설정합니다.</p></li>
 <li><p><strong>공인전자문서센터에 완료 문서 저장하기</strong>: 문서가 완료되면 이폼사인과 연계된 공인전자문서센터에 자동으로 저장되도록 설정합니다. 본 기능은 추가 요금이 발생합니다.</p></li>
 <li><p><strong>완료 문서에 타임스탬프 찍기</strong>: 완료된 문서가 그 이후 변경되지 않았음을 증명하는 타임스탬프가 문서에 적용될 수 있도록 설정합니다. 본 기능은 추가 요금이 발생합니다.</p></li>
 </ul>
-</div>
+<hr class="docutils" />
 </div>
 </div>
 </div>
 <div class="section" id="field-fb">
-<span id="id21"></span><h3>필드 설정<a class="headerlink" href="#field-fb" title="Permalink to this headline">¶</a></h3>
+<span id="id20"></span><h3>필드 설정<a class="headerlink" href="#field-fb" title="Permalink to this headline">¶</a></h3>
 <p><strong>필드 설정</strong>에서는 문서 목록과 CSV로 데이터 다운로드 시 표시되는 컴포넌트의 컬럼의 표시 여부 및 순서를 설정할 수 있습니다. 또한, 템플릿에 들어가는 필드의 기본값 또는 자동입력 값을 설정할 수 있습니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/template-setting-FB-field-setting.png"><img alt="템플릿 설정 &gt; 필드 설정" src="../_images/template-setting-FB-field-setting.png" style="width: 700px;" /></a>
@@ -687,9 +705,10 @@
 <li><p>모든 설정을 완료한 후 <strong>저장</strong> 버튼을 클릭합니다</p></li>
 </ol>
 </div>
+<hr class="docutils" />
 </div>
 <div class="section" id="noti-fb">
-<span id="id22"></span><h3>알림 설정<a class="headerlink" href="#noti-fb" title="Permalink to this headline">¶</a></h3>
+<span id="id21"></span><h3>알림 설정<a class="headerlink" href="#noti-fb" title="Permalink to this headline">¶</a></h3>
 <p>템플릿으로 작성되는 문서의 상태 알림을 수신할 수신자 설정 및 알림 내용 확인, 편집 등을 할 수 있습니다.</p>
 <p><strong>상태 알림 설정</strong></p>
 <p>해당 템플릿으로 작성된 문서의 진행 상태에 대한 알림의 수신자를 설정하고 알림 메시지를 미리보기(문서 승인/검토 및 작성/반려/취소/수정 알림) 또는 편집(문서 최종 완료 알림) 할 수 있습니다.</p>
@@ -709,8 +728,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="id23">
-<h2>개별 템플릿 메뉴<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id22">
+<h2>개별 템플릿 메뉴<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
 <p><strong>템플릿 관리</strong> 화면에서 템플릿 이름 오른쪽에 위치한 메뉴 아이콘(<img alt="image24" src="../_images/template-hamburgericon.png" />)을 클릭하면 각 템플릿별 메뉴가 나타납니다.</p>
 <p><a class="reference internal" href="../_images/template-manage-menu.png"><img alt="image25" src="../_images/template-manage-menu.png" style="width: 700px;" /></a></p>
 <ul>
@@ -726,8 +745,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id24">
-<h2>템플릿 검색<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id23">
+<h2>템플릿 검색<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
 <p><strong>템플릿 관리</strong> 화면에서는 템플릿 카테고리별 조회, 검색 등을 할 수 있습니다.</p>
 <p><a class="reference internal" href="../_images/template-manage-search.png"><img alt="image28" src="../_images/template-manage-search.png" style="width: 700px;" /></a></p>
 <dl>
