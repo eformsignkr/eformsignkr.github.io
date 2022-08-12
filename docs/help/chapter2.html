@@ -103,28 +103,29 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#permissions">권한 구분</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id10">대표 관리자</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id11">회사 관리 권한</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id12">템플릿 관리 권한</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">회사 관리자</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">템플릿 관리자</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">문서 관리자</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#permissionsfortemplate">템플릿별 권한</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id14">멤버 및 그룹 관리</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id15">멤버 관리</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id16">그룹 관리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">멤버 및 그룹 관리</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id16">멤버 관리</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">그룹 관리</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#mysignature">내 서명 관리</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#registersignature"><strong>서명/이니셜 등록하는 방법</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#registerstamp"><strong>도장 등록하는 방법</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id20"><strong>도장 이미지 등록</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id21"><strong>도장 이미지 등록</strong></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#scanstamp"><strong>실물 도장 스캔</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#company-stamp">회사 도장 관리</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id24"><strong>회사 도장</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id25"><strong>도장 사용 내역</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25"><strong>회사 도장</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id26"><strong>도장 사용 내역</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -211,7 +212,8 @@
 <p>이폼사인에 로그인한 후 대시보드 화면 왼쪽 상단의 메뉴(<img alt="image1" src="../_images/menu_icon.png" />) 아이콘을 클릭하면, 아래와 같은 사이드바 메뉴가 나타납니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>메뉴는 사용자의 권한에 따라 다르게 나타납니다. 대표 관리자는 모든 메뉴를 볼 수 있으며, 모든 권한이 있습니다.</p>
+<p>메뉴는 사용자의 권한에 따라 다르게 나타납니다. 대표 관리자는 모든 메뉴를 볼 수 있으며, 모든 권한이 있습니다.
+권한 설정에 관한 자세한 내용은 <a class="reference external" href="chapter2.html#permissions">권한 구분</a>을 참고해 주세요.</p>
 </div>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/dashboard_menu_expand.png"><img alt="이폼사인 메뉴 구성" src="../_images/dashboard_menu_expand.png" style="width: 700px;" /></a>
@@ -221,7 +223,7 @@
 <li><p><strong>새 문서 작성:</strong>
 내 PC에 저장된 문서 파일 또는 eformsign에 등록된 작성 가능한 템플릿 중 선택하여 문서를 작성합니다.</p>
 <ul>
-<li><p><strong>내 파일로 문서 작성:</strong> 미리 저장된 템플릿이 없더라도 내 PC에 저장된 문서 파일을 eformsign에 바로 업로드한 후 필요한 컴포넌트를 문서 위에 추가하여 수신자에게 전송합니다.</p></li>
+<li><p><strong>내 파일로 문서 작성:</strong> 미리 저장된 템플릿이 없더라도 내 PC에 저장된 문서 파일을 eformsign에 바로 업로드한 후 필요한 입력 항목을 문서 위에 추가하여 수신자에게 전송합니다.</p></li>
 <li><p><strong>템플릿으로 문서 작성:</strong> 문서를 작성할 수 있는 템플릿 목록이 조회되고, 템플릿을 선택하여 문서를 작성합니다.</p></li>
 </ul>
 </li>
@@ -234,15 +236,17 @@
 <li><p><strong>일괄 작성 문서함:</strong> 내가 일괄로 작성한 문서의 진행 상태 등 일괄 작성 문서에 대한 현황을 확인할 수 있습니다.</p></li>
 </ul>
 </li>
-<li><p><strong>문서 관리:</strong> 문서 관리 권한이 있어야만 접근 가능한 메뉴입니다. 문서 관리 권한이 있는 템플릿으로 만들어진 모든 문서를
+<li><p><strong>공유 문서함:</strong> 소유한 문서를 다른 멤버에게 공유하거나 공유 문서함에 접근 권한이 있을 경우 공유된 문서를 한눈에 확인할 수 있습니다.</p></li>
+<li><p><strong>문서 관리:</strong> 문서 관리자 권한이 있어야만 접근 가능한 메뉴입니다. 문서 관리 권한이 있는 템플릿으로 만들어진 모든 문서를
 조회할 수 있습니다. 단, 대표관리자의 경우, 모든 문서를 조회 및 관리할 수 있습니다.</p></li>
 <li><p><strong>내 서명:</strong> 내 서명을 등록하고 문서 작성 시 편리하게 서명란에 적용할 수 있습니다.</p></li>
-<li><p><strong>템플릿 관리:</strong> 템플릿 관리 권한이 있어야만 접근 가능한 메뉴입니다. 템플릿 목록을 확인하고 템플릿을 생성 및 설정할 수 있습니다.</p></li>
-<li><p><strong>회사 관리:</strong> 대표 관리자와 회사 관리 권한이 부여된 멤버만 접근 가능한 메뉴입니다. 회사 정보를 조회하고 수정할 수 있습니다.</p>
+<li><p><strong>템플릿 관리:</strong> 템플릿 관리자 권한이 있어야만 접근 가능한 메뉴입니다. 템플릿 목록을 확인하고 템플릿을 생성 및 설정할 수 있습니다.</p></li>
+<li><p><strong>회사 관리:</strong> 대표 관리자와 회사 관리자 권한이 부여된 멤버만 접근 가능한 메뉴입니다. 회사 정보를 조회하고 수정할 수 있습니다.</p>
 <ul>
 <li><p><strong>회사 정보:</strong> 회사 정보 회사 정보를 확인 및 수정하고 대시보드, 이메일 등에 적용되는 브랜드 이미지를 설정할 수 있습니다.</p></li>
 <li><p><strong>그룹 관리:</strong> 멤버 그룹을 생성하거나 그룹 정보를 수정할 수 있습니다.</p></li>
 <li><p><strong>멤버 관리:</strong> 멤버를 초대하거나 멤버 정보를 수정할 수 있습니다.</p></li>
+<li><p><strong>권한 관리:</strong> 멤버별로 회사 관리자, 템플릿 관리자, 문서 관리자 권한을 부여하고 관리할 수 있습니다.</p></li>
 <li><p><strong>회사 도장 관리:</strong> 법인인감, 사용인감 등 회사의 공식 도장을 등록하고 각 도장 별 사용 권한을 설정할 수 있으며, 도장 사용 내역을 확인할 수 있습니다.</p></li>
 <li><p><strong>서명 설정:</strong> 그리기, 텍스트, 도장 중 서명하는 방식을 설정할 수 있습니다.</p></li>
 <li><p><strong>알림 템플릿 관리:</strong> eformsign에서 발송되는 이메일, SMS 알림 템플릿 목록을 확인하고 수정할 수 있습니다.</p></li>
@@ -256,10 +260,11 @@
 <li><p><strong>API / Webhook:</strong> 이폼사인 API를 사용할 때 필요한 API 및 웹훅 키를 관리할 수 있습니다.</p></li>
 </ul>
 </li>
-<li><p><strong>요금 관리:</strong> 요금제 및 결제 내역을 조회하고 요금제나 결제 수단을 변경할 수 있습니다.</p>
+<li><p><strong>요금 관리:</strong> 요금제, 실시간 이용 현황 및 결제 내역을 조회하고 요금제나 결제 수단을 변경할 수 있습니다.</p>
 <ul>
-<li><p><strong>요금제 변경:</strong> 사용 중인 요금제를 변경할 수 있습니다.</p></li>
-<li><p><strong>실시간 요금:</strong> 현재까지의 이용 내역 및 요금 현황을 실시간으로 조회할 수 있습니다.</p></li>
+<li><p><strong>요금제:</strong> 사용 중인 요금제를 확인  변경할 수 있습니다.</p></li>
+<li><p><strong>실시간 사용 내역:</strong> 현재까지의 사용 내역 및 잔여 수량을 실시간으로 조회할 수 있습니다.</p></li>
+<li><p><strong>결제 내역:</strong> 최근 1년간의 결재 내역을 확인할 수 있습니다.있습니다.</p></li>
 <li><p><strong>결제 수단 설정:</strong> 요금 결제시 사용될 신용카드 정보를 등록할 수 있습니다.</p></li>
 </ul>
 </li>
@@ -288,7 +293,7 @@
 <p>자주 사용하는 템플릿은 즐겨찾기에 등록하여 바로 문서를 작성할 수 있습니다. 템플릿 <strong>즐겨찾기</strong>는 대시보드에서 할 수 있습니다.</p>
 <ol class="arabic">
 <li><p>대시보드의 즐겨찾기 추가 아이콘( <img alt="image4" src="../_images/favorites-add.PNG" />)을 클릭하세요.</p></li>
-<li><p>클릭시 즐겨찾기에 등록이 안된 템플릿의 목록이 팝업창으로 뜹니다.</p></li>
+<li><p>즐겨찾기에 등록이 안된 템플릿의 목록이 팝업창으로 뜹니다.</p></li>
 <li><p>즐겨찾기에 추가하고자 하는 템플릿의 체크박스를 클릭합니다.</p>
 <p><a class="reference internal" href="../_images/favorites-add-popup2.PNG"><img alt="image5" src="../_images/favorites-add-popup2.PNG" style="width: 400px;" /></a></p>
 </li>
@@ -296,19 +301,19 @@
 </ol>
 </div>
 </dd>
-<dt><strong>④ 처리할 문서함</strong></dt><dd><p>내가 처리해야 하는 문서의 개수를 보여주며, 클릭시 <strong>처리할 문서함</strong>으로 이동합니다.</p>
+<dt><strong>④ 처리할 문서함</strong></dt><dd><p>내가 처리해야 하는 문서의 수를 보여주며, 클릭시 <strong>처리할 문서함</strong>으로 이동합니다.</p>
 </dd>
-<dt><strong>⑤ 진행 중 문서함</strong></dt><dd><p>현재 진행 중인 문서의 개수를 보여주며, 클릭시 진행 중인 문서의 목록을 확인할 수 있는 <strong>진행 중 문서함</strong>으로 이동합니다.</p>
+<dt><strong>⑤ 진행 중 문서함</strong></dt><dd><p>현재 진행 중인 문서의 수를 보여주며, 클릭시 진행 중인 문서의 목록을 확인할 수 있는 <strong>진행 중 문서함</strong>으로 이동합니다.</p>
 </dd>
 <dt><strong>⑥ 완료 문서함</strong></dt><dd><p>클릭시 <strong>완료 문서함</strong>으로 이동합니다.</p>
 </dd>
-<dt><strong>⑦ 임시 보관함</strong></dt><dd><p><strong>내 파일로 문서 작성</strong>을 통해 문서 작성 진행 중 <strong>문서 시작하기</strong> 이전에 임시 저장된 문서의 개수를 보여주며, 클릭시 <strong>임시 보관함</strong>으로 이동합니다.</p>
+<dt><strong>⑦ 임시 보관함</strong></dt><dd><p><strong>내 파일로 문서 작성</strong>을 통해 문서 작성 진행 중 <strong>문서 시작하기</strong> 이전에 임시 저장된 문서의 수를 보여주며, 클릭시 <strong>임시 보관함</strong>으로 이동합니다.</p>
 </dd>
-<dt><strong>⑧ 처리할 문서</strong></dt><dd><p>내가 처리해야 하는 문서의 개수와 최근 문서 3건을 목록으로 보여줍니다. 목록의 문서명을 클릭하면 해당 문서로 바로 이동하며, <strong>더보기</strong>를 클릭하면 <strong>처리할 문서함</strong>으로 이동합니다.</p>
+<dt><strong>⑧ 처리할 문서</strong></dt><dd><p>내가 처리해야 하는 문서의 수와 최근 문서 3건을 목록으로 보여줍니다. 목록의 문서명을 클릭하면 해당 문서로 바로 이동하며, <strong>더보기</strong>를 클릭하면 <strong>처리할 문서함</strong>으로 이동합니다.</p>
 </dd>
-<dt><strong>⑨ 임시 보관 문서</strong></dt><dd><p>임시 보관함에 저장된 문서의 개수와 최근 문서 3건을 목록으로 보여줍니다. 목록의 문서명을 클릭하면 해당 문서로 바로 이동하며, <strong>더보기</strong>를 클릭하면 <strong>임시 보관함</strong>으로 이동합니다.</p>
+<dt><strong>⑨ 임시 보관 문서</strong></dt><dd><p>임시 보관함에 저장된 문서의 수와 최근 문서 3건을 목록으로 보여줍니다. 목록의 문서명을 클릭하면 해당 문서로 바로 이동하며, <strong>더보기</strong>를 클릭하면 <strong>임시 보관함</strong>으로 이동합니다.</p>
 </dd>
-<dt><strong>⑩ 진행 중 문서</strong></dt><dd><p>진행 중인 문서의 개수와 최근 문서 3건을 목록으로 보여줍니다. 목록의 문서명을 클릭하면 해당 문서로 바로 이동하며, <strong>더보기</strong>를 클릭하면 <strong>진행 중 문서함</strong>으로 이동합니다.</p>
+<dt><strong>⑩ 진행 중 문서</strong></dt><dd><p>진행 중인 문서의 수와 최근 문서 3건을 목록으로 보여줍니다. 목록의 문서명을 클릭하면 해당 문서로 바로 이동하며, <strong>더보기</strong>를 클릭하면 <strong>진행 중 문서함</strong>으로 이동합니다.</p>
 </dd>
 <dt><strong>⑪ 완료 문서</strong></dt><dd><p>최근 완료된 문서 3건을 목록으로 보여줍니다. 목록의 문서명을 클릭하면 해당 문서로 바로 이동하며, <strong>더보기</strong>를 클릭하면 <strong>완료 문서함</strong>으로 이동합니다.</p>
 </dd>
@@ -317,7 +322,7 @@
 </div>
 <div class="section" id="id5">
 <h2>기본 정보 확인 및 변경<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>이폼사인 가입시 입력한 개인 정보 및 내가 등록된 회사의 정보는 사이드바 메뉴의 우측 상단에 있는 아이콘(<img alt="image6" src="../_images/menu-hamberger-icon.png" />)을 클릭하여 확인할 수 있습니다.</p>
+<p>이폼사인 가입 시 입력한 개인정보 및 내가 등록된 회사의 정보는 사이드바 메뉴의 우측 상단에 있는 아이콘(<img alt="image6" src="../_images/menu-hamberger-icon.png" />)을 클릭하여 확인할 수 있습니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/menu-personalinfo.png"><img alt="내 정보 확인 아이콘" src="../_images/menu-personalinfo.png" style="width: 700px;" /></a>
 </div>
@@ -327,7 +332,7 @@
 </div>
 <ul class="simple">
 <li><p><strong>회사 변경:</strong> 내가 소속된 회사가 여러 개일 경우 회사 변경을 클릭하면 회사의 목록이 나타나며 변경할 회사를 클릭하여 소속 회사를 변경할 수 있습니다.</p></li>
-<li><p><strong>내 정보:</strong> 이폼사인 가입시 등록한 내 개인 정보를 확인 및 수정할 수 있으며, 내가 소속된 회사의 정보를 확인할 수 있습니다.</p></li>
+<li><p><strong>내 정보:</strong> 이폼사인 가입 시 등록한 내 개인정보를 확인 및 수정할 수 있으며, 내가 소속된 회사의 정보를 확인할 수 있습니다.</p></li>
 <li><p><strong>로그아웃:</strong> 이폼사인에서 로그아웃 할 수 있습니다.</p></li>
 </ul>
 <div class="section" id="id6">
@@ -394,12 +399,16 @@
 </div>
 <div class="section" id="brand">
 <span id="id8"></span><h3>브랜드<a class="headerlink" href="#brand" title="Permalink to this headline">¶</a></h3>
-<p>브랜드 회사의 로고와 심볼을 등록하여 이폼사인의 대시보드와 사이드바 메뉴에 표시되도록 할 수 있으며, 문서 요청시 등 발송하는 이메일 템플릿 등에 표시할 수 있습니다.</p>
+<p>회사의 로고와 심볼을 등록하여 이폼사인의 대시보드와 사이드바 메뉴에 표시되도록 할 수 있으며, 문서 요청시 등 발송하는 이메일 템플릿 등에 표시할 수 있습니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>로고와 심볼의 차이</strong></p>
 <p>로고와 심볼 모두 회사를 대표하는 이미지입니다. 로고는 대체로 브랜드명을 기재하는 가로로 긴 형식, 심볼은 이미지만으로 표현한 정사각형 형식입니다.</p>
-<p>이폼사인에서도 로고는 512 x 128의 가로 투명 이미지, 심볼은 120 x 120의 정사각형 투명 이미지를 권장하고 있습니다.</p>
+<p><strong>권장 사이즈</strong></p>
+<ul class="simple">
+<li><p>로고: 512 x 128의 가로 투명 이미지</p></li>
+<li><p>심볼: 120 x 120의 정사각형 투명 이미지</p></li>
+</ul>
 </div>
 <p><strong>회사 로고 등록하는 방법</strong></p>
 <div class="figure align-default">
@@ -435,12 +444,21 @@
 <li><p><strong>대표 관리자</strong></p>
 <p>회사의 대표자로 이폼사인 사용에 대한 모든 권한이 있습니다.</p>
 </li>
-<li><p><strong>회사 관리</strong></p>
+<li><p><strong>회사 관리자</strong></p>
 <p><strong>회사 관리</strong> 메뉴에 접근할 수 있습니다. 회사 정보, 멤버, 그룹 등을 관리할 수 있으며 <strong>멤버 초대</strong> 및 <strong>문서 이관</strong> 등을 할 수 있습니다.</p>
 </li>
-<li><p><strong>템플릿 관리</strong></p>
+<li><p><strong>템플릿 관리자</strong></p>
 <p><strong>템플릿 관리</strong> 메뉴에 접근할 수 있습니다. 폼 빌더를 사용하여 폼파일을 만들거나 웹폼 디자이너로 파일을 업로드하여 새로운 템플릿을 등록할 수 있으며, 템플릿을 수정, 배포 및 삭제할 수 있습니다.</p>
 </li>
+<li><p><strong>문서 관리자</strong></p>
+<p><strong>문서 관리</strong> 메뉴에 접근할 수 있습니다. 문서 관리 권한을 부여받은 템플릿으로 생성된 문서를 열람하고 다운로드 받을 수 있으며, 관리 범위에 따라 문서를 취소 또는 제거할 수도 있습니다.</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>관리자 권한은 <strong>회사 관리 &gt; 권한 관리</strong> 메뉴에서 <strong>대표 관리자</strong>만 설정할 수 있습니다.</p>
+</div>
+<ul>
 <li><p><strong>템플릿별 권한</strong></p>
 <p>템플릿별로 멤버 또는 그룹에게 다음과 같은 권한을 부여할 수 있습니다.</p>
 <ul>
@@ -450,28 +468,22 @@
 <li><p><strong>템플릿 수정 권한</strong></p>
 <p>템플릿 수정 권한은 해당 템플릿을 수정할 수 있는 권한입니다.</p>
 </li>
-<li><p><strong>문서 관리 권한</strong></p>
-<p><strong>문서 관리</strong> 메뉴에 접근하여 템플릿 별로 생성된 문서를 열람하고 다운로드 받을 수 있습니다.</p>
-</li>
 </ul>
 </li>
 </ul>
 <div class="section" id="id10">
 <h3>대표 관리자<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
-<p>대표 관리자는 가입시 회사를 생성한 사용자가 대표 관리자로 등록되며, 이폼사인 사용에 대한 모든 권한을 갖고 있는 최고 관리자입니다.</p>
-<p>대표 관리자는</p>
+<p>대표 관리자는 가입 시 회사를 생성한 사용자가 대표 관리자로 등록되며, 이폼사인 사용에 대한 모든 권한을 갖고 있는 최고 관리자입니다.</p>
+<p><strong>대표 관리자는</strong></p>
 <ul class="simple">
 <li><p>모든 메뉴에 접근할 수 있습니다.</p></li>
 <li><p>템플릿을 생성, 수정, 삭제, 관리할 수 있습니다.</p></li>
 <li><p>모든 문서를 작성, 열람, 관리할 수 있습니다.</p></li>
+<li><p>멤버별 권한을 부여할 수 있습니다.</p></li>
 <li><p>대표 관리자 변경이 필요한 경우 다른 멤버에게 권한을 위임할 수 있습니다.</p></li>
 </ul>
 <p>대표 관리자가 탈퇴할 경우, 회사가 삭제되며 회사를 삭제하지 않고 계정 탈퇴를 하려면 대표 관리자에 대한 권한은 다른 멤버에게 위임해야 합니다.</p>
 <p><strong>대표 관리자 권한 위임하는 방법</strong></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>이 작업은 <strong>대표 관리자</strong> 권한이 필요합니다.</p>
-</div>
 <ol class="arabic">
 <li><p>사이드바 메뉴에서 <strong>회사 관리 &gt; 회사 정보</strong>로 이동합니다.</p></li>
 <li><p><strong>상세 정보</strong>의 <strong>수정</strong> 버튼을 클릭하면 <strong>대표 관리자</strong> 항목의 오른쪽에 나타나는 <strong>권한 위임</strong> 링크를 클릭합니다.</p>
@@ -479,23 +491,20 @@
 <a class="reference internal image-reference" href="../_images/Admin-auth-change_1.png"><img alt="대표 관리자 권한 위임 위치" src="../_images/Admin-auth-change_1.png" style="width: 700px;" /></a>
 </div>
 </li>
-<li><p><strong>권한 위임</strong> 팝업창에서 권한을 위임할 멤버를 검색 및 선택합니다.</p>
+<li><p><strong>권한 위임</strong> 팝업창에서 대표 관리자 권한을 위임할 멤버를 검색 및 선택합니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/Admin-auth-change-popup_1.png"><img alt="권한 위임 팝업 화면" src="../_images/Admin-auth-change-popup_1.png" style="width: 500px;" /></a>
 </div>
 </li>
 <li><p>대표 관리자 계정의 비밀번호를 입력합니다.</p></li>
-<li><p><strong>저장</strong> 버튼을 클릭해 변경사항을 저장합니다.</p></li>
+<li><p><strong>저장</strong> 버튼을 클릭하면 대표 관리자 권한이 위임됩니다.</p></li>
 </ol>
 </div>
 <div class="section" id="id11">
-<h3>회사 관리 권한<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
-<p>회사 관리자는 <strong>회사 관리</strong> 메뉴에 접근 권한을 가지며, 회사와 관련된 정보 및 멤버/그룹 등의 정보를 열람, 수정, 삭제 등을 할 수 있습니다. 회사 관리 권한은 대표 관리자가 멤버에게 권한을 부여할 수 있습니다.</p>
-<p><strong>회사 관리 권한 부여하는 방법</strong></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>이 작업은 <strong>대표 관리자</strong> 권한이 필요합니다.</p>
-</div>
+<h3>회사 관리자<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>회사 관리자는 <strong>회사 관리</strong> 메뉴에 접근 권한을 가지며, 회사와 관련된 정보 및 멤버/그룹 등의 정보를 열람, 수정, 삭제 등을 할 수 있습니다.</p>
+<p>회사 관리자 권한은 <strong>멤버 관리</strong> 또는 <strong>권한 관리</strong> 메뉴에서 설정할 수 있습니다.</p>
+<p><strong>회사 관리 &gt; 멤버 관리에서 회사 관리자 설정하는 방법</strong></p>
 <ol class="arabic">
 <li><p>사이드바 메뉴에서 <strong>회사 관리 &gt; 멤버 관리</strong>로 이동합니다.</p></li>
 <li><p>멤버 목록에서 <strong>회사 관리</strong> 권한을 부여할 멤버를 선택합니다.</p></li>
@@ -506,17 +515,40 @@
 </li>
 <li><p><strong>저장</strong> 버튼을 클릭합니다.</p></li>
 </ol>
+<p><strong>회사 관리 &gt; 권한 관리에서 회사 관리자 설정하는 방법</strong></p>
+<ol class="arabic">
+<li><p>사이드바 메뉴에서 <strong>회사 관리 &gt; 권한 관리</strong>로 이동합니다.</p></li>
+<li><p><strong>회사 관리자</strong> 권한 설정 화면에서 우측 상단의 <strong>회사 관리자 추가</strong> 버튼을 클릭합니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/add-company-manager.png"><img alt="권한 관리 &gt; 회사 관리자 추가 버튼" src="../_images/add-company-manager.png" style="width: 700px;" /></a>
 </div>
-<div class="section" id="id12">
-<h3>템플릿 관리 권한<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
-<p>템플릿 관리자는 <strong>템플릿 관리</strong> 메뉴에 접근 권한을 가지며, 템플릿을 등록, 수정, 배포, 삭제할 수 있습니다.</p>
-<p>템플릿을 등록한 템플릿 관리자는 해당 템플릿의 템플릿 소유자가 됩니다. 한 회사에 여러 명의 템플릿 관리자가 있는 경우 템플릿 소유자와 템플릿 관리자가 다를 수 있습니다.</p>
-<p>템플릿 관리자가 템플릿 소유자가 아닌 경우 해당 템플릿의 설정 보기와 템플릿 복제만 할 수 있습니다.</p>
-<p><strong>템플릿 관리 권한 부여하는 방법</strong></p>
+</li>
+<li><p>회사 관리자로 설정할 멤버를 검색 후 선택합니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/add-company-manager-popup.png"><img alt="권한 관리 &gt; 회사 관리자 추가 팝업" src="../_images/add-company-manager-popup.png" style="width: 400px;" /></a>
+</div>
+</li>
+<li><p><strong>확인</strong> 버튼을 누르면 해당 멤버가 회사 관리자로 추가됩니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/company-manager-added.png"><img alt="권한 관리 &gt; 회사 관리자 추가된 화면" src="../_images/company-manager-added.png" style="width: 700px;" /></a>
+</div>
+</li>
+</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>이 작업은 <strong>대표 관리자</strong> 또는 <strong>템플릿 관리</strong> 권한이 필요합니다.</p>
+<p>회사 관리자 권한을 삭제하려면, 우측 상단의 휴지통 아이콘을 클릭한 후 권한을 삭제할 멤버를 선택하고 <strong>삭제</strong> 버튼을 클릭합니다.</p>
 </div>
+</div>
+<div class="section" id="id12">
+<h3>템플릿 관리자<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>템플릿 관리자는 <strong>템플릿 관리</strong> 메뉴에 접근 권한을 가지며, 템플릿을 등록, 수정, 배포, 삭제할 수 있습니다.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>템플릿을 등록한 템플릿 관리자는 해당 템플릿의 소유자가 됩니다. 한 회사에 여러 명의 템플릿 관리자가 있는 경우 템플릿 소유자와 템플릿 관리자가 다를 수 있습니다.</p>
+<p>템플릿 관리자가 템플릿 소유자가 아닌 경우 해당 템플릿의 설정 보기와 템플릿 복제만 할 수 있습니다.</p>
+</div>
+<p>템플릿 관리자 권한은 <strong>멤버 관리</strong> 메뉴 또는 <strong>권한 관리</strong> 메뉴에서 설정할 수 있습니다.</p>
+<p><strong>회사 관리 &gt; 멤버 관리에서 템플릿 관리자 설정하는 방법</strong></p>
 <ol class="arabic">
 <li><p>사이드바 메뉴에서 <strong>회사 관리 &gt; 멤버 관리</strong>로 이동합니다.</p></li>
 <li><p>멤버 목록에서 템플릿 관리 권한을 부여할 멤버를 선택합니다.</p></li>
@@ -527,19 +559,129 @@
 </li>
 <li><p><strong>저장</strong> 버튼을 클릭합니다.</p></li>
 </ol>
+<p><strong>회사 관리 &gt; 권한 관리에서 템플릿 관리자 설정하는 방법</strong></p>
+<ol class="arabic">
+<li><p>사이드바 메뉴에서 <strong>회사 관리 &gt; 권한 관리</strong>로 이동합니다.</p></li>
+<li><p>메뉴에서 <strong>템플릿 관리자</strong>를 클릭합니다.</p></li>
+<li><p>우측 상단의 <strong>템플릿 관리자 추가</strong> 버튼을 클릭합니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/add-template-manager.png"><img alt="권한 관리 &gt; 템플릿 관리자 추가 버튼" src="../_images/add-template-manager.png" style="width: 700px;" /></a>
+</div>
+</li>
+<li><p>템플릿 관리자로 설정할 멤버를 검색 후 선택합니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/add-template-manager-popup.png"><img alt="권한 관리 &gt; 템플릿 관리자 추가 팝업" src="../_images/add-template-manager-popup.png" style="width: 400px;" /></a>
+</div>
+</li>
+<li><p><strong>확인</strong> 버튼을 누르면 해당 멤버가 템플릿 관리자로 추가됩니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/template-manager-added.png"><img alt="권한 관리 &gt; 템플릿 관리자 추가된 화면" src="../_images/template-manager-added.png" style="width: 700px;" /></a>
+</div>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>템플릿 관리자별 소유한 템플릿 확인하기</strong></p>
+<p>템플릿 관리자 목록에서는 각 템플릿 관리자별 소유한 템플릿의 수를 확인할 수 있으며, <strong>상세보기</strong>를 클릭하면 해당 관리자가 소유한 템플릿의 목록을 확인할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/template-manager-templatesowned.png"><img alt="권한 관리 &gt; 템플릿 관리 상세" src="../_images/template-manager-templatesowned.png" style="width: 700px;" /></a>
+</div>
+</div></blockquote>
+<p><strong>템플릿 관리 상세</strong> 팝업에서는 해당 템플릿 관리자가 소유한 템플릿의 목록을 확인할 수 있으며, 템플릿 이름에 마우스오버를 하면 <strong>소유자 변경</strong> 버튼이 표시되어 클릭 후 소유자를 다른 멤버로 변경할 수 있습니다.</p>
+</div>
+</div>
+<div class="section" id="id13">
+<h3>문서 관리자<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><strong>문서 관리</strong> 메뉴에 접근할 수 있습니다. 문서 관리자 권한을 부여받은 템플릿으로 생성된 문서를 열람하고 다운로드 받을 수 있으며, 관리 범위에 따라 문서를 취소 또는 제거할 수도 있습니다.</p>
+</div></blockquote>
+<p><strong>문서 관리자 권한 부여하는 방법</strong></p>
+<ol class="arabic">
+<li><p>사이드바 메뉴에서 <strong>회사 관리 &gt; 권한 관리</strong>로 이동합니다.</p></li>
+<li><p>권한 메뉴에서 <strong>문서 관리자</strong>를 클릭합니다.</p></li>
+<li><p>우측 상단의 <strong>문서 관리자 추가</strong> 버튼을 클릭합니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/add-document-manager.png"><img alt="권한 관리 &gt; 문서 관리자 화면" src="../_images/add-document-manager.png" style="width: 700px;" /></a>
+</div>
+</li>
+<li><p>문서 관리자로 설정할 멤버를 검색 후 선택합니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/add-document-manager-popup.png"><img alt="권한 관리 &gt; 문서 관리자 추가 팝업" src="../_images/add-document-manager-popup.png" style="width: 400px;" /></a>
+</div>
+</li>
+<li><p><strong>확인</strong> 버튼을 누르면 해당 멤버가 문서 관리자로 추가됩니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/document-manager-added.png"><img alt="권한 관리 &gt; 문서 관리자 추가된 화면" src="../_images/document-manager-added.png" style="width: 700px;" /></a>
+</div>
+</li>
+<li><p>목록에서 해당 멤버 우측에 <strong>설정</strong> 버튼을 클릭해 관리 문서에 대한 상세 설정을 합니다.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/document-manager-setting-popup.png"><img alt="권한 관리 &gt; 문서 관리자 팝업" src="../_images/document-manager-setting-popup.png" style="width: 400px;" /></a>
+</div>
+<p>문서 관리자에게 관리 권한을 부여할 문서 조건을 설정합니다.</p>
+<ul>
+<li><dl>
+<dt><strong>문서 조건 선택:</strong> 문서 작성자와 문서 종류를 선택하면 선택한 작성자가 작성한 문서에 대한 관리 권한이 부여됩니다.</dt><dd><blockquote>
+<div><p>예를 들어 ‘인사팀’에서 작성한 ‘근로 계약서’에 대한 문서 관리자를 설정할 경우, 작성자에 ‘인사팀’, 문서 종류에 템플릿 목록의 ‘근로 계약서’를 선택합니다.</p>
+</div></blockquote>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>작성자</strong></dt><dd><p>문서를 작성한 작성자를 전체 멤버, 그룹, 또는 개별 멤버 중 선택합니다.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>문서 종류</strong></dt><dd><ul>
+<li><p><strong>전체 문서:</strong> 위에서 선택한 작성자가 작성한 모든 문서를 관리합니다.</p></li>
+<li><p><strong>템플릿으로 작성된 문서 전체:</strong> 선택한 작성자가 작성한 문서 중 템플릿으로 작성한 모든 문서를 관리합니다.</p></li>
+<li><p><strong>템플릿 없이 내 파일로 작성된 문서 전체:</strong> 선택한 작성자가 <strong>내 파일로 문서 작성</strong> 메뉴를 통해 작성한 모든 문서를 관리합니다.</p></li>
+<li><p><strong>템플릿 목록:</strong> 선택한 작성자가 해당 템플릿으로 작성한 문서를 관리합니다.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><strong>관리 범위 선택:</strong> 문서 조건에서 설정한 문서에 대한 관리 범위를 설정합니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>문서 열람 및 다운로드:</strong> 문서 관리자의 기본 권한으로 선택에 관계없이 문서 관리 권한이 부여된 그룹 또는 멤버는 모든 문서를 열람할 수 있는 권한이 부여됩니다.</p></li>
+<li><p><strong>문서 취소:</strong> 완료된 문서에 대해 문서 작성자가 취소를 요청할 경우 취소를 승인하여 해당 문서를 취소할 수 있는 권한입니다.</p></li>
+<li><p><strong>문서 영구 제거:</strong> 시스템에서 문서를 영구적으로 제거할 수 있는 권한입니다.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>아래 + 버튼을 클릭하면 문서 조건을 여러개 설정할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/document-manager-setting-popup2.png"><img alt="권한 관리 &gt; 문서 관리자 팝업2" src="../_images/document-manager-setting-popup2.png" style="width: 400px;" /></a>
+</div>
+</div></blockquote>
+</div>
+</li>
+</ol>
 </div>
 <div class="section" id="permissionsfortemplate">
-<span id="id13"></span><h3>템플릿별 권한<a class="headerlink" href="#permissionsfortemplate" title="Permalink to this headline">¶</a></h3>
-<p>각 템플릿 별로 문서를 생성할 수 있는 <strong>템플릿 사용 권한</strong>과 템플릿을 수정할 수 있는 <strong>수정 권한</strong>, 그리고 템플릿으로 생성된 문서와 문서에 입력된 데이터를 관리하는 <strong>문서 관리 권한</strong>을 부여할 수 있습니다.</p>
+<span id="id14"></span><h3>템플릿별 권한<a class="headerlink" href="#permissionsfortemplate" title="Permalink to this headline">¶</a></h3>
+<p>각 템플릿별로 문서를 생성할 수 있는 <strong>템플릿 사용 권한</strong>과 템플릿을 수정할 수 있는 <strong>수정 권한</strong>부여할 수 있습니다.</p>
 <ul class="simple">
-<li><p><strong>템플릿 사용 권한</strong>이 부여된 멤버는 <strong>새 문서 작성</strong> 메뉴 화면에서 해당 템플릿으로 문서를 작성할 수 있습니다.</p></li>
+<li><p><strong>템플릿 사용 권한</strong>이 부여된 멤버는 <strong>새 문서 작성 &gt; 템플릿으로 문서 작성</strong> 메뉴 화면에서 해당 템플릿으로 문서를 작성할 수 있습니다.</p></li>
 <li><p><strong>템플릿 수정 권한</strong>이 부여된 멤버는 <strong>템플릿 관리</strong>에서 해당 템플릿을 수정할 수 있습니다.</p></li>
-<li><p><strong>문서 관리 권한</strong>이 부여된 멤버는 <strong>문서 관리</strong> 메뉴 화면에서 해당 템플릿으로 작성된 문서를 열람, 삭제, 다운로드할 수 있습니다.</p></li>
 </ul>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>템플릿 수정 권한은 템플릿 관리자에게만 부여할 수 있습니다.</p>
+</div>
 <p><strong>권한 부여하는 방법</strong></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>이 작업은 <strong>대표 관리자</strong> 또는 <strong>템플릿 관리</strong> 권한이 필요합니다.</p>
+<p>이 작업은 <strong>대표 관리자</strong> 또는 <strong>템플릿 관리자</strong> 권한이 필요합니다.</p>
 </div>
 <ol class="arabic">
 <li><p>사이드바 메뉴에서 <strong>템플릿 관리</strong>로 이동합니다.</p></li>
@@ -558,19 +700,19 @@
 </ol>
 </div>
 </div>
-<div class="section" id="id14">
-<h2>멤버 및 그룹 관리<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id15">
+<h2>멤버 및 그룹 관리<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
 <p><strong>회사 관리</strong> 메뉴에서 멤버를 초대, 삭제, 수정 및 그룹 생성, 추가, 삭제 등을 관리할 수 있습니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/menu-group-member-manage.png"><img alt="회사관리 &gt; 그룹/멤버 관리" src="../_images/menu-group-member-manage.png" style="width: 700px;" /></a>
 </div>
-<div class="section" id="id15">
-<h3>멤버 관리<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id16">
+<h3>멤버 관리<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <p><strong>멤버 관리</strong> 메뉴에서는 멤버를 회사 소속으로 초대하거나, 초대된 멤버를 관리할 수 있습니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/manage-member.png"><img alt="회사 관리 &gt; 멤버 관리" src="../_images/manage-member.png" style="width: 700px;" /></a>
 </div>
-<dl class="simple">
+<dl>
 <dt><strong>① 활성 멤버</strong></dt><dd><p>초대를 수락하여 현재 활성화된 멤버 목록 및 정보를 확인할 수 있습니다.</p>
 </dd>
 <dt><strong>② 비활성 멤버</strong></dt><dd><p>비활성된 멤버 목록 및 정보를 확인할 수 있습니다.</p>
@@ -579,22 +721,31 @@
 </dd>
 <dt><strong>④ 멤버 목록</strong></dt><dd><p>목록에서 멤버를 클릭하여 오른쪽 멤버 정보 탭에서 정보를 확인, 수정하거나 삭제할 수 있습니다.</p>
 </dd>
-<dt><strong>⑤ 멤버 정보</strong></dt><dd><p>멤버 정보를 확인할 수 있으며, 멤버 상태 변경, 회사 관리, 템플릿 관리 등 권한을 부여할 수 있습니다. .</p>
+<dt><strong>⑤ 멤버 정보</strong></dt><dd><p>멤버 정보를 확인할 수 있으며, 멤버 상태 변경, 회사 관리, 템플릿 관리 등 권한을 부여할 수 있습니다.</p>
 </dd>
 <dt><strong>⑥ 필드 값 설정</strong></dt><dd><p>멤버와 관련된 필드 값을 설정할 수 있습니다.</p>
 </dd>
-<dt><strong>⑦ 문서 이관</strong></dt><dd><p>멤버가 이폼사인을 더 이상 사용하지 않는 경우, 해당 멤버가 처리했거나 처리할 문서를 다른 멤버에게 이관할 수 있습니다.</p>
+<dt><strong>⑦ 공유 문서함 이관</strong></dt><dd><p>멤버가 소유한 공유 문서함을 다른 멤버에게 이관할 수 있습니다. 소유한 공유 문서함이 여러 개인 경우 일괄로 이관할 수 있으며, 그 중 일부만 이관할 수도 있습니다.</p>
 </dd>
-<dt><strong>⑧ 멤버 일괄 초대</strong></dt><dd><p>멤버 초대시 여러 명의 멤버를 한번에 초대할 수 있습니다.</p>
+<dt><strong>⑧ 문서 이관</strong></dt><dd><p>멤버가 이폼사인을 더 이상 사용하지 않거나 부서 변경 등의 이유로 문서를 이관해야할 경우, 해당 멤버가 처리했거나 처리할 문서를 다른 멤버에게 이관할 수 있습니다.</p>
 </dd>
-<dt><strong>⑨ 멤버 초대</strong></dt><dd><p>이메일 또는 ID를 사용하여 멤버를 초대할 수 있습니다.</p>
+<dt><strong>⑨ 멤버 일괄 초대</strong></dt><dd><p>멤버 초대시 여러 명의 멤버를 한번에 초대할 수 있습니다.</p>
 </dd>
-<dt><strong>⑩ 삭제</strong></dt><dd><p><strong>휴지통</strong> 아이콘을 클릭하면 멤버 목록 왼쪽에 체크박스가 활성화됩니다. 삭제할 멤버를 체크한 후 <strong>삭제</strong> 버튼을 클릭하면 멤버가 삭제됩니다.</p>
+<dt><strong>⑩ 멤버 초대</strong></dt><dd><p>이메일 또는 ID를 사용하여 멤버를 초대할 수 있습니다.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>멤버 초대 시 이메일 또는 SMS 전송된 멤버 초대 링크는 7일간 유효합니다.
+멤버 초대 후 초대받은 멤버가 7일 이내에 수락하지 않으면 비활성 멤버로 변경되며, 다시 초대해야 합니다.</p>
+</div>
+</dd>
+<dt><strong>⑪ 멤버 목록 일괄 다운로드</strong></dt><dd><p>회사에 소속된 멤버 목록을 CSV 파일로 다운로드할 수 있습니다.</p>
+</dd>
+<dt><strong>⑫ 삭제</strong></dt><dd><p><strong>휴지통</strong> 아이콘을 클릭하면 멤버 목록 왼쪽에 체크박스가 활성화됩니다. 삭제할 멤버를 체크한 후 <strong>삭제</strong> 버튼을 클릭하면 멤버가 삭제됩니다.</p>
 </dd>
 </dl>
 </div>
-<div class="section" id="id16">
-<h3>그룹 관리<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id17">
+<h3>그룹 관리<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
 <p>그룹 관리 메뉴에서는 회사내 그룹을 생성할 수 있으며, 그룹 정보 확인, 수정 및 삭제 등을 할 수 있습니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/manage-group.png"><img alt="회사관리 &gt; 그룹 관리" src="../_images/manage-group.png" style="width: 700px;" /></a>
@@ -614,10 +765,10 @@
 </div>
 </div>
 <div class="section" id="mysignature">
-<span id="id17"></span><h2>내 서명 관리<a class="headerlink" href="#mysignature" title="Permalink to this headline">¶</a></h2>
+<span id="id18"></span><h2>내 서명 관리<a class="headerlink" href="#mysignature" title="Permalink to this headline">¶</a></h2>
 <p><strong>내 서명</strong> 메뉴에서 <strong>서명, 이니셜, 도장</strong>을 등록해 두면 문서 작성 시 등록된 서명을 간편하게 사용할 수 있습니다.</p>
 <div class="section" id="registersignature">
-<span id="id18"></span><h3><strong>서명/이니셜 등록하는 방법</strong><a class="headerlink" href="#registersignature" title="Permalink to this headline">¶</a></h3>
+<span id="id19"></span><h3><strong>서명/이니셜 등록하는 방법</strong><a class="headerlink" href="#registersignature" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>작업은 <strong>PC, 모바일, 애플리케이션</strong>에서 진행할 수 있습니다.</p>
@@ -660,10 +811,15 @@
 </div>
 </div>
 <div class="section" id="registerstamp">
-<span id="id19"></span><h3><strong>도장 등록하는 방법</strong><a class="headerlink" href="#registerstamp" title="Permalink to this headline">¶</a></h3>
+<span id="id20"></span><h3><strong>도장 등록하는 방법</strong><a class="headerlink" href="#registerstamp" title="Permalink to this headline">¶</a></h3>
 <p>문서에 직접 서명이 아닌 직인이나 도장을 사용해야 하는 경우가 있습니다. 이폼사인에서는 도장 이미지를 등록하거나, 실물 도장을 실물 크기 그대로 스캔하여 등록한 후 문서의 서명란에 도장을 찍을 수 있습니다.</p>
-<div class="section" id="id20">
-<h4><strong>도장 이미지 등록</strong><a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>내 서명의 도장은 회사 도장과는 다릅니다.
+회사의 공식 도장은 <a class="reference external" href="chapter2.html#company_stamp">회사 도장</a>으로 등록해 사용하세요.</p>
+</div>
+<div class="section" id="id21">
+<h4><strong>도장 이미지 등록</strong><a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>도장 이미지를 미리 준비해야 합니다.</p>
@@ -679,7 +835,7 @@
 <a class="reference internal image-reference" href="../_images/signature-stamp-register.png"><img alt="도장 등록 버튼" src="../_images/signature-stamp-register.png" style="width: 700px;" /></a>
 </div>
 </li>
-<li><p>이미지 영역을 클릭하면 내 PC에 저장된 이미지를 업로드 할 수 있는 팝업창이 뜹니다. 원하는 도장 이미지를 선택합니다.</p>
+<li><p>이미지 영역을 클릭하면 내 PC에 저장된 이미지를 업로드할 수 있는 팝업창이 뜹니다. 원하는 도장 이미지를 선택합니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/signature-stamp-image-upload1.png"><img alt="내 서명 &gt; 도장 등록" src="../_images/signature-stamp-image-upload1.png" style="width: 400px;" /></a>
 </div>
@@ -689,16 +845,13 @@
 </ol>
 </div>
 <div class="section" id="scanstamp">
-<span id="id21"></span><h4><strong>실물 도장 스캔</strong><a class="headerlink" href="#scanstamp" title="Permalink to this headline">¶</a></h4>
+<span id="id22"></span><h4><strong>실물 도장 스캔</strong><a class="headerlink" href="#scanstamp" title="Permalink to this headline">¶</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>실제 등록하고 싶은 도장과 이폼사인에서 제공하는 <strong>도장 스캔 용지</strong>를 다운로드 및 출력해 준비합니다.
 스캔 용지는 반드시 스캔 영역이 선명하게 출력되어야 합니다.</p>
 </div>
-<ul class="simple">
-<li><p><strong>PC에서 도장 스캔하기</strong></p></li>
-</ul>
-<hr class="docutils" />
+<p><strong>PC에서 도장 스캔하기</strong></p>
 <ol class="arabic">
 <li><p><strong>내 서명</strong>에서 <strong>도장 등록</strong>버튼을 클릭 후 <strong>실물 도장 스캔</strong> 탭을 클릭합니다.</p>
 <div class="figure align-default">
@@ -715,10 +868,7 @@
 <li><p>해당 화면에서 도장이 찍힌 스캔 전용 용지의 스캔 영역을 인식합니다.</p></li>
 <li><p>추출된 도장 이미지를 확인한 후 저장하면 도장이 등록됩니다.</p></li>
 </ol>
-<ul class="simple">
-<li><p><strong>모바일에서 도장 스캔하기</strong></p></li>
-</ul>
-<hr class="docutils" />
+<p><strong>모바일에서 도장 스캔하기</strong></p>
 <ol class="arabic">
 <li><p><strong>내 서명</strong>에서 <strong>도장 등록</strong>버튼을 터치한 후 <strong>실물 도장 스캔</strong> 탭을 터치합니다.</p>
 <div class="figure align-default">
@@ -737,7 +887,7 @@
 <li><p>추출된 도장 이미지를 확인한 후 <strong>확인</strong>을 터치하면 도장이 등록됩니다.</p></li>
 </ol>
 <div class="section" id="caution-scanstamp">
-<span id="id22"></span><h5><strong>실물 도장 스캔시 주의사항</strong><a class="headerlink" href="#caution-scanstamp" title="Permalink to this headline">¶</a></h5>
+<span id="id23"></span><h5><strong>실물 도장 스캔시 주의사항</strong><a class="headerlink" href="#caution-scanstamp" title="Permalink to this headline">¶</a></h5>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Tip 1. 스캔 화면이 연결되지 않을 때</strong></p>
@@ -745,15 +895,17 @@
 <ol class="arabic">
 <li><p>네이버 또는 카카오톡 앱을 사용하고 있는 경우</p>
 <p>네이버 또는 카카오톡 앱을 사용할 경우 도장이 인식되지 않을 수 있습니다. 이 경우 브라우저를 변경한 후 도장 스캔을 다시 진행하시기 바랍니다.</p>
-<dl>
-<dt>-네이버 앱에서 브라우저 변경하는 방법</dt><dd><p>① 실물 도장 스캔 화면 하단의 더보기(···) 아이콘을 터치합니다.</p>
+<ul>
+<li><p>네이버 앱에서 브라우저 변경하는 방법
+① 실물 도장 스캔 화면 하단의 더보기(···) 아이콘을 터치합니다.</p>
 <p>② 다른 브라우저를 선택 후 문서 작성 및 도장 스캔을 진행합니다.</p>
-</dd>
-<dt>-카카오 앱에서 브라우저 변경하는 방법</dt><dd><p>① 알림톡의 <strong>문서 확인하기</strong> 버튼을 터치합니다.</p>
+</li>
+<li><p>카카오 앱에서 브라우저 변경하는 방법
+① 알림톡의 <strong>문서 확인하기</strong> 버튼을 터치합니다.</p>
 <p>② 화면 우측 상단의 더보기(⋮) 아이콘을 터치합니다.</p>
 <p>③ 다른 브라우저로 열기를 선택 후 문서 작성 및 도장 스캔을 진행합니다.</p>
-</dd>
-</dl>
+</li>
+</ul>
 </li>
 <li><p>스캔 화면이 나오지 않고 작업 선택 화면이 나오는 경우</p>
 <p>일부 안드로이드 기기에서는 스캔 화면으로 연결되지 않고 카메라, 앨범 등을 선택하는 작업 선택 화면이 나타날 수 있습니다. 이 경우 다음과 같이 진행합니다.</p>
@@ -775,15 +927,15 @@
 </div>
 </div>
 <div class="section" id="company-stamp">
-<span id="id23"></span><h2>회사 도장 관리<a class="headerlink" href="#company-stamp" title="Permalink to this headline">¶</a></h2>
+<span id="id24"></span><h2>회사 도장 관리<a class="headerlink" href="#company-stamp" title="Permalink to this headline">¶</a></h2>
 <p><strong>회사 도장 관리</strong> 메뉴에서는 회사내에서 사용되는 법인 인감, 사용 인감 등 회사 도장을 여러 개 등록하고 관리할 수 있습니다.
 도장 별로 멤버 또는 그룹에게 도장 사용 권한을 부여하고 도장 사용 내역을 확인할 수 있습니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>회사 도장 관리는 대표 관리자 또는 회사 관리 권한이 있어야 합니다.</p>
+<p>회사 도장 관리는 대표 관리자 또는 회사 관리자 권한이 있어야 합니다.</p>
 </div>
-<div class="section" id="id24">
-<h3><strong>회사 도장</strong><a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id25">
+<h3><strong>회사 도장</strong><a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
 <p>회사에서 사용되는 도장을 여러 개 등록하고 관리할 수 있습니다. 도장 별로 사용 권한을 다르게 부여할 수 있으며, 도장에 대한 모든 변경 이력을 확인할 수 있습니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/menu-company-stamp.png"><img alt="회사 도장 관리 화면" src="../_images/menu-company-stamp.png" style="width: 700px;" /></a>
@@ -800,11 +952,11 @@
 </ul>
 <p>등록된 도장에 대해서는 편집, 삭제 및 변경 이력 확인이 가능합니다. 도장에 대한 변경 이력은 다음과 같이 나타납니다.</p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/company-stamp-register-history.png"><img alt="회사 도장 변경 이력 화면" src="../_images/company-stamp-register-history.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/company-stamp-register-history.png"><img alt="회사 도장 변경 이력 화면" src="../_images/company-stamp-register-history.png" style="width: 400px;" /></a>
 </div>
 </div>
-<div class="section" id="id25">
-<h3><strong>도장 사용 내역</strong><a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id26">
+<h3><strong>도장 사용 내역</strong><a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
 <p>사용된 모든 도장의 이력을 볼 수 있습니다. 도장 별로 도장을 사용한 멤버, 날짜, 문서 등의 정보가 나타납니다.
 사용된 도장을 누가 언제 사용했는지 한눈에 확인할 수 있으며, 도장 사용 내역은 CSV 파일로 다운로드 가능합니다.</p>
 <div class="figure align-default">

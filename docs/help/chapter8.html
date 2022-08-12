@@ -112,6 +112,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#drafts">임시 보관함</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bulksend-documents">일괄 작성 문서함</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shared-documents">공유 문서함</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter9.html">커스터마이즈</a></li>
@@ -188,7 +189,7 @@
 <p>작성한 문서는 상태에 따라 다음 3개의 문서함에 저장됩니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>일괄 작성한 문서는 <a class="reference external" href="#bulksend-documents">일괄 작성 문서함</a> 에서 확인할 수 있습니다.</p>
+<p>일괄 작성한 문서는 <a class="reference external" href="#bulksend-documents">일괄 작성 문서함</a>에서 확인할 수 있습니다.</p>
 </div>
 <p>문서함에서는 각각 문서의 상태와 이력에 대한 상세 정보를 확인하고 관리할 수 있으며, 문서를 처리하거나, 재전송, 완료 문서 전송 등 추가 작업을 수행할 수 있습니다. 문서 작성 도중 임시 저장한 문서는 처리할 문서함에 나타나며 목록에서 문서를 선택해 전송할 수 있습니다.</p>
 <ul class="simple">
@@ -196,15 +197,17 @@
 <li><p><strong>진행 중 문서함:</strong> 내가 작성 또는 처리한 문서 중 완료되지 않은 문서 목록을 확인할 수 있습니다.</p></li>
 <li><p><strong>완료 문서함:</strong> 내가 작성한 문서 중 완료된 문서 목록을 확인할 수 있습니다.</p></li>
 </ul>
-<p><strong>문서 관리</strong> 메뉴에서는 템플릿 설정에서 문서 관리 권한을 부여한 멤버가 해당 템플릿으로 작성된 모든 문서를 확인할 수 있습니다.</p>
+<p><strong>문서 관리</strong> 메뉴에서는 회사 관리 &gt; 권한 구분에서 문서 관리자 권한을 부여한 멤버가 관리 권한이 있는 템플릿으로 작성된 모든 문서를 확인할 수 있습니다.</p>
 <ul class="simple">
-<li><p><strong>문서 관리:</strong> 문서 관리 권한이 있는 멤버만 접근 가능한 메뉴입니다. 해당 멤버는 문서 관리 권한이 있는 템플릿으로 작성된 모든 문서를 조회할 수 있습니다.</p></li>
+<li><p><strong>문서 관리:</strong> 문서 관리자 권한이 있는 멤버만 접근 가능한 메뉴입니다. 해당 멤버는 문서 관리 권한이 있는 템플릿으로 작성된 모든 문서를 조회할 수 있습니다.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>대표 관리자는 모든 문서를 조회하고 관리할 수 있습니다.</p>
 </div>
-<p><a class="reference internal" href="../_images/inbox_ex1.png"><img alt="image1" src="../_images/inbox_ex1.png" style="width: 700px;" /></a></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/document_inbox.png"><img alt="문서함 메뉴" src="../_images/document_inbox.png" style="width: 700px;" /></a>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>각각의 문서함과 문서 관리 화면 구성은 거의 동일하지만, 상태 또는 권한에 따라 표시되는 문서에 차이가 있습니다.</p>
@@ -223,15 +226,15 @@
 <dt>②  <a class="reference external" href="#category">카테고리</a> 표시창, 필터 콤보박스 및 검색 입력박스</dt><dd><p>템플릿 관리 메뉴에서 설정한 카테고리 별로 문서를 볼 수 있으며 필터를 통해 필요한 문서만 목록에 표시되도록 할 수 있습니다.</p>
 <p>검색은 키워드 검색, 상세 검색을 통해 제목이나 내용을 조합해서 검색할 수 있으며, 숫자, 날짜 범위를 지정해 검색, 사용자 지정 필터를 통한 검색 등 다양한 방법으로 검색할 수 있습니다.</p>
 </dd>
-<dt>③ 문서 목록 및 <a class="reference external" href="#additional_work">작업 항목</a></dt><dd><p>문서는 한 페이지에 최대 20개까지 표시됩니다.</p>
-<p>문서의 상태, 제목, 단계, 작성자, 작성일, 처리자, 처리일, 문서 ID, 문서 번호 등의 컬럼을 기반으로 문서 목록의 내용을 보여주며, 표시 컬럼의 종류는 문서함 오른쪽 상단의 아이콘 중 컬럼(<a class="reference internal" href="../_images/column_icon.png"><img alt="image4" src="../_images/column_icon.png" style="width: 35px;" /></a>) 아이콘을 클릭하면 나타나는 <a class="reference external" href="#document_column">컬럼 체크박스</a>에서 선택할 수 있습니다.</p>
+<dt>③ 문서 목록 및 <a class="reference external" href="#additional-work">작업 항목</a></dt><dd><p>문서는 한 페이지에 최대 20개까지 표시됩니다.</p>
+<p>문서의 상태, 제목, 단계, 작성자, 작성일, 처리자, 처리일, 문서 ID, 문서 번호 등의 컬럼을 기반으로 문서 목록의 내용을 보여주며, 표시 컬럼의 종류는 문서함 오른쪽 상단의 아이콘 중 컬럼(<a class="reference internal" href="../_images/column_icon.png"><img alt="image4" src="../_images/column_icon.png" style="width: 35px;" /></a>) 아이콘을 클릭하면 나타나는 <a class="reference external" href="#document-column">컬럼 체크박스</a>에서 선택할 수 있습니다.</p>
 <p>문서 목록에서 수행할 수 있는 추가 작업에는 <strong>미리보기, 삭제 요청, 재요청, 완료 문서 전송</strong> 등이 있습니다.</p>
 </dd>
 <dt>④ <a class="reference external" href="#history">문서 상태 및 이력 보기</a></dt><dd><p>문서 상태와 이력을 확인할 수 있습니다.</p>
 <p><strong>문서 상태</strong>에서는 문서의 관점에서 언제 문서가 만들어지고 처리되고 완료되었는 지를 확인할 수 있습니다.</p>
 <p><strong>이력</strong>에서는 작성자 및 수신자 입장에서 누가 어떤 작업을 수행했는 지를 확인할 수 있습니다.</p>
 </dd>
-<dt>⑤ <a class="reference external" href="#document_column">문서함 필드 조정</a>, <a class="reference external" href="#document_download">문서 다운로드</a> 및 <a class="reference external" href="#document_delete">삭제</a> 아이콘</dt><dd><p>문서함의 컬럼(<a class="reference internal" href="../_images/column_icon.png"><img alt="image5" src="../_images/column_icon.png" style="width: 35px;" /></a>) 아이콘을 클릭하면 컬럼의 종류가 표시되고, 컬럼 체크박스를 통해 문서 목록에 어떤 컬럼을 보여줄 지를 선택할 수 있습니다.</p>
+<dt>⑤ <a class="reference external" href="#document-column">문서함 필드 조정</a>, <a class="reference external" href="#document-download">문서 다운로드</a> 및 <a class="reference external" href="#document-delete">삭제</a> 아이콘</dt><dd><p>문서함의 컬럼(<a class="reference internal" href="../_images/column_icon.png"><img alt="image5" src="../_images/column_icon.png" style="width: 35px;" /></a>) 아이콘을 클릭하면 컬럼의 종류가 표시되고, 컬럼 체크박스를 통해 문서 목록에 어떤 컬럼을 보여줄 지를 선택할 수 있습니다.</p>
 <p>문서 다운로드를 클릭하면 리스트 중에 다운로드하고자 하는 문서를 선택(복수 선택 가능)하고 PDF 문서, 감사 추적증명서, 선택 필드의 CSV 데이터를 다운로드할 수 있습니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -285,13 +288,13 @@
 <h4><strong>키워드 및 필터 검색</strong><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <p>검색은 키워드 검색은 물론, 상세 검색을 통해 제목이나 내용을 조합해서 검색하거나, 숫자, 날짜 범위를 지정해 검색, 사용자 지정 필터를 통한 검색 등 다양한 검색 방법을 제공하고 있습니다. 또한, 사용자 지정 필터를 설정해서 문서에 입력된 값도 검색할 수 있으며, 숫자의 범위, 날짜의 기간을 설정해서 검색할 수도 있습니다.</p>
 <p>필터를 사용해서 검색 가능한 필터는 다음과 같습니다. 한편, 사용자 지정 필터는 완료 문서함과 문서 관리에서만 사용할 수 있습니다.</p>
-<table class="docutils align-default" id="id16">
-<caption><span class="caption-text"><strong>필터 종류 리스트</strong></span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id17">
+<caption><span class="caption-text"><strong>필터 종류 리스트</strong></span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 19%" />
-<col style="width: 27%" />
+<col style="width: 28%" />
 <col style="width: 26%" />
-<col style="width: 27%" />
+<col style="width: 26%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>처리할 문서함</p></th>
@@ -352,11 +355,8 @@
 <td><p>처리일</p></td>
 </tr>
 <tr class="row-even"><td><p>요청일</p></td>
-<td><blockquote>
-<div><p>처리일</p>
-</div></blockquote>
-<p>문서 처리 경과일수</p>
-</td>
+<td><p>처리일
+문서 처리 경과일수</p></td>
 <td><p>사용자 지정 필터</p></td>
 <td><p>사용자 지정 필터</p></td>
 </tr>
@@ -519,6 +519,7 @@ CSV 다운로드를 선택하고 다운받을 데이터를 확인한 후 <strong
 <div class="figure align-default">
 <img alt="문서함 컬럼 설정 아이콘" src="../_images/column_type.png" />
 </div>
+<hr class="docutils" />
 </div>
 </div>
 <div class="section" id="drafts">
@@ -538,6 +539,7 @@ CSV 다운로드를 선택하고 다운받을 데이터를 확인한 후 <strong
 <p class="admonition-title">Note</p>
 <p>내 파일로 문서 작성하는 방법은 <a class="reference external" href="chapter3.html#id2">내 파일로 문서 작성하기</a> 를 참고하시기 바랍니다.</p>
 </div>
+<hr class="docutils" />
 </div>
 <div class="section" id="bulksend-documents">
 <span id="id15"></span><h2>일괄 작성 문서함<a class="headerlink" href="#bulksend-documents" title="Permalink to this headline">¶</a></h2>
@@ -561,11 +563,86 @@ CSV 다운로드를 선택하고 다운받을 데이터를 확인한 후 <strong
 </div>
 <p>예약 전송한 문서의 경우, 예약 변경 또는 취소를 할 수 있습니다.</p>
 <div class="figure align-default">
-<img alt="일괄 작성 문서함-예약 변경" src="../_images/bulksend-schedule-change.png" />
+<a class="reference internal image-reference" href="../_images/bulksend-schedule-change.png"><img alt="일괄 작성 문서함-예약 변경" src="../_images/bulksend-schedule-change.png" style="width: 300px;" /></a>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>한번에 대량으로 문서를 전송할 수 있는 문서 일괄 작성 방법은 <a class="reference external" href="chapter3.html#bulksend">일괄 작성으로 문서 대량 전송하기</a> 를 참고하시기 바랍니다.</p>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="shared-documents">
+<span id="id16"></span><h2>공유 문서함<a class="headerlink" href="#shared-documents" title="Permalink to this headline">¶</a></h2>
+<p>공유 문서함에서는 공유 문서함을 만들어 내가 소유한 문서를 다른 멤버들과 공유하거나 다른 멤버들이 나에게 공유한 문서를 확인할 수 있습니다.</p>
+<div class="figure align-default">
+<img alt="공유 문서함" src="../_images/shared-documents-box.png" />
+</div>
+<p>멤버는 공유 문서함 메뉴에서 공유 문서함을 생성할 수 있으며 해당 공유 문서함에 접근할 수 있는 멤버 또는 그룹을 선택할 수 있습니다.</p>
+<p>공유 문서함에 추가하고 싶은 문서가 있다면 처리할 문서함, 진행 중 문서함 또는 완료 문서함에서 원하는 문서를 공유 문서함에 추가할 수 있습니다.</p>
+<p><strong>공유 문서함 만들기</strong></p>
+<ol class="arabic simple">
+<li><p>사이드바 메뉴에서 공유 문서함을 클릭합니다.</p></li>
+<li><p>공유 문서함 추가 버튼을 클릭하여 공유 문서함 폴더를 생성합니다.</p></li>
+<li><p>팝업창에 문서함 이름 및 설명을 입력하고 문서함 접근 권한을 부여할 멤버/그룹을 선택합니다.</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="공유 문서함 만들기" src="../_images/create-shared-documentbox.png" />
+</div>
+<ol class="arabic simple" start="4">
+<li><p>생성된 공유 문서함 옆의 더보기(⋯) 버튼을 클릭해 문서함에 대한 설정을 합니다.</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="공유 문서함 설정" src="../_images/shared-documentbox-setting.png" />
+</div>
+<ul>
+<li><p><strong>일반 설정:</strong> 문서함 이름, 설명, 문서함에 접근 권한이 부여된 멤버를 설정합니다.</p></li>
+<li><dl>
+<dt><strong>자동 공유 규칙 설정:</strong> 해당 문서함에 자동으로 공유될 문서에 대한 규칙을 설정합니다.</dt><dd><p>문서 제목에 포함된 문구와 문서 종류를 설정하면 규칙에 따라 자동으로 공유 문서함에 문서가 공유됩니다.</p>
+<p>예를 들어, 문서 제목에 포함된 문구를 “계약서”로 설정하고 문서 종류를 “템플릿 없이 내 파일로 작성된 문서”로 설정하면 내 파일로 작성된 문서 중 문서 제목에서 “계약서”가 포함된 문서는 해당 문서함에 공유됩니다.</p>
+</dd>
+</dl>
+</li>
+<li><p><strong>소유자 변경:</strong> 해당 공유 문서함의 소유자를 변경합니다.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>❗공유 문서함을 생성한 멤버는 자동으로 해당 공유 문서함의 소유자가 됩니다.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>삭제:</strong> 공유 문서함을 삭제합니다. 문서함을 삭제할 경우 문서함에 공유된 모든 문서가 공유 해제됩니다.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Tip. 자동 공유 규칙 설정 방법</strong></p>
+<ol class="arabic simple">
+<li><p>자동 공유 규칙을 설정하고자 하는 공유 문서함 옆의 더 보기(⋯) 버튼을 클릭하고 자동 공유 규칙 설정 옵션을 클릭합니다.</p></li>
+<li><p>팝업창에서 해당 공유 문서함에 특정 문서를 자동으로 공유하기 위한 규칙을 설정합니다. 아래 두 가지 조건을 각각 또는 모두 설정할 수 있습니다.</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>문서 제목에 포함된 문구:</strong> 문구를 추가하면 해당 문구가 문서 제목에 포함된 문서가 자동으로 공유 문서함에 추가됩니다. 여러 개의 문구를 설정할 수 있으며, 설정한 문구 중 하나의 문구만 문서 제목에 포함되면 해당 문서가 공유됩니다.</p></li>
+<li><p><strong>문서 종류:</strong> 공유하고자 하는 템플릿 이름을 선택하면 해당 템플릿으로 문서 작성 시 공유 문서함에 자동으로 공유됩니다. 템플릿 없이 내 파일로 작성한 문서를 선택하면 내 파일로 작성한 문서 모두 또는 문서 제목에 포함된 문구에 설정된 문구가 있을 경우 해당 문구가 포함된 문서가 공유 문서함에 공유됩니다.</p></li>
+</ul>
+<p>예를 들어, 문서 제목에 포함된 문구를 “계약서”로 설정하고 문서 종류를 “템플릿 없이 내 파일로 작성된 문서”로 설정하면 내 파일로 작성된 문서 중 문서 제목에서 “계약서”가 포함된 문서는 해당 문서함에 공유됩니다.</p>
+<blockquote>
+<div><div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/shared-rule-setting.png"><img alt="자동 공유 규칙" src="../_images/shared-rule-setting.png" style="width: 300px;" /></a>
+</div>
+</div></blockquote>
+</div>
+<p><strong>공유 문서함에 문서 추가하기</strong></p>
+<ol class="arabic">
+<li><p>처리할 문서함, 진행 중 문서함 또는 완료 문서함으로 이동합니다.</p></li>
+<li><p>문서 이름 아래의 ‘공유‘를 클릭한 후 공유할 공유 문서함을 선택합니다.</p>
+<div class="figure align-default">
+<img alt="문서 공유하기" src="../_images/share-document.png" />
+</div>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>문서함 목록에서 여러 개의 문서를 동시에 공유하려면 문서함 우측 상단의 <strong>공유 아이콘</strong>을 클릭합니다.
+공유할 문서를 체크한 후 <strong>공유</strong> 버튼을 클릭하고 공유할 문서함을 선택합니다.</p>
 </div>
 </div>
 </div>

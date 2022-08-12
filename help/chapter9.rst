@@ -110,4 +110,4 @@
 .. |image1| image:: resources/customfield_icon.png
 .. |image2| image:: resources/customfield-list-order.PNG
 .. |image3| image:: resources/notification-template-new.PNG
-   :width: 700px
+            :width: 700px

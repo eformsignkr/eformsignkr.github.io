@@ -117,8 +117,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#noti-wd">알림 설정</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id22">개별 템플릿 메뉴</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id23">템플릿 검색</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id23">개별 템플릿 메뉴</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id24">템플릿 검색</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter7.html">폼 빌더로 템플릿 만들기</a></li>
@@ -194,9 +194,10 @@
 <span id="id1"></span><h1>웹폼 디자이너로 템플릿 만들기<a class="headerlink" href="#template-wd" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <h2>템플릿 개요<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>템플릿은 이폼사인에서 사용하는 <strong>전자문서 서식</strong>입니다. 기존에 종이로 작성하던 계약서, 신청서, 동의서와 같은 기본 문서 서식을 전자문서 형태로 만든 것을 <strong>템플릿</strong>이라고 합니다. 템플릿은 이폼사인 서비스내 <strong>웹폼 디자이너</strong> 또는 <strong>이폼사인 폼 빌더</strong>를 통해 만들고 업로드할 수 있습니다.</p>
+<p><strong>템플릿</strong>은 이폼사인에서 사용하는 <strong>전자문서 서식</strong>입니다. 기존에 종이로 작성하던 계약서, 신청서, 동의서와 같은 기본 문서 서식을 전자문서 형태로 만든 것을 <strong>템플릿</strong>이라고 합니다. 템플릿은 이폼사인 서비스내 <strong>웹폼 디자이너</strong> 또는 <strong>이폼사인 폼 빌더</strong>를 통해 만들고 업로드할 수 있습니다.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
+<p><strong>❗템플릿은 왜 사용하나요?</strong></p>
 <p>템플릿은 자주 또는 주기적으로 작성해야 하는 문서를 사용할 때 유용합니다.
 템플릿으로 한번 등록해 놓으면 문서 작성할 일이 생길때 마다 문서를 새로 업로드하여 만들지 않아도 쉽고 빠르게 문서를 전송할 수 있습니다.</p>
 </div>
@@ -214,10 +215,10 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>업로드 가능한 파일 형식은 pdf, hwp, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, tiff 입니다.
-파일 크기는 최대 9MB까지 업로드 가능합니다.</p>
+파일 크기는 최대 9MB까지 업로드 가능하며, 파일을 추가하더라도 모든 파일 용량의 총합이 9MB을 넘지 않아야 합니다.</p>
 </div>
 <ol class="arabic">
-<li><p>템플릿으로 만들 문서 파일을 직접 드래그하거나 <strong>내 컴퓨터에서 파일 선택</strong>을 클릭하여 해당 파일 선택 후 업로드 합니다.</p>
+<li><p>템플릿으로 만들 문서 파일을 직접 드래그하거나 <strong>내 컴퓨터에서 파일 선택</strong>을 클릭하여 템플릿으로 만들고자 하는 파일을 선택한 후 업로드 합니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/template-manage-upload.png"><img alt="템플릿 관리&gt;파일 업로드(1)" src="../_images/template-manage-upload.png" style="width: 700px;" /></a>
 </div>
@@ -243,20 +244,20 @@
 <p><strong>템플릿 설정</strong></p>
 <p>템플릿에 대한 상세 설정을 할 수 있습니다.</p>
 <ul>
-<li><p><a class="reference external" href="#general_wd">일반 설정</a></p>
+<li><p><a class="reference external" href="#general-wd">일반 설정</a></p>
 <p>템플릿 이름, 약칭, 문서 제목, 문서 번호 등을 설정합니다.</p>
 </li>
-<li><p><a class="reference external" href="#auth_wd">권한 설정</a></p>
-<p>해당 템플릿을 사용해 문서를 생성할 수 있는 템플릿 사용 권한과 생성된 문서를 관리할 멤버 또는 그룹을 지정합니다.</p>
+<li><p><a class="reference external" href="#auth-wd">권한 설정</a></p>
+<p>해당 템플릿을 사용해 문서를 생성할 수 있는 템플릿 사용 권한과 템플릿을 수정할 수 있는 수정 권한을 부여할 멤버 또는 그룹을 지정합니다.</p>
 </li>
-<li><p><a class="reference external" href="#workflow_wd">워크플로우 설정</a></p>
-<p>문서의 작성부터 완료까지 작성된 문서가 처리될 단계를 설정합니다.</p>
+<li><p><a class="reference external" href="#workflow-wd">워크플로우 설정</a></p>
+<p>문서의 시작부터 완료까지 작성된 문서가 처리될 단계를 설정합니다.</p>
 </li>
-<li><p><a class="reference external" href="#field_wd">필드 설정</a></p>
+<li><p><a class="reference external" href="#field-wd">필드 설정</a></p>
 <p>필드의 기본값, 자동 입력 값 등을 설정합니다.</p>
 </li>
-<li><p><a class="reference external" href="#noti_wd">알림 설정</a></p>
-<p>해당 템플릿을 통해 작성된 문서의 상태 변경시 알림을 수신할 수신자, 또는 알림 메시지 내용 등을 설정합니다</p>
+<li><p><a class="reference external" href="#noti-wd">알림 설정</a></p>
+<p>해당 템플릿으로 생성된 문서에 대한 상태 알림의 수신자를 설정하고 최종 완료 알림 메시지를 편집합니다.</p>
 </li>
 </ul>
 </div>
@@ -264,7 +265,7 @@
 <div class="section" id="workflow">
 <span id="id4"></span><h2>워크플로우 개요<a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h2>
 <p><strong>워크플로우</strong>란 문서가 작성되어 완료되기까지의 문서의 요청 및 처리 과정을 말합니다.</p>
-<p>워크플로우는 템플릿 관리자가 템플릿 별로 <strong>템플릿 설정</strong> &gt; <strong>워크플로우 설정</strong>에서 설정할 수 있습니다.</p>
+<p>워크플로우는 템플릿 관리자가 템플릿별로 <strong>템플릿 설정</strong> &gt; <strong>워크플로우 설정</strong>에서 설정할 수 있습니다.</p>
 <p>워크플로우는 <strong>시작 - 완료</strong>가 기본 단계이며, 아래와 같이 <strong>검토자</strong>, <strong>참여자</strong> 2가지 단계를 원하는 대로 추가하여 워크플로우를 생성할 수 있습니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/workflow_new.png"><img alt="워크플로우 단계" src="../_images/workflow_new.png" style="width: 500px;" /></a>
@@ -283,7 +284,7 @@
 <p>업로드한 파일로 생성될 템플릿에 대한 상세 사항을 설정할 수 있습니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>이 작업은 <strong>대표 관리자</strong> 또는 <strong>템플릿 관리</strong> 권한이 필요하며, PC, 모바일, 애플리케이션에서 진행할 수 있습니다.</p>
+<p>이 작업은 <strong>대표 관리자</strong> 또는 <strong>템플릿 관리자</strong> 권한이 필요하며, PC, 모바일, 애플리케이션에서 진행할 수 있습니다.</p>
 </div>
 <div class="section" id="general-wd">
 <span id="id6"></span><h3>일반 설정<a class="headerlink" href="#general-wd" title="Permalink to this headline">¶</a></h3>
@@ -308,7 +309,7 @@
 </dd>
 <dt><strong>④ 설명</strong></dt><dd><p>템플릿에 대한 추가적인 설명을 입력합니다. 이 설명 내용은 목록 및 템플릿으로 문서 작성의 템플릿 이름 하단에 나타납니다.</p>
 </dd>
-<dt><strong>⑤ 문서작성 유효기간</strong></dt><dd><p>템플릿으로 문서를 작성할 수 있는 기한을 설정합니다. 시작일은 템플릿을 업로드한 날로 기본 설정되며 날짜를 변경할 수 있습니다.</p>
+<dt><strong>⑤ 템플릿 유효기간</strong></dt><dd><p>템플릿으로 문서를 작성할 수 있는 기한을 설정합니다. 시작일은 템플릿을 업로드한 날로 기본 설정되며 날짜를 변경할 수 있습니다.</p>
 <p><strong>기간 제한 없음</strong>을 체크하면 계속해서 문서를 작성할 수 있습니다. <strong>기간 제한 없음</strong> 체크를 해제한 후 날짜를 설정하면 설정된 날짜까지만 해당 템플릿으로 문서를 작성할 수 있습니다.</p>
 </dd>
 </dl>
@@ -321,7 +322,7 @@
 </dd>
 <dt><strong>⑦ 문서 제목 변경 허용</strong></dt><dd><p><strong>문서 제목 변경 허용</strong>을 체크하면 <strong>작성</strong> 단계의 문서 작성자가 문서 제목을 수정할 수 있습니다.</p>
 </dd>
-<dt><strong>⑧ 문서 번호 자동 부여</strong></dt><dd><p>문서 번호 자동 부여를 체크하면 생성된 문서에 대해 자동으로 문서번호가 부여됩니다. 문서번호 표현식 중 원하는 표현식을 선택하고, 언제 문서번호를 생성할 지 문서번호 채번 시점을 선택합니다.</p>
+<dt><strong>⑧ 문서 번호 자동 부여</strong></dt><dd><p>문서 번호 자동 부여를 체크하면 생성된 문서에 자동으로 문서번호가 부여됩니다. 문서번호 표현식 중 원하는 표현식을 선택하고, 언제 문서번호를 생성할 지 문서번호 채번 시점을 선택합니다.</p>
 <p><img alt="image1" src="../_images/template-setting-general-doc-numering.png" /></p>
 </dd>
 <dt><strong>⑨ 문서 전송 시 팝업 생략</strong></dt><dd><p>문서를 빨리 작성하고 제출하는 일이 많을 때 사용합니다. 이 설정을 체크하지 않으면 문서 전송 시 <strong>확인 메시지 입력</strong> 팝업창이 나타납니다. <strong>문서 전송 시 팝업 생략</strong>을 체크하면 <strong>메시지 입력</strong> 팝업창이 나타나지 않고 바로 다음 단계로 진행됩니다.</p>
@@ -341,7 +342,7 @@
 <div class="section" id="id11">
 <h6><strong>문서 제목 규칙 설정하는 방법</strong><a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h6>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/template-setting-general-doc-numering_rule.png"><img alt="템플릿 설정 &gt; 문서 제목 규칙 설정" src="../_images/template-setting-general-doc-numering_rule.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/template-setting-general-doc-numering_rule.png"><img alt="템플릿 설정 &gt; 문서 제목 규칙 설정" src="../_images/template-setting-general-doc-numering_rule.png" style="width: 500px;" /></a>
 </div>
 <ol class="arabic simple">
 <li><p>사이드바 메뉴에서 <strong>템플릿 관리</strong>로 이동합니다.</p></li>
@@ -357,7 +358,7 @@
 </div>
 <ul>
 <li><p><strong>문서입력항목</strong>: 문서에 입력된 내용을 문서 제목에 추가합니다.</p>
-<p><strong>예약어 추가</strong> 버튼 클릭 후, <strong>문서입력항목</strong>을 클릭하면 템플릿의 컴포넌트 ID 리스트가 나타나며, 원하는 ID를 선택하면 해당 컴포넌트에 입력된 내용이 문서 제목에 추가됩니다.</p>
+<p><strong>예약어 추가</strong> 버튼 클릭 후, <strong>문서입력항목</strong>을 클릭하면 템플릿의 입력 항목 ID 리스트가 나타나며, 원하는 ID를 선택하면 해당 입력 항목에 입력된 내용이 문서 제목에 추가됩니다.</p>
 </li>
 <li><p><strong>시스템 정보</strong>: 문서와 관련된 정보를 제목에 추가합니다.</p>
 <p><strong>시스템 정보</strong>를 클릭하여 아래 정보 중 선택하여 문서 제목에 표시될 수 있도록 설정합니다.</p>
@@ -424,7 +425,7 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>문서 제목 변경 허용</strong> 여부를 확인하세요!</p>
-<p>문서 제목 규칙을 설정해 놓더라도 <strong>문서 제목 변경 허용</strong>이 체크되어 있으면 문서 작성자가 임의로 문서 제목을 변경할 수 있습니다. 문서 제목이 변경되는 것을 원하지 않는 경우 <strong>문서 제목 변경 허용</strong>을 체크 해지하시기 바랍니다.</p>
+<p>문서 제목 규칙을 설정해 놓더라도 <strong>문서 제목 변경 허용</strong>이 체크되어 있으면 문서 작성자가 임의로 문서 제목을 변경할 수 있습니다. 문서 제목이 변경되는 것을 원하지 않는 경우 <strong>문서 제목 변경 허용</strong>을 체크 해지해 주세요.</p>
 </div>
 <div class="figure align-default">
 <img alt="문서 제목 변경 허용 여부 확인" src="../_images/template-setting-general-doc-numering_rule_allow_change.png" />
@@ -435,7 +436,7 @@
 <div class="section" id="docnumber-wd">
 <span id="id13"></span><h4>일반 설정 &gt; 문서번호 생성 및 확인하기<a class="headerlink" href="#docnumber-wd" title="Permalink to this headline">¶</a></h4>
 <p>템플릿 별로 작성된 문서에 연속되는 문서번호를 부여할 수 있습니다.
-템플릿 별로 문서 번호 자동 생성 여부를 설정할 수 있으며 번호 형식 4가지 중 한 가지를 선택하여 설정 가능합니다. 문서 번호는 문서 컴포넌트를 사용하여 문서 내에 입력할 수 있습니다. 또한 문서 목록에서 별도의 컬럼으로 확인할 수 있으며 문서 번호로 문서를 검색할 수 있습니다.</p>
+템플릿 별로 문서 번호 자동 생성 여부를 설정할 수 있으며 번호 형식 4가지 중 한 가지를 선택하여 설정 가능합니다. 문서 번호는 정보 입력 항목을 사용하여 문서 내에 입력할 수 있습니다. 또한 문서 목록에서 별도의 컬럼으로 확인할 수 있으며 문서 번호로 문서를 검색할 수 있습니다.</p>
 <div class="section" id="id14">
 <h5><strong>문서번호 생성하는 방법</strong><a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h5>
 <div class="figure align-default">
@@ -480,13 +481,13 @@
 </div>
 <div class="section" id="id15">
 <h5><strong>문서번호 확인하는 방법</strong><a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h5>
-<p>문서번호는 문서번호 컴포넌트를 사용하여 문서 내에 입력하거나 문서 목록에서 확인할 수 있습니다.</p>
+<p>문서번호는 문서번호 입력 항목을 사용하여 문서 내에 입력하거나 문서 목록에서 확인할 수 있습니다.</p>
 <ul>
 <li><p><strong>문서 내에 문서번호 표시하기</strong></p>
-<p>문서번호는 문서번호 컴포넌트를 사용하여 문서 내에 입력할 수 있습니다.</p>
+<p>문서번호는 문서번호 입력 항목을 사용하여 문서 내에 입력할 수 있습니다.</p>
 <ol class="arabic">
 <li><p>웹폼 디자이너에 문서 파일을 업로드합니다.</p></li>
-<li><p>문서번호가 들어갈 위치에 문서 컴포넌트를 추가합니다.</p>
+<li><p>문서번호가 들어갈 위치에 문서 입력 항목을 추가합니다.</p>
 <p><a class="reference internal" href="../_images/web-form-designer-document-component.png"><img alt="image4" src="../_images/web-form-designer-document-component.png" style="width: 700px;" /></a></p>
 </li>
 <li><p><strong>다음</strong> 버튼을 클릭해 <strong>템플릿 설정</strong>으로 이동합니다.</p></li>
@@ -502,7 +503,7 @@
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/doc-list-docnumber2.png"><img alt="문서함 - 문서 목록 - 문서번호 확인" src="../_images/doc-list-docnumber2.png" style="width: 700px;" /></a>
 </div>
-<p>문서번호는 문서 목록을 볼 수 있는 문서함(진행 중 문서함, 처리할 문서함, 완료 문서함) 및 문서 관리 메뉴(문서 관리 권한 필요)에서 확인할 수 있습니다.</p>
+<p>문서번호는 문서 목록을 볼 수 있는 문서함(진행 중 문서함, 처리할 문서함, 완료 문서함) 및 문서 관리 메뉴(문서 관리자 권한 필요)에서 확인할 수 있습니다.</p>
 <ol class="arabic">
 <li><p>사이드바 메뉴에서 <strong>문서함</strong> 또는 <strong>문서 관리</strong> 메뉴로 이동합니다.</p></li>
 <li><p>오른쪽 상단의 <strong>컬럼 설정</strong> 아이콘을 클릭합니다.</p></li>
@@ -529,7 +530,7 @@
 </div>
 <div class="section" id="auth-wd">
 <span id="id16"></span><h3>권한 설정<a class="headerlink" href="#auth-wd" title="Permalink to this headline">¶</a></h3>
-<p>권한 설정 화면에서는 템플릿 사용 권한, 템플릿 수정 권한, 문서 관리 권한을 설정할 수 있습니다.</p>
+<p>권한 설정 화면에서는 템플릿 사용 권한, 템플릿 수정 권한을 설정할 수 있습니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/template-setting-auth-new.PNG"><img alt="템플릿 설정 &gt; 권한 설정" src="../_images/template-setting-auth-new.PNG" style="width: 700px;" /></a>
 </div>
@@ -538,12 +539,7 @@
 <p><strong>템플릿 수정 권한</strong></p>
 <p>해당 템플릿을 수정할 수 있는 권한을 설정하며 <strong>멤버</strong>를 검색하여 선택합니다.</p>
 <p><strong>문서 관리 권한</strong></p>
-<p>그룹 또는 멤버를 선택하여 템플릿을 사용해서 만들어진 문서를 열람하거나 완료 문서에 대한 취소 요청을 승인하거나 문서를 영구적으로 제거할 수 있는 권한을 모두 또는 각각 설정할 수 있습니다.</p>
-<ul class="simple">
-<li><p><strong>모든 문서 열람(기본권한):</strong> 문서 관리자의 기본 권한으로 선택에 관계없이 문서 관리 권한이 부여된 그룹 또는 멤버는 모든 문서를 열람할 수 있는 권한이 부여됩니다.</p></li>
-<li><p><strong>문서 취소(선택시):</strong> 완료된 문서에 대해 문서 작성자가 취소를 요청할 경우 취소를 승인하여 해당 문서를 취소할 수 있는 권한입니다.</p></li>
-<li><p><strong>문서 영구 제거(선택시):</strong> 시스템에서 문서를 영구적으로 제거할 수 있는 권한입니다.</p></li>
-</ul>
+<p>문서 관리 권한은 <strong>회사 관리 &gt; 권한 관리 &gt; 문서 관리자</strong>에서 설정할 수 있습니다. 자세한 내용은 <a class="reference external" href="chapter2.html#permissions">권한 구분</a>을 참고해 주세요.</p>
 </div>
 <div class="section" id="workflow-wd">
 <span id="id17"></span><h3>워크플로우 설정<a class="headerlink" href="#workflow-wd" title="Permalink to this headline">¶</a></h3>
@@ -559,19 +555,27 @@
 <li><p><strong>수신자 타입 선택</strong>에서 추가하고자 하는 <strong>수신자 타입</strong>을 선택합니다.</p>
 <p><a class="reference internal" href="../_images/workflow-addstep-type2.png"><img alt="image9" src="../_images/workflow-addstep-type2.png" style="width: 700px;" /></a></p>
 </li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>❗참여자와 검토자의 차이</strong></p>
+<p>참여자는 실제 문서에 서명, 작성 등 입력 항목에 입력할 수 있으며, 검토자는 문서에 직접 입력은 할 수 없고 문서 검토 후 승인 여부만 결정합니다.</p>
+</div>
+<ol class="arabic simple" start="4">
 <li><p>선택 시 워크플로우에 단계가 추가됩니다</p></li>
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>참여자는 <strong>폼 디자인하기</strong> 단계에서 추가하여야 하며, 최대 30명까지 추가할 수 있습니다.
-검토자를 포함한 워크플로우 단계는 개수 제한없이 추가할 수 있습니다. 워크플로우 단계를 클릭한 후 드래그해서 순서를 조정할 수 있으며, 단계 오른쪽에 위치한 <strong>-</strong>를 클릭하면 단계가 삭제됩니다.</p>
+검토자를 포함한 워크플로우 단계는 개수 제한없이 추가할 수 있습니다.
+워크플로우 단계를 클릭한 후 드래그해서 순서를 조정할 수 있으며, 단계 오른쪽에 위치한 <strong>-</strong>를 클릭하면 단계가 삭제됩니다.</p>
 <p><a class="reference internal" href="../_images/workflow-step-added.png"><img alt="image10" src="../_images/workflow-step-added.png" style="width: 400px;" /></a></p>
 </div>
 </div>
 <div class="section" id="id19">
 <h4><strong>워크플로우 단계별 상세 설정</strong><a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
 <p>단계를 클릭하여 각 워크플로우 단계별로 상세 속성을 설정할 수 있습니다.</p>
-<p><strong>시작: 문서를 작성하는 단계입니다.</strong></p>
+<p><strong>시작: 문서 작성을 시작하는 단계입니다.</strong></p>
 <hr class="docutils" />
 <p><a class="reference internal" href="../_images/workflow-step-start-property.png"><img alt="image12" src="../_images/workflow-step-start-property.png" style="width: 700px;" /></a></p>
 <ul class="simple">
@@ -589,24 +593,61 @@
 <li><p><strong>알림</strong>: 수신자에게 문서 작성 요청 시 알림을 보낼 방법을 설정하고 알림 내용을 편집할 수 있습니다.</p>
 <ul class="simple">
 <li><p><strong>알림 방법 선택:</strong> 알림은 기본적으로 이메일로 발송되며, SMS 선택 시, <strong>문자</strong>와 <strong>카카오톡</strong>이 활성화되어 선택할 수 있습니다.</p></li>
-<li><p><strong>알림 내용 편집:</strong> 각 단계 별로 수신자에게 발송되는 문서 요청 알림 내용을 편집할 수 있습니다.</p></li>
+<li><p><strong>알림 내용 편집:</strong> 각 단계별로 수신자에게 발송되는 문서 요청 알림 내용을 편집할 수 있습니다.</p></li>
 </ul>
 </li>
-<li><p><strong>문서 전송 기한</strong>: 수신자가 문서를 받은 후 다음 단계 수신자에게 문서를 전송하기까지의 기한을 설정합니다. 문서 전송 기한을 설정하지 않으려면 0일 0시간으로 입력하세요.</p></li>
+<li><p><strong>문서 전송 기한</strong>: 수신자가 문서를 받은 후 다음 단계 수신자에게 문서를 전송하기까지의 기한을 설정합니다.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>멤버의 경우 문서 전송 기한이 없도록 설정할 수 있습니다. <strong>문서 전송 기한을 0일 0시간</strong>으로 설정하세요.
+외부 수신자는 문서 전송 기한을 최대 50일까지 설정할 수 있습니다.</p>
+</div>
+</li>
 <li><p><strong>수신자 정보 자동 설정</strong>: 수신자에게 문서 요청시 문서에 입력된 정보를 바탕으로 수신자의 이름 및 연락처를 자동으로 설정할 수 있습니다.</p></li>
-<li><p><strong>문서 열람 전 본인확인 설정</strong>: 문서를 열람하기 전에 본인확인을 한 후 문서를 열람할 수 있도록 설정합니다.</p>
+<li><p><strong>문서 열람 전 본인확인 설정:</strong> 문서 열람 전 수신자가 본인확인을 진행한 후 문서를 열람할 수 있도록 설정합니다. 간편 인증과 추가 인증 모두 선택할 경우, 2단계로 본인확인을 진행할 수 있습니다.</p>
 <ul>
-<li><p><strong>본인확인 정보</strong>: <strong>수신자 이름</strong>, <strong>입력항목 중 하나를 선택</strong>, 또는 <strong>보내는 사람이 직접 입력</strong> 중 선택하여 수신자가 문서 열람 시 해당 정보를 입력하도록 설정합니다.</p></li>
-<li><p><strong>추가 인증 수단</strong>: 본인확인 수단을 추가로 설정합니다. 이메일 인증과 휴대폰 본인확인 모두 설정할 경우, 수신자가 본인확인 단계에서 선택할 수 있습니다.</p>
+<li><p><strong>간편 인증</strong>: 외부 수신자가 문서를 열람하기 위해서 본 설정에서 미리 설정한 정보를 입력해야 합니다. 도움말을 입력하여 힌트를 제공할 수 있습니다.</p>
+<ul>
+<li><p>문서 접근 암호: 문서 열람 시 입력할 암호를 설정합니다. 암호 설정은 <strong>직접 입력, 수신자 이름, 문서에 입력된 내용</strong> 중 선택할 수 있습니다.</p>
 <blockquote>
-<div><ul class="simple">
-<li><p><strong>이메일 인증</strong>: 수신자의 이메일로 인증번호 6자리가 전송되며, 전송된 인증번호를 본인확인 창에 입력합니다.</p></li>
-<li><p><strong>휴대폰 본인확인</strong>: 휴대폰 본인확인을 진행하도록 설정하며, 본 기능은 반드시 본인 명의의 휴대폰이 있어야만 가능합니다.</p></li>
+<div><ul>
+<li><p>직접 입력: 설정 단계에서 암호를 직접 입력하고 수신자에서 보여질 암호 힌트를 입력합니다.</p></li>
+<li><p>수신자 이름: 수신자 이름으로 설정하면 수신자 정보에 입력한 이름과 일치한 이름을 수신자가 암호로 입력해야 합니다.</p></li>
+<li><p>문서에 입력된 내용: 문서 내 입력 항목을 선택하여 해당 입력 항목에 입력한 내용을 암호로 설정할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/doc-password-setting.png"><img alt="문서 접근 암호 설정" src="../_images/doc-password-setting.png" style="width: 400px;" /></a>
+</div>
+</div></blockquote>
+</li>
 </ul>
 </div></blockquote>
 </li>
 </ul>
 </li>
+<li><p><strong>추가 인증</strong>: 본인확인 수단을 추가로 설정합니다.</p>
+<blockquote>
+<div><ul>
+<li><p><strong>이메일/SMS 인증:</strong> 수신자의 이메일 또는 휴대폰 번호로 6자리 인증번호를 발송합니다. 수신자는 인증번호를 인증 창에 입력 후 문서 열람을 할 수 있습니다.</p></li>
+<li><p><strong>휴대폰 본인확인:</strong> 수신자 명의의 휴대폰으로 본인확인을 진행한 후 문서를 열람하도록 설정합니다.</p></li>
+<li><p><strong>법인 공동인증서 확인:</strong> 법인간 계약 시 법인 범용 공동인증서로 법인 인증을 진행한 후 문서를 열람하도록 설정합니다. 사업자등록번호는 <strong>직접 입력, 문서에 입력된 내용, 입력 안 함</strong> 중 선택할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/additional-verification.png"><img alt="추가인증 설정" src="../_images/additional-verification.png" style="width: 400px;" /></a>
+</div>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>추가 인증을 모두 선택하면 수신자가 인증 진행 단계에서 3가지 중 1가지 방법을 선택해 진행할 수 있습니다.
+이메일 인증을 제외한 추가 인증 수단은 모두 별도의 추가 비용이 발생됩니다.</p>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p><strong>문서 일부 숨기기 설정:</strong> 2개 이상의 파일로 구성된 문서일 경우 일부 문서를 숨기기 설정할 수 있습니다.</p></li>
 </ul>
 <p><strong>참여자/검토자-수신자 지정</strong></p>
 <div class="figure align-default">
@@ -627,23 +668,51 @@
 <li><p><strong>알림</strong>: 수신자에게 문서 작성 요청 시 알림을 보낼 방법을 설정하고 알림 내용을 편집할 수 있습니다.</p>
 <ul>
 <li><p>알림 방법 선택: 알림은 기본적으로 이메일로 발송되며, SMS 선택 시, <strong>문자</strong>와 <strong>카카오톡</strong>이 활성화되어 선택할 수 있습니다.</p></li>
-<li><p>알림 내용 편집: 각 단계 별로 수신자에게 발송되는 문서 요청 알림 내용을 편집할 수 있습니다.</p></li>
+<li><p>알림 내용 편집: 각 단계별로 수신자에게 발송되는 문서 요청 알림 내용을 편집할 수 있습니다.</p></li>
 </ul>
 </li>
-<li><p><strong>문서 전송 기한</strong>: 수신자가 문서를 받은 후 다음 단계 수신자에게 문서를 전송하기까지의 기한을 설정합니다. 문서 전송 기한을 설정하지 않으려면 0일 0시간으로 입력하세요.</p></li>
+<li><p><strong>문서 전송 기한</strong>: 수신자가 문서를 받은 후 다음 단계 수신자에게 문서를 전송하기까지의 기한을 설정합니다. 문서 전송 기한을 설정하지 않으려면 0일 0시간으로 입력하세요(수신자가 내부 멤버일 경우에만 해당).</p></li>
 </ul>
+<div class="section" id="hide">
+<span id="id20"></span><h5><strong>문서에서 일부 영역만 보이도록 설정하는 방법</strong><a class="headerlink" href="#hide" title="Permalink to this headline">¶</a></h5>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>문서 일부 숨기기 설정</strong></p>
+<p>파일을 추가해서 여러 개의 파일로 문서를 만든 경우 수신자에게 보여지는 문서의 일부를 숨기도록 설정할 수 있습니다. 즉, 한 템플릿에서 수신자에게 보낼 부분과 보내지 않을 문서를 구분할 수 있습니다.</p>
+<p>업로드한 문서 파일이 여러 개인 경우, 워크플로우의 <strong>수신자 단계</strong> 속성 설정에서 <strong>문서 일부 숨기기 설정</strong>이 나타납니다. 문서에 추가된 파일 이름이 목록으로 표시되어 각 파일별로 <strong>보이기, 숨기기 또는 이전 단계 요청자가 선택</strong>할 수 있도록 설정할 수 있습니다.</p>
+<p>❗단, 문서 일부 숨기기 기능은 문서 수신자가 내부 멤버가 아닌 외부 수신자일 경우에만 적용됩니다.</p>
+<p><strong>설정 방법</strong></p>
+<ol class="arabic simple">
+<li><p>대시보드 <strong>메뉴 &gt; 템플릿 관리</strong>로 이동합니다.</p></li>
+<li><p>템플릿의 <strong>설정 아이콘(⚙)</strong>을 클릭하여 템플릿 설정 화면으로 이동합니다.</p></li>
+<li><p><strong>워크플로우 설정</strong> 탭으로 이동합니다.</p></li>
+<li><p><strong>수신자</strong> 단계를 추가합니다.</p></li>
+<li><p>오른쪽 속성 영역 하단의 <strong>문서 일부 숨기기 설정</strong>을 체크합니다.</p></li>
+<li><p>문서 내 영역에 따라 노출 여부를 선택합니다.</p>
+<ul class="simple">
+<li><p><strong>보이기:</strong> 수신자에게 해당 시트 또는 구역이 전송됩니다.</p></li>
+<li><p><strong>선택:</strong> 전송 단계에서 해당 영역의 노출 여부를 선택합니다.</p></li>
+<li><p><strong>숨기기:</strong> 수신자에게 해당 시트 또는 구역이 보이지 않습니다.</p></li>
+</ul>
+</li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/hide-setting.png"><img alt="문서 일부 숨기기 설정" src="../_images/hide-setting.png" style="width: 500px;" /></a>
+</div>
+</div>
 <p><strong>완료: 문서가 모든 워크플로우 단계를 거쳐 최종 완료되는 단계입니다.</strong></p>
 <hr class="docutils" />
 <p><a class="reference internal" href="../_images/workflow-step-complete-property.png"><img alt="image18" src="../_images/workflow-step-complete-property.png" style="width: 700px;" /></a></p>
 <ul class="simple">
 <li><p><strong>별도의 파일 저장소에 완료 문서 저장하기</strong>: 문서가 완료되면 대표 관리자 또는 회사 관리자가 별도로 설정한 외부 클라우드 저장소에 완료된 문서가 저장되도록 설정합니다.</p></li>
 <li><p><strong>공인전자문서센터에 완료 문서 저장하기</strong>: 문서가 완료되면 이폼사인과 연계된 공인전자문서센터에 자동으로 저장되도록 설정합니다. 본 기능은 추가 요금이 발생합니다.</p></li>
-<li><p><strong>완료 문서에 타임스탬프 찍기</strong>: 완료된 문서가 그 이후 변경되지 않았음을 증명하는 타임스탬프가 문서에 적용될 수 있도록 설정합니다. 본 기능은 추가 요금이 발생합니다.</p></li>
+<li><p><strong>최종 완료 문서에 타임스탬프 찍기</strong>: 완료된 문서가 그 이후 변경되지 않았음을 증명하는 타임스탬프가 문서에 적용될 수 있도록 설정합니다. 본 기능은 추가 요금이 발생합니다.</p></li>
 </ul>
 </div>
 </div>
+</div>
 <div class="section" id="field-wd">
-<span id="id20"></span><h3>필드 설정<a class="headerlink" href="#field-wd" title="Permalink to this headline">¶</a></h3>
+<span id="id21"></span><h3>필드 설정<a class="headerlink" href="#field-wd" title="Permalink to this headline">¶</a></h3>
 <p><strong>필드 설정</strong>에서는 문서 목록에 표시되는 컬럼의 표시 여부 및 순서를 설정할 수 있습니다. 또한, 템플릿에 들어가는 필드의 기본값 또는 자동입력 값을 설정할 수 있습니다.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/template-field-setting.png"><img alt="템플릿 설정 &gt; 필드 설정" src="../_images/template-field-setting.png" style="width: 700px;" /></a>
@@ -665,7 +734,7 @@
 </div>
 </div>
 <div class="section" id="noti-wd">
-<span id="id21"></span><h3>알림 설정<a class="headerlink" href="#noti-wd" title="Permalink to this headline">¶</a></h3>
+<span id="id22"></span><h3>알림 설정<a class="headerlink" href="#noti-wd" title="Permalink to this headline">¶</a></h3>
 <p>템플릿으로 작성되는 문서의 상태 알림을 수신할 수신자 설정 및 알림 내용 확인, 편집 등을 할 수 있습니다.</p>
 <p><strong>상태 알림 설정</strong></p>
 <p>해당 템플릿으로 생성된 문서의 진행 상태에 대한 알림의 수신자를 설정하고 알림 메시지를 미리보기(문서 승인/검토 및 작성/반려/취소/수정 알림) 또는 편집(문서 최종 완료 알림) 할 수 있습니다.</p>
@@ -685,8 +754,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="id22">
-<h2>개별 템플릿 메뉴<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id23">
+<h2>개별 템플릿 메뉴<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
 <p><strong>템플릿 관리</strong> 화면에서 템플릿 이름 오른쪽에 위치한 메뉴 아이콘(⋮)을 클릭하면 각 템플릿별 메뉴가
 나타납니다.</p>
 <p><a class="reference internal" href="../_images/template-manage-menu-wfd.png"><img alt="image23" src="../_images/template-manage-menu-wfd.png" style="width: 500px;" /></a></p>
@@ -697,9 +766,6 @@
 <li><p><strong>소유자 변경</strong>: 템플릿의 소유자를 변경할 수 있습니다. 기본적으로 템플릿 소유자는 템플릿을 생성한 사람으로 자동 지정됩니다. 이후 변경하고자 할 경우 소유자 변경을 통해 다른 멤버로 소유자를 변경할 수 있습니다. 템플릿 소유자는 템플릿 관리 권한을 가진 멤버 중에 선택할 수 있습니다.</p>
 <p><img alt="image24" src="../_images/template-owner-change.PNG" /></p>
 </li>
-<li><p><strong>문서 관리자 설정:</strong> 해당 템플릿으로 작성되는 문서의 관리자를 설정할 수 있습니다. <strong>템플릿 설정 &gt; 권한 설정 &gt; 문서 관리자 설정</strong>과 동일합니다.</p>
-<p><img alt="image25" src="../_images/document-manager-setting.PNG" /></p>
-</li>
 <li><p><strong>문서 번호 설정 변경</strong>: 템플릿 설정에서 설정한 문서 번호 설정을 변경할 수 있는 기능으로 문서번호가 채번되는 템플릿의 시작번호를 다시 설정할 수 있습니다.</p>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
@@ -709,8 +775,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id23">
-<h2>템플릿 검색<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id24">
+<h2>템플릿 검색<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
 <p><strong>템플릿 관리</strong> 화면에서는 템플릿 카테고리별 조회, 검색 등을 할 수 있습니다.</p>
 <p><a class="reference internal" href="../_images/template-manage-search.png"><img alt="image27" src="../_images/template-manage-search.png" style="width: 700px;" /></a></p>
 <dl>
