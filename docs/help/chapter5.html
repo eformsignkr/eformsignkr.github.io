@@ -392,8 +392,12 @@ ID는 컴포넌트를 추가하면 자동으로 설정되지만, 컴포넌트에
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>문서에 직접 서명이 아닌 직인이나 개인 도장을 사용해야 하는 경우가 있습니다. eformsign에서는 도장 이미지를 사용해 문서의 서명란에 도장을 찍을 수 있습니다. 도장 이미지를 사용하려면, 서명 팝업에서 <strong>도장</strong> 탭을 클릭하고 도장 이미지를 선택한 후 <strong>확인</strong> 버튼을 누릅니다.
-회사 법인 인감 등 회사 직인이 있을 경우, <strong>회사 관리 메뉴에서 회사 도장</strong>으로 등록한 후 <strong>회사 도장</strong> 컴포넌트로 안전하고 간편하게 사용할 수 있습니다.</p>
+<p><strong>문서에 도장 날인하기</strong></p>
+<p>문서에 직접 서명이 아닌 직인이나 개인 도장을 사용해야 하는 경우가 있습니다. eformsign에서는 도장 이미지를 사용해 문서의 서명란에 도장을 찍을 수 있습니다.</p>
+<p><strong>① 일반 도장 이미지 사용</strong></p>
+<p>도장 이미지를 사용하려면, 서명 팝업에서 <strong>도장</strong> 탭을 클릭하고 도장 이미지를 선택한 후 <strong>확인</strong> 버튼을 누릅니다.</p>
+<p><strong>② 회사 도장 사용</strong></p>
+<p>회사 법인 인감 등 회사 직인이 있을 경우, <strong>회사 관리 메뉴에서 회사 도장</strong>으로 등록한 후 <strong>회사 도장</strong> 컴포넌트로 안전하고 간편하게 사용할 수 있습니다.</p>
 </div>
 <p><strong>③ 서명펜 두께</strong></p>
 <p>서명을 그릴 때 표시되는 선의 두께를 설정합니다.</p>
@@ -401,6 +405,7 @@ ID는 컴포넌트를 추가하면 자동으로 설정되지만, 컴포넌트에
 <p>서명을 그릴 때 표시하는 선의 색을 설정합니다.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
+<p><strong>서명일 자동입력 설정 방법</strong></p>
 <p>전자 계약서, 전자 동의서 등 서명이 들어가는 문서에 서명일이 자동으로 입력되도록 설정할 수 있습니다.</p>
 <ol class="arabic simple">
 <li><p>전자 서식으로 변환할 문서 파일(워드, 엑셀, 파워포인트)을 열거나 혹은 새 문서를 만듭니다.</p></li>
@@ -410,7 +415,7 @@ ID는 컴포넌트를 추가하면 자동으로 설정되지만, 컴포넌트에
 <li><p><strong>사용일</strong> 컴포넌트의 속성창을 엽니다.</p></li>
 </ol>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/date-component-properties.png"><img alt="사용일 컴포넌트 속성" src="../_images/date-component-properties.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/date-component-properties.png"><img alt="사용일 컴포넌트 속성" src="../_images/date-component-properties.png" style="width: 300px;" /></a>
 </div>
 <ol class="arabic simple" start="6">
 <li><p>사용일 표시 유형을 <strong>입력 값을 수정한 날짜</strong>로 선택합니다.</p></li>
@@ -500,9 +505,11 @@ ID는 컴포넌트를 추가하면 자동으로 설정되지만, 컴포넌트에
 <p>해당 옵션을 체크하면 음수 값을 입력할 수 있습니다.</p>
 <p><strong>③ 입력 가능 최솟값/최댓값</strong></p>
 <p>입력 가능한 최솟값 또는 최댓값을 설정합니다.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>최솟값을 설정한 경우 입력한 값이 설정한 최솟값보다 작으면 최솟값으로 변경되어 입력됩니다. 최댓값을 설정한 경우에는 입력한 값이 설정한 최대값보다 크면 최댓값으로 변경되어 입력됩니다.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p><strong>최솟값/최대값 설정한 경우 참고사항!</strong></p>
+<p>최솟값을 설정한 경우 입력한 값이 설정한 최솟값보다 작으면 최솟값으로 변경되어 입력됩니다.
+최댓값을 설정한 경우에는 입력한 값이 설정한 최대값보다 크면 최댓값으로 변경되어 입력됩니다.</p>
 </div>
 <p><strong>④ 입력 가능 소수점 자릿수</strong></p>
 <p>입력 가능한 소수점 자릿수를 설정합니다. 소수점 자릿수는 0~10까지 입력할 수 있습니다.</p>
@@ -762,6 +769,7 @@ PC 키보드 환경에서는 입력란에 직접 원하는 숫자를 입력할 �
 <p><a class="reference internal" href="../_images/user-input-certain-component.png"><img alt="image35" src="../_images/user-input-certain-component.png" style="width: 300px;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
+<p><strong>서명자 이름 자동 입력되도록 설정하는 방법</strong></p>
 <p>담당자 서명란에 서명한 담당자의 이름을 자동으로 입력되도록 하려면, 먼저 담당자 서명란에 서명 컴포넌트를 생성한 후 서명 컴포넌트의 ID를 ‘담당자 서명’으로 지정합니다. 담당자의 이름을 입력할 사용자 컴포넌트를 하나 더 생성합니다. 사용자 컴포넌트의 사용자 표시 유형 속성을 <strong>입력 값을 수정한 사람</strong>으로 선택하고, 컴포넌트 ID 입력란에 ‘담당자 서명’을 입력합니다.</p>
 </div>
 <p><strong>③ 사용자 표시 정보</strong></p>
@@ -771,8 +779,14 @@ PC 키보드 환경에서는 입력란에 직접 원하는 숫자를 입력할 �
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>멤버 기본 정보를 수정하려면 <strong>대표 관리자</strong> 또는 <strong>회사 관리자</strong> 권한이 필요합니다.</p>
-<p>멤버 기본 정보를 수정하려면 eformsign에 로그인한 후 <strong>회사 관리 &gt; 멤버 관리</strong> 메뉴로 이동합니다. 멤버 목록에서 멤버를 선택하고 화면 오른쪽에 나타나는 상세 보기 영역의 정보를 수정한 후 <strong>저장</strong> 버튼을 클릭합니다.</p>
+<p><strong>멤버 기본 정보 수정 방법</strong></p>
+<p><em>멤버 기본 정보를 수정하려면 **대표 관리자*</em> 또는 <strong>회사 관리자</strong> 권한이 필요합니다.</p>
+<ol class="arabic simple">
+<li><p><strong>회사 관리 &gt; 멤버 관리</strong> 메뉴로 이동합니다.</p></li>
+<li><p>멤버 목록에서 멤버를 선택합니다.</p></li>
+<li><p>화면 오른쪽에 나타나는 상세 보기 영역의 정보를 수정합니다.</p></li>
+<li><p><strong>저장</strong> 버튼을 클릭하면 정보가 수정됩니다.</p></li>
+</ol>
 </div>
 </div>
 <div class="section" id="usedate">
