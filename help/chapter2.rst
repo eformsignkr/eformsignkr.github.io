@@ -252,7 +252,7 @@
 
 .. note::
 
-   이 작업은 **대표 관리자** 또는 **회사 관리 권한**\ 이 필요합니다.
+   이 작업은 **대표 관리자** 또는 **회사 관리자 권한**\ 이 필요합니다.
 
 .. figure:: resources/managecompany-companyinfo-menu.png
    :alt: 회사 관리 > 회사 정보 메뉴
