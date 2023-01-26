@@ -504,7 +504,7 @@
       3. 병합할 워크플로우 단계 중 **아래에 있는 워크플로우를 클릭**\ 하면 워크플로우 왼쪽에 **전송 순서 합치기** 아이콘(|image8|)이 나타납니다. 
       4. 해당 아이콘(|image8|)을 클릭하면 하단과 상단의 워크플로우가 합쳐집니다.
 
-      .. figure:: resources/workflow_merge_wd.png
+      .. figure:: resources/workflow_merge_fb.png
          :alt: 템플릿 설정 > 워크플로우 설정 > 합치기
          :width: 500px
 
@@ -514,7 +514,7 @@
 
          병합된 워크플로우를 클릭하면 아이콘이 표시됩니다. 분할할 워크플로우 단계를 클릭후 전송 순서 나누기 아이콘(|image10|)을 클릭하면 합쳐진 워크플로우 단계가 다시 분리됩니다.
 
-         .. figure:: resources/workflow_split_wd.png
+         .. figure:: resources/workflow_split_fb.png
             :alt: 템플릿 설정 > 워크플로우 설정 > 나누기
             :width: 500px
    
