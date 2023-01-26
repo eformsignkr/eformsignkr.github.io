@@ -96,9 +96,9 @@ eformsign을 사용하면 누구나 쉽게 기존의 문서를 전자문서로 �
 
       수신자 단계에서 열람자를 선택하면, 문서 전송 옵션을 통해 문서 처리 방법을 설정할 수 있습니다.  
 
-      - ** 수신자가 문서를 열람하면 다음 단계로 전송: ** 열람자 단계의 수신자가 문서를 열람해야지만 문서가 다음 단계로 전송됩니다.
+      - **수신자가 문서를 열람하면 다음 단계로 전송:** 열람자 단계의 수신자가 문서를 열람해야지만 문서가 다음 단계로 전송됩니다.
 
-      - ** 수신자의 문서 열람 여부와 관계없이 바로 다음 단계로 전송: ** 열람자 단계의 수신자가 문서를 열람하지 않아도 문서가 다음 단계로 전송됩니다. 
+      - **수신자의 문서 열람 여부와 관계없이 바로 다음 단계로 전송:** 열람자 단계의 수신자가 문서를 열람하지 않아도 문서가 다음 단계로 전송됩니다. 
 
       .. figure:: resources/needtoview_option.png
          :width: 300px
@@ -267,15 +267,16 @@ eformsign을 사용하면 누구나 쉽게 기존의 문서를 전자문서로 �
             :width: 400px
 
 
-      추가한 파일별로 일부 수신자에게는 문서가 보이지 않도록 설정할 수 있습니다. 단, 수신자가 내부 멤버일 경우에는 적용되지 않습니다.
+      추가한 파일별로 일부 수신자에게는 문서가 보이지 않도록 설정할 수 있습니다. 
+      ❗단, 수신자가 내부 멤버일 경우에는 적용되지 않습니다.
 
          1. 파일 추가를 클릭해 파일을 추가합니다. 
          2. 수신자 지정하기 단계에서 해당 수신자 단계의 **수신자 옵션**\ 에서 **문서 일부 숨기기 설정** 옵션을 체크합니다. 
-         3. 문서 파일별로 보이기 또는 숨기기를 선택합니다. 
+         3. 문서 파일별로 **보이기** 또는 **숨기기**\ 를 선택합니다.
 
-            **- 보이기:** 보이기를 선택하면 해당 문서는 해당 단계의 수신자에게 보여지게 됩니다.
+         - **보이기:** 보이기를 선택하면 해당 문서는 해당 단계의 수신자에게 보여지게 됩니다.
 
-            **- 숨기기:** 숨기기를 선택하면 해당 문서는 해당 단계의 수신자에게 보이지 않게 됩니다. 
+         - **숨기기:** 숨기기를 선택하면 해당 문서는 해당 단계의 수신자에게 보이지 않게 됩니다. 
 
          .. figure:: resources/newfrom-hide.png
             :alt: 내 파일로 문서 작성-파일 숨기기
@@ -465,6 +466,7 @@ eformsign을 사용하면 누구나 쉽게 기존의 문서를 전자문서로 �
 .. |image7| image:: resources/newfrommyfile-option.png
    :width: 700px
 .. |image8| image:: resources/menu_icon_3.png
+   :width: 20px
 .. |image9| image:: resources/newfrommyfile-saveasdrafts.png
 .. |image10| image:: resources/newfrommyfile-startfromnow.png
    :width: 700px
@@ -477,7 +479,7 @@ eformsign을 사용하면 누구나 쉽게 기존의 문서를 전자문서로 �
 .. |image14| image:: resources/menu-startfromtemplate.png
    :width: 700px
 .. |image15| image:: resources/create-icon.PNG
-   :width: 50px
+   :width: 30px
 .. |image16| image:: resources/startfromtemplate-create.png
    :width: 700px
 .. |image17| image:: resources/bulk-creation-table-blue-section.png
