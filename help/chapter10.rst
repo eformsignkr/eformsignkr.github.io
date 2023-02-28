@@ -9,8 +9,8 @@
 eformsign에서 작성된 문서가 완료되면 외부의 클라우드 스토리지 서비스에 자동으로 저장되도록 설정할 수 있습니다.
 
 .. note::
-\ 
-   현재 **Dropbox, Google Drive, OneDrive, box**를 지원하고 있으며,
+ 
+   현재 **Dropbox, Google Drive, OneDrive, box**\ 를 지원하고 있으며,
    외부 파일저장소 연동은 **대표 관리자**\ 만 설정할 수 있습니다.
 
 1. 메뉴에서 **커넥트> 파일 저장소**\ 로 이동합니다.
