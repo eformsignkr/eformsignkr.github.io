@@ -1,3 +1,4 @@
+==================
 eformsign 소개
 ==================
 
@@ -228,8 +229,8 @@ eformsign을 사용하는 방법으로는 내 컴퓨터에 저장된 문서 파�
 **템플릿으로 문서 작성** 메뉴에서 해당 템플릿으로 문서를 작성하고 수신자에게 전송합니다.
 
 .. figure:: resources/use_flow_web.png
-      :alt: 웹폼 디자이너와 eformsign 간 사용 흐름
-      :width: 700px
+   :alt: 웹폼 디자이너와 eformsign 간 사용 흐름
+   :width: 700px
 
 
 

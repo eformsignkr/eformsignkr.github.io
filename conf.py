@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'eformsign User Guide'
-copyright = '2021, FORCS CO., LTD. All rights reserved.'
+copyright = '2023, FORCS CO., LTD. All rights reserved.'
 author = 'FORCS'
 
 # The short X.Y version
-version = ''
+version = 'version 3.5'
 # The full version, including alpha/beta/rc tags
-release = '2021.10.22'
+release = '2023.02.27'
 
 
 # -- General configuration ---------------------------------------------------
@@ -42,6 +42,7 @@ extensions = [
 #'sphinxcontrib.redoc',
     'sphinx_code_tabs',
     'sphinx_rtd_theme',
+    'sphinx.ext.todo', 'sphinx.ext.mathjax', #'sphinxcontrib.fulltoc'
 ]
 
 
@@ -86,6 +87,9 @@ html_theme = 'sphinx_rtd_theme'
 #
 # html_theme_options = {}
 
+
+
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
@@ -101,6 +105,14 @@ html_favicon = 'C:\docbook\eformsignkr.github.io\images\\favicon.ico'
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
+html_sidebars = {
+    '**': [
+        'globaltoc.html',
+        'localtoc.html',
+        'searchbox.html',
+    ]
+}
+
 
 
 # -- Options for HTMLHelp output ---------------------------------------------
@@ -111,39 +123,86 @@ htmlhelp_basename = 'eformsignUserGuidedoc'
 
 # -- Options for LaTeX output ------------------------------------------------
 
+latex_engine = 'pdflatex'
+
+latex_engine = 'xelatex'
+latex_use_xindy = False
+
+latex_elements = {
+    'papersize': 'a4paper',
+    'pointsize': '10pt',
+    'classoptions': ',oneside',
+    'babel': '',
+    'inputenc': '',
+    'utf8extra': '',
+    'fontenc': '',
+    'fontpkg': '',
+    'geometry': '',
+    'fncychap': '',
+    'preamble': r'''
+        \usepackage{kotex}
+        \usepackage{float}
+        \floatplacement{figure}{H}
+        ''',
+}
+
+
+latex_engine = 'xelatex'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
-    # 'papersize': 'letterpaper',
+    'papersize': 'a4paper',
 
     # The font size ('10pt', '11pt' or '12pt').
     #
-    # 'pointsize': '10pt',
+    'pointsize': '10pt',
 
     # Additional stuff for the LaTeX preamble.
     #
-    # 'preamble': '',
+    'preamble': '',
 
     # Latex figure (float) alignment
     #
-    # 'figure_align': 'htbp',
+    'figure_align': 'htbp',
+
+
+    # kotex config
+    'figure_align': 'htbp',
+
+    'fontpkg': r'''
+\usepackage{kotex}
+
+% 영문 폰트 설정
+\setmainfont[Mapping=tex-text]{나눔고딕}
+\setsansfont[Mapping=tex-text]{나눔명조}
+\setmonofont{나눔고딕코딩}
+
+% 한글 폰트 설정
+\setmainhangulfont[Mapping=tex-text]{나눔고딕}
+\setsanshangulfont[Mapping=tex-text]{나눔명조}
+\setmonohangulfont{나눔고딕코딩}
+
+''',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'eformsignUserGuide.tex', 'eformsign User Guide Documentation',
+    ('index', 'eformsignUserGuide.tex', 'eformsign 사용 매뉴얼',
      'FORCS', 'manual'),
 ]
 
+latex_additional_files = [
+    'kotex.sty',
+]
 
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'eformsignuserguide', 'eformsign User Guide Documentation',
+    (master_doc, 'eformsignuserguide', 'eformsign 사용 매뉴얼',
      [author], 1)
 ]
 
@@ -154,7 +213,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'eformsignUserGuide', 'eformsign User Guide Documentation',
+    (master_doc, 'eformsignUserGuide', 'eformsign 사용 매뉴얼',
      author, 'eformsignUserGuide', 'One line description of project.',
      'Miscellaneous'),
 ]
@@ -178,8 +237,8 @@ epub_title = project
 epub_exclude_files = ['search.html']
 
 html_theme_options = {
-    'logo_only': True,
-    # ...
+    'logo_only': True, 
+    'titles_only': False
 }
 html_logo = "C:\docbook\eformsignkr.github.io\images\\forcs_b.png"
 
@@ -251,11 +310,23 @@ pdf_language = "en"
 # Page template name for "regular" pages
 #pdf_page_template = 'cutePage'
 # Show Table Of Contents at the beginning?
-#pdf_use_toc = True
+pdf_use_toc = True
 # How many levels deep should the table of contents be?
 
 pdf_toc_depth = 9999
 # Add section number to section references
-pdf_use_numbered_links = False
+pdf_use_numbered_links = True
 # Background images fitting mode
 pdf_fit_background_mode = 'scale'
+
+
+from sphinx.builders.latex import LaTeXBuilder
+
+class AllPdfBuilder(LaTeXBuilder):
+    name = 'all-pdf'
+    format = 'pdf'
+    def get_outdated_docs(self):
+        return 'all documents'
+
+def setup(app):
+    app.add_builder(AllPdfBuilder)
