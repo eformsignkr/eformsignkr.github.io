@@ -13,8 +13,8 @@ eformsign 사용자 안내서
    help/chapter2
    help/chapter3
    help/chapter4
+   help/chapter6  
    help/chapter5
-   help/chapter6
    help/chapter7
    help/chapter8
    help/chapter9   
