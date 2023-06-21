@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>웹폼 디자이너 소개 &mdash; eformsign User Guide 2023.02.27 documentation</title>
+  <title>웹폼 디자이너 소개 &mdash; eformsign User Guide 2023.04.27 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
@@ -21,7 +21,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="폼 빌더(MS Office Add-in) 소개" href="chapter5.html" />
+    <link rel="next" title="웹폼 디자이너로 템플릿 만들기" href="chapter5.html" />
     <link rel="prev" title="문서 작성하기" href="chapter3.html" /> 
 </head>
 
@@ -38,7 +38,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 3.5
+                version 3.6
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -61,8 +61,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#webformdesigner-menus">웹폼 디자이너 화면 구성</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#components">입력 항목 개요</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id7">입력 항목 종류</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id8"><strong>기본 입력 항목</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id9"><strong>문서 정보 입력 항목</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">기본 입력 항목</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">문서 정보 입력 항목</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#id10">입력 항목별 속성 설정</a><ul>
@@ -78,20 +78,21 @@
 <li class="toctree-l4"><a class="reference internal" href="#date2">날짜</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#numeric2">증감</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#label2">레이블</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hyperlink2">하이퍼링크</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#camera2">카메라</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#record2">녹음</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#attach2">첨부</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#document2">문서 정보: 문서 ID와 문서 번호</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#document2">문서 ID와 문서 번호</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id26">템플릿에 대한 추가 설정하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id27">템플릿에 대한 추가 설정</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="chapter5.html">폼 빌더(MS Office Add-in) 소개</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">웹폼 디자이너로 템플릿 만들기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter7.html">폼 빌더(MS Office Add-in)로 템플릿 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">웹폼 디자이너로 템플릿 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">폼 빌더(MS Office Add-in) 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">폼 빌더로 템플릿 만들기</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">문서함</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter9.html">커스터마이즈</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter10.html">외부 서비스 연동</a></li>
@@ -123,7 +124,7 @@
              
   <section id="webform">
 <span id="id1"></span><h1>웹폼 디자이너 소개<a class="headerlink" href="#webform" title="Permalink to this heading"></a></h1>
-<p>웹폼 디자이너는 eformsign 서비스에 기존의 문서 파일을 업로드하여 전자서식으로 만들 수 있는 에디터입니다.</p>
+<p>웹폼 디자이너는 eformsign 서비스에 기존의 문서 파일을 업로드하여 전자서식으로 만들 수 있는 웹 에디터입니다.</p>
 <p><strong>내 파일로 문서 작성</strong> 메뉴 또는 <strong>템플릿 관리</strong> 메뉴에서 문서 파일을 업로드하면 웹폼 디자이너 화면이 나타납니다. 이폼사인에서 제공하는 다양한 입력 항목 중 원하는 입력 항목을 문서의 원하는 위치에 추가하고 난 후, 각 입력 항목에 대한 속성을 설정하면 전자서식을 손쉽게 만들 수 있습니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -132,33 +133,36 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>MS Office에서 바로 전자문서를 생성할 수 있는 MS Office Add-in 기능(폼 빌더)도 제공하고 있습니다. 폼 빌더(MS Office Add-in)에 관한 자세한 내용은 <a class="reference external" href="chapter5.html#formbuilder">폼 빌더</a>를 참고하시기 바랍니다.</p>
+<p>MS Office에서 바로 전자문서를 생성할 수 있는 MS Office Add-in 기능(폼 빌더)도 제공하고 있습니다. 폼 빌더(MS Office Add-in)에 관한 자세한 내용은 <a class="reference external" href="chapter6.html#formbuilder">폼 빌더</a>를 참고하시기 바랍니다.</p>
 </div>
 <section id="id2">
 <h2>파일 업로드하기<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
 <section id="id3">
 <h3><strong>내 파일로 문서 작성</strong> 메뉴에서 파일 업로드<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
-<ol class="arabic simple">
-<li><p>메뉴 또는 대시보드에서 <strong>내 파일로 문서 작성</strong>을 클릭합니다.</p></li>
-</ol>
+<ol class="arabic">
+<li><p>대시보드에 파일을 드래그하거나 사이드바 메뉴에서 클릭하여 <strong>내 파일로 문서 작성</strong> 메뉴로 이동합니다.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/myfile_create_document.png"><img alt="내 파일로 문서 작성 메뉴" src="../_images/myfile_create_document.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/newfrommyfile-menu.png"><img alt="파일 추가" src="../_images/newfrommyfile-menu.png" style="width: 700px;" /></a>
 </figure>
-<ol class="arabic" start="2">
+</li>
 <li><p>화면에 바로 파일을 드래그하거나 <strong>내 컴퓨터에서 파일 선택</strong>을 클릭해서 자신의 컴퓨터에서 업로드하고자 하는 파일을 선택합니다.</p>
 <p><a class="reference internal" href="../_images/myfile_create_document2.png"><img alt="image2" src="../_images/myfile_create_document2.png" style="width: 500px;" /></a></p>
 </li>
-<li><p>문서에 참여할 문서 참여자 및 역할을 추가 및 설정하면, 문서에 입력 항목을 추가할 수 있는 웹폼 디자이너 화면이 나타납니다.</p></li>
-</ol>
+<li><p>문서에 참여할 문서 참여자 및 역할을 추가 및 설정하면, 문서에 입력 항목을 추가할 수 있는 웹폼 디자이너 화면이 나타납니다.</p>
 <figure class="align-default">
 <img alt="참여자 추가 화면" src="../_images/myfile_create_document_addparticipants.png" />
 </figure>
+</li>
+</ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>파일을 추가하거나 변경하려면 화면 하단의 <strong>파일 추가</strong> 또는 파일 이름 옆의 더보기 메뉴에서 <strong>파일 변경</strong>을 클릭합니다.</p>
+<p>파일을 추가하거나 변경하려면 화면 하단의 <strong>파일 추가</strong> 또는 파일 이름 옆의 더보기(⋮) 메뉴에서 <strong>파일 변경</strong>을 클릭합니다.</p>
 <p>❗파일은 파일 개수에 상관없이 전체 파일 크기 9MB까지 추가할 수 있습니다.</p>
 <figure class="align-default">
 <img alt="파일 추가/변경" src="../_images/add-file.png" />
+</figure>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/add-file-menu.png"><img alt="파일 추가 더보기 메뉴" src="../_images/add-file-menu.png" style="width: 400px;" /></a>
 </figure>
 </div>
 </section>
@@ -168,30 +172,32 @@
 <p class="admonition-title">Note</p>
 <p>템플릿 관리 메뉴에서 템플릿을 생성하려면 대표 관리자 또는 템플릿 관리자 권한이 있어야 합니다.</p>
 </div>
-<ol class="arabic simple">
-<li><p><strong>템플릿 관리</strong> 메뉴로 이동합니다.</p></li>
-</ol>
+<ol class="arabic">
+<li><p><strong>템플릿 관리</strong> 메뉴로 이동합니다.</p>
 <figure class="align-default">
 <img alt="웹폼 디자이너 화면" src="../_images/web-form_1.png" />
 </figure>
-<ol class="arabic simple" start="2">
-<li><p>템플릿 관리 화면에 바로 파일을 드래그하거나 <strong>내 컴퓨터에서 파일 선택</strong>을 클릭해 자신의 컴퓨터에서 업로드하고자 하는 파일을 선택합니다.</p></li>
-</ol>
+</li>
+<li><p>템플릿 관리 화면에 바로 파일을 드래그하거나 <strong>내 컴퓨터에서 파일 선택</strong>을 클릭해 자신의 컴퓨터에서 업로드하고자 하는 파일을 선택합니다.</p>
 <figure class="align-default">
 <img alt="웹폼 디자이너 화면" src="../_images/web-form_2.png" />
 </figure>
-<ol class="arabic simple" start="3">
-<li><p>문서에 참여할 문서 참여자 및 역할을 추가 및 설정하면, 웹폼 디자이너 화면이 나타납니다.</p></li>
-</ol>
+</li>
+<li><p>문서에 참여할 문서 참여자 및 역할을 추가 및 설정하면, 웹폼 디자이너 화면이 나타납니다.</p>
 <figure class="align-default">
 <img alt="웹폼 디자이너 화면" src="../_images/web-form_3.png" />
 </figure>
+</li>
+</ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>파일을 추가하거나 변경하려면 화면 하단의 <strong>파일 추가</strong> 또는 파일 이름 옆의 더보기 메뉴에서 <strong>파일 변경</strong>을 클릭합니다.</p>
+<p>파일을 추가하거나 변경하려면 화면 하단의 <strong>파일 추가</strong> 또는 파일 이름 옆의 더보기(⋮) 메뉴에서 <strong>파일 변경</strong>을 클릭합니다.</p>
 <p>❗파일은 파일 개수에 상관없이 전체 파일 크기 9MB까지 추가할 수 있습니다.</p>
 <figure class="align-default">
 <img alt="파일 추가/변경" src="../_images/template_addfile.png" />
+</figure>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/add-file-menu.png"><img alt="파일 추가 더보기 메뉴" src="../_images/add-file-menu.png" style="width: 400px;" /></a>
 </figure>
 </div>
 </section>
@@ -202,17 +208,18 @@
 <figure class="align-default">
 <img alt="웹폼 디자이너 메뉴 구성-내 파일로 문서 작성" src="../_images/myfile_create_document4.png" />
 </figure>
-<p><strong>1. 상단 바:</strong> 문서 제목과 현재 단계를 확인할 수 있으며, 다음 단계로 진행할 수 있는 버튼과 더보기 메뉴가 표시됩니다.
-<strong>템플릿 설정</strong>의 경우 <strong>폼 디자인하기, 설정하기</strong>의 2단계가 표시되며, 템플릿 관리 리스트 화면으로 돌아가거나 입력 항목이 추가된 템플릿의 표시 형태를 미리보기할 수 있습니다. <strong>내 파일로 문서 작성</strong>의 경우 <strong>폼 디자인하기, 수신자 지정하기, 옵션</strong>의 3단계가 표시되며, 폼 디자인을 완료하고 문서 작성을 시작하거나 임시 보관함에 저장하고 나갈 수 있습니다.</p>
+<p><strong>① 상단 바:</strong> 문서 제목과 현재 단계를 확인할 수 있으며, 다음 단계로 진행할 수 있는 버튼과 더보기 메뉴가 표시됩니다.</p>
+<p><strong>템플릿 설정</strong>의 경우 <strong>폼 디자인하기, 설정하기</strong>의 2단계가 표시되며, 템플릿 관리 리스트 화면으로 돌아가거나 입력 항목이 추가된 템플릿의 표시 형태를 미리보기할 수 있습니다.</p>
+<p><strong>내 파일로 문서 작성</strong>의 경우 <strong>폼 디자인하기, 수신자 지정하기, 옵션</strong>의 3단계가 표시되며, 폼 디자인을 완료하고 문서 작성을 시작하거나 임시 보관함에 저장하고 나갈 수 있습니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>상단 바에 표시되는 각 단계를 클릭하면 해당 단계의 화면으로 이동합니다. <strong>설정하기</strong>를 클릭하면 워크플로우, 권한 등을 설정할 수 있습니다. 템플릿 생성 및 내 파일로 문서 작성을 완료하기 전에 설정을 완료하시기 바랍니다.</p>
 </div>
-<p><strong>2. 문서 표시 창:</strong> 업로드한 문서 파일이 표시됩니다.</p>
-<p><strong>3. 문서 참여자:</strong> 문서에 참여할 참여자를 선택한 후 해당 참여자가 입력할 입력 항목을 문서에 드래그하여 추가합니다. 참여자 추가를 클릭해 문서 참여자를 추가할 수 있습니다. 한 문서에 문서 참여자는 최대 30명까지 추가할 수 있습니다.</p>
-<p><strong>4. 입력 항목 리스트:</strong> 텍스트, 멀티라인, 서명, 체크, 선택 등 14개의 기본 입력 항목과 문서 ID, 문서 번호 등 2개의 정보 항목을 제공합니다.</p>
-<p><strong>5. 속성:</strong> 서명, 텍스트, 체크 등 입력 항목을 클릭해 문서의 원하는 위치에 추가하면 각 입력 항목의 ID, 작성권한 등 상세 속성을 설정할 수 있습니다.</p>
-<p><strong>6. 하단 바:</strong> 파일명이 표시되며, 파일을 추가할 수 있는 파일 추가 버튼, 파일별 더보기 메뉴를 통해 파일 변경, 순서 이동, 파일 삭제 등을 할 수 있습니다.</p>
+<p><strong>② 문서 표시 창:</strong> 업로드한 문서 파일이 표시됩니다.</p>
+<p><strong>③ 문서 참여자:</strong> 문서에 참여할 참여자를 선택한 후 해당 참여자가 입력할 입력 항목을 문서에 드래그하여 추가합니다. 참여자 추가를 클릭해 문서 참여자를 추가할 수 있습니다. 한 문서에 문서 참여자는 최대 30명까지 추가할 수 있습니다.</p>
+<p><strong>④ 입력 항목 리스트:</strong> 텍스트, 멀티라인, 서명, 체크, 선택 등 14개의 기본 입력 항목과 문서 ID, 문서 번호 등 2개의 정보 항목을 제공합니다.</p>
+<p><strong>⑤ 속성:</strong> 서명, 텍스트, 체크 등 입력 항목을 클릭해 문서의 원하는 위치에 추가하면 각 입력 항목의 ID, 작성권한 등 상세 속성을 설정할 수 있습니다.</p>
+<p><strong>⑥ 하단 바:</strong> 파일명이 표시되며, 파일을 추가할 수 있는 파일 추가 버튼, 파일별 더보기 메뉴를 통해 파일 변경, 순서 이동, 파일 삭제 등을 할 수 있습니다.</p>
 </section>
 <section id="components">
 <span id="id6"></span><h2>입력 항목 개요<a class="headerlink" href="#components" title="Permalink to this heading"></a></h2>
@@ -224,7 +231,7 @@
 <h3>입력 항목 종류<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h3>
 <p>eformsign은 다음의 입력 항목을 지원합니다.</p>
 <section id="id8">
-<h4><strong>기본 입력 항목</strong><a class="headerlink" href="#id8" title="Permalink to this heading"></a></h4>
+<h4>기본 입력 항목<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h4>
 <ul class="simple">
 <li><p><a class="reference external" href="#signature2">서명</a><strong>:</strong> 서명을 입력합니다.</p></li>
 <li><p><a class="reference external" href="#companystamp2">회사 도장</a><strong>:</strong> 등록된 회사 도장을 입력합니다.</p></li>
@@ -238,14 +245,15 @@
 <li><p><a class="reference external" href="#toggle2">토글</a><strong>:</strong> 2개 이상의 값을 입력하면 버튼을 클릭할 때마다 다른 값으로 전환됩니다.</p></li>
 <li><p><a class="reference external" href="#date2">날짜</a><strong>:</strong> 특정 날짜를 입력합니다.</p></li>
 <li><p><a class="reference external" href="#numeric2">증감</a><strong>:</strong> 증감 버튼을 클릭해 숫자를 입력합니다.</p></li>
+<li><p><a class="reference external" href="#hyperlink2">하이퍼링크</a><strong>:</strong> 문서에 하이퍼링크를 추가합니다.</p></li>
 <li><p><a class="reference external" href="#label2">레이블</a><strong>:</strong> 별도로 설정한 값을 문서에 표시하고자 할때 사용합니다.</p></li>
 <li><p><a class="reference external" href="#camera2">카메라</a><strong>:</strong> 카메라가 연결된 기기(스마트폰, 태블릿 등)에서는 카메라로 사진을 찍거나 사진첩에서 사진을 선택합니다. 카메라가 없는 기기(일반 PC)에서는 이미지 파일을 선택합니다.</p></li>
 <li><p><a class="reference external" href="#record2">녹음</a><strong>:</strong> 녹음 기능이 있는 기기에서 버튼을 클릭해 녹음을 진행합니다.</p></li>
-<li><p><a class="reference external" href="#attach2">첨부</a><strong>:</strong> 파일 첨부 기능을 추가합니다.</p></li>
+<li><p><a class="reference external" href="#attach2">첨부</a><strong>:</strong> 문서에 파일을 첨부합니다.</p></li>
 </ul>
 </section>
 <section id="id9">
-<h4><strong>문서 정보 입력 항목</strong><a class="headerlink" href="#id9" title="Permalink to this heading"></a></h4>
+<h4>문서 정보 입력 항목<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h4>
 <ul class="simple">
 <li><p><a class="reference external" href="#document2">문서 ID</a><strong>:</strong> 문서 내에 문서 ID를 입력합니다.</p></li>
 <li><p><a class="reference external" href="#document2">문서 번호</a><strong>:</strong> 문서 내에 문서 번호를 입력합니다.</p></li>
@@ -268,7 +276,7 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>문서 관련 정보 제공을 위한 문서 정보 입력 항목의 경우, 툴팁 텍스트 속성이 없습니다.</p>
+<p>레이블, 하이퍼링크 등 일부 입력 항목과 문서 관련 정보 제공을 위한 문서 정보 입력 항목의 경우, 공통 속성이 다를 수 있습니다.</p>
 </div>
 <hr class="docutils" />
 <p>각 입력 항목에 대한 설명은 다음과 같습니다.</p>
@@ -293,18 +301,19 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>등록된 서명과 이니셜, 도장이 있는 경우에는 해당 서명이 서명란에 자동으로 입력되지만, 등록된 서명과 이니셜, 도장이 없는 경우 서명을 직접 입력할 수 있는 팝업이 나타납니다.
-서명 유형을 한 가지만 선택할 경우 서명란을 클릭하면 해당 서명 유형이 바로 입력되며, 서명 유형을 두 가지 이상 선택할 경우 서명란을 클릭하면 다음과 같이 선택할 수 있는 서명 유형 버튼이 표시됩니다.</p>
+<p>등록된 서명과 이니셜, 도장이 있는 경우에는 해당 서명이 서명란에 자동으로 입력되지만, 등록된 서명과 이니셜, 도장이 없는 경우 서명을 직접 입력할 수 있는 팝업이 나타납니다.</p>
+<p>서명 유형을 한 가지만 선택할 경우 서명란을 클릭하면 해당 서명 유형이 바로 입력되며, 서명 유형을 두 가지 이상 선택할 경우 서명란을 클릭하면 다음과 같이 선택할 수 있는 서명 유형 버튼이 표시됩니다.</p>
 <figure class="align-default">
 <img alt="서명 유형 선택" src="../_images/select-signature-type.png" />
 </figure>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>문서에 직접 서명이 아닌 직인이나 개인 도장을 사용해야 하는 경우가 있습니다. eformsign에서는 도장 이미지를 사용해 문서의 서명란에 도장을 찍을 수 있습니다. 도장 이미지를 사용하려면, 서명 팝업에서 <strong>도장</strong> 탭을 클릭하고 도장 이미지를 선택한 후 <strong>확인</strong> 버튼을 누릅니다. 회사 법인 인감 등 회사 직인이 있을 경우, 회사 도장으로 등록해 놓으면, 회사 도장 입력 항목으로 안전하고 간편하게 사용할 수 있습니다.</p>
+<p>문서에 직접 서명이 아닌 직인이나 개인 도장을 사용해야 하는 경우가 있습니다. eformsign에서는 도장을 만들거나, 도장 이미지 업로드, 실물인감스캔을 통해 문서의 서명란에 도장을 찍을 수 있습니다.</p>
+<p>회사 법인 인감 등 회사 직인이 있을 경우, <strong>회사 도장</strong>으로 등록해 놓으면, <code class="docutils literal notranslate"><span class="pre">회사</span> <span class="pre">도장</span></code> 입력 항목으로 사용 권한이 있는 멤버만 안전하고 간편하게 사용할 수 있습니다.</p>
 </div>
 <p><strong>③ 서명 방법</strong></p>
-<p><strong>직접 입력만 허용</strong>을 체크하면 태블릿 PC 등으로 서명란에 직접 서명을 할 수 있도록 설정합니다. 서명란을 클릭하면 서명 팝업이 나타나며 <strong>그리기, 텍스트, 모바일, eformsign 앱</strong> 탭 중 원하는 방식으로 서명을 입력합니다.</p>
+<p><strong>직접 입력만 허용</strong>을 체크하면 태블릿 PC 등으로 서명란에 직접 서명을 할 수 있도록 설정합니다. 서명란을 클릭하면 서명 팝업이 나타나며 <strong>그리기, 텍스트, 모바일, eformsign 앱</strong> 중 원하는 방식으로 서명을 입력합니다.</p>
 <p><strong>④ 서명펜 두께</strong></p>
 <p>서명을 그릴 때 표시되는 선의 두께를 설정합니다.</p>
 <p><strong>⑤ 서명펜 색</strong></p>
@@ -333,7 +342,8 @@
 </section>
 <section id="company-stamp2">
 <span id="id12"></span><h4>회사 도장<a class="headerlink" href="#company-stamp2" title="Permalink to this heading"></a></h4>
-<p>회사 대표 도장, 사용 인감, 법인 인감 등 <strong>회사 관리 &gt; 회사 도장</strong>에 등록된 회사 도장을 입력하고자 할 때 사용합니다. 회사 도장은 <strong>회사 관리 &gt; 회사 도장</strong>에 등록된 도장과 사용권한을 부여받은 멤버만 사용할 수 있으며, 회사 도장에 대한 이력이 <strong>회사 도장</strong> 메뉴에 기록됩니다.</p>
+<p>회사 대표 도장, 사용 인감, 법인 인감 등 <strong>회사 관리 &gt; 회사 도장</strong>에 등록된 회사 도장을 입력하고자 할 때 사용합니다.</p>
+<p>회사 도장은 <strong>회사 관리 &gt; 회사 도장</strong>에 등록된 도장과 사용권한을 부여받은 멤버만 사용할 수 있으며, 회사 도장에 대한 이력이 <strong>회사 도장</strong> 메뉴에 기록됩니다.</p>
 <p><strong>입력 항목 속성</strong></p>
 <figure class="align-default">
 <img alt="회사 도장 입력 항목 속성 설정하기" src="../_images/companystamp-component-properties_web.png" />
@@ -357,21 +367,37 @@
 </div>
 <p><strong>② 기본 값</strong></p>
 <p>기본으로 표시될 텍스트를 설정할 수 있습니다.</p>
-<p><strong>③ 텍스트 타입</strong></p>
-<p>텍스트 타입을 기본 텍스트, 주소, 패스워드 중 선택합니다.</p>
+<p><strong>③ 입력 타입</strong></p>
+<p>입력 타입을 일반 텍스트, 주소, 패스워드, 입력 규칙 사용자 지정 중 선택합니다.</p>
 <ul class="simple">
-<li><p><strong>텍스트:</strong> 일반 텍스트 입력시 사용합니다.</p></li>
+<li><p><strong>일반 텍스트:</strong> 일반 텍스트 입력시 사용합니다.</p></li>
 <li><p><strong>주소:</strong> 주소 입력이 필요할 때 설정합니다. 선택 시 텍스트 입력항목을 클릭하면 주소 검색창에서 주소를 검색하여 입력할 수 있습니다.</p></li>
+<li><p><strong>(우편번호)주소:</strong> 우편번호를 포함한 주소 입력이 필요할 때 설정합니다.</p></li>
 <li><p><strong>패스워드:</strong> 입력한 내용이 표시되지 않도록 설정합니다. 텍스트 입력 시 입력한 내용이 별표(*) 또는 패스워드 문자(●)로 입력되어 입력한 내용을 숨길 수 있습니다. 입력된 내용은 PDF에서도 패스워드 문자로 숨겨지며, CSV 데이터를 다운로드 받을 때에만 확인할 수 있습니다.</p></li>
+<li><p><strong>입력 규칙 사용자 지정:</strong> 입력항목에 입력될 텍스트의 유형을 설정합니다.</p></li>
 </ul>
-<p><strong>④ 입력 가능 최대 글자 수</strong></p>
-<p>입력 가능한 최대 글자 수(공백 포함)를 설정할 수 있습니다. 텍스트의 경우 100자, 멀티라인의 경우 400자가 기본으로 설정되어 있습니다.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>항목 크기에 맞게 글자수 제한</strong>을 체크하면, 항목 크기에 따라 글자수가 제한되도록 설정할 수 있습니다.
-짧은 텍스트는 항목 크기를 작게, 긴 텍스트를 입력해야 하는 경우에는 항목 크기를 크게 설정해 주세요.</p>
+<p><strong>④ 입력 규칙 설정</strong></p>
+<p>전화번호, 생년월일, 사업자등록번호 등 기본 입력 규칙 유형 중에서 선택하거나 직접 입력을 선택하여 규칙을 만들 수 있습니다.</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/text-component-rule-option.png"><img alt="입력 규칙 설정" src="../_images/text-component-rule-option.png" style="width: 300px;" /></a>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>입력 규칙 설정에서 <strong>직접 입력</strong>을 선택하면 숫자, 알파벳 등 입력받을 문자의 종류와 글자 수 등 규칙을 직접 설정할 수 있습니다. 예를 들어 여권번호를 입력하도록 하려면 여권번호 유형에 따라 규칙을 다음과 같이 설정할 수 있습니다.</p>
+<p>여권번호는 ‘알파벳 + 숫자 8자리’ 또는 ‘알파벳 + 숫자3자리 + 알파벳 + 숫자 4자리’ 조합으로 구성되어 있어서 알파벳 대문자로 시작할 수 있도록 ‘&gt;L’, 숫자만 입력할 수 있는 ‘0’, 숫자와 알파벳을 입력할 수 있는 ‘A’를 사용해 <strong>&gt;L000A0000</strong>으로 규칙을 설정합니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/text-component-rule.png"><img alt="입력 규칙 설정- 직접 입력" src="../_images/text-component-rule.png" style="width: 300px;" /></a>
+</figure>
 </div>
-<p><strong>⑤ 키패드 타입(모바일만 적용)</strong></p>
+</div></blockquote>
+<p><strong>⑤ 텍스트 조정</strong></p>
+<ul class="simple">
+<li><p><strong>너비에 맞게 글자 수 제한:</strong>  입력 항목 크기에 맞게 글자 수를 자동으로 제한합니다. 짧은 텍스트는 항목 크기를 작게, 긴 텍스트를 입력해야 하는 경우에는 항목 크기를 크게 설정해 주세요.</p></li>
+<li><p><strong>글자 크기 자동 조정:</strong>  입력 항목 크기에 맞게 글자 크기를 자동으로 조정합니다.(글자 크기 축소)</p></li>
+<li><p><strong>입력 가능 글자 수 직접 입력:</strong> 입력 항목에 입력할 수 있는 최대 글자 수를 설정합니다. 옵션 선택 시 최대 글자 수로 기본 설정됩니다. 텍스트는 ‘1~1000자’, 멀티라인은 ‘1~8000자’까지 입력할 수 있습니다.</p></li>
+</ul>
+<p><strong>⑥ 키패드 타입(모바일만 적용)</strong></p>
 <p>스마트폰, 태블릿과 같은 모바일 환경에서 문서를 작성할 때 실행할 키패드 타입을 선택합니다.</p>
 <hr class="docutils" />
 </section>
@@ -440,10 +466,10 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>입력 항목을 추가할 때 (+) 버튼을 클릭하면 동일한 ID로 항목(아이템)이 추가됩니다.</p>
-</div>
 <figure class="align-default">
 <img alt="체크 입력 항목 속성 설정하기2" src="../_images/check-component-properties-2_web.png" />
 </figure>
+</div>
 <p><strong>② 아이템 리스트</strong></p>
 <p>해당 항목에 표시될 텍스트를 입력할 수 있습니다. 텍스트는 문서에 표시되는 문구이며, 값은 CSV 파일로 입력 데이터 다운로드 시 표시되는 문구입니다. <strong>다중 선택 가능</strong>을 해제하면 아이템 리스트 중 한 항목만 선택할 수 있습니다.</p>
 <p><strong>③ 선택 스타일</strong></p>
@@ -459,6 +485,12 @@
 </div>
 <p><strong>④ 비선택 스타일</strong></p>
 <p>선택되지 않은 항목에 표시될 스타일을 지정할 수 있습니다. 체크박스는 사각형, 라디오 버튼은 원형, 원 표시는 아무것도 표시되지 않습니다.</p>
+<p><strong>⑤ 체크박스 위치</strong></p>
+<p>체크박스의 위치를 지정합니다.</p>
+<ul class="simple">
+<li><p>텍스트 왼쪽: 체크박스 위치를 텍스트의 왼쪽에 위치하도록 설정합니다.</p></li>
+<li><p>텍스트 오른쪽: 체크박스 위치를 텍스트의 오른쪽에 위치하도록 설정합니다.</p></li>
+</ul>
 <hr class="docutils" />
 </section>
 <section id="select2">
@@ -483,6 +515,12 @@
 </div>
 <p><strong>④ 비선택 스타일</strong></p>
 <p>선택되지 않은 항목에 표시될 스타일을 지정할 수 있습니다.</p>
+<p><strong>⑤ 라디오버튼 위치</strong></p>
+<p>라디오버튼의 위치를 지정합니다.</p>
+<ul class="simple">
+<li><p>텍스트 왼쪽: 라디오버튼 위치를 텍스트의 왼쪽에 위치하도록 설정합니다.</p></li>
+<li><p>텍스트 오른쪽: 라디오버튼 위치를 텍스트의 오른쪽에 위치하도록 설정합니다.</p></li>
+</ul>
 <hr class="docutils" />
 </section>
 <section id="combo2">
@@ -581,8 +619,27 @@
 <p>해당 입력란에 입력한 텍스트가 문서상에 표시됩니다.</p>
 <hr class="docutils" />
 </section>
+<section id="hyperlink2">
+<span id="id23"></span><h4>하이퍼링크<a class="headerlink" href="#hyperlink2" title="Permalink to this heading"></a></h4>
+<p>하이퍼링크 입력 항목을 사용하면 클릭 시 특정 웹 페이지로 이동하거나 메일 주소 연결, 전화번호 연결되도록 설정할 수 있습니다.</p>
+<p><strong>입력 항목 속성</strong></p>
+<figure class="align-default">
+<img alt="하이퍼링크 입력 항목 속성 설정하기" src="../_images/hyperlink_property_web.png" />
+</figure>
+<p><strong>① 표시할 텍스트</strong></p>
+<p>문서에 표시될 텍스트를 입력합니다. 표시할 텍스트를 입력하지 않을 경우, 주소에 입력한 내용이 표시됩니다.</p>
+<p><strong>② 주소</strong></p>
+<p>연결될 주소를 입력합니다. 웹 페이지 주소, 메일 주소, 전화번호를 입력할 수 있으며,
+주소는 다음과 같은 형태로 입력해야 합니다.</p>
+<ul class="simple">
+<li><p>웹 주소:  <a class="reference external" href="http://www.eformsign.com">http://www.eformsign.com</a> 또는 <a class="reference external" href="https://www.eformsign.com">https://www.eformsign.com</a></p></li>
+<li><p>메일 주소 연결 : mailto: <a class="reference external" href="mailto:eformsign&#37;&#52;&#48;forcs&#46;com">eformsign<span>&#64;</span>forcs<span>&#46;</span>com</a></p></li>
+<li><p>전화 연결: tel: 000-0000-0000</p></li>
+</ul>
+<hr class="docutils" />
+</section>
 <section id="camera2">
-<span id="id23"></span><h4>카메라<a class="headerlink" href="#camera2" title="Permalink to this heading"></a></h4>
+<span id="id24"></span><h4>카메라<a class="headerlink" href="#camera2" title="Permalink to this heading"></a></h4>
 <p>스마트폰, 태블릿 등 카메라가 있는 기기로 사진을 찍어 문서에 삽입하고자 할 경우 사용합니다. 카메라가 없는 PC 환경에서는 입력 항목을 클릭하면 이미지 파일을 선택할 수 있는 선택창이 나타납니다.
 선택한 이미지의 크기가 입력란의 크기보다 클 경우 입력란 안에 들어갈 수 있도록 축소되어 올라갑니다.</p>
 <div class="admonition note">
@@ -604,7 +661,7 @@
 <hr class="docutils" />
 </section>
 <section id="record2">
-<span id="id24"></span><h4>녹음<a class="headerlink" href="#record2" title="Permalink to this heading"></a></h4>
+<span id="id25"></span><h4>녹음<a class="headerlink" href="#record2" title="Permalink to this heading"></a></h4>
 <p>문서에 사용자의 녹음 데이터를 저장해야 할 때 사용합니다. 녹음 입력 항목을 추가하면 뷰어에서 다음과 같이 녹음된 내용을 재생하거나 새로운 녹음을 할 수 있습니다.</p>
 <p><a class="reference internal" href="../_images/record1.png"><img alt="image12" src="../_images/record1.png" style="width: 400px;" /></a></p>
 <div class="admonition note">
@@ -625,7 +682,7 @@
 <hr class="docutils" />
 </section>
 <section id="attach2">
-<span id="id25"></span><h4>첨부<a class="headerlink" href="#attach2" title="Permalink to this heading"></a></h4>
+<span id="id26"></span><h4>첨부<a class="headerlink" href="#attach2" title="Permalink to this heading"></a></h4>
 <p>문서에 별도로 첨부 파일을 추가할 수 있도록 할 경우 사용합니다. 첨부 입력 항목을 통해 문서를 첨부할 경우 문서의 맨 끝에 첨부한 문서가 새로운 페이지로 추가됩니다.</p>
 <p>첨부 가능한 파일의 종류와 크기는 다음과 같습니다.</p>
 <ul class="simple">
@@ -646,7 +703,7 @@
 <hr class="docutils" />
 </section>
 <section id="document2">
-<span id="id"></span><h4>문서 정보: 문서 ID와 문서 번호<a class="headerlink" href="#document2" title="Permalink to this heading"></a></h4>
+<span id="id"></span><h4>문서 ID와 문서 번호<a class="headerlink" href="#document2" title="Permalink to this heading"></a></h4>
 <p>문서 정보 입력 항목은 문서 내에 문서 관련 정보를 입력해야 할 때 사용합니다. 문서 ID, 문서 번호가 표시되도록 설정할 수 있습니다.</p>
 <ul>
 <li><p><strong>문서 ID:</strong> 시스템에서 모든 문서에 부여하는 문서의 고유한 ID로, 32자리의 알파벳과 숫자의 조합으로 표시됩니다. 예) 0077af27a98846c8872f5333920679b7</p></li>
@@ -665,8 +722,8 @@
 </section>
 </section>
 <hr class="docutils" />
-<section id="id26">
-<h2>템플릿에 대한 추가 설정하기<a class="headerlink" href="#id26" title="Permalink to this heading"></a></h2>
+<section id="id27">
+<h2>템플릿에 대한 추가 설정<a class="headerlink" href="#id27" title="Permalink to this heading"></a></h2>
 <p>문서에 입력 항목를 추가하고 나면 템플릿 제목, 문서 번호, 워크플로우 등 템플릿으로 생성되는 문서에 대한 상세 설정을 할 수 있습니다.</p>
 <p><strong>폼 디자인하기</strong> 화면에서 <strong>설정하기</strong> 버튼을 눌러 설정하기 화면으로 이동합니다. 설정하기 화면에서는 다음의 5가지 설정을 하여 템플릿을 설정할 수 있습니다.</p>
 <ul class="simple">
@@ -702,7 +759,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="chapter3.html" class="btn btn-neutral float-left" title="문서 작성하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="chapter5.html" class="btn btn-neutral float-right" title="폼 빌더(MS Office Add-in) 소개" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="chapter5.html" class="btn btn-neutral float-right" title="웹폼 디자이너로 템플릿 만들기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

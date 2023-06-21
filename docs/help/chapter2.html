@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>기본정보 &mdash; eformsign User Guide 2023.02.27 documentation</title>
+  <title>기본정보 &mdash; eformsign User Guide 2023.04.27 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
@@ -38,7 +38,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 3.5
+                version 3.6
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -76,26 +76,28 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#mysignature">내 서명 관리</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#registersignature"><strong>서명/이니셜 등록하는 방법</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#registerstamp"><strong>도장 등록하는 방법</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id21"><strong>도장 이미지 등록</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scanstamp"><strong>실물 도장 스캔</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#registersignature">서명/이니셜 등록 방법</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#registerstamp">도장 등록 방법</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#creatstamp">도장 만들기</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uploadstampimage">도장 이미지 업로드</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scanstamp">실물 도장 스캔</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#caution-scanstamp">도장 스캔시 주의사항</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#company-stamp">회사 도장 관리</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id25"><strong>회사 도장</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id26"><strong>도장 사용 내역</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id26">회사 도장</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id27">도장 사용 내역</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">문서 작성하기</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">웹폼 디자이너 소개</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter5.html">폼 빌더(MS Office Add-in) 소개</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">웹폼 디자이너로 템플릿 만들기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter7.html">폼 빌더(MS Office Add-in)로 템플릿 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">웹폼 디자이너로 템플릿 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">폼 빌더(MS Office Add-in) 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">폼 빌더로 템플릿 만들기</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">문서함</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter9.html">커스터마이즈</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter10.html">외부 서비스 연동</a></li>
@@ -131,7 +133,7 @@
 <h2>대시보드<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
 <section id="id3">
 <h3>메뉴 구성<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
-<p>이폼사인에 로그인한 후 대시보드 화면 왼쪽 상단의 메뉴(<img alt="image1" src="../_images/menu_icon.png" />) 아이콘을 클릭하면, 아래와 같은 사이드바 메뉴가 나타납니다.</p>
+<p>이폼사인에 로그인한 후 대시보드 화면 왼쪽 상단의 메뉴(<a class="reference internal" href="../_images/menu_icon.png"><img alt="image1" src="../_images/menu_icon.png" style="width: 20px;" /></a>) 아이콘을 클릭하면, 아래와 같은 사이드바 메뉴가 나타납니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>메뉴는 사용자의 권한에 따라 다르게 나타납니다. 대표 관리자는 모든 메뉴를 볼 수 있으며, 모든 권한이 있습니다.
@@ -172,7 +174,7 @@
 <li><p><strong>회사 도장 관리:</strong> 법인인감, 사용인감 등 회사의 공식 도장을 등록하고 각 도장 별 사용 권한을 설정할 수 있으며, 도장 사용 내역을 확인할 수 있습니다.</p></li>
 <li><p><strong>서명 설정:</strong> 그리기, 텍스트, 도장 중 서명하는 방식을 설정할 수 있습니다.</p></li>
 <li><p><strong>알림 템플릿 관리:</strong> eformsign에서 발송되는 이메일, SMS 알림 템플릿 목록을 확인하고 수정할 수 있습니다.</p></li>
-<li><p><strong>사용자 정의 필드 관리:</strong> 회사, 그룹, 멤버에 대한 추가 정보를 입력하거나 수정할 수 있습니다.</p></li>
+<li><p><strong>사용자 정의 정보셋 관리:</strong> 회사, 그룹, 멤버에 대한 추가 정보를 입력하거나 수정할 수 있습니다.</p></li>
 </ul>
 </li>
 <li><p><strong>커넥트:</strong> 대표 관리자만 접근 가능한 메뉴입니다. 외부 서비스와 연계하여 사용하는 기능을 확인할 수 있습니다.</p>
@@ -196,64 +198,60 @@
 </section>
 <section id="id4">
 <h3>대시보드 화면 구성<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
-<p>이폼사인 로그인 후 나타나는 대시보드 화면은 권한에 관계없이 모두 동일하게 나타납니다 . 내가 처리해야 할 문서, 진행 중인 문서 등을
-한눈에 확인할 수 있으며, <strong>새 문서 작성하기</strong>, <strong>문서함</strong> 등 주요 메뉴로 바로가기를 제공합니다.</p>
+<p>이폼사인 로그인 후 나타나는 대시보드 화면은 권한에 관계없이 모두 동일하게 나타납니다. 대시보드에서 파일을 바로 업로드하고 문서를 작성하는 것은 물론, 등록된 템플릿을 확인하고 해당 템플릿으로 바로 문서 작성을 할 수 있습니다. 또한, 각 <strong>문서함</strong>과 <strong>템플릿으로 문서 작성</strong> 등 주요 메뉴로 바로가기를 제공합니다.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/dashboard_main.png"><img alt="대시보드 화면" src="../_images/dashboard_main.png" style="width: 700px;" /></a>
 </figure>
-<dl>
-<dt><strong>① 템플릿으로 문서 작성</strong></dt><dd><p>저장된 템플릿을 사용하여 새 문서를 작성할 수 있는 <strong>템플릿으로 문서 작성</strong> 화면으로 이동합니다.</p>
-</dd>
-<dt><strong>② 내 파일로 문서 작성</strong></dt><dd><p>내 파일을 직접 업로드하여 새 문서를 작성할 수 있는<strong>내 파일로 문서 작성</strong> 화면으로 이동합니다.</p>
-</dd>
-<dt><strong>③ 즐겨찾기</strong></dt><dd><p>내가 즐겨찾기로 등록한 템플릿을 보여줍니다. 해당 템플릿을 클릭하면 템플릿을 사용하여 문서를 작성할 수 있는 화면으로 바로
-이동합니다. 즐겨찾기에 템플릿을 추가하려면 추가 아이콘(<img alt="image2" src="../_images/favorites-add.PNG" />)을 클릭하여 새로 등록할 수 있습니다. 즐겨찾기에 등록된 템플릿을
-삭제하려면 편집 아이콘(<img alt="image3" src="../_images/favorites-edit.PNG" />)을 클릭하여 삭제할 수 있습니다.</p>
+<p><strong>① 문서함 바로가기</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>처리할 문서함</strong>: 내가 처리해야 하는 문서의 수를 보여주며, 클릭 시 <strong>처리할 문서함</strong>으로 이동합니다.</p></li>
+<li><p><strong>진행 중 문서함</strong>: 현재 진행 중인 문서의 수를 보여주며, 클릭시 진행 중인 문서의 목록을 확인할 수 있는 <strong>진행 중 문서함</strong>으로 이동합니다.</p></li>
+<li><p><strong>완료 문서함</strong>: 클릭 시 <strong>완료 문서함</strong>으로 이동합니다.</p></li>
+<li><p><strong>임시 보관함</strong>: <strong>내 파일로 문서 작성</strong>을 통해 문서 작성 진행 중 <strong>문서 시작하기</strong> 이전에 임시 저장된 문서의 수를 보여주며, 클릭 시 <strong>임시 보관함</strong>으로 이동합니다.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>② 내 파일로 문서 작성하기</strong></p>
+<blockquote>
+<div><p>해당 영역에 파일을 드래그&amp;드롭하면 바로 새 문서를 작성할 수 있는 <strong>내 파일로 문서 작성</strong> 화면으로 이동합니다.
+<strong>내 컴퓨터에서 파일 선택</strong>을 클릭하면 <strong>내 파일로 문서 작성</strong>할 파일을 업로드할 수 있는 화면으로 이동합니다.</p>
+</div></blockquote>
+<p><strong>③ 템플릿으로 문서 작성하기</strong></p>
+<blockquote>
+<div><p>즐겨찾기한 템플릿, 최근에 사용한 템플릿, 최근에 업로드한 템플릿 순으로 표시됩니다. 해당 템플릿의 문서 작성 아이콘을 클릭하면 바로 문서를 작성할 수 있습니다. 템플릿 전체보기를 클릭하면 템플릿으로 문서 작성 화면으로 이동하여 모든 템플릿을 확인할 수 있습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="../_images/template-create-icon.PNG"><img alt="image2" src="../_images/template-create-icon.PNG" style="width: 20px;" /></a> : 문서 1건을 작성합니다.</p></li>
+<li><p><a class="reference internal" href="../_images/template-bulkcreate-icon.PNG"><img alt="image3" src="../_images/template-bulkcreate-icon.PNG" style="width: 20px;" /></a> : 여러 건의 문서를 한번에 작성한 후 보낼 수 있는 <strong>일괄작성</strong> 페이지로 이동합니다.</p></li>
+</ul>
+</div></blockquote>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>자주 사용하는 템플릿 즐겨찾기에 추가하는 방법!</strong></p>
-<p>자주 사용하는 템플릿은 즐겨찾기에 등록하여 바로 문서를 작성할 수 있습니다. 템플릿 <strong>즐겨찾기</strong>는 대시보드에서 할 수 있습니다.</p>
-<ol class="arabic">
-<li><p>대시보드의 즐겨찾기 추가 아이콘( <img alt="image4" src="../_images/favorites-add.PNG" />)을 클릭하세요.</p></li>
-<li><p>즐겨찾기에 등록이 안된 템플릿의 목록이 팝업창으로 뜹니다.</p></li>
-<li><p>즐겨찾기에 추가하고자 하는 템플릿의 체크박스를 클릭합니다.</p>
-<p><a class="reference internal" href="../_images/favorites-add-popup2.PNG"><img alt="image5" src="../_images/favorites-add-popup2.PNG" style="width: 400px;" /></a></p>
-</li>
-<li><p><strong>선택</strong>을 클릭하면 즐겨찾기에 등록됩니다.</p></li>
+<p><strong>템플릿 즐겨찾기 설정하는 방법!</strong></p>
+<p>자주 사용하는 템플릿은 즐겨찾기에 등록하면 대시보드에 가장 우선순위로 표시됩니다. 템플릿 <strong>즐겨찾기</strong>는 <strong>템플릿으로 문서 작성</strong> 화면에서 할 수 있습니다.</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/template_favorite.png"><img alt="템플릿 즐겨찾기" src="../_images/template_favorite.png" style="width: 500px;" /></a>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>템플릿으로 문서 작성</strong> 메뉴로 이동합니다.</p></li>
+<li><p>즐겨찾기할 템플릿의 (<a class="reference internal" href="../_images/favorites-icon.PNG"><img alt="image4" src="../_images/favorites-icon.PNG" style="width: 20px;" /></a>) 아이콘을 클릭하면 즐겨찾기에 추가됩니다.</p></li>
+<li><p>대시보드에서 즐겨찾기한 템플릿이 우선 표시된 것을 확인할 수 있습니다.</p></li>
+<li><p>즐겨찾기(<a class="reference internal" href="../_images/favorites-added-icon.PNG"><img alt="image5" src="../_images/favorites-added-icon.PNG" style="width: 20px;" /></a>) 아이콘을 다시 클릭하면 즐겨찾기 해제됩니다.</p></li>
 </ol>
+</div></blockquote>
 </div>
-</dd>
-<dt><strong>④ 처리할 문서함</strong></dt><dd><p>내가 처리해야 하는 문서의 수를 보여주며, 클릭시 <strong>처리할 문서함</strong>으로 이동합니다.</p>
-</dd>
-<dt><strong>⑤ 진행 중 문서함</strong></dt><dd><p>현재 진행 중인 문서의 수를 보여주며, 클릭시 진행 중인 문서의 목록을 확인할 수 있는 <strong>진행 중 문서함</strong>으로 이동합니다.</p>
-</dd>
-<dt><strong>⑥ 완료 문서함</strong></dt><dd><p>클릭시 <strong>완료 문서함</strong>으로 이동합니다.</p>
-</dd>
-<dt><strong>⑦ 임시 보관함</strong></dt><dd><p><strong>내 파일로 문서 작성</strong>을 통해 문서 작성 진행 중 <strong>문서 시작하기</strong> 이전에 임시 저장된 문서의 수를 보여주며, 클릭시 <strong>임시 보관함</strong>으로 이동합니다.</p>
-</dd>
-<dt><strong>⑧ 처리할 문서</strong></dt><dd><p>내가 처리해야 하는 문서의 수와 최근 문서 3건을 목록으로 보여줍니다. 목록의 문서명을 클릭하면 해당 문서로 바로 이동하며, <strong>더보기</strong>를 클릭하면 <strong>처리할 문서함</strong>으로 이동합니다.</p>
-</dd>
-<dt><strong>⑨ 임시 보관 문서</strong></dt><dd><p>임시 보관함에 저장된 문서의 수와 최근 문서 3건을 목록으로 보여줍니다. 목록의 문서명을 클릭하면 해당 문서로 바로 이동하며, <strong>더보기</strong>를 클릭하면 <strong>임시 보관함</strong>으로 이동합니다.</p>
-</dd>
-<dt><strong>⑩ 진행 중 문서</strong></dt><dd><p>진행 중인 문서의 수와 최근 문서 3건을 목록으로 보여줍니다. 목록의 문서명을 클릭하면 해당 문서로 바로 이동하며, <strong>더보기</strong>를 클릭하면 <strong>진행 중 문서함</strong>으로 이동합니다.</p>
-</dd>
-<dt><strong>⑪ 완료 문서</strong></dt><dd><p>최근 완료된 문서 3건을 목록으로 보여줍니다. 목록의 문서명을 클릭하면 해당 문서로 바로 이동하며, <strong>더보기</strong>를 클릭하면 <strong>완료 문서함</strong>으로 이동합니다.</p>
-</dd>
-</dl>
+</div></blockquote>
 </section>
 </section>
 <section id="id5">
 <h2>기본 정보 확인 및 변경<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
-<p>이폼사인 가입 시 입력한 개인정보 및 내가 등록된 회사의 정보는 사이드바 메뉴의 우측 상단에 있는 아이콘(<img alt="image6" src="../_images/menu-hamberger-icon.png" />)을 클릭하여 확인할 수 있습니다.</p>
+<p>이폼사인 가입 시 입력한 개인정보와 내가 등록된 회사의 정보는 사이드 메뉴 우측 상단 아이콘(<a class="reference internal" href="../_images/menu-hamberger-icon.png"><img alt="image6" src="../_images/menu-hamberger-icon.png" style="width: 20px;" /></a>)을 클릭하여 확인할 수 있습니다.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/menu-personalinfo.png"><img alt="내 정보 확인 아이콘" src="../_images/menu-personalinfo.png" style="width: 700px;" /></a>
-</figure>
-<p>메뉴에서 아이콘(<img alt="image7" src="../_images/menu-hamberger-icon.png" />)을 클릭하면 다음과 같이 하위 메뉴가 표시됩니다.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/menu-personalinfo1.png"><img alt="내 정보 확인 및 변경 메뉴" src="../_images/menu-personalinfo1.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/menu-personalinfo.png"><img alt="내 정보 확인 아이콘" src="../_images/menu-personalinfo.png" style="width: 600px;" /></a>
 </figure>
 <ul class="simple">
-<li><p><strong>회사 변경:</strong> 내가 소속된 회사가 여러 개일 경우 회사 변경을 클릭하면 회사의 목록이 나타나며 변경할 회사를 클릭하여 소속 회사를 변경할 수 있습니다.</p></li>
+<li><p><strong>회사 변경:</strong> 내가 소속된 회사가 여러 개일 경우 회사 변경을 클릭하면 회사의 목록이 나타합니다. 변경할 회사를 클릭하여 소속 회사를 변경할 수 있습니다.</p></li>
 <li><p><strong>내 정보:</strong> 이폼사인 가입 시 등록한 내 개인정보를 확인 및 수정할 수 있으며, 내가 소속된 회사의 정보를 확인할 수 있습니다.</p></li>
 <li><p><strong>로그아웃:</strong> 이폼사인에서 로그아웃 할 수 있습니다.</p></li>
 </ul>
@@ -261,10 +259,10 @@
 <h3>내 정보<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h3>
 <p><strong>내 정보 &gt; 개인 정보</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/myinfor-personalinfo-main.png"><img alt="내 정보 &gt; 개인 정보 화면" src="../_images/myinfor-personalinfo-main.png" style="width: 730px;" /></a>
+<a class="reference internal image-reference" href="../_images/myinfor-personalinfo-main.png"><img alt="내 정보 &gt; 개인 정보 화면" src="../_images/myinfor-personalinfo-main.png" style="width: 700px;" /></a>
 </figure>
 <dl class="simple">
-<dt><strong>개인 정보</strong></dt><dd><p>회원가입시 입력한 이름, 이메일 또는 아이디, 비밀번호 및 연락처를 확인 및 수정할 수 있습니다.</p>
+<dt><strong>개인 정보</strong></dt><dd><p>회원가입 시 입력한 이름, 이메일 또는 아이디, 비밀번호 및 연락처를 확인 및 수정할 수 있습니다.</p>
 </dd>
 <dt><strong>소셜 계정 연결</strong></dt><dd><p>구글, 페이스북의 소셜 계정을 새로 연결, 계정 추가, 연결 해제를 할 수 있습니다.</p>
 </dd>
@@ -336,26 +334,19 @@
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/managecompany-brand.png"><img alt="회사 정보 &gt; 브랜드 이미지 등록" src="../_images/managecompany-brand.png" style="width: 750px;" /></a>
 </figure>
-<ol class="arabic">
+<ol class="arabic simple">
 <li><p>사이드바 메뉴에서 <strong>회사 관리 &gt; 회사 정보</strong>로 이동합니다.</p></li>
 <li><p><strong>브랜드</strong> 탭을 클릭합니다.</p></li>
 <li><p><strong>브랜드 이미지 &gt; 로고</strong> 영역의 이미지를 클릭합니다.</p></li>
-<li><p>이미지 업로드 팝업창이 뜨면 내 PC에 저장된 로고 이미지 파일을 선택하여 업로드 합니다.</p>
+<li><p>이미지 업로드 팝업창이 뜨면 내 PC에 저장된 로고 이미지 파일을 선택하여 업로드합니다.</p>
 <ul class="simple">
 <li><p>이미지 크기: 가로 512px, 세로 128px 권장</p></li>
 <li><p>파일 크기: 최대 300KB</p></li>
 <li><p>파일 형식: PNG, JPG, JPEG, GIF</p></li>
 </ul>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/managecompany-logo-upload.png"><img alt="이미지 업로드 팝업 화면" src="../_images/managecompany-logo-upload.png" style="width: 650px;" /></a>
-</figure>
 </li>
-<li><p>화면 오른쪽 상단의 저장 버튼을 클릭합니다.</p></li>
-<li><p>대시보드에서 변경된 로고를 확인합니다.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/logo-change.png"><img alt="로고 변경된 대시보드" src="../_images/logo-change.png" style="width: 750px;" /></a>
-</figure>
-</li>
+<li><p>화면 오른쪽 상단의 <strong>저장</strong> 버튼을 클릭합니다.</p></li>
+<li><p>대시보드, 사이드 메뉴 상단에서 변경된 로고를 확인합니다.</p></li>
 </ol>
 </section>
 </section>
@@ -385,7 +376,7 @@
 <p>템플릿별로 멤버 또는 그룹에게 다음과 같은 권한을 부여할 수 있습니다.</p>
 <ul>
 <li><p><strong>템플릿 사용 권한</strong></p>
-<p>템플릿 사용 권한은 템플릿으로 문서를 작성할 수 있는 권한을 말합니다. 권한을 부여 받은 멤버의 <strong>템플릿으로 문서 작성</strong> 화면에 해당 템플릿이 나타나며 문서를 작성할 수 있습니다.</p>
+<p>템플릿 사용 권한은 템플릿으로 문서를 작성할 수 있는 권한을 말합니다. 권한이 있는 멤버의 <strong>템플릿으로 문서 작성</strong> 화면에 해당 템플릿이 나타나며 문서를 작성할 수 있습니다.</p>
 </li>
 <li><p><strong>템플릿 수정 권한</strong></p>
 <p>템플릿 수정 권한은 해당 템플릿을 수정할 수 있는 권한입니다.
@@ -396,7 +387,7 @@
 </ul>
 <section id="id10">
 <h3>대표 관리자<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h3>
-<p>대표 관리자는 가입 시 회사를 생성한 사용자가 대표 관리자로 등록되며, 이폼사인 사용에 대한 모든 권한을 갖고 있는 최고 관리자입니다.</p>
+<p>대표 관리자는 가입 시 회사를 생성한 사용자가 대표 관리자로 등록되며, 모든 권한이 있는 최고 관리자입니다.</p>
 <p><strong>대표 관리자는</strong></p>
 <ul class="simple">
 <li><p>모든 메뉴에 접근할 수 있습니다.</p></li>
@@ -405,11 +396,11 @@
 <li><p>멤버별 권한을 부여할 수 있습니다.</p></li>
 <li><p>대표 관리자 변경이 필요한 경우 다른 멤버에게 권한을 위임할 수 있습니다.</p></li>
 </ul>
-<p>대표 관리자가 탈퇴할 경우, 회사가 삭제되며 회사를 삭제하지 않고 계정 탈퇴를 하려면 대표 관리자에 대한 권한은 다른 멤버에게 위임해야 합니다.</p>
+<p>대표 관리자가 탈퇴할 경우, 회사가 삭제되며 회사를 삭제하지 않고 계정 탈퇴를 하려면 대표 관리자 권한을 다른 멤버에게 위임해야 합니다.</p>
 <p><strong>대표 관리자 권한 위임하는 방법</strong></p>
 <ol class="arabic">
-<li><p>사이드바 메뉴에서 <strong>회사 관리 &gt; 회사 정보</strong>로 이동합니다.</p></li>
-<li><p><strong>상세 정보</strong>의 <strong>수정</strong> 버튼을 클릭하면 <strong>대표 관리자</strong> 항목의 오른쪽에 나타나는 <strong>권한 위임</strong> 링크를 클릭합니다.</p>
+<li><p><strong>회사 관리 &gt; 회사 정보</strong>로 이동합니다.</p></li>
+<li><p><strong>상세 정보</strong>의 <strong>수정</strong> 버튼을 클릭하면 <strong>대표 관리자</strong> 계정 옆에 표시되는 <strong>권한 위임</strong>을 클릭합니다.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/Admin-auth-change_1.png"><img alt="대표 관리자 권한 위임 위치" src="../_images/Admin-auth-change_1.png" style="width: 700px;" /></a>
 </figure>
@@ -549,11 +540,10 @@
 예를 들어 ‘인사팀’에서 작성한 ‘근로 계약서’에 대한 문서 관리자를 설정할 경우, 작성자에 ‘인사팀’, 문서 종류에 템플릿 목록의 ‘근로 계약서’를 선택합니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><dl class="simple">
-<dt><strong>작성자</strong></dt><dd><p>문서를 작성한 작성자를 전체 멤버, 그룹, 또는 개별 멤버 중 선택합니다.</p>
-</dd>
-</dl>
-</li>
+<li><p><strong>작성자</strong></p></li>
+</ul>
+<p>문서를 작성한 작성자를 전체 멤버, 그룹, 또는 개별 멤버 중 선택합니다.</p>
+<ul class="simple">
 <li><dl class="simple">
 <dt><strong>문서 종류</strong></dt><dd><ul>
 <li><p><strong>전체 문서:</strong> 위에서 선택한 작성자가 작성한 모든 문서를 관리합니다.</p></li>
@@ -691,7 +681,7 @@
 <span id="id18"></span><h2>내 서명 관리<a class="headerlink" href="#mysignature" title="Permalink to this heading"></a></h2>
 <p><strong>내 서명</strong> 메뉴에서 <strong>서명, 이니셜, 도장</strong>을 등록해 두면 문서 작성 시 등록된 서명을 간편하게 사용할 수 있습니다.</p>
 <section id="registersignature">
-<span id="id19"></span><h3><strong>서명/이니셜 등록하는 방법</strong><a class="headerlink" href="#registersignature" title="Permalink to this heading"></a></h3>
+<span id="id19"></span><h3>서명/이니셜 등록 방법<a class="headerlink" href="#registersignature" title="Permalink to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>작업은 <strong>PC, 모바일, 애플리케이션</strong>에서 진행할 수 있습니다.</p>
@@ -735,16 +725,47 @@
 </div>
 </section>
 <section id="registerstamp">
-<span id="id20"></span><h3><strong>도장 등록하는 방법</strong><a class="headerlink" href="#registerstamp" title="Permalink to this heading"></a></h3>
-<p>문서에 직접 서명이 아닌 직인이나 도장을 사용해야 하는 경우가 있습니다. 이폼사인에서는 도장 이미지를 등록하거나, 실물 도장을 실물 크기 그대로 스캔하여 등록한 후 문서의 서명란에 도장을 찍을 수 있습니다.</p>
+<span id="id20"></span><h3>도장 등록 방법<a class="headerlink" href="#registerstamp" title="Permalink to this heading"></a></h3>
+<p>문서에 직접 서명이 아닌 직인이나 도장을 사용해야 하는 경우가 있습니다. 이폼사인에서는 도장을 3가지 방법으로 등록해 사용할 수 있습니다.</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="chapter2.html#registerstamp">도장 만들기</a></p></li>
+<li><p><a class="reference external" href="chapter2.html#uploadstampimage">도장 이미지 업로드</a></p></li>
+<li><p><a class="reference external" href="chapter2.html#scanstamp">실물 도장 스캔</a></p></li>
+</ol>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>❗내 서명의 도장은 회사 도장과는 다릅니다.</strong></p>
 <p>회사의 법인 인감 등 공식 도장은 <a class="reference external" href="chapter2.html#company_stamp">회사 도장</a>으로 등록해 사용하세요.</p>
 <p>회사 도장으로 등록 후 사용하면, 멤버/그룹별 사용 권한을 부여하고, 사용 이력 등을 확인할 수 있습니다.</p>
 </div>
-<section id="id21">
-<h4><strong>도장 이미지 등록</strong><a class="headerlink" href="#id21" title="Permalink to this heading"></a></h4>
+<section id="creatstamp">
+<span id="id21"></span><h4>도장 만들기<a class="headerlink" href="#creatstamp" title="Permalink to this heading"></a></h4>
+<p>이름, 날짜 등 도장에 들어갈 정보를 입력하고 도장 스타일을 선택해 원하는 도장을 바로 만들 수 있습니다.</p>
+<ol class="arabic">
+<li><p>사이드바 메뉴에서 <strong>내 서명</strong>으로 이동합니다.</p></li>
+<li><p><strong>도장 등록</strong> 버튼을 클릭합니다</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/signature-stamp-register.png"><img alt="도장 등록 버튼" src="../_images/signature-stamp-register.png" style="width: 700px;" /></a>
+</figure>
+</li>
+<li><p>도장에 표시할 이름을 입력합니다. 도장 스타일에 따라서 날짜 형식과 추가 정보(ex.회사 이름)를 입력합니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/signature-stamp-create-stamp.png"><img alt="내 서명 &gt; 도장 등록" src="../_images/signature-stamp-create-stamp.png" style="width: 400px;" /></a>
+</figure>
+</li>
+<li><p>도장 컬러를 선택하고 <strong>적용</strong> 버튼을 클릭합니다.</p></li>
+<li><p>원하는 도장 스타일을 선택하고 <strong>저장</strong> 버튼을 클릭합니다.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>날짜가 들어간 도장을 선택하면 해당 도장을 찍을때 날짜가 ‘오늘 날짜’로 자동 적용됩니다.</p>
+</div>
+<ol class="arabic simple" start="6">
+<li><p><strong>편집, 삭제</strong> 버튼으로 등록된 도장을 편집 또는 삭제합니다.</p></li>
+</ol>
+</section>
+<section id="uploadstampimage">
+<span id="id22"></span><h4>도장 이미지 업로드<a class="headerlink" href="#uploadstampimage" title="Permalink to this heading"></a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>도장 이미지를 미리 준비해야 합니다.</p>
@@ -755,7 +776,7 @@
 </div>
 <ol class="arabic">
 <li><p>사이드바 메뉴에서 <strong>내 서명</strong>으로 이동합니다.</p></li>
-<li><p><strong>도장 등록</strong> 버튼을 클릭합니다</p>
+<li><p><strong>도장 등록</strong> 버튼을 클릭 후 <strong>이미지 업로드</strong> 탭을 클릭합니다.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/signature-stamp-register.png"><img alt="도장 등록 버튼" src="../_images/signature-stamp-register.png" style="width: 700px;" /></a>
 </figure>
@@ -770,7 +791,7 @@
 </ol>
 </section>
 <section id="scanstamp">
-<span id="id22"></span><h4><strong>실물 도장 스캔</strong><a class="headerlink" href="#scanstamp" title="Permalink to this heading"></a></h4>
+<span id="id23"></span><h4>실물 도장 스캔<a class="headerlink" href="#scanstamp" title="Permalink to this heading"></a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>실제 등록하고 싶은 도장과 이폼사인에서 제공하는 <strong>도장 스캔 용지</strong>를 다운로드 및 출력해 준비합니다.
@@ -797,7 +818,7 @@
 <ol class="arabic">
 <li><p><strong>내 서명</strong>에서 <strong>도장 등록</strong>버튼을 터치한 후 <strong>실물 도장 스캔</strong> 탭을 터치합니다.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/signature-stamp-scan-popup-mobile.png"><img alt="실물 도장 스캔 팝업" src="../_images/signature-stamp-scan-popup-mobile.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/signature-stamp-scan-popup-mobile.png"><img alt="실물 도장 스캔 팝업" src="../_images/signature-stamp-scan-popup-mobile.png" style="width: 250px;" /></a>
 </figure>
 </li>
 <li><p><strong>도장 스캔 용지</strong>를 다운로드 후 인쇄합니다.</p></li>
@@ -805,14 +826,15 @@
 <li><p>실물 도장 스캔 팝업의 <strong>스캔 시작</strong> 버튼을 터치합니다.</p></li>
 <li><p>연결된 카메라 화면에서 카메라 접근을 허용합니다.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/stamp-scan-mobile-camera.png"><img alt="카메라 접근 허용" src="../_images/stamp-scan-mobile-camera.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/stamp-scan-mobile-camera.png"><img alt="카메라 접근 허용" src="../_images/stamp-scan-mobile-camera.png" style="width: 250px;" /></a>
 </figure>
 </li>
 <li><p>카메라 화면에 스캔 영역을 비추면 도장이 자동으로 인식됩니다.</p></li>
 <li><p>추출된 도장 이미지를 확인한 후 <strong>확인</strong>을 터치하면 도장이 등록됩니다.</p></li>
 </ol>
+</section>
 <section id="caution-scanstamp">
-<span id="id23"></span><h5><strong>실물 도장 스캔시 주의사항</strong><a class="headerlink" href="#caution-scanstamp" title="Permalink to this heading"></a></h5>
+<span id="id24"></span><h4>도장 스캔시 주의사항<a class="headerlink" href="#caution-scanstamp" title="Permalink to this heading"></a></h4>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Tip 1. 스캔 화면이 연결되지 않을 때</strong></p>
@@ -823,45 +845,42 @@
 브라우저를 변경한 후 도장 스캔을 다시 진행해 주세요.</p>
 <ul>
 <li><p><strong>네이버 앱에서 브라우저 변경하는 방법</strong></p>
-<p>① 실물 도장 스캔 화면 하단의 더보기(···) 아이콘을 터치합니다.</p>
-<p>② <strong>다른 브라우저</strong>를 선택 후 문서 작성 및 도장 스캔을 진행합니다.</p>
+<p>① 실물 도장 스캔 화면 하단의 더보기(···) 아이콘을 터치합니다.
+② <strong>다른 브라우저</strong>를 선택 후 문서 작성 및 도장 스캔을 진행합니다.</p>
 </li>
 <li><p><strong>카카오 앱에서 브라우저 변경하는 방법</strong></p>
-<p>① 알림톡의 <strong>문서 확인하기</strong> 버튼을 터치합니다.</p>
-<p>② 화면 우측 상단의 더보기(⋮) 아이콘을 터치합니다.</p>
-<p>③ <strong>다른 브라우저로 열기</strong>를 선택 후 문서 작성 및 도장 스캔을 진행합니다.</p>
+<p>① 알림톡의 <strong>문서 확인하기</strong> 버튼을 터치합니다.
+② 화면 우측 상단의 더보기(⋮) 아이콘을 터치합니다.
+③ <strong>다른 브라우저로 열기</strong>를 선택 후 문서 작성 및 도장 스캔을 진행합니다.</p>
 </li>
 </ul>
 </div></blockquote>
 <p><strong>2. 스캔 화면이 나오지 않고 작업 선택 화면이 나오는 경우</strong></p>
 <blockquote>
 <div><p>일부 안드로이드 기기에서는 스캔 화면으로 연결되지 않고 카메라, 앨범 등을 선택하는 작업 선택 화면이 나타날 수 있습니다. 이 경우 다음과 같이 진행합니다.</p>
-<p>① 작업 선택 화면에서 <strong>카메라</strong>를 선택합니다.</p>
-<p>② 카메라 화면에서 도장 스캔 영역이 선명하게 나오도록 사진을 찍습니다.</p>
-<p>③ 찍힌 사진에서 도장이 자동으로 인식됩니다.</p>
+<p>① 작업 선택 화면에서 <strong>카메라</strong>를 선택합니다.
+② 카메라 화면에서 도장 스캔 영역이 선명하게 나오도록 사진을 찍습니다.
+③ 찍힌 사진에서 도장이 자동으로 인식됩니다.</p>
 </div></blockquote>
 <p><strong>Tip 2. 도장이 인식되지 않았다고 나올 때</strong></p>
 <p>일부 모바일 브라우저의 카메라 화면에서는 해상도가 낮아 도장이 인식되지 않을 수 있습니다. 이 경우 아래와 같은 방법으로 도장 스캔을 진행할 수 있습니다.</p>
-<blockquote>
-<div><figure class="align-default">
+<figure class="align-default">
 <a class="reference internal image-reference" href="../_images/stamp-scan-help.png"><img alt="도장 스캔 해결 방법" src="../_images/stamp-scan-help.png" style="width: 700px;" /></a>
 </figure>
-</div></blockquote>
 </div>
 </section>
 </section>
 </section>
-</section>
 <section id="company-stamp">
-<span id="id24"></span><h2>회사 도장 관리<a class="headerlink" href="#company-stamp" title="Permalink to this heading"></a></h2>
+<span id="id25"></span><h2>회사 도장 관리<a class="headerlink" href="#company-stamp" title="Permalink to this heading"></a></h2>
 <p><strong>회사 도장 관리</strong> 메뉴에서는 회사내에서 사용되는 법인 인감, 사용 인감 등 회사 도장을 여러 개 등록하고 관리할 수 있습니다.
 도장별로 멤버 또는 그룹에게 도장 사용 권한을 부여하고 도장 사용 내역을 확인할 수 있습니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>회사 도장 관리는 <strong>대표 관리자</strong> 또는 <strong>회사 관리자</strong> 권한이 있어야 합니다.</p>
 </div>
-<section id="id25">
-<h3><strong>회사 도장</strong><a class="headerlink" href="#id25" title="Permalink to this heading"></a></h3>
+<section id="id26">
+<h3>회사 도장<a class="headerlink" href="#id26" title="Permalink to this heading"></a></h3>
 <p>회사에서 사용되는 도장을 여러 개 등록하고 관리할 수 있습니다. 도장별로 사용 권한을 다르게 부여할 수 있으며, 도장에 대한 모든 변경 이력을 확인할 수 있습니다.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/menu-company-stamp.png"><img alt="회사 도장 관리 화면" src="../_images/menu-company-stamp.png" style="width: 700px;" /></a>
@@ -873,7 +892,7 @@
 <ul class="simple">
 <li><p><strong>도장 이름</strong>: 도장 이름을 입력합니다.</p></li>
 <li><p><strong>설명</strong>: 도장 사용 시 참고할 수 있는 내용을 입력합니다.</p></li>
-<li><p><strong>도장 이미지</strong>: 도장 이미지는 <strong>도장 이미지 파일을 업로드</strong> 하거나 <strong>실물 도장 스캔</strong>으로 도장 이미지를 등록합니다.</p></li>
+<li><p><strong>도장 이미지</strong>: 도장 이미지는 <strong>도장 이미지 파일을 업로드</strong> 하거나 <strong>실물 도장 스캔</strong>또는 <strong>도장 만들기</strong>를 통해 도장 이미지를 등록합니다.</p></li>
 <li><p><strong>도장 사용 권한</strong>: 도장 사용 권한을 멤버 전체 또는 특정 그룹 또는 멤버에게 부여할 수 있습니다.</p></li>
 </ul>
 <p>등록된 도장에 대해서는 편집, 삭제 및 변경 이력 확인이 가능합니다. 도장에 대한 변경 이력은 다음과 같이 나타납니다.</p>
@@ -881,8 +900,8 @@
 <a class="reference internal image-reference" href="../_images/company-stamp-register-history.png"><img alt="회사 도장 변경 이력 화면" src="../_images/company-stamp-register-history.png" style="width: 400px;" /></a>
 </figure>
 </section>
-<section id="id26">
-<h3><strong>도장 사용 내역</strong><a class="headerlink" href="#id26" title="Permalink to this heading"></a></h3>
+<section id="id27">
+<h3>도장 사용 내역<a class="headerlink" href="#id27" title="Permalink to this heading"></a></h3>
 <p>사용된 모든 도장의 이력을 볼 수 있습니다. 도장별로 도장을 사용한 멤버, 날짜, 문서 등의 정보가 나타납니다.
 사용된 도장을 누가 언제 사용했는지 한눈에 확인할 수 있으며, 도장 사용 내역은 CSV 파일로 다운로드 가능합니다.</p>
 <figure class="align-default">

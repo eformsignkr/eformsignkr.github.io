@@ -15,28 +15,30 @@ eformsign에서 작성된 문서가 완료되면 외부의 클라우드 스토�
 
 1. 메뉴에서 **커넥트> 파일 저장소**\ 로 이동합니다.
 
-.. figure:: resources/connect_1.png
-   :alt: 파일 저장소 화면
-   :width: 750px
+   .. figure:: resources/connect_1.png
+      :alt: 파일 저장소 화면
+      :width: 750px
 
 
 2. 완료된 문서를 저장할 클라우드 스토리지를 선택한 다음 **계정 연결** 버튼을 눌러 로그인합니다.
 
-3. 로그인하면 **연결 해제**\ 와 **저장 경로 설정** 버튼이 나타납니다. 필요에 따라 **저장 경로 설정** 버튼을 눌러 저장 경로를
-설정합니다.
+3. 로그인하면 **연결 해제**\ 와 **저장 경로 설정** 버튼이 나타납니다. 필요에 따라 **저장 경로 설정** 버튼을 눌러 저장 경로를 설정합니다.
 
-.. figure:: resources/connect_2.png
-   :alt: 파일 저장소의 계정 연결과 연결 해제
-   :width: 750px
+   .. figure:: resources/connect_2.png
+      :alt: 파일 저장소의 계정 연결과 연결 해제
+      :width: 750px
 
 
 .. note::
 
-   저장 경로 설정 팝업은 다음과 같습니다.
+   **저장 경로 설정 방법**
 
-   기본 경로는 eformsign 하위 폴더로 회사명이 들어갑니다. **새 폴더** 버튼을 눌러 새로운 폴더를 만들고 저장 경로를 변경할 수도 있습니다.
+   기본 경로는 eformsign 하위 폴더로 회사명 폴더에 저장됩니다.
+   저장 경로 설정 팝업에서 **새 폴더** 버튼을 눌러 새로운 폴더를 만들고 저장 경로를 변경할 수 있습니다.
 
-   |image1|
+   .. figure:: resources/analytic_8.png
+      :alt: 저장 경로 설정
+      :width: 400px
 
 4. **템플릿 관리** 메뉴로 이동합니다.
 
@@ -115,8 +117,4 @@ eformsign에서 작성된 문서가 완료되면 외부의 클라우드 스토�
 
 .. figure:: resources/analytic_8.png
    :alt: 데이터 연결 관리 화면
-   :width: 750px
-
-
-.. |image1| image:: resources/connect_3.png
-   :width: 450px
+   :width: 500px

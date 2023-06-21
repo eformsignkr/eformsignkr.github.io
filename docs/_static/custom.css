@@ -1,1 +1,19 @@
 /* This file intentionally left blank. */
+
+
+:root {
+    --codeBackgroundColor: #f8f8f8;
+    --inlineCodeBackgroundColor: #f8f8f8;
+    --codeBlue: #0000ff;
+    --codeGreen: #008000;
+    --dividerColor: rgba(0, 0, 0, 0.08);
+    --faintFontColor: rgba(0, 0, 0, 0.6);
+    --fontColor: #252630;
+    --linkColor: #2980b9;
+    --mainBackgroundColor: white;
+    --mainNavColor: #0E73C3;
+    --notificationBannerColor: #176bb0;
+    --searchHighlightColor: #fff150;
+    --sidebarColor: white;
+    --navbarHeight: 4rem;
+}

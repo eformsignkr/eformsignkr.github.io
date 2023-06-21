@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>외부 서비스 연동 &mdash; eformsign User Guide 2023.02.27 documentation</title>
+  <title>외부 서비스 연동 &mdash; eformsign User Guide 2023.04.27 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
@@ -37,7 +37,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 3.5
+                version 3.6
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -52,9 +52,9 @@
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">기본정보</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">문서 작성하기</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">웹폼 디자이너 소개</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter5.html">폼 빌더(MS Office Add-in) 소개</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">웹폼 디자이너로 템플릿 만들기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter7.html">폼 빌더(MS Office Add-in)로 템플릿 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">웹폼 디자이너로 템플릿 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">폼 빌더(MS Office Add-in) 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">폼 빌더로 템플릿 만들기</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">문서함</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter9.html">커스터마이즈</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">외부 서비스 연동</a><ul>
@@ -98,25 +98,27 @@
 <p>현재 <strong>Dropbox, Google Drive, OneDrive, box</strong>를 지원하고 있으며,
 외부 파일저장소 연동은 <strong>대표 관리자</strong>만 설정할 수 있습니다.</p>
 </div>
-<ol class="arabic simple">
-<li><p>메뉴에서 <strong>커넥트&gt; 파일 저장소</strong>로 이동합니다.</p></li>
-</ol>
+<ol class="arabic">
+<li><p>메뉴에서 <strong>커넥트&gt; 파일 저장소</strong>로 이동합니다.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/connect_1.png"><img alt="파일 저장소 화면" src="../_images/connect_1.png" style="width: 750px;" /></a>
 </figure>
-<ol class="arabic simple" start="2">
+</li>
 <li><p>완료된 문서를 저장할 클라우드 스토리지를 선택한 다음 <strong>계정 연결</strong> 버튼을 눌러 로그인합니다.</p></li>
-</ol>
-<p>3. 로그인하면 <strong>연결 해제</strong>와 <strong>저장 경로 설정</strong> 버튼이 나타납니다. 필요에 따라 <strong>저장 경로 설정</strong> 버튼을 눌러 저장 경로를
-설정합니다.</p>
+<li><p>로그인하면 <strong>연결 해제</strong>와 <strong>저장 경로 설정</strong> 버튼이 나타납니다. 필요에 따라 <strong>저장 경로 설정</strong> 버튼을 눌러 저장 경로를 설정합니다.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/connect_2.png"><img alt="파일 저장소의 계정 연결과 연결 해제" src="../_images/connect_2.png" style="width: 750px;" /></a>
 </figure>
+</li>
+</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>저장 경로 설정 팝업은 다음과 같습니다.</p>
-<p>기본 경로는 eformsign 하위 폴더로 회사명이 들어갑니다. <strong>새 폴더</strong> 버튼을 눌러 새로운 폴더를 만들고 저장 경로를 변경할 수도 있습니다.</p>
-<p><a class="reference internal" href="../_images/connect_3.png"><img alt="image1" src="../_images/connect_3.png" style="width: 450px;" /></a></p>
+<p><strong>저장 경로 설정 방법</strong></p>
+<p>기본 경로는 eformsign 하위 폴더로 회사명 폴더에 저장됩니다.
+저장 경로 설정 팝업에서 <strong>새 폴더</strong> 버튼을 눌러 새로운 폴더를 만들고 저장 경로를 변경할 수 있습니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/analytic_8.png"><img alt="저장 경로 설정" src="../_images/analytic_8.png" style="width: 400px;" /></a>
+</figure>
 </div>
 <ol class="arabic simple" start="4">
 <li><p><strong>템플릿 관리</strong> 메뉴로 이동합니다.</p></li>
@@ -180,7 +182,7 @@
 <li><p>연결된 시트로 이동하면 데이터를 가져올 컬럼(입력항목)이 표시된 것을 확인할 수 있습니다. 이후 작성되는 문서의 경우 문서에 데이터가 입력될 때마다 자동으로 업데이트니다.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/analytic_8.png"><img alt="데이터 연결 관리 화면" src="../_images/analytic_8.png" style="width: 750px;" /></a>
+<a class="reference internal image-reference" href="../_images/analytic_8.png"><img alt="데이터 연결 관리 화면" src="../_images/analytic_8.png" style="width: 500px;" /></a>
 </figure>
 </section>
 </section>
