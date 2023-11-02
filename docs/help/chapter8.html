@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>문서함 &mdash; eformsign User Guide 2023.04.27 documentation</title>
+  <title>문서함 &mdash; eformsign User Guide 2023.10.31 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
@@ -38,7 +38,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 3.6
+                version 10.2023.0921.212
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -113,39 +113,42 @@
 <span id="id1"></span><h1>문서함<a class="headerlink" href="#documents" title="Permalink to this heading"></a></h1>
 <section id="id2">
 <h2>기본 문서함<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
-<p>작성한 문서는 상태에 따라 다음 3개의 문서함에 저장됩니다.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>일괄 작성한 문서는 <a class="reference external" href="#bulksend-documents">일괄 작성 문서함</a>에서 확인할 수 있습니다.</p>
-</div>
+<p>작성한 문서는 상태에 따라 문서함에 저장됩니다.</p>
 <p>문서함에서는 각각 문서의 상태와 이력에 대한 상세 정보를 확인하고 관리할 수 있으며, 문서를 처리하거나, 재전송, 완료 문서 전송 등 추가 작업을 수행할 수 있습니다. 문서 작성 도중 임시 저장한 문서는 처리할 문서함에 나타나며 목록에서 문서를 선택해 전송할 수 있습니다.</p>
 <ul class="simple">
-<li><p><strong>처리할 문서함:</strong> 임시 저장한 문서, 내가 처리해야 할 문서(다른 멤버가 나에게 작성 요청한 문서), 또는 멤버가 아닌 수신인에게 보낸 문서 중 처리되지 않은 문서 목록을 확인할 수 있습니다.</p></li>
+<li><p><strong>처리할 문서함:</strong> 임시 저장한 문서(초안), 내가 처리해야 할 문서(다른 멤버가 나에게 작성 요청한 문서), 또는 멤버가 아닌 수신자에게 보낸 문서 중 문서 기한이 지나 재요청이 필요한 문서 목록을 확인할 수 있습니다.</p></li>
 <li><p><strong>진행 중 문서함:</strong> 내가 작성 또는 처리한 문서 중 완료되지 않은 문서 목록을 확인할 수 있습니다.</p></li>
 <li><p><strong>완료 문서함:</strong> 내가 작성한 문서 중 완료된 문서 목록을 확인할 수 있습니다.</p></li>
+<li><p><strong>일괄 작성 문서함:</strong> 내가 일괄로 작성한 문서의 진행 상태 등 일괄 작성 문서에 대한 현황을 확인할 수 있습니다. (일괄 작성 문서함에 대한 설명은 <a class="reference external" href="#bulksend-documents">일괄 작성 문서함</a> 참고)</p></li>
 </ul>
-<p><strong>문서 관리</strong> 메뉴에서는 회사 관리 &gt; 권한 구분에서 문서 관리자 권한을 부여한 멤버가 관리 권한이 있는 템플릿으로 작성된 모든 문서를 확인할 수 있습니다.</p>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><strong>공유 문서함:</strong> 소유한 문서를 다른 멤버에게 공유하거나 공유 문서함에 접근 권한이 있을 경우 공유된 문서를 한눈에 확인할 수 있습니다. (공유 문서함에 대한 설명은 <a class="reference external" href="#shared-documents">공유 문서함</a> 참고)</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>문서 관리/일괄 작성 문서 관리</strong> 메뉴는 문서 관리자를 위한 문서함으로 <strong>문서 관리자</strong>가 권한이 있는 문서를 확인할 수 있습니다.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>문서 관리자 설정 방법은  <a class="reference external" href="chapter2.html#docmanager-permissions">문서 관리자 설정</a>에서 확인해 주세요. 대표 관리자는 모든 문서를 조회하고 관리할 수 있습니다.</p>
+</div>
 <ul class="simple">
 <li><p><strong>문서 관리:</strong> 문서 관리자 권한이 있는 멤버만 접근 가능한 메뉴입니다. 해당 멤버는 문서 관리 권한이 있는 템플릿으로 작성된 모든 문서를 조회할 수 있습니다.</p></li>
+<li><p><strong>일괄 작성 문서 관리:</strong> 문서 관리자 권한이 있어야만 접근 가능한 메뉴입니다. 문서 관리 권한이 있는 템플릿으로 일괄 작성된 문서를 조회할 수 있습니다.</p></li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>대표 관리자는 모든 문서를 조회하고 관리할 수 있습니다.</p>
-</div>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/document_inbox.png"><img alt="문서함 메뉴" src="../_images/document_inbox.png" style="width: 700px;" /></a>
-</figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>각각의 문서함과 문서 관리 화면 구성은 거의 동일하지만, 상태 또는 권한에 따라 표시되는 문서에 차이가 있습니다.</p>
-</div>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/inbox_layout.png"><img alt="문서함 형태" src="../_images/inbox_layout.png" style="width: 700px;" /></a>
 </figure>
 </section>
 <section id="id3">
 <h2>문서함 구성<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>처리할, 진행중, 완료 문서함</strong>과 <strong>문서 관리</strong> 화면 구성은 거의 동일하지만, 상태 또는 권한에 따라 표시되는 문서에 차이가 있습니다.</p>
+</div>
 <p>문서함은 다음의 5가지 항목으로 구성되어 있습니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/inbox_layout.png"><img alt="문서함 형태" src="../_images/inbox_layout.png" style="width: 700px;" /></a>
+</figure>
 <dl>
 <dt>① 메뉴 및 홈 아이콘, 문서함 이름</dt><dd><p>메뉴(<a class="reference internal" href="../_images/menu_icon_2.png"><img alt="image2" src="../_images/menu_icon_2.png" style="width: 25px;" /></a>)와 홈(<a class="reference internal" href="../_images/home_icon_2.png"><img alt="image3" src="../_images/home_icon_2.png" style="width: 25px;" /></a>) 아이콘을 통해 다른 메뉴로 이동하거나 대시보드로 이동할 수 있습니다. 현재 표시되고 있는 문서함의 이름을
 확인할 수 있습니다.</p>
@@ -406,10 +409,7 @@
 <li><p><strong>문서 상태</strong>: 워크플로우 단계별로 문서가 언제, 누구에 의해 작성/처리되었는지 표시</p></li>
 <li><p><strong>이력</strong>: 작성자 및 수신자 관점에서 시간 순으로 누가 어떤 작업을 수행했는지 표시</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/document_status.png"><img alt="문서 상태 탭" src="../_images/document_status.png" style="width: 300px;" /></a>
-</figure>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/document_history.png"><img alt="이력 탭" src="../_images/document_history.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/document_status.png"><img alt="문서 상태 탭" src="../_images/document_status.png" style="width: 500px;" /></a>
 </figure>
 </li>
 </ul>
@@ -469,7 +469,7 @@
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>일괄 작성 문서함에서 문서 다운로드하기</strong></p>
+<p><strong>일괄 작성 문서함/일괄 작성 문서 관리에서 문서 다운로드하기</strong></p>
 <p>일괄 작성으로 보낸 문서는 일괄 작성 문서함에서 다운로드할 수 있습니다.</p>
 <ol class="arabic simple">
 <li><p><strong>일괄 작성 문서함</strong> 목록에서 다운로드할 문서의 <strong>상세 보기</strong>를 클릭합니다.</p></li>

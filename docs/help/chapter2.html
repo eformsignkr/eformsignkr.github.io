@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>기본정보 &mdash; eformsign User Guide 2023.04.27 documentation</title>
+  <title>기본정보 &mdash; eformsign User Guide 2023.10.31 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
@@ -38,7 +38,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 3.6
+                version 10.2023.0921.212
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -66,7 +66,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#id10">대표 관리자</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id11">회사 관리자</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id12">템플릿 관리자</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id13">문서 관리자</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#docmanager-permissions">문서 관리자</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#permissionsfortemplate">템플릿별 권한</a></li>
 </ul>
 </li>
@@ -154,15 +154,15 @@
 <li><p><strong>임시 보관함:</strong> <strong>내 파일로 문서 작성</strong> 중 <strong>문서 시작하기</strong> 전 단계에서 임시 저장한 문서 목록을 볼 수 있습니다.</p></li>
 <li><p><strong>문서함:</strong> 나와 관련된 문서 목록을 확인합니다.</p>
 <ul>
-<li><p><strong>처리할 문서함:</strong> 내가 처리해야 할 문서(다른 멤버가 나에게 요청한 문서), 또는 멤버가 아닌 수신자에게 보낸 문서 중 처리되지 않은 문서 목록을 볼 수 있습니다.</p></li>
+<li><p><strong>처리할 문서함:</strong> 내가 처리해야 할 문서(다른 멤버가 나에게 요청한 문서), 템플릿으로 문서 작성을 통해 문서 작성 중 임시저장한 문서(초안), 멤버가 아닌 수신자에게 보낸 문서 중 문서 기한이 지나 재요청이 필요한 문서 목록을 볼 수 있습니다.</p></li>
 <li><p><strong>진행 중 문서함:</strong> 내가 작성 또는 처리한 문서 중 아직 완료되지 않은 문서 목록을 볼 수 있습니다.</p></li>
 <li><p><strong>완료 문서함:</strong> 내가 작성한 문서 중 완료된 모든 문서 목록을 볼 수 있습니다.</p></li>
 <li><p><strong>일괄 작성 문서함:</strong> 내가 일괄로 작성한 문서의 진행 상태 등 일괄 작성 문서에 대한 현황을 확인할 수 있습니다.</p></li>
 </ul>
 </li>
 <li><p><strong>공유 문서함:</strong> 소유한 문서를 다른 멤버에게 공유하거나 공유 문서함에 접근 권한이 있을 경우 공유된 문서를 한눈에 확인할 수 있습니다.</p></li>
-<li><p><strong>문서 관리:</strong> 문서 관리자 권한이 있어야만 접근 가능한 메뉴입니다. 문서 관리 권한이 있는 템플릿으로 만들어진 모든 문서를
-조회할 수 있습니다. 단, 대표관리자의 경우, 모든 문서를 조회 및 관리할 수 있습니다.</p></li>
+<li><p><strong>문서 관리:</strong> 문서 관리자 권한이 있어야만 접근 가능한 메뉴입니다. 문서 관리 권한이 있는 템플릿으로 만들어진 모든 문서를 조회할 수 있습니다. 단, 대표관리자의 경우, 모든 문서를 조회 및 관리할 수 있습니다.</p></li>
+<li><p><strong>일괄 작성 문서 관리:</strong> 문서 관리자 권한이 있어야만 접근 가능한 메뉴입니다. 문서 관리 권한이 있는 템플릿으로 일괄 작성된 문서를 조회할 수 있습니다. 단, 대표관리자의 경우, 모든 문서를 조회 및 관리할 수 있습니다.</p></li>
 <li><p><strong>내 서명:</strong> 내 서명을 등록하고 문서 작성 시 편리하게 서명란에 적용할 수 있습니다.</p></li>
 <li><p><strong>템플릿 관리:</strong> 템플릿 관리자 권한이 있어야만 접근 가능한 메뉴입니다. 템플릿 목록을 확인하고 템플릿을 생성 및 설정할 수 있습니다.</p></li>
 <li><p><strong>회사 관리:</strong> 대표 관리자와 회사 관리자 권한이 부여된 멤버만 접근 가능한 메뉴입니다. 회사 정보를 조회하고 수정할 수 있습니다.</p>
@@ -380,7 +380,7 @@
 </li>
 <li><p><strong>템플릿 수정 권한</strong></p>
 <p>템플릿 수정 권한은 해당 템플릿을 수정할 수 있는 권한입니다.
-❗템플릿 수정 권한은 <strong>템플릿 관리자 권한이 있는 멤버만 지정</strong>할 수 있습니다.</p>
+❗템플릿 수정 권한은 <strong>템플릿 관리자 권한이 있는 멤버에게만</strong>부여할 수 있습니다.</p>
 </li>
 </ul>
 </li>
@@ -505,8 +505,8 @@
 <p><strong>템플릿 관리 상세</strong> 팝업에서는 해당 템플릿 관리자가 소유한 템플릿의 목록을 확인할 수 있으며, 템플릿 이름에 마우스오버를 하면 <strong>소유자 변경</strong> 버튼이 표시되어 클릭 후 소유자를 다른 멤버로 변경할 수 있습니다.</p>
 </div>
 </section>
-<section id="id13">
-<h3>문서 관리자<a class="headerlink" href="#id13" title="Permalink to this heading"></a></h3>
+<section id="docmanager-permissions">
+<span id="id13"></span><h3>문서 관리자<a class="headerlink" href="#docmanager-permissions" title="Permalink to this heading"></a></h3>
 <p><strong>문서 관리</strong> 메뉴에 접근할 수 있습니다. 문서 관리자 권한을 부여받은 템플릿으로 생성된 문서를 열람하고 다운로드 받을 수 있으며, 관리 범위에 따라 문서를 취소 또는 제거할 수도 있습니다.</p>
 <p><strong>문서 관리자 권한 설정 방법</strong></p>
 <ol class="arabic">
@@ -537,24 +537,48 @@
 <p>문서 관리자에게 관리 권한을 부여할 문서 조건을 설정합니다.</p>
 <ul>
 <li><p><strong>문서 조건 선택:</strong>  문서 작성자와 문서 종류를 선택하면 선택한 작성자가 작성한 문서에 대한 관리 권한이 부여됩니다.
-예를 들어 ‘인사팀’에서 작성한 ‘근로 계약서’에 대한 문서 관리자를 설정할 경우, 작성자에 ‘인사팀’, 문서 종류에 템플릿 목록의 ‘근로 계약서’를 선택합니다.</p>
+예를 들어 ‘인사팀’에서 작성한 ‘근로 계약서’에 대한 문서 관리자를 설정할 경우, 작성자에 ‘인사팀’, 문서 종류에 템플릿 목록의 ‘근로 계약서’를 선택합니다. 작성자와 문서 종류에 대해 상세 조건도 설정할 수 있습니다.</p>
 <blockquote>
-<div><ul class="simple">
-<li><p><strong>작성자</strong></p></li>
+<div><ul>
+<li><p><strong>작성자</strong></p>
+<blockquote>
+<div><p>문서를 작성한 작성자를 전체 멤버, 그룹, 또는 개별 멤버 중 선택합니다.</p>
+<ul>
+<li><p><strong>상세 조건</strong> : 작성자 정보(ID, 이메일, 이름 등)를 기준으로 키워드를 설정한 후 해당 키워드와 일치 또는 포함 조건을 선택합니다. 설정에 따라 해당 키워드와 일치 또는 포함하는 문서가 해당 문서 관리자의 문서 관리 메뉴에 표시됩니다.</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/docmanager-advancedsetting-creator.png"><img alt="권한 관리 &gt; 문서 관리자 팝업 &gt; 작성자 상세 조건" src="../_images/docmanager-advancedsetting-creator.png" style="width: 400px;" /></a>
+</figure>
+</div></blockquote>
+</li>
 </ul>
-<p>문서를 작성한 작성자를 전체 멤버, 그룹, 또는 개별 멤버 중 선택합니다.</p>
-<ul class="simple">
-<li><dl class="simple">
+</div></blockquote>
+</li>
+<li><dl>
 <dt><strong>문서 종류</strong></dt><dd><ul>
 <li><p><strong>전체 문서:</strong> 위에서 선택한 작성자가 작성한 모든 문서를 관리합니다.</p></li>
 <li><p><strong>템플릿으로 작성된 문서 전체:</strong> 선택한 작성자가 작성한 문서 중 템플릿으로 작성한 모든 문서를 관리합니다.</p></li>
 <li><p><strong>템플릿 없이 내 파일로 작성된 문서 전체:</strong> 선택한 작성자가 <strong>내 파일로 문서 작성</strong> 메뉴를 통해 작성한 모든 문서를 관리합니다.</p></li>
-<li><p><strong>템플릿 목록:</strong> 선택한 작성자가 해당 템플릿으로 작성한 문서를 관리합니다.</p></li>
+<li><p><strong>템플릿 목록:</strong> 선택한 작성자가 해당 템플릿으로 작성한 문서를 관리합니다.</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/docmanager-setting-doctype.png"><img alt="권한 관리 &gt; 문서 관리자 팝업 &gt; 문서 종류" src="../_images/docmanager-setting-doctype.png" style="width: 400px;" /></a>
+</figure>
+</div></blockquote>
+</li>
+<li><p><strong>상세 조건:</strong> 문서 종류 선택 후 해당 문서에 입력된 내용을 기준으로 키워드/범위/기간을 설정합니다. 필드 이름에 입력 항목 ID를 입력하고 키워드(일치/포함), 범위 또는 기간을 설정합니다. 조건에 해당하는 문서가 해당 문서 관리자의 문서 관리 메뉴에 표시됩니다.</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/docmanager-advancedsetting-doctype.png"><img alt="권한 관리 &gt; 문서 관리자 팝업 &gt; 문서 종류 상세 조건" src="../_images/docmanager-advancedsetting-doctype.png" style="width: 400px;" /></a>
+</figure>
+</div></blockquote>
+</li>
 </ul>
 </dd>
 </dl>
 </li>
 </ul>
+<p>📣 상세 조건은 여러 개를 설정할 수 있으며, ‘OR’ 조건으로 적용됩니다. 또한, <strong>일괄 작성 문서 관리</strong>에는 적용되지 않습니다.</p>
 </div></blockquote>
 </li>
 <li><p><strong>관리 범위 선택:</strong> 문서 조건에서 설정한 문서에 대한 관리 범위를 설정합니다.</p>
@@ -689,7 +713,6 @@
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/menu-mysignature.png"><img alt="내 서명 관리 화면" src="../_images/menu-mysignature.png" style="width: 700px;" /></a>
 </figure>
-<p><a class="reference internal" href="../_images/mysignature.PNG"><img alt="image11" src="../_images/mysignature.PNG" style="width: 700px;" /></a></p>
 <ol class="arabic">
 <li><p>사이드바 메뉴에서 <strong>내 서명</strong>으로 이동합니다.</p></li>
 <li><p>서명 등록 버튼을 클릭합니다.</p>

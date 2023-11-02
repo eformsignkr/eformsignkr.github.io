@@ -24,9 +24,9 @@ copyright = '2023, FORCS CO., LTD. All rights reserved.'
 author = 'FORCS'
 
 # The short X.Y version
-version = 'version 3.6'
+version = 'version 10.2023.0921.212'
 # The full version, including alpha/beta/rc tags
-release = '2023.04.27'
+release = '2023.10.31'
 
 
 # -- General configuration ---------------------------------------------------
@@ -87,7 +87,20 @@ html_theme = 'sphinx_rtd_theme'
 #
 # html_theme_options = {}
 
-
+html_theme_options = {
+    'logo_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': False,
+    'vcs_pageview_mode': '',
+    'style_nav_header_background': 'white',
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
+}
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
