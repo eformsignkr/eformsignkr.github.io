@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>폼 빌더(MS Office Add-in) 소개 &mdash; eformsign User Guide 2023.10.31 documentation</title>
+  <title>폼 빌더(MS Office Add-in) 소개 &mdash; eformsign User Guide 2023.12.12 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
@@ -38,7 +38,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 10.2023.0921.212
+                version 10.2023.1123.208
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -228,9 +228,7 @@ ID는 컴포넌트를 추가하면 자동으로 설정되지만, 컴포넌트에
 <ul>
 <li><p><strong>엑셀에서 추가하기</strong></p>
 <ol class="arabic">
-<li><p>엑셀 파일을 열고 <strong>OZ in Excel</strong> 리본 메뉴로 이동합니다.</p>
-<p><img alt="image8" src="../_images/ozinexcel_1.png" /></p>
-</li>
+<li><p>엑셀 파일을 열고 <strong>OZ in Excel</strong> 리본 메뉴로 이동합니다.</p></li>
 <li><p>컴포넌트를 추가할 셀을 선택합니다.</p>
 <p><img alt="image9" src="../_images/ozinexcel_2.png" /></p>
 </li>
@@ -319,7 +317,7 @@ ID는 컴포넌트를 추가하면 자동으로 설정되지만, 컴포넌트에
 <p><strong>문서에 도장 날인하기</strong></p>
 <p>문서에 직접 서명이 아닌 직인이나 개인 도장을 사용해야 하는 경우가 있습니다. eformsign에서는 도장 이미지를 사용해 문서의 서명란에 도장을 찍을 수 있습니다.</p>
 <p><strong>① 일반 도장 이미지 사용</strong></p>
-<p>도장 이미지를 사용하려면, 서명 팝업에서 <strong>도장</strong> 탭을 클릭하고 도장 이미지를 선택한 후 <strong>확인</strong> 버튼을 누릅니다.</p>
+<p>도장 이미지를 사용하려면, <strong>서명</strong> 팝업에서 <strong>도장</strong> 탭을 클릭하고 도장 이미지를 선택한 후 <strong>확인</strong> 버튼을 누릅니다.</p>
 <p><strong>② 회사 도장 사용</strong></p>
 <p>회사 법인 인감 등 회사 직인이 있을 경우, <strong>회사 관리 메뉴에서 회사 도장</strong>으로 등록한 후 <strong>회사 도장</strong> 컴포넌트로 안전하고 간편하게 사용할 수 있습니다.</p>
 </div>
@@ -383,12 +381,28 @@ ID는 컴포넌트를 추가하면 자동으로 설정되지만, 컴포넌트에
 <li><p><strong>(우편번호)주소:</strong> 우편번호를 포함한 주소 입력이 필요할 때 설정합니다.</p></li>
 <li><p><strong>패스워드:</strong> 입력한 내용이 표시되지 않도록 설정합니다. 텍스트 입력 시 입력한 내용이 별표(*) 또는 패스워드 문자(●)로 입력되어 입력한 내용을 숨길 수 있습니다. 입력된 내용은 PDF에서도 패스워드 문자로 숨겨지며, CSV 데이터를 다운로드 받을 때에만 확인할 수 있습니다.</p></li>
 </ul>
-<p><strong>③ 텍스트 조정</strong></p>
+<p><strong>③ 입력 규칙 설정</strong></p>
+<p>전화번호, 생년월일, 사업자등록번호 등 기본 입력 규칙 유형 중에서 선택하거나 직접 입력을 선택하여 규칙을 만들 수 있습니다.</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/text-component-rule-option.png"><img alt="입력 규칙 설정" src="../_images/text-component-rule-option.png" style="width: 300px;" /></a>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>입력 규칙 설정에서 <strong>직접 입력</strong>을 선택하면 숫자, 알파벳 등 입력받을 문자의 종류와 글자 수 등 규칙을 직접 설정할 수 있습니다. 예를 들어 여권번호를 입력하도록 하려면 여권번호 유형에 따라 규칙을 다음과 같이 설정할 수 있습니다.</p>
+<p>여권번호는 ‘알파벳 + 숫자 8자리’ 또는 ‘알파벳 + 숫자3자리 + 알파벳 + 숫자 4자리’ 조합으로 구성되어 있어서 알파벳 대문자로 시작할 수 있도록 ‘&gt;L’, 숫자만 입력할 수 있는 ‘0’, 숫자와 알파벳을 입력할 수 있는 ‘A’를 사용해 <strong>&gt;L000A0000</strong>으로 규칙을 설정합니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/text-component-rule.png"><img alt="입력 규칙 설정- 직접 입력" src="../_images/text-component-rule.png" style="width: 300px;" /></a>
+</figure>
+</div>
+</div></blockquote>
+<p><strong>④ 텍스트 조정</strong></p>
 <ul class="simple">
 <li><p><strong>너비에 맞게 글자 수 제한:</strong>  입력 항목 크기에 맞게 글자 수를 자동으로 제한합니다. 짧은 텍스트는 항목 크기를 작게, 긴 텍스트를 입력해야 하는 경우에는 항목 크기를 크게 설정해 주세요.</p></li>
-<li><p><strong>입력 가능 글자 수 직접 입력:</strong> 입력 가능한 최대 글자 수(공백 포함)를 설정합니다.  텍스트는 ‘1~1000자’, 멀티라인은 ‘1~8000자’까지 입력할 수 있습니다.</p></li>
+<li><p><strong>글자 크기 자동 조정:</strong>  입력 항목 크기에 맞게 글자 크기를 자동으로 조정합니다.(글자 크기 축소)</p></li>
+<li><p><strong>입력 가능 글자 수 직접 입력:</strong> 입력 항목에 입력할 수 있는 최대 글자 수를 설정합니다. 옵션 선택 시 최대 글자 수로 기본 설정됩니다. 텍스트는 ‘1~1000자’, 멀티라인은 ‘1~8000자’까지 입력할 수 있습니다.</p></li>
 </ul>
-<p><strong>④ 키패드 타입(모바일만 적용)</strong></p>
+<p><strong>⑤ 키패드 타입(모바일만 적용)</strong></p>
 <p>스마트폰, 태블릿과 같은 모바일 환경에서 문서를 작성할 때 실행할 키패드 타입을 선택합니다.</p>
 </section>
 <section id="handwriting">
@@ -482,9 +496,15 @@ ID는 컴포넌트를 추가하면 자동으로 설정되지만, 컴포넌트에
 <p><strong>② 선택 스타일</strong></p>
 <p>선택 컴포넌트는 속성에서 스타일을 지정할 수 있습니다. 체크를 선택하면 속성에서 체크박스가 기본으로 설정되어 있으며, 이외에 라디오 버튼, 빨간 원 표시를 선택할 수 있습니다.</p>
 <p>체크 / 라디오 / 원 선택 시 각각 체크박스는 다음과 같이 표시됩니다.</p>
-<p><strong>④ 비선택 스타일</strong></p>
-<p>선택되지 않은 항목에 표시될 스타일을 지정할 수 있습니다. 체크박스는 사각형, 라디오 버튼은 원형, 원 표시는 아무것도 표시되지 않습니다.</p>
 <p><a class="reference internal" href="../_images/check-component-style-settings.png"><img alt="image19" src="../_images/check-component-style-settings.png" style="width: 700px;" /></a></p>
+<p><strong>③ 비선택 스타일</strong></p>
+<p>선택되지 않은 항목에 표시될 스타일을 지정할 수 있습니다. 체크박스는 사각형, 라디오 버튼은 원형, 원 표시는 아무것도 표시되지 않습니다.</p>
+<p><strong>④ 체크박스 위치</strong></p>
+<p>체크박스의 위치를 지정합니다.</p>
+<ul class="simple">
+<li><p>텍스트 왼쪽: 체크박스 위치를 텍스트의 왼쪽에 위치하도록 설정합니다.</p></li>
+<li><p>텍스트 오른쪽: 체크박스 위치를 텍스트의 오른쪽에 위치하도록 설정합니다.</p></li>
+</ul>
 </section>
 <section id="select">
 <span id="id18"></span><h4>선택<a class="headerlink" href="#select" title="Permalink to this heading"></a></h4>
@@ -510,6 +530,12 @@ ID는 컴포넌트를 추가하면 자동으로 설정되지만, 컴포넌트에
 <p><strong>다중 선택 가능</strong>을 체크하면 1개 이상의 항목을 선택할 수 있습니다. 1개 이상의 항목을 선택한 경우 데이터 저장 시 선택된 여러 개의 항목이 콤마(,)로 구분되어 저장됩니다.</p>
 <p><strong>⑤ 선택 안 함 가능</strong></p>
 <p><strong>선택 안 함 가능</strong>을 체크하면 선택한 항목을 다시 클릭해 선택 해제를 할 수 있습니다.</p>
+<p><strong>⑥ 라디오버튼 위치</strong></p>
+<p>라디오버튼의 위치를 지정합니다.</p>
+<ul class="simple">
+<li><p>텍스트 왼쪽: 선택 컴포넌트 위치를 텍스트의 왼쪽에 위치하도록 설정합니다.</p></li>
+<li><p>텍스트 오른쪽: 선택 컴포넌트 위치를 텍스트의 오른쪽에 위치하도록 설정합니다.</p></li>
+</ul>
 </section>
 <section id="combo">
 <span id="id19"></span><h4>콤보<a class="headerlink" href="#combo" title="Permalink to this heading"></a></h4>
@@ -775,11 +801,8 @@ PC 키보드 환경에서는 입력란에 직접 원하는 숫자를 입력할 �
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/ozinword-menu-file.png"><img alt="실행하기" src="../_images/ozinword-menu-file.png" style="width: 700px;" /></a>
 </figure>
-<p><a class="reference internal" href="../_images/form_upload_login.png"><img alt="image40" src="../_images/form_upload_login.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>로그인하면 전자문서 서식인 폼으로 변환된 문서가 미리보기 형태로 표시됩니다.</p>
-<p><a class="reference internal" href="../_images/upload_preview.png"><img alt="image41" src="../_images/upload_preview.png" style="width: 700px;" /></a></p>
-</li>
+<li><p>로그인하면 전자문서 서식인 폼으로 변환된 문서가 미리보기 형태로 표시됩니다.</p></li>
 <li><p>업로드 미리보기 화면에서 <strong>폼 파일 업로드</strong>를 클릭하거나 리본 메뉴의 <strong>업로드</strong>(<img alt="image42" src="../_images/upload_button.png" />) 아이콘을 클릭하면 템플릿 목록과 함께 <strong>새 템플릿</strong> 추가할 수 있는 화면이 나타납니다.</p>
 <p><a class="reference internal" href="../_images/upload_list.png"><img alt="image43" src="../_images/upload_list.png" style="width: 700px;" /></a></p>
 </li>
@@ -798,7 +821,7 @@ PC 키보드 환경에서는 입력란에 직접 원하는 숫자를 입력할 �
 <li><p><strong>일반 설정:</strong> 템플릿 이름, 약칭, 문서 제목 규칙, 문서 번호 등을 설정합니다.</p></li>
 <li><p><strong>권한 설정:</strong> 해당 템플릿으로 문서를 생성할 멤버나 그룹, 템플릿을 수정할 수 있는 멤버를 지정합니다.</p></li>
 <li><p><strong>워크플로우 설정:</strong> 문서의 시작부터 완료까지 작성된 문서의 처리 단계를 설정합니다.</p></li>
-<li><p><strong>필드 설정:</strong> 필드의 표시 여부, 순서, 기본값, 자동 입력 값 등을 설정합니다.</p></li>
+<li><p><strong>필드 설정:</strong> 필드의 표시 여부, 순서, 기본값, 자동 입력값 등을 설정합니다.</p></li>
 <li><p><strong>알림 설정:</strong> 템플릿으로 생성된 문서에 대한 상태 알림의 수신자를 설정하고 최종 완료 알림 메시지를 편집합니다</p></li>
 </ul>
 </li>
@@ -817,7 +840,7 @@ PC 키보드 환경에서는 입력란에 직접 원하는 숫자를 입력할 �
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>템플릿에 대한 상세한 설명은 <a class="reference external" href="chapter7.html#template_fb">폼 빌더로 템플릿 만들기</a>를 참고하시기 바랍니다.</p>
+<p>템플릿 설정 등 템플릿에 대한 상세한 설명은 <a class="reference external" href="chapter7.html#template_fb">폼 빌더로 템플릿 만들기</a>를 참고하시기 바랍니다.</p>
 </div>
 </section>
 </section>
