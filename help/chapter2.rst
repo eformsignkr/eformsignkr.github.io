@@ -811,7 +811,7 @@
 
    .. figure:: resources/signature-method.png
       :alt: 서명 방식 설정 화면
-      :width: 400px
+      :width: 700px
 
 
 .. _registerstamp:
@@ -864,6 +864,19 @@
    날짜가 들어간 도장을 선택하면 해당 도장을 찍을때 날짜가 ‘오늘 날짜’로 자동 적용됩니다.
 
 6. **편집, 삭제** 버튼으로 등록된 도장을 편집 또는 삭제합니다.
+
+.. tip::
+
+   **도장 만들기 제한하는 방법**
+
+   서명란에 도장 입력 시 **도장 만들기**\ 를 허용하지 않으려면 **회사 관리 > 서명 방식 설정**\ 에서 도장 만들기 제한을 설정해 주세요. 
+
+
+   .. figure:: resources/signature-method-createstamp.png
+      :alt: 서명 방식 설정 화면
+      :width: 700px
+
+
 
 .. _uploadstampimage:
 
