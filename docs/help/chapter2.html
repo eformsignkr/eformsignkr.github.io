@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>기본정보 &mdash; eformsign User Guide 2024.01.31 documentation</title>
+  <title>기본정보 &mdash; eformsign User Guide 2024.03.12 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
@@ -38,7 +38,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 10.2024.0125.200
+                version v10.2024.0228.201
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -58,7 +58,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#id5">기본 정보 확인 및 변경</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id6">내 정보</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id7">회사 정보 수정 및 추가</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">회사 정보 수정</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#brand">브랜드</a></li>
 </ul>
 </li>
@@ -70,7 +70,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#permissionsfortemplate">템플릿별 권한</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id15">멤버 및 그룹 관리</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#manage-members-groups">멤버 및 그룹 관리</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id16">멤버 관리</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id17">그룹 관리</a></li>
 </ul>
@@ -91,6 +91,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#id27">도장 사용 내역</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#security-settings">보안 설정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#retention">문서 보관 기간 설정</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">문서 작성하기</a></li>
@@ -175,6 +177,8 @@
 <li><p><strong>서명 방식 설정:</strong> 서명 시 서명 입력 방식을 제한 또는 허용할 수 있습니다. (텍스트 서명 및 도장 만들기 서명 입력 방식)</p></li>
 <li><p><strong>알림 템플릿 관리:</strong> eformsign에서 발송되는 이메일, SMS 알림 템플릿 목록을 확인하고 수정할 수 있습니다.</p></li>
 <li><p><strong>사용자 정의 정보셋 관리:</strong> 회사, 그룹, 멤버에 대한 추가 정보를 입력하거나 수정할 수 있습니다.</p></li>
+<li><p><strong>보안 설정:</strong> 권한별로 특정 IP 주소에서만 이폼사인에 로그인할 수 있도록 관리자 및 멤버 권한별로 접속 허용 IP를 설정할 수 있습니다.</p></li>
+<li><p><strong>문서 보관 기간 설정:</strong> 회사 내에서 작성되는 모든 문서에 대한 보관 기간을 설정할 수 있습니다.</p></li>
 </ul>
 </li>
 <li><p><strong>커넥트:</strong> 대표 관리자만 접근 가능한 메뉴입니다. 외부 서비스와 연계하여 사용하는 기능을 확인할 수 있습니다.</p>
@@ -297,7 +301,7 @@
 </dl>
 </section>
 <section id="id7">
-<h3>회사 정보 수정 및 추가<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h3>
+<h3>회사 정보 수정<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h3>
 <p><strong>내 정보</strong>에서 확인 가능한 회사 정보는 <strong>회사 관리 &gt; 회사 정보</strong>에서 수정할 수 있습니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -323,7 +327,8 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>로고와 심볼의 차이</strong></p>
-<p>로고와 심볼 모두 회사를 대표하는 이미지입니다. 로고는 대체로 브랜드명을 기재하는 가로로 긴 형식, 심볼은 이미지만으로 표현한 정사각형 형식입니다.</p>
+<p>로고와 심볼 모두 회사를 대표하는 이미지입니다.
+로고는 대체로 브랜드명을 기재하는 가로로 긴 형식, 심볼은 이미지만으로 표현한 정사각형 형식입니다.</p>
 <p><strong>권장 사이즈</strong></p>
 <ul class="simple">
 <li><p>로고: 512 x 128의 가로 투명 이미지</p></li>
@@ -578,7 +583,10 @@
 </dl>
 </li>
 </ul>
-<p>📣 상세 조건은 여러 개를 설정할 수 있으며, ‘OR’ 조건으로 적용됩니다. 또한, <strong>일괄 작성 문서 관리</strong>에는 적용되지 않습니다.</p>
+<dl class="simple">
+<dt>📣 상세 조건은 여러 개를 설정할 수 있으며, ‘OR’ 조건으로 적용됩니다.</dt><dd><p>또한, <strong>일괄 작성 문서 관리</strong>에는 적용되지 않습니다.</p>
+</dd>
+</dl>
 </div></blockquote>
 </li>
 <li><p><strong>관리 범위 선택:</strong> 문서 조건에서 설정한 문서에 대한 관리 범위를 설정합니다.</p>
@@ -637,8 +645,8 @@
 </ol>
 </section>
 </section>
-<section id="id15">
-<h2>멤버 및 그룹 관리<a class="headerlink" href="#id15" title="Permalink to this heading"></a></h2>
+<section id="manage-members-groups">
+<span id="id15"></span><h2>멤버 및 그룹 관리<a class="headerlink" href="#manage-members-groups" title="Permalink to this heading"></a></h2>
 <p><strong>회사 관리</strong> 메뉴에서 멤버를 초대, 삭제, 수정 및 그룹 생성, 추가, 삭제 등을 관리할 수 있습니다.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/menu-group-member-manage.png"><img alt="회사관리 &gt; 그룹/멤버 관리" src="../_images/menu-group-member-manage.png" style="width: 700px;" /></a>
@@ -939,6 +947,80 @@
 <a class="reference internal image-reference" href="../_images/company-stamp-history.png"><img alt="회사 도장 사용 내역 화면" src="../_images/company-stamp-history.png" style="width: 700px;" /></a>
 </figure>
 </section>
+</section>
+<section id="security-settings">
+<span id="id28"></span><h2>보안 설정<a class="headerlink" href="#security-settings" title="Permalink to this heading"></a></h2>
+<p>이폼사인의 계정 보안을 위해 권한별로 특정 IP 주소에서만 로그인할 수 있도록 설정할 수 있습니다.</p>
+<p><strong>권한별 접속 허용 IP 설정 방법</strong></p>
+<ol class="arabic simple">
+<li><p><strong>회사 관리 &gt; 보안 설정</strong> 메뉴로 이동합니다.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/security-settings.png"><img alt="보안 설정" src="../_images/security-settings.png" style="width: 700px;" /></a>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p><strong>보안 설정 &gt; IP 접속 제어 설정</strong> 페이지에서 <strong>지정된 IP 접속 허용</strong>을 선택합니다.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/security-settings2.png"><img alt="보안 설정" src="../_images/security-settings2.png" style="width: 700px;" /></a>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>접속 허용 IP 또는 IP 대역을 입력합니다.</p></li>
+<li><p>해당 IP에서 로그인을 허용할 권한(대표 관리자/회사 관리자/멤버)을 선택합니다.</p></li>
+<li><p><strong>추가</strong> 버튼을 클릭합니다.</p></li>
+<li><p>목록에 추가된 설정 정보를 확인 후 <strong>저장</strong> 버튼을 클릭합니다.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/security-settings1.png"><img alt="보안 설정" src="../_images/security-settings1.png" style="width: 700px;" /></a>
+</figure>
+</section>
+<section id="retention">
+<span id="id29"></span><h2>문서 보관 기간 설정<a class="headerlink" href="#retention" title="Permalink to this heading"></a></h2>
+<p>보다 안전하고 효율적인 문서 관리를 위해 문서의 보관 기간을 설정할 수 있습니다.</p>
+<p>문서의 보관 기간은 회사 전체 또는 템플릿별로 설정할 수 있으며 설정된 보관 기간이 지나면 해당 문서는 문서함에서 삭제됩니다.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>템플릿별 문서 보관 기간 설정 방법은 <a class="reference external" href="chapter5.html#general-wd">템플릿 설정</a>에서 확인해 주세요.</p>
+</div>
+<p><strong>문서 보관 기간 설정 방법</strong></p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>❗대표 관리자만 설정할 수 있으며, 설정 시 <strong>회사 내 작성되는 모든 문서</strong>에 적용됩니다.</p>
+<p>단, 템플릿 설정에서 별도로 보관 기간이 설정되어 있는 경우, 해당 템플릿으로 작성되는 문서는 템플릿 설정에 따라 적용됩니다.</p>
+</div>
+<ol class="arabic simple">
+<li><p><strong>회사 관리 &gt; 문서 보관 기간 설정</strong> 메뉴로 이동합니다.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/retention-period.png"><img alt="문서 보관 기간 설정" src="../_images/retention-period.png" style="width: 700px;" /></a>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>문서 보관 기간 설정 페이지에서 <strong>설정</strong>을 클릭합니다.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/retention-period1.png"><img alt="문서 보관 기간 설정" src="../_images/retention-period1.png" style="width: 700px;" /></a>
+</figure>
+<ol class="arabic" start="3">
+<li><p>기간 단위(년/개월)를 선택 후 기간을 입력합니다.</p>
+<p>➡기간은 <strong>최소 1개월부터 최대 15년</strong>까지 설정할 수 있습니다.</p>
+</li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/retention-period2.png"><img alt="문서 보관 기간 설정" src="../_images/retention-period2.png" style="width: 700px;" /></a>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p><strong>저장</strong>을 클릭하면 문서 보관 기간이 변경되며, 이후 작성하는 문서부터 적용됩니다.</p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>📣 <strong>문서 보관 기간에 관한 참고사항</strong></p>
+<ul class="simple">
+<li><p>문서 보관 기간은 기본 15년으로 설정되어 있습니다.</p></li>
+<li><p>문서함에서 삭제된 문서는 14일의 유예기간 후 자동으로 시스템에서 영구 삭제됩니다.</p></li>
+<li><p>회사 설정과 템플릿별 설정이 모두 되어있는 문서는 템플릿 설정이 우선 적용됩니다.</p></li>
+<li><p>문서 보관 기관 설정을 변경하면 변경 후 새로 작성하는 문서부터 적용됩니다.</p></li>
+</ul>
+</div>
 </section>
 </section>
 
