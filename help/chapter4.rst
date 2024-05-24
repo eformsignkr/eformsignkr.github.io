@@ -28,12 +28,14 @@
 1. 대시보드에 파일을 드래그하거나 사이드바 메뉴에서 클릭하여 **내 파일로 문서 작성** 메뉴로 이동합니다.
 
    .. figure:: resources/newfrommyfile-menu.png
-      :alt: 파일 추가
+      :alt: 내 파일로 문서 작성 메뉴
       :width: 700px
 
 2. 화면에 바로 파일을 드래그하거나 **내 컴퓨터에서 파일 선택**\ 을 클릭해서 자신의 컴퓨터에서 업로드하고자 하는 파일을 선택합니다.
 
-   |image2|
+   .. figure:: resources/newfrommyfile-uploadfile.png
+      :alt: 파일 추가
+      :width: 500px
 
 3. 문서에 참여할 서명 참여자 및 역할을 추가 및 설정하면, 문서에 입력 항목을 추가할 수 있는 웹폼 디자이너 화면이 나타납니다.
 
@@ -64,13 +66,15 @@
 
 1. **템플릿 관리** 메뉴로 이동합니다.
 
-   .. figure:: resources/web-form_1.png
-      :alt: 웹폼 디자이너 화면
+   .. figure:: resources/template-manage-menu-new.png
+      :alt: 템플릿 관리
+      :width: 700px
 
-2. 템플릿 관리 화면에 바로 파일을 드래그하거나 **내 컴퓨터에서 파일 선택**\ 을 클릭해 자신의 컴퓨터에서 업로드하고자 하는 파일을 선택합니다.
+2. 템플릿 관리 화면에 바로 파일을 드래그하거나 오른쪽 상단의 **새 템플릿 만들기**\ 를 클릭해 자신의 컴퓨터에서 업로드하고자 하는 파일을 선택합니다.
 
-   .. figure:: resources/web-form_2.png
-      :alt: 웹폼 디자이너 화면
+   .. figure:: resources/template-manage-upload.png
+      :alt: 템플릿 관리
+      :width: 700px
 
 3. 문서에 참여할 서명 참여자 및 역할을 추가 및 설정하면, 웹폼 디자이너 화면이 나타납니다.
 
