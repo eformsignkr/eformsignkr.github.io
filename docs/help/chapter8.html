@@ -72,6 +72,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#id11">데이터 파일 다운로드</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#set-reminder">리마인더 설정하기</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#document-delete">문서 삭제하기</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#document-column">문서함 컬럼 설정</a></li>
 </ul>
@@ -226,8 +227,8 @@
 <h4>키워드 및 필터 검색<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h4>
 <p>검색은 키워드 검색은 물론, 상세 검색을 통해 제목이나 내용을 조합해서 검색하거나, 숫자, 날짜 범위를 지정해 검색, 사용자 지정 필터를 통한 검색 등 다양한 검색 방법을 제공하고 있습니다. 또한, 사용자 지정 필터를 설정해서 문서에 입력된 값도 검색할 수 있으며, 숫자의 범위, 날짜의 기간을 설정해서 검색할 수도 있습니다.</p>
 <p>필터를 사용해서 검색 가능한 필터는 다음과 같습니다. 한편, 사용자 지정 필터는 완료 문서함과 문서 관리에서만 사용할 수 있습니다.</p>
-<table class="docutils align-default" id="id17">
-<caption><span class="caption-text"><strong>필터 종류 리스트</strong></span><a class="headerlink" href="#id17" title="Permalink to this table"></a></caption>
+<table class="docutils align-default" id="id18">
+<caption><span class="caption-text"><strong>필터 종류 리스트</strong></span><a class="headerlink" href="#id18" title="Permalink to this table"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>처리할 문서함</p></th>
 <th class="head"><p>진행 중 문서함</p></th>
@@ -481,8 +482,34 @@
 </div>
 </section>
 </section>
+<section id="set-reminder">
+<span id="id12"></span><h3>리마인더 설정하기<a class="headerlink" href="#set-reminder" title="Permalink to this heading"></a></h3>
+<p>완료 문서함에서는 문서에 대한 리마인더가 필요한 경우 알림을 설정할 수 있습니다. 예를 들어, 갱신 계약이 필요한 경우 갱신일자가 도래했음을 알려주는 알림을 설정할 수 있습니다.</p>
+<ol class="arabic">
+<li><p>완료 문서함으로 이동합니다.</p></li>
+<li><p>리마인더를 설정할 문서 제목 아래 리마인더 설정 버튼을 클릭합니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/set_reminder.png"><img alt="완료문서함-리마인더 설정" src="../_images/set_reminder.png" style="width: 600px;" /></a>
+</figure>
+</li>
+<li><p>리마인더 알림 설정 팝업에서 알림일, 메시지, 수신자를 설정합니다. 수신자는 그룹 또는 멤버만 선택할 수 있습니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/set_reminder_popup.png"><img alt="리마인더 설정 팝업" src="../_images/set_reminder_popup.png" style="width: 500px;" /></a>
+</figure>
+</li>
+<li><p>저장 버튼을 클릭하면 리마인더 설정이 완료됩니다.</p></li>
+<li><p>설정된 알림은 설정된 시간에 수신자의 이메일로 전송됩니다.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>리마인더가 설정된 경우 문서 제목 아래 버튼명이 <strong>리마인더 수정</strong>으로 변경되며, <strong>리마인더 수정</strong>을 클릭하여 설정 사항을 변경할 수 있습니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/edit_reminder.png"><img alt="리마인더 수" src="../_images/edit_reminder.png" style="width: 400px;" /></a>
+</figure>
+</div>
+</section>
 <section id="document-delete">
-<span id="id12"></span><h3>문서 삭제하기<a class="headerlink" href="#document-delete" title="Permalink to this heading"></a></h3>
+<span id="id13"></span><h3>문서 삭제하기<a class="headerlink" href="#document-delete" title="Permalink to this heading"></a></h3>
 <p>eformsign에서는 지정된 관리자만 문서를 삭제할 수 있습니다.</p>
 <ol class="arabic simple">
 <li><p>문서함 목록에서 오른쪽 상단에 있는 삭제(<img alt="image13" src="../_images/delete_icon1.png" />) 아이콘을 클릭합니다.</p></li>
@@ -491,7 +518,7 @@
 </ol>
 </section>
 <section id="document-column">
-<span id="id13"></span><h3>문서함 컬럼 설정<a class="headerlink" href="#document-column" title="Permalink to this heading"></a></h3>
+<span id="id14"></span><h3>문서함 컬럼 설정<a class="headerlink" href="#document-column" title="Permalink to this heading"></a></h3>
 <p>문서함 오른쪽 상단의 아이콘 중 컬럼(<a class="reference internal" href="../_images/column_icon.png"><img alt="image4" src="../_images/column_icon.png" style="width: 35px;" /></a>) 아이콘을 클릭하면 목록에서 어떤 컬럼을 표시할 지 선택할 수 있습니다.</p>
 <blockquote>
 <div><figure class="align-default">
@@ -502,7 +529,7 @@
 </section>
 </section>
 <section id="mydocuments">
-<span id="id14"></span><h2>내 문서 보관함<a class="headerlink" href="#mydocuments" title="Permalink to this heading"></a></h2>
+<span id="id15"></span><h2>내 문서 보관함<a class="headerlink" href="#mydocuments" title="Permalink to this heading"></a></h2>
 <p><strong>내 문서 보관함</strong>에는 <strong>내 파일로 문서 작성</strong> 과정에서 <strong>문서 시작하기</strong> 전 단계에서 <strong>저장</strong>을 클릭하여 저장한 문서들이 보관됩니다.</p>
 <p><strong>내 파일로 문서 작성</strong>을 통해 작성한 문서를 저장한 후 매번 새로 만들 필요없이 템플릿처럼 활용할 수 있습니다.</p>
 <ol class="arabic">
@@ -529,7 +556,7 @@
 <hr class="docutils" />
 </section>
 <section id="bulksend-documents">
-<span id="id15"></span><h2>일괄 작성 문서함<a class="headerlink" href="#bulksend-documents" title="Permalink to this heading"></a></h2>
+<span id="id16"></span><h2>일괄 작성 문서함<a class="headerlink" href="#bulksend-documents" title="Permalink to this heading"></a></h2>
 <p>일괄 작성 문서함에서는 일괄 작성으로 대량 전송한 문서를 한 눈에 볼 수 있습니다. 일괄 작성한 문서의 진행 상황을 확인하고, 예약 전송 변경, 취소 또는 재요청 등을 할 수 있습니다.</p>
 <figure class="align-default">
 <img alt="일괄 작성 문서함" src="../_images/bulksend-documents.png" />
@@ -561,7 +588,7 @@
 <hr class="docutils" />
 </section>
 <section id="shared-documents">
-<span id="id16"></span><h2>공유 문서함<a class="headerlink" href="#shared-documents" title="Permalink to this heading"></a></h2>
+<span id="id17"></span><h2>공유 문서함<a class="headerlink" href="#shared-documents" title="Permalink to this heading"></a></h2>
 <p>공유 문서함에서는 공유 문서함을 만들어 내가 소유한 문서를 다른 멤버들과 공유하거나 다른 멤버들이 나에게 공유한 문서를 확인할 수 있습니다.</p>
 <figure class="align-default">
 <img alt="공유 문서함" src="../_images/shared-documents-box.png" />
