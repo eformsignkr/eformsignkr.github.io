@@ -91,15 +91,34 @@
 <li class="toctree-l3"><a class="reference internal" href="#id27">도장 사용 내역</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#security-settings">보안 설정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#security-settings">보안 설정</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id29">로그인 설정</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id30">로그인 2단계 인증</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id31">중복 로그인 제한</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id32">장기 미접속 로그인 제한</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ip">IP 접속 제어 설정</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id33">권한별 접속 허용 IP 설정 방법</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#retention">문서 보관 기간 설정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#activity-log">활동 이력 관리</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id36">접속 이력</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id37">정보 수정 이력</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id38">다운로드 이력</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id39">권한 관리 이력</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">문서 작성하기</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">웹폼 디자이너 소개</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter5.html">웹폼 디자이너로 템플릿 만들기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">폼 빌더(MS Office Add-in) 소개</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter7.html">폼 빌더로 템플릿 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">eformsign for Microsoft Office 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">MS Office에서 이폼사인 템플릿 만들기</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">문서함</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter9.html">커스터마이즈</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter10.html">외부 서비스 연동</a></li>
@@ -163,6 +182,7 @@
 </ul>
 </li>
 <li><p><strong>공유 문서함:</strong> 소유한 문서를 다른 멤버에게 공유하거나 공유 문서함에 접근 권한이 있을 경우 공유된 문서를 한눈에 확인할 수 있습니다.</p></li>
+<li><p><strong>휴지통:</strong> 문서함에서 직접 삭제한 문서 및 보관 기관이 지나 자동으로 삭제된 문서의 목록을 확인할 수 있습니다.</p></li>
 <li><p><strong>문서 관리:</strong> 문서 관리자 권한이 있어야만 접근 가능한 메뉴입니다. 문서 관리 권한이 있는 템플릿으로 만들어진 모든 문서를 조회할 수 있습니다. 단, 대표관리자의 경우, 모든 문서를 조회 및 관리할 수 있습니다.</p></li>
 <li><p><strong>일괄 작성 문서 관리:</strong> 문서 관리자 권한이 있어야만 접근 가능한 메뉴입니다. 문서 관리 권한이 있는 템플릿으로 일괄 작성된 문서를 조회할 수 있습니다. 단, 대표관리자의 경우, 모든 문서를 조회 및 관리할 수 있습니다.</p></li>
 <li><p><strong>내 서명:</strong> 내 서명을 등록하고 문서 작성 시 편리하게 서명란에 적용할 수 있습니다.</p></li>
@@ -178,8 +198,9 @@
 <li><p><strong>서명 방식 설정:</strong> 서명 시 서명 입력 방식을 제한 또는 허용할 수 있습니다. (텍스트 서명 및 도장 만들기 서명 입력 방식)</p></li>
 <li><p><strong>알림 템플릿 관리:</strong> eformsign에서 발송되는 이메일, SMS 알림 템플릿 목록을 확인하고 수정할 수 있습니다.</p></li>
 <li><p><strong>사용자 정의 정보셋 관리:</strong> 회사, 그룹, 멤버에 대한 추가 정보를 입력하거나 수정할 수 있습니다.</p></li>
-<li><p><strong>보안 설정:</strong> 권한별로 특정 IP 주소에서만 이폼사인에 로그인할 수 있도록 관리자 및 멤버 권한별로 접속 허용 IP를 설정할 수 있습니다.</p></li>
+<li><p><strong>보안 설정:</strong> 로그인 2단계 인증, 중복 로그인 제한 등 로그인 관련 보안 설정, IP 접속 제어 설정 등 계정 보호를 위한 보안 기능을 설정할 수 있습니다.</p></li>
 <li><p><strong>문서 보관 기간 설정:</strong> 회사 내에서 작성되는 모든 문서에 대한 보관 기간을 설정할 수 있습니다.</p></li>
+<li><p><strong>활동 이력 관리:</strong> 이폼사인 접속 이력, 정보 수정 이력, 다운로드 이력 등 이용자의 활동에 관한 이력을 확인할 수 있습니다.</p></li>
 </ul>
 </li>
 <li><p><strong>커넥트:</strong> 대표 관리자만 접근 가능한 메뉴입니다. 외부 서비스와 연계하여 사용하는 기능을 확인할 수 있습니다.</p>
@@ -198,7 +219,7 @@
 </ul>
 </li>
 <li><p><strong>이용 현황:</strong> 주간, 월간, 연간, 멤버별 이용 현황을 조회할 수 있습니다.</p></li>
-<li><p><strong>eformsign 폼 빌더(MS Office Add-in) 다운로드:</strong> MS 오피스 프로그램에서 전자서식(템플릿)을 생성하기 위한 폼 빌더를 다운로드합니다.</p></li>
+<li><p><strong>eformsign 폼 빌더(MS Office Add-in) 다운로드:</strong> MS 오피스 프로그램에서 템플릿을 생성하기 위한 MS Office용 이폼사인 플러그인(eformsign for Microsoft Office)을 다운로드합니다.</p></li>
 </ul>
 </section>
 <section id="id4">
@@ -369,7 +390,7 @@
 <p><strong>회사 관리</strong> 메뉴에 접근할 수 있습니다. 회사 정보, 멤버, 그룹 등을 관리할 수 있으며 <strong>멤버 초대</strong> 및 <strong>문서 이관</strong> 등을 할 수 있습니다.</p>
 </li>
 <li><p><strong>템플릿 관리자</strong></p>
-<p><strong>템플릿 관리</strong> 메뉴에 접근할 수 있습니다. 폼 빌더(MS Office Add-in)를 사용하여 템플릿으로 업로드하거나 웹폼 디자이너로 파일을 업로드하여 새로운 템플릿을 등록할 수 있으며, 템플릿을 수정, 배포 및 삭제할 수 있습니다.</p>
+<p><strong>템플릿 관리</strong> 메뉴에 접근할 수 있습니다. 템플릿 관리 메뉴에서 파일을 직접 업로드하거나, MS Office에서 바로 템플릿을 만들어 새로운 템플릿을 등록할 수 있으며, 템플릿을 수정, 배포 및 삭제할 수 있습니다.</p>
 </li>
 <li><p><strong>문서 관리자</strong></p>
 <p><strong>문서 관리</strong> 메뉴에 접근할 수 있습니다. 문서 관리 권한을 부여받은 문서를 열람하고 다운로드할 수 있으며, 관리 범위에 따라 문서를 취소 또는 제거할 수도 있습니다.</p>
@@ -964,8 +985,115 @@
 </section>
 <section id="security-settings">
 <span id="id28"></span><h2>보안 설정<a class="headerlink" href="#security-settings" title="Permalink to this heading"></a></h2>
+<p>이폼사인의 계정 보호를 위해 로그인 시 인증 설정, 접속 IP 설정 등 보안 관련 기능을 설정할 수 있습니다.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>보안 설정은 <strong>대표 관리자</strong> 만 설정할 수 있습니다.</p>
+</div>
+<section id="id29">
+<h3>로그인 설정<a class="headerlink" href="#id29" title="Permalink to this heading"></a></h3>
+<p>이폼사인 계정 로그인 시 2단계 인증 설정, 중복 로그인 제한, 장기 미접속 로그인 제한을 설정하고 상세 조건을 설정할 수 있습니다.</p>
+<section id="id30">
+<h4>로그인 2단계 인증<a class="headerlink" href="#id30" title="Permalink to this heading"></a></h4>
+<p>이폼사인 계정 보호를 위해 로그인 시 2단계 인증 진행 여부 및 인증 수단을 설정할 수 있습니다.</p>
+<ol class="arabic simple">
+<li><p><strong>회사 관리 &gt; 보안 설정</strong> 메뉴로 이동합니다.</p></li>
+<li><p>로그인 설정에서 <strong>로그인 2단계 인증</strong>을 활성화합니다.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/security-2fa-setting.png"><img alt="로그인 2단계 인증" src="../_images/security-2fa-setting.png" style="width: 700px;" /></a>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>로그인 2단계 인증 팝업을 확인 후 <strong>예</strong>를 클릭합니다.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/security-2fa-setting-popup.png"><img alt="로그인 2단계 인증" src="../_images/security-2fa-setting-popup.png" style="width: 300px;" /></a>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>2단계 인증 설정 시 기존 로그인된 계정은 자동으로 로그아웃되며, 이후 로그인 시부터 2단계 인증을 진행해야 합니다.</p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>2단계 인증 설정 시 기본 인증 수단은 <strong>Google OTP 인증</strong>으로 설정되어 있습니다. Google OTP 인증을 사용하려면 우선 등록 후 사용해야 하며, <strong>Google OTP 앱을 우선 설치</strong>해야 합니다. 앱이 없을 경우, 구글플레이 스토어나 앱스토어에서 Google OTP 또는 Google Authenticator앱을 설치해 주세요.</p>
+</div>
+<section id="google-otp">
+<h5><strong>Google OTP 등록 방법</strong><a class="headerlink" href="#google-otp" title="Permalink to this heading"></a></h5>
+<p>2단계 인증 설정 시 기본 인증 수단은 Google OTP 인증으로 설정되어 있습니다. Google OTP 등록방법은 다음과 같습니다.</p>
+<ol class="arabic">
+<li><p>Google OTP 등록을 위해 본인인증을 진행해야 합니다. 등록 팝업에서 연락처 확인 후 <strong>전송</strong> 버튼을 클릭합니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/google-otp1.png"><img alt="구글 OTP 등록1" src="../_images/google-otp1.png" style="width: 500px;" /></a>
+</figure>
+</li>
+<li><p>이메일 또는 휴대폰으로 전송된 인증번호 6자리를 인증번호 입력란에 입력한 후 <strong>다음</strong>을 클릭합니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/google-otp2.png"><img alt="구글 OTP 등록2" src="../_images/google-otp2.png" style="width: 350px;" /></a>
+</figure>
+</li>
+<li><p>모바일 기기에서 Google OTP 앱을 실행한 후 앱 화면 하단의 [+] 아이콘을 클릭합니다. <strong>QR 코드 스캔</strong>을 선택한 후 이폼사인 화면에 표시된 QR 코드를 스캔하면 Google OTP가 등록됩니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/google-otp3.png"><img alt="구글 OTP 등록3" src="../_images/google-otp3.png" style="width: 500px;" /></a>
+</figure>
+</li>
+<li><p>이폼사인 화면에서 다음을 클릭하면 Google OTP 인증 화면으로 넘어갑니다. Google OTP 앱에 표시된 6자리 인증번호를 인증번호 입력란에 입력한 후 <strong>완료</strong> 버튼을 클릭하면 로그인됩니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/google-otp4.png"><img alt="구글 OTP 등록4" src="../_images/google-otp4.png" style="width: 500px;" /></a>
+</figure>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>인증 수단 설정 변경</strong></p>
+<p>기본 인증 수단은 Google OTP 인증으로 설정되어 있으며, 기본 인증 수단 설정에서 <strong>변경</strong>을 클릭하면 이메일 또는 SMS 인증으로 변경할 수 있습니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/security-2fa-setting2.png"><img alt="기본 인증 수단 변경" src="../_images/security-2fa-setting2.png" style="width: 500px;" /></a>
+</figure>
+</div>
+</section>
+</section>
+<section id="id31">
+<h4>중복 로그인 제한<a class="headerlink" href="#id31" title="Permalink to this heading"></a></h4>
+<p>이폼사인 계정 보호를 위해 한 계정의 중복 로그인을 제한하도록 설정하며, 로그인 세션 유지 시간을 설정하여 일정 시간이 지나면 자동으로 로그아웃되도록 설정할 수 있습니다.</p>
+<ol class="arabic">
+<li><p><strong>회사 관리&gt; 보안 설정</strong> 메뉴로 이동합니다.</p></li>
+<li><p><strong>로그인 설정</strong>에서 <strong>중복 로그인 제한</strong>을 활성화합니다.</p></li>
+<li><p><strong>자동 로그아웃 시간</strong>을 설정합니다. 로그인 후 일정 시간동안 활동이 감지되지 않으면 자동으로 로그아웃되는 시간을 설정할 수 있습니다. 기본 60분으로 설정되며, <strong>최소 10분부터 최대 1,440분(24시간)</strong>까지 설정할 수 있습니다.</p></li>
+<li><p><strong>자동 로그아웃 안내 시간</strong>을 설정합니다. 자동으로 로그아웃되기 전에 안내 팝업을 표시할 시간을 조정할 수 있으며 <strong>자동 로그아웃 전 30초~300초 전</strong>까지 설정할 수 있습니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/security-setting-diable-multiple-logins.png"><img alt="중복 로그인 제한" src="../_images/security-setting-diable-multiple-logins.png" style="width: 500px;" /></a>
+</figure>
+</li>
+<li><p>중복 로그인 제한 설정이 완료되면 마지막으로 로그인한 기기 또는 브라우저만 로그인이 유지되며 나머지 기기에서는 모두 자동 로그아웃됩니다.</p></li>
+</ol>
+</section>
+<section id="id32">
+<h4>장기 미접속 로그인 제한<a class="headerlink" href="#id32" title="Permalink to this heading"></a></h4>
+<p>일정 기간 이상 이폼사인 서비스에 로그인하지 않은 계정에 대하여 로그인을 제한하도록 설정할 수 있습니다.</p>
+<ol class="arabic">
+<li><p><strong>회사 관리&gt; 보안 설정</strong> 메뉴로 이동합니다.</p></li>
+<li><p><strong>로그인 설정</strong>에서 <strong>중복 로그인 제한</strong>을 활성화합니다.</p></li>
+<li><p>장기 미접속 기간은 기본 90일로 설정되어 있으며 <strong>변경</strong>을 클릭하면 아래 팝업에서 변경할 수 있습니다. 기간은 최소 7일부터 최대 365일까지 설정할 수 있습니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/security-setting-inactive-accounts.png"><img alt="장기 미접속 로그인 제한" src="../_images/security-setting-inactive-accounts.png" style="width: 500px;" /></a>
+</figure>
+</li>
+<li><p>기간을 입력한 후 <strong>저장</strong>을 클릭합니다.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>장기 미접속으로 인한 로그인 제한 해제 방법</strong></p>
+<p>장기 미접속 로그인 제한으로 인해 이용이 제한된 멤버에 대한 이용 제한 해제는 <strong>멤버 관리</strong> 화면에서 할 수 있습니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/security-setting-unlock-inactive-accounts.png"><img alt="장기 미접속 이용제한해제" src="../_images/security-setting-unlock-inactive-accounts.png" style="width: 500px;" /></a>
+</figure>
+</div>
+</section>
+</section>
+<section id="ip">
+<h3>IP 접속 제어 설정<a class="headerlink" href="#ip" title="Permalink to this heading"></a></h3>
 <p>이폼사인의 계정 보안을 위해 권한별로 특정 IP 주소에서만 로그인할 수 있도록 설정할 수 있습니다.</p>
-<p><strong>권한별 접속 허용 IP 설정 방법</strong></p>
+<section id="id33">
+<h4>권한별 접속 허용 IP 설정 방법<a class="headerlink" href="#id33" title="Permalink to this heading"></a></h4>
 <ol class="arabic simple">
 <li><p><strong>회사 관리 &gt; 보안 설정</strong> 메뉴로 이동합니다.</p></li>
 </ol>
@@ -973,7 +1101,7 @@
 <a class="reference internal image-reference" href="../_images/security-settings.png"><img alt="보안 설정" src="../_images/security-settings.png" style="width: 700px;" /></a>
 </figure>
 <ol class="arabic simple" start="2">
-<li><p><strong>보안 설정 &gt; IP 접속 제어 설정</strong> 페이지에서 <strong>지정된 IP 접속 허용</strong>을 선택합니다.</p></li>
+<li><p><strong>보안 설정 &gt; IP 접속 제어 설정</strong> 에서 <strong>지정된 IP 접속 허용</strong>을 선택합니다.</p></li>
 </ol>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/security-settings2.png"><img alt="보안 설정" src="../_images/security-settings2.png" style="width: 700px;" /></a>
@@ -988,8 +1116,10 @@
 <a class="reference internal image-reference" href="../_images/security-settings1.png"><img alt="보안 설정" src="../_images/security-settings1.png" style="width: 700px;" /></a>
 </figure>
 </section>
+</section>
+</section>
 <section id="retention">
-<span id="id29"></span><h2>문서 보관 기간 설정<a class="headerlink" href="#retention" title="Permalink to this heading"></a></h2>
+<span id="id34"></span><h2>문서 보관 기간 설정<a class="headerlink" href="#retention" title="Permalink to this heading"></a></h2>
 <p>보다 안전하고 효율적인 문서 관리를 위해 문서의 보관 기간을 설정할 수 있습니다.</p>
 <p>문서의 보관 기간은 회사 전체 또는 템플릿별로 설정할 수 있으며 설정된 보관 기간이 지나면 해당 문서는 문서함에서 삭제됩니다.</p>
 <div class="admonition note">
@@ -1035,6 +1165,42 @@
 <li><p>문서 보관 기간 설정을 변경하면 변경 후 새로 작성하는 문서부터 적용됩니다.</p></li>
 </ul>
 </div>
+</section>
+<section id="activity-log">
+<span id="id35"></span><h2>활동 이력 관리<a class="headerlink" href="#activity-log" title="Permalink to this heading"></a></h2>
+<p><strong>회사 관리 &gt; 활동 이력 관리</strong> 메뉴에서는 이폼사인 이용자의 서비스 접속 이력, 정보 수정 이력, 다운로드 이력 등 이용자 활동에 관한 이력을 확인 및 다운로드할 수 있습니다.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>활동 이력 관리</strong> 메뉴는 <strong>대표 관리자</strong> 만 접근할 수 있습니다.</p>
+</div>
+<section id="id36">
+<h3>접속 이력<a class="headerlink" href="#id36" title="Permalink to this heading"></a></h3>
+<p>소속된 멤버들의 이폼사인 로그인/로그아웃, 서비스 이용 제한 해제 등 서비스 접속과 관련된 활동 이력을 확인할 수 있습니다. 이력은 최근 2년간의 내용이 보관되며 조회는 최대 3개월까지 가능합니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/login-history.png"><img alt="접속 이력" src="../_images/login-history.png" style="width: 700px;" /></a>
+</figure>
+</section>
+<section id="id37">
+<h3>정보 수정 이력<a class="headerlink" href="#id37" title="Permalink to this heading"></a></h3>
+<p>소속된 멤버들이 이용자 본인의 개인정보 변경과 관련된 활동 이력을 확인할 수 있습니다. 이력은 최근 2년간의 내용이 보관되며 조회는 최대 3개월까지 가능합니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/profile-revision-history.png"><img alt="문서 보관 기간 설정" src="../_images/profile-revision-history.png" style="width: 700px;" /></a>
+</figure>
+</section>
+<section id="id38">
+<h3>다운로드 이력<a class="headerlink" href="#id38" title="Permalink to this heading"></a></h3>
+<p>소속된 멤버들이 문서함, 멤버 관리, 회사 도장 관리, 이용 현황, 활동 이력 관리 메뉴에서 다운로드받은 이력을 확인할 수 있습니다. 이력은 최근 2년간의 내용이 보관되며 조회는 최대 3개월까지 가능합니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/download-history.png"><img alt="문서 보관 기간 설정" src="../_images/download-history.png" style="width: 700px;" /></a>
+</figure>
+</section>
+<section id="id39">
+<h3>권한 관리 이력<a class="headerlink" href="#id39" title="Permalink to this heading"></a></h3>
+<p>멤버에 대한 권한 변경 등 권한 관리 메뉴에서의 활동에 관한 이력을 확인할 수 있습니다. 이력은 최근 5년간의 내용이 보관되며 조회는 최대 3개월까지 가능합니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/permission-management-history.png"><img alt="문서 보관 기간 설정" src="../_images/permission-management-history.png" style="width: 700px;" /></a>
+</figure>
+</section>
 </section>
 </section>
 

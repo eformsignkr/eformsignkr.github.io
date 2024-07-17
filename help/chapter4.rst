@@ -5,7 +5,7 @@
 ====================
 
 
-웹폼 디자이너는 eformsign 서비스에 기존의 문서 파일을 업로드하여 전자서식으로 만들 수 있는 웹 에디터입니다.
+웹폼 디자이너는 eformsign 서비스에 기존의 문서 파일을 업로드하여 전자서식으로 만들 수 있는 웹 편집기입니다.
 
 **내 파일로 문서 작성** 메뉴 또는 **템플릿 관리** 메뉴에서 문서 파일을 업로드하면 웹폼 디자이너 화면이 나타납니다. 이폼사인에서 제공하는 다양한 입력 항목 중 원하는 입력 항목을 문서의 원하는 위치에 추가하고 난 후, 각 입력 항목에 대한 속성을 설정하면 전자서식을 손쉽게 만들 수 있습니다.
 
@@ -16,7 +16,7 @@
 
 .. note::
 
-   MS Office에서 바로 전자문서를 생성할 수 있는 MS Office Add-in 기능(폼 빌더)도 제공하고 있습니다. 폼 빌더(MS Office Add-in)에 관한 자세한 내용은 `폼 빌더 <chapter6.html#formbuilder>`__\ 를 참고하시기 바랍니다.
+   MS Office에서 바로 전자문서를 생성할 수 있는 MS Office용 이폼사인 플러그인(eformsign for Microsoft Office)도 제공하고 있습니다. eformsign for Microsoft Office에 관한 자세한 내용은 `eformsign for Microsoft Office 소개 <chapter6.html#formbuilder>`__\ 를 참고하시기 바랍니다.
 
 --------------------
 파일 업로드하기 
@@ -72,7 +72,7 @@
 
 2. 템플릿 관리 화면에 바로 파일을 드래그하거나 오른쪽 상단의 **새 템플릿 만들기**\ 를 클릭해 자신의 컴퓨터에서 업로드하고자 하는 파일을 선택합니다.
 
-   .. figure:: resources/template-manage-upload.png
+   .. figure:: resources/template-manage-upload-popup.png
       :alt: 템플릿 관리
       :width: 700px
 
