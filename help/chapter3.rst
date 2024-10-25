@@ -125,6 +125,31 @@ eformsign에서 전자문서를 작성 및 전송하는 방법은 내 PC에 저�
       .. figure:: resources/needtoview_option.png
          :width: 300px
 
+   .. tip::
+
+      **수신자 단계 병합하기 - 동시 전송**
+
+      일반적으로 수신자를 추가하면 설정된 순서에 따라 문서가 전송됩니다. 
+      여러 단계의 수신자를 병합하면 병합된 단계 수신자에게 문서를 동시에 전송할 수 있습니다. 
+
+      1. 병합할 수신자 단계 중 **아래에 있는 수신자를 클릭**\ 하면 왼쪽에 **전송 순서 합치기** 아이콘(|image17|)이 나타납니다. 
+      2. 해당 아이콘(|image17|)을 클릭하면 하단과 상단의 단계가 합쳐집니다.
+
+         .. figure:: resources/merge_steps.png
+            :alt: 수신자 지정하기 > 합치기
+            :width: 500px
+
+         .. note::
+
+            **병합된 단계 나누기**
+
+            병합된 수신자 단계를 클릭하면 아이콘이 표시됩니다. 분할할 단계를 클릭 후 **전송 순서 나누기** 아이콘(|image18|)을 클릭하면 합쳐진 단계가 다시 분리됩니다.
+
+            .. figure:: resources/split_steps.png
+               :alt: 수신자 지정하기 > 순서 나누기
+               :width: 500px
+
+
 
    .. tip::
 
@@ -140,9 +165,11 @@ eformsign에서 전자문서를 작성 및 전송하는 방법은 내 PC에 저�
 
 
 
-6. **옵션**\ 을 클릭해 문서 제목과 문서 완료 시 타임스탬프 적용 여부를 설정합니다.
+6. **옵션**\ 을 클릭해 문서 알림 수신자를 설정하고 문서 완료 시 타임스탬프 적용 여부를 설정합니다.
 
-   |image7|
+   .. figure:: resources/newfrommyfile-option.png
+      :alt: 옵셜 설정
+      :width: 700px
 
    .. note::
 
@@ -163,14 +190,24 @@ eformsign에서 전자문서를 작성 및 전송하는 방법은 내 PC에 저�
 
 7. 모든 설정을 완료한 후 **문서 작성 시작하기**\ 를 클릭합니다.
 
-   .. caution::
-
-      **문서 작성 시작하기**\ 를 클릭한 시점부터 과금 대상 문서수에 카운트됩니다.
+   .. figure:: resources/newfrommyfile-option.png
+      :alt: 옵션 설정
+      :width: 700px
 
 
    .. note::
 
-      **임시 저장** 버튼을 클릭하면 처리할 문서함에서 확인할 수 있습니다.  
+      - 문서 제목은 업로드한 파일명으로 자동 설정되며 좌측 상단에서 수정할 수 있습니다.
+
+         .. figure:: resources/newfrommyfile-edit-title.png
+            :alt: 참조자 추가
+            :width: 500px
+
+      - **임시 저장** 버튼을 클릭하면 초안으로 저장되며, 처리할 문서함에서 확인할 수 있습니다.
+        
+      - **문서 작성 시작하기**\ 를 클릭한 시점부터 과금 대상 문서수에 카운트됩니다.
+
+
 
 
 8. 문서를 확인 후 **전송** 버튼을 클릭하면 수신자에게 문서가 전송됩니다.
@@ -363,13 +400,12 @@ eformsign에서 전자문서를 작성 및 전송하는 방법은 내 PC에 저�
 
 옵션 설정
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-마지막 옵션 설정에서는 문서 제목을 정하고 문서 알림 설정 및 편집, 타임스탬프 적용 여부를 설정할 수 있습니다.
+마지막 옵션 설정에서는 문서 알림 설정 및 편집, 타임스탬프 적용 여부를 설정할 수 있습니다.
 
 .. figure:: resources/newfrommyfile-option.png
    :alt: 옵션 설정 화면
    :width: 700px
 
-- **문서 제목**: 문서 제목을 설정합니다. 설정한 문서 제목으로 문서가 발송 및 문서함에 보관됩니다.
 
 - **문서 알림 설정:** 문서의 진행 상태 및 문서 완료에 대한 알림을 받을 수신자를 설정하고 알림 메시지를 미리보기 또는 편집할 수 있습니다. 
 
@@ -599,5 +635,7 @@ eformsign에서 전자문서를 작성 및 전송하는 방법은 내 PC에 저�
    :width: 30px
 .. |image16| image:: resources/startfromtemplate-create.png
    :width: 700px
-.. |image17| image:: resources/bulk-creation-table-blue-section.png
-   :width: 700px
+.. |image17| image:: resources/workflow_merge_icon.png
+      :width: 30px
+.. |image18| image:: resources/workflow_unmerge_icon.png
+      :width: 30px

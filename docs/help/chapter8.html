@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>문서함 &mdash; eformsign User Guide 2024.07.17 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
+  <title>문서함 &mdash; eformsign User Guide 2024.10.25 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/code-tabs.css?v=1bc26e2f" />
+
+  
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/code-tabs.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=e08c9b4a"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/code-tabs.js?v=c983d12e"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -38,7 +41,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 10.2024.0627.205
+                version 10.2024.1010.205
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -112,11 +115,14 @@
            <div itemprop="articleBody">
              
   <section id="documents">
-<span id="id1"></span><h1>문서함<a class="headerlink" href="#documents" title="Permalink to this heading"></a></h1>
+<span id="id1"></span><h1>문서함<a class="headerlink" href="#documents" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>기본 문서함<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<h2>기본 문서함<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>작성한 문서는 상태에 따라 문서함에 저장됩니다.</p>
 <p>문서함에서는 각각 문서의 상태와 이력에 대한 상세 정보를 확인하고 관리할 수 있으며, 문서를 처리하거나, 재전송, 완료 문서 전송 등 추가 작업을 수행할 수 있습니다. 문서 작성 도중 임시 저장한 문서는 처리할 문서함에 나타나며 목록에서 문서를 선택해 전송할 수 있습니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/document_inbox.png"><img alt="문서함 메뉴" src="../_images/document_inbox.png" style="width: 700px;" /></a>
+</figure>
 <ul class="simple">
 <li><p><strong>처리할 문서함:</strong> 임시 저장한 문서(초안), 내가 처리해야 할 문서(다른 멤버가 나에게 작성 요청한 문서), 또는 멤버가 아닌 수신자에게 보낸 문서 중 문서 기한이 지나 재요청이 필요한 문서 목록을 확인할 수 있습니다.</p></li>
 <li><p><strong>진행 중 문서함:</strong> 내가 작성 또는 처리한 문서 중 완료되지 않은 문서 목록을 확인할 수 있습니다.</p></li>
@@ -138,12 +144,15 @@
 <li><p><strong>문서 관리:</strong> 문서 관리자 권한이 있는 멤버만 접근 가능한 메뉴입니다. 해당 멤버는 문서 관리 권한이 있는 템플릿으로 작성된 모든 문서를 조회할 수 있습니다.</p></li>
 <li><p><strong>일괄 작성 문서 관리:</strong> 문서 관리자 권한이 있어야만 접근 가능한 메뉴입니다. 문서 관리 권한이 있는 템플릿으로 일괄 작성된 문서를 조회할 수 있습니다.</p></li>
 </ul>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/document_inbox.png"><img alt="문서함 메뉴" src="../_images/document_inbox.png" style="width: 700px;" /></a>
-</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>다른 멤버가 보낸 문서에 대해 수신자가 문서를 처리하지 않은 경우, 문서 관리자가 직접 문서를 <strong>재요청</strong>할 수 있습니다.
+- 재요청 가능한 문서는 <strong>문서 관리</strong>와 <strong>일괄 작성 문서 관리 &gt; 상세 보기</strong>에 <strong>재요청</strong> 버튼이 표시됩니다.
+- 일괄 작성 문서함 및 일괄 작성 문서 관리에서 일괄로 문서 재요청 시 기존 메시지 및 전송 기한을 수정할 수 있습니다</p>
+</div>
 </section>
 <section id="id3">
-<h2>문서함 구성<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<h2>문서함 구성<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>처리할, 진행중, 완료 문서함</strong>과 <strong>문서 관리</strong> 화면 구성은 거의 동일하지만, 상태 또는 권한에 따라 표시되는 문서에 차이가 있습니다.</p>
@@ -186,7 +195,7 @@
 </div>
 </div></blockquote>
 <section id="category">
-<span id="id4"></span><h3>카테고리, 키워드, 필터 검색<a class="headerlink" href="#category" title="Permalink to this heading"></a></h3>
+<span id="id4"></span><h3>카테고리, 키워드, 필터 검색<a class="headerlink" href="#category" title="Link to this heading"></a></h3>
 <p>카테고리, 키워드 및 필터 검색 창은 각 문서함의 왼쪽 상단에 있습니다.
 문서 관리함에만 상태별 필터가 추가되어 있습니다.</p>
 <ul>
@@ -198,7 +207,7 @@
 </li>
 </ul>
 <section id="id5">
-<h4>카테고리 검색<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h4>
+<h4>카테고리 검색<a class="headerlink" href="#id5" title="Link to this heading"></a></h4>
 <p>카테고리 검색 콤보박스를 활용하면 <strong>템플릿 관리</strong> 메뉴에서 설정한 카테고리별로 문서를 표시하고 이 중 원하는 카테고리나 문서를 확인할 수 있습니다.</p>
 <p>콤보박스의 <strong>X</strong> 아이콘를 누르면 아래와 같이 템플릿에서 설정한 카테고리에 따라 분류되어 나타납니다.</p>
 <figure class="align-default">
@@ -206,7 +215,7 @@
 </figure>
 </section>
 <section id="id6">
-<h4>문서 상태별 검색<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h4>
+<h4>문서 상태별 검색<a class="headerlink" href="#id6" title="Link to this heading"></a></h4>
 <p>각각의 문서함에서 문서의 상태별로 문서를 검색할 수 있습니다.</p>
 <ul class="simple">
 <li><p><strong>처리할 문서함</strong></p></li>
@@ -226,11 +235,11 @@
 <p><a class="reference internal" href="../_images/documentmanage_status_search.png"><img alt="image9" src="../_images/documentmanage_status_search.png" style="width: 700px;" /></a></p>
 </section>
 <section id="id7">
-<h4>키워드 및 필터 검색<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h4>
+<h4>키워드 및 필터 검색<a class="headerlink" href="#id7" title="Link to this heading"></a></h4>
 <p>검색은 키워드 검색은 물론, 상세 검색을 통해 제목이나 내용을 조합해서 검색하거나, 숫자, 날짜 범위를 지정해 검색, 사용자 지정 필터를 통한 검색 등 다양한 검색 방법을 제공하고 있습니다. 또한, 사용자 지정 필터를 설정해서 문서에 입력된 값도 검색할 수 있으며, 숫자의 범위, 날짜의 기간을 설정해서 검색할 수도 있습니다.</p>
 <p>필터를 사용해서 검색 가능한 필터는 다음과 같습니다. 한편, 사용자 지정 필터는 완료 문서함과 문서 관리에서만 사용할 수 있습니다.</p>
 <table class="docutils align-default" id="id19">
-<caption><span class="caption-text"><strong>필터 종류 리스트</strong></span><a class="headerlink" href="#id19" title="Permalink to this table"></a></caption>
+<caption><span class="caption-text"><strong>필터 종류 리스트</strong></span><a class="headerlink" href="#id19" title="Link to this table"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>처리할 문서함</p></th>
 <th class="head"><p>진행 중 문서함</p></th>
@@ -388,7 +397,7 @@
 </section>
 </section>
 <section id="additional-work">
-<span id="id8"></span><h3>문서함별 작업 항목<a class="headerlink" href="#additional-work" title="Permalink to this heading"></a></h3>
+<span id="id8"></span><h3>문서함별 작업 항목<a class="headerlink" href="#additional-work" title="Link to this heading"></a></h3>
 <p>각 문서함의 목록에서 수행할 수 있는 추가 작업에는 미리보기, 재요청, 완료 문서 전송 등이 있습니다.</p>
 <ul>
 <li><p><strong>처리할 문서함</strong></p>
@@ -406,7 +415,7 @@
 </ul>
 </section>
 <section id="history">
-<span id="id9"></span><h3>상태 및 이력보기<a class="headerlink" href="#history" title="Permalink to this heading"></a></h3>
+<span id="id9"></span><h3>상태 및 이력보기<a class="headerlink" href="#history" title="Link to this heading"></a></h3>
 <p>문서함 목록에서 문서를 선택하면 해당 문서의 상태와 이력을 화면 오른쪽에서 확인할 수 있습니다.</p>
 <ul>
 <li><p><strong>문서 상태</strong>: 워크플로우 단계별로 문서가 언제, 누구에 의해 작성/처리되었는지 표시</p></li>
@@ -418,7 +427,7 @@
 </ul>
 </section>
 <section id="document-download">
-<span id="id10"></span><h3>문서 다운로드<a class="headerlink" href="#document-download" title="Permalink to this heading"></a></h3>
+<span id="id10"></span><h3>문서 다운로드<a class="headerlink" href="#document-download" title="Link to this heading"></a></h3>
 <p>eformsign에서 작성된 문서는 <strong>PDF로 다운로드</strong>하거나 입력된 내용을 포함한 문서 <strong>데이터 파일</strong>을 별도로 다운로드할 수 있습니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -426,7 +435,7 @@
 <p>문서 내 입력된 내용을 포함하여 문서 제목, 문서 ID, 수신자 등 문서 메타데이터를 확인할 수 있는 파일로 CSV 파일 형식으로 다운로드됩니다.</p>
 </div>
 <section id="pdf">
-<h4>PDF 파일로 다운로드<a class="headerlink" href="#pdf" title="Permalink to this heading"></a></h4>
+<h4>PDF 파일로 다운로드<a class="headerlink" href="#pdf" title="Link to this heading"></a></h4>
 <ol class="arabic">
 <li><p><strong>문서함/문서 관리</strong> 메뉴에서 문서 다운로드(<a class="reference internal" href="../_images/pdf_download_icon.png"><img alt="image12" src="../_images/pdf_download_icon.png" style="width: 25px;" /></a>) 아이콘을 클릭합니다.</p></li>
 <li><p>문서 목록 왼쪽에 표시된 체크박스를 선택하여 다운로드할 문서를 선택합니다.</p></li>
@@ -439,7 +448,7 @@
 </ol>
 </section>
 <section id="id11">
-<h4>데이터 파일 다운로드<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h4>
+<h4>데이터 파일 다운로드<a class="headerlink" href="#id11" title="Link to this heading"></a></h4>
 <ol class="arabic">
 <li><p><strong>완료 문서함/문서 관리</strong> 메뉴에서 데이터 파일 생성(<a class="reference internal" href="../_images/csv_download_icon.png"><img alt="image14" src="../_images/csv_download_icon.png" style="width: 25px;" /></a>) 아이콘을 클릭합니다.</p></li>
 <li><p>문서 목록 왼쪽에 표시된 체크박스를 선택하여 다운로드할 문서를 선택합니다.</p></li>
@@ -485,7 +494,7 @@
 </section>
 </section>
 <section id="set-reminder">
-<span id="id12"></span><h3>리마인더 설정하기<a class="headerlink" href="#set-reminder" title="Permalink to this heading"></a></h3>
+<span id="id12"></span><h3>리마인더 설정하기<a class="headerlink" href="#set-reminder" title="Link to this heading"></a></h3>
 <p>완료 문서함에서는 문서에 대한 리마인더가 필요한 경우 알림을 설정할 수 있습니다. 예를 들어, 갱신 계약이 필요한 경우 갱신일자가 도래했음을 알려주는 알림을 설정할 수 있습니다.</p>
 <ol class="arabic">
 <li><p>완료 문서함으로 이동합니다.</p></li>
@@ -511,7 +520,7 @@
 </div>
 </section>
 <section id="document-delete">
-<span id="id13"></span><h3>문서 삭제하기<a class="headerlink" href="#document-delete" title="Permalink to this heading"></a></h3>
+<span id="id13"></span><h3>문서 삭제하기<a class="headerlink" href="#document-delete" title="Link to this heading"></a></h3>
 <p>eformsign에서는 지정된 관리자만 문서를 삭제할 수 있습니다.</p>
 <ol class="arabic simple">
 <li><p>문서함 목록에서 오른쪽 상단에 있는 삭제(<img alt="image13" src="../_images/delete_icon1.png" />) 아이콘을 클릭합니다.</p></li>
@@ -520,7 +529,7 @@
 </ol>
 </section>
 <section id="document-column">
-<span id="id14"></span><h3>문서함 컬럼 설정<a class="headerlink" href="#document-column" title="Permalink to this heading"></a></h3>
+<span id="id14"></span><h3>문서함 컬럼 설정<a class="headerlink" href="#document-column" title="Link to this heading"></a></h3>
 <p>문서함 오른쪽 상단의 아이콘 중 컬럼(<a class="reference internal" href="../_images/column_icon.png"><img alt="image4" src="../_images/column_icon.png" style="width: 35px;" /></a>) 아이콘을 클릭하면 목록에서 어떤 컬럼을 표시할 지 선택할 수 있습니다.</p>
 <blockquote>
 <div><figure class="align-default">
@@ -531,7 +540,7 @@
 </section>
 </section>
 <section id="mydocuments">
-<span id="id15"></span><h2>내 문서 보관함<a class="headerlink" href="#mydocuments" title="Permalink to this heading"></a></h2>
+<span id="id15"></span><h2>내 문서 보관함<a class="headerlink" href="#mydocuments" title="Link to this heading"></a></h2>
 <p><strong>내 문서 보관함</strong>에는 <strong>내 파일로 문서 작성</strong> 과정에서 <strong>문서 시작하기</strong> 전 단계에서 <strong>저장</strong>을 클릭하여 저장한 문서들이 보관됩니다.</p>
 <p><strong>내 파일로 문서 작성</strong>을 통해 작성한 문서를 저장한 후 매번 새로 만들 필요없이 템플릿처럼 활용할 수 있습니다.</p>
 <ol class="arabic">
@@ -558,7 +567,7 @@
 <hr class="docutils" />
 </section>
 <section id="bulksend-documents">
-<span id="id16"></span><h2>일괄 작성 문서함<a class="headerlink" href="#bulksend-documents" title="Permalink to this heading"></a></h2>
+<span id="id16"></span><h2>일괄 작성 문서함<a class="headerlink" href="#bulksend-documents" title="Link to this heading"></a></h2>
 <p>일괄 작성 문서함에서는 일괄 작성으로 대량 전송한 문서를 한 눈에 볼 수 있습니다. 일괄 작성한 문서의 진행 상황을 확인하고, 예약 전송 변경, 취소 또는 재요청 등을 할 수 있습니다.</p>
 <figure class="align-default">
 <img alt="일괄 작성 문서함" src="../_images/bulksend-documents.png" />
@@ -590,7 +599,7 @@
 <hr class="docutils" />
 </section>
 <section id="shared-documents">
-<span id="id17"></span><h2>공유 문서함<a class="headerlink" href="#shared-documents" title="Permalink to this heading"></a></h2>
+<span id="id17"></span><h2>공유 문서함<a class="headerlink" href="#shared-documents" title="Link to this heading"></a></h2>
 <p>공유 문서함에서는 공유 문서함을 만들어 내가 소유한 문서를 다른 멤버들과 공유하거나 다른 멤버들이 나에게 공유한 문서를 확인할 수 있습니다.</p>
 <figure class="align-default">
 <img alt="공유 문서함" src="../_images/shared-documents-box.png" />
@@ -668,7 +677,7 @@
 <hr class="docutils" />
 </section>
 <section id="trash">
-<span id="id18"></span><h2>휴지통<a class="headerlink" href="#trash" title="Permalink to this heading"></a></h2>
+<span id="id18"></span><h2>휴지통<a class="headerlink" href="#trash" title="Link to this heading"></a></h2>
 <p>내가 작성한 문서 또는 문서 관리 권한이 있는 문서를 삭제하거나 설정에 의해 문서의 보관 기간이 지난 경우, 해당 문서는 휴지통으로 이동됩니다.
 휴지통으로 이동된 문서는 14일 동안 보관되며 이후 완전 삭제됩니다.</p>
 <figure class="align-default">

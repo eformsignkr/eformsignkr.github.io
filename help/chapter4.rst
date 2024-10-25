@@ -74,7 +74,7 @@
 
    .. figure:: resources/template-manage-upload-popup.png
       :alt: 템플릿 관리
-      :width: 700px
+      :width: 500px
 
 3. 문서에 참여할 서명 참여자 및 역할을 추가 및 설정하면, 웹폼 디자이너 화면이 나타납니다.
 
