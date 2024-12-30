@@ -521,7 +521,7 @@ eformsign에서는 지정된 관리자만 문서를 삭제할 수 있습니다.
 
 - 문서의 응답/미응답 여부 확인
 - 일괄 또는 개별 재요청, 문서 취소, 다운로드(PDF, CSV 파일) 가능
-- 문서 별 단계, 상태 및 이력 확인 가능
+- 문서별 단계, 상태 및 이력 확인 가능
 
 
 .. figure:: resources/bulksend-documents-detail.png

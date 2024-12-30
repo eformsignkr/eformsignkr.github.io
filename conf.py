@@ -24,9 +24,9 @@ copyright = '2024, FORCS CO., LTD. All rights reserved.'
 author = 'FORCS'
 
 # The short X.Y version
-version = 'version 10.2024.1010.205'
+version = 'version 10.2024.1211.209'
 # The full version, including alpha/beta/rc tags
-release = '2024.10.25'
+release = '2024.12.27'
 
 
 # -- General configuration ---------------------------------------------------
@@ -86,6 +86,9 @@ html_theme = 'sphinx_rtd_theme'
 # documentation.
 #
 # html_theme_options = {}
+
+
+
 
 html_theme_options = {
     'logo_only': False,
@@ -237,6 +240,7 @@ texinfo_documents = [
 # Bibliographic Dublin Core info.
 epub_title = project
 
+
 # The unique identifier of the text. This can be a ISBN number
 # or the project homepage.
 #
@@ -254,6 +258,12 @@ html_theme_options = {
     'titles_only': False
 }
 html_logo = "C:\docbook\eformsignkr.github.io\images\\forcs_b.png"
+
+
+#html_logo = "C:\docbook\eformsignkr.github.io\images\\eformsign_guide_logo.png"
+
+#html_logo = "C:\docbook\eformsignkr.github.io\images\\forcs_b.png"
+
 
 
 
