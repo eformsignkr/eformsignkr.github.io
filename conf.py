@@ -79,7 +79,9 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+import sphinx_rtd_theme
+
+html_theme = 'piccolo_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -87,24 +89,33 @@ html_theme = 'sphinx_rtd_theme'
 #
 # html_theme_options = {}
 
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
+html_css_files = []
+
+
+#html_theme_options = {
+#    'logo_only': False,
+#    'display_version': True,
+#    'prev_next_buttons_location': 'bottom',
+#    'style_external_links': False,
+#    'vcs_pageview_mode': '',
+#    'style_nav_header_background': 'white',
+#    "navbar_fixed_top": True,  # 상단 네비게이션 바 고정
+#    "show_sidebar": True,   
+#Toc options:
+#    'collapse_navigation': True,
+#    'sticky_navigation': True,
+ #   'navigation_depth': 4,
+#    'includehidden': True,
+#    'titles_only': False
+#}
 
 
 html_theme_options = {
-    'logo_only': False,
-    'display_version': True,
-    'prev_next_buttons_location': 'bottom',
-    'style_external_links': False,
-    'vcs_pageview_mode': '',
-    'style_nav_header_background': 'white',
-    # Toc options
-    'collapse_navigation': True,
-    'sticky_navigation': True,
-    'navigation_depth': 4,
-    'includehidden': True,
-    'titles_only': False
+    "navbar_fixed_top": True,
+    "show_sidebar": True,
 }
-
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -121,13 +132,13 @@ html_favicon = 'C:\docbook\eformsignkr.github.io\images\\favicon.ico'
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-html_sidebars = {
-    '**': [
-        'globaltoc.html',
-        'localtoc.html',
-        'searchbox.html',
-    ]
-}
+#html_sidebars = {
+#    '**': [
+#        'globaltoc.html',
+#        'localtoc.html',
+#        'searchbox.html',
+#    ]
+#}
 
 
 
@@ -241,6 +252,8 @@ texinfo_documents = [
 epub_title = project
 
 
+html_short_title = "eformsign 사용 매뉴얼"
+
 # The unique identifier of the text. This can be a ISBN number
 # or the project homepage.
 #
@@ -255,12 +268,24 @@ epub_exclude_files = ['search.html']
 
 html_theme_options = {
     'logo_only': True, 
-    'titles_only': False
+    'titles_only': False,
+    "globaltoc_collapse": True,
+    "show_theme_credit": False,
 }
-html_logo = "C:\docbook\eformsignkr.github.io\images\\forcs_b.png"
+
+#html_logo = "C:\docbook\eformsignkr.github.io\images\\forcs_b.png"
+
+pygments_style = "stata-dark"
+
+html_theme_options = {
+    "source_url": 'https://www.eformsign.com/',
+    "source_icon": "C:\Docbook\eformsignkr.github.io\docs\_static\favicon.png",
+    "banner_text": '<a href="https://www.eformsign.com/">eformsign 바로가기</a>!'
+}
 
 
-#html_logo = "C:\docbook\eformsignkr.github.io\images\\eformsign_guide_logo.png"
+
+html_logo = "C:\docbook\eformsignkr.github.io\images\\eformsign_guide_logo1.png"
 
 #html_logo = "C:\docbook\eformsignkr.github.io\images\\forcs_b.png"
 
@@ -353,3 +378,12 @@ class AllPdfBuilder(LaTeXBuilder):
 
 def setup(app):
     app.add_builder(AllPdfBuilder)
+
+
+
+def remove_query_string(app, pagename, templatename, context, doctree):
+    css_files = context.get('css_files', [])
+    context['css_files'] = [css.split('?')[0] for css in css_files]
+
+def setup(app):
+    app.connect('html-page-context', remove_query_string)
