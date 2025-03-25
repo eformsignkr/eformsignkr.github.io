@@ -42,7 +42,6 @@
    .. figure:: resources/myfile_create_document_addparticipants.png
       :alt: 참여자 추가 화면
 
-
 .. tip::
 
    파일을 추가하거나 변경하려면 화면 하단의 **파일 추가** 또는 파일 이름 옆의 더보기(⋮) 메뉴에서 **파일 변경**\ 을 클릭합니다.

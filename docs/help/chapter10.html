@@ -5,13 +5,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>외부 서비스 연동 &#8212; eformsign User Guide 2024.12.27 documentation</title>
+    <title>외부 서비스 연동 &#8212; eformsign User Guide 2025.03.26 documentation</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic_mod.css" type="text/css" />
     <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../_static/documentation_options.js?v=5680ed0d"></script>
+    <script src="../_static/documentation_options.js?v=0d0b5286"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/code-tabs.js?v=c983d12e"></script>
@@ -24,123 +24,6 @@
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
-    
-        <div id="notification_banner" data-banner-hiding="temporary" v-show="!permanentlyHidden">
-    <p v-if="visible" id="content"><a href="https://www.eformsign.com/">eformsign 바로가기</a>!</p>
-    <a class="close" href="#" @click.prevent="toggleVisible()">[[ visible ? '&#x25B2; HIDE' : '&#x25BC; SHOW BANNER' ]]</a>
-</div>
-
-<script>
-(function() {
-    const topNav = document.querySelector('#top_nav')
-    const notificationContent = document.querySelector('#notification_banner p#content').innerText
-    const localStorageKey = 'readNotification'
-    const bannerHiding = document.querySelector('#notification_banner').dataset['bannerHiding']
-    const cssVariableName = '--navbarHeight'
-    const rootElement = document.documentElement
-
-    /*************************************************************************/
-    // Local storage for remembering if the user has read the notification.
-
-    function checkAlreadyRead() {
-        return localStorage.getItem(localStorageKey) == notificationContent
-    }
-
-    function setRead() {
-        localStorage.setItem(localStorageKey, notificationContent)
-    }
-
-    function clearRead() {
-        localStorage.removeItem(localStorageKey)
-    }
-
-    const alreadyRead = checkAlreadyRead()
-    const permanentlyHidden = alreadyRead && bannerHiding == 'permanent'
-
-    /*************************************************************************/
-    // Updating a CSS variable so other elements adjust to the nav bar height.
-
-    function updateNavbarHeight() {
-        // Only update it if the delta is significant. Otherwise it causes
-        // unnecessary browser repaints.
-        const documentStyles = getComputedStyle(rootElement)
-        // We store the value in REM, so need to convert to pixels
-        const currentValue = parseFloat(
-            documentStyles.getPropertyValue(cssVariableName)
-        ) * parseFloat(documentStyles.fontSize)
-
-        const newValue = topNav.clientHeight
-
-        if (newValue - 5 > currentValue) {
-            console.log(`Updating ${cssVariableName} - overlapping`)
-            rootElement.style.setProperty(
-                cssVariableName, newValue + "px"
-            );
-        } else if (currentValue - newValue >= 30) {
-            console.log(`Updating ${cssVariableName} - gap too large`)
-            rootElement.style.setProperty(
-                cssVariableName, newValue + "px"
-            );
-        }
-    }
-
-    /*************************************************************************/
-    // After loading the page, and resizing the window, recalculate the nav bar
-    // height.
-
-    if (!permanentlyHidden) {
-        // This height is approximately correct when there's a banner, so
-        // shouldn't require any page reflow:
-        rootElement.style.setProperty(
-            '--navbarHeight', "5.5rem"
-        );
-
-        document.addEventListener("DOMContentLoaded", function() {
-            updateNavbarHeight()
-        });
-
-        var interval = undefined
-
-        window.addEventListener('resize', () => {
-            if (interval) {
-                clearTimeout(interval)
-            }
-            interval = setTimeout(() => {
-                console.log("Finished resizing")
-                updateNavbarHeight()
-            }, 100)
-        })
-    }
-
-    /*************************************************************************/
-
-    PetiteVue.createApp({
-        visible: !alreadyRead,
-        permanentlyHidden: permanentlyHidden,
-        bannerHiding: bannerHiding,
-        $delimiters: ['[[', ']]'],
-        toggleVisible() {
-            this.visible = !this.visible
-
-            if (this.visible) {
-                clearRead()
-            } else {
-                setRead()
-            }
-
-            if (!this.visible && bannerHiding == 'permanent') {
-                this.permanentlyHidden = true
-            }
-
-            // Run this after Vue has had time to update the DOM:
-            setTimeout(
-                updateNavbarHeight,
-                0
-            )
-        }
-    }).mount('#notification_banner')
-})()
-</script>
     
 
     <nav>
@@ -282,13 +165,15 @@
 <ol class="arabic">
 <li><p>메뉴에서 <strong>커넥트&gt; 파일 저장소</strong>로 이동합니다.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/connect_1.png"><img alt="파일 저장소 화면" src="../_images/connect_1.png" style="width: 750px;" /></a>
+<a class="reference internal image-reference" href="../_images/connect_1.png"><img alt="파일 저장소 화면" src="../_images/connect_1.png" style="width: 750px;" />
+</a>
 </figure>
 </li>
 <li><p>완료된 문서를 저장할 클라우드 스토리지를 선택한 다음 <strong>계정 연결</strong> 버튼을 눌러 로그인합니다.</p></li>
 <li><p>로그인하면 <strong>연결 해제</strong>와 <strong>저장 경로 설정</strong> 버튼이 나타납니다. 필요에 따라 <strong>저장 경로 설정</strong> 버튼을 눌러 저장 경로를 설정합니다.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/connect_2.png"><img alt="파일 저장소의 계정 연결과 연결 해제" src="../_images/connect_2.png" style="width: 750px;" /></a>
+<a class="reference internal image-reference" href="../_images/connect_2.png"><img alt="파일 저장소의 계정 연결과 연결 해제" src="../_images/connect_2.png" style="width: 750px;" />
+</a>
 </figure>
 </li>
 </ol>
@@ -298,7 +183,8 @@
 <p>기본 경로는 eformsign 하위 폴더로 회사명 폴더에 저장됩니다.
 저장 경로 설정 팝업에서 <strong>새 폴더</strong> 버튼을 눌러 새로운 폴더를 만들고 저장 경로를 변경할 수 있습니다.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/analytic_8.png"><img alt="저장 경로 설정" src="../_images/analytic_8.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/analytic_8.png"><img alt="저장 경로 설정" src="../_images/analytic_8.png" style="width: 400px;" />
+</a>
 </figure>
 </div>
 <ol class="arabic simple" start="4">
@@ -308,7 +194,8 @@
 <li><p><strong>완료</strong> 단계 속성 탭에서 <strong>별도의 파일 저장소에 완료 문서 저장하기</strong>를 체크합니다. <strong>파일 저장소</strong> 메뉴에서 설정한 클라우드 저장소가 연결되어 있는 것을 확인할 수 있습니다. 이후 해당 템플릿으로 문서를 작성한 후 문서가 완료되면 eformsign 외에도 연결된 외부 파일 저장소에 완료 문서가 자동으로 저장됩니다.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/connect_5.png"><img alt="별도의 파일 저장소에 완료 문서 저장하기 체크박스" src="../_images/connect_5.png" style="width: 750px;" /></a>
+<a class="reference internal image-reference" href="../_images/connect_5.png"><img alt="별도의 파일 저장소에 완료 문서 저장하기 체크박스" src="../_images/connect_5.png" style="width: 750px;" />
+</a>
 </figure>
 </section>
 <section id="id3">
@@ -319,35 +206,41 @@
 <p><strong>분석 및 리포팅</strong>은 <strong>대표 관리자</strong>만 설정할 수 있습니다.</p>
 </div>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/analytic_1.png"><img alt="분석 및 리포팅 메뉴 화면" src="../_images/analytic_1.png" style="width: 750px;" /></a>
+<a class="reference internal image-reference" href="../_images/analytic_1.png"><img alt="분석 및 리포팅 메뉴 화면" src="../_images/analytic_1.png" style="width: 750px;" />
+</a>
 </figure>
 <ol class="arabic simple">
 <li><p>메뉴의 <strong>커넥트&gt; 분석 및 리포트</strong>로 이동합니다.</p></li>
 <li><p>Google Spread와 Office 365 중 원하는 서비스를 선택하고 <strong>계정 연결</strong> 버튼을 클릭하여 로그인합니다.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/analytic_2.png"><img alt="분석 및 리포팅 메뉴 화면" src="../_images/analytic_2.png" style="width: 750px;" /></a>
+<a class="reference internal image-reference" href="../_images/analytic_2.png"><img alt="분석 및 리포팅 메뉴 화면" src="../_images/analytic_2.png" style="width: 750px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="3">
 <li><p><strong>데이터 연결 관리</strong> 버튼을 클릭합니다.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/analytic_3.png"><img alt="데이터 연결 관리 화면" src="../_images/analytic_3.png" style="width: 750px;" /></a>
+<a class="reference internal image-reference" href="../_images/analytic_3.png"><img alt="데이터 연결 관리 화면" src="../_images/analytic_3.png" style="width: 750px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="4">
 <li><p>화면 중앙 또는 오른쪽 상단의 <strong>데이터 연결 추가</strong> 버튼을 클릭합니다.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/analytic_4.png"><img alt="데이터 연결 관리 화면" src="../_images/analytic_4.png" style="width: 750px;" /></a>
+<a class="reference internal image-reference" href="../_images/analytic_4.png"><img alt="데이터 연결 관리 화면" src="../_images/analytic_4.png" style="width: 750px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="5">
 <li><p>이름, 데이터 연결 시트, 데이터 전송 시점, 템플릿을 설정하고 <strong>저장</strong> 버튼을 클릭합니다.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/analytic_5.png"><img alt="데이터 연결 관리 화면" src="../_images/analytic_5.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/analytic_5.png"><img alt="데이터 연결 관리 화면" src="../_images/analytic_5.png" style="width: 600px;" />
+</a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/analytic_6.png"><img alt="데이터 연결 관리 화면" src="../_images/analytic_6.png" style="width: 750px;" /></a>
+<a class="reference internal image-reference" href="../_images/analytic_6.png"><img alt="데이터 연결 관리 화면" src="../_images/analytic_6.png" style="width: 750px;" />
+</a>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -357,13 +250,15 @@
 <li><p><strong>데이터 연결 관리</strong> 화면에 데이터 연결이 설정된 시트가 표시됩니다.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/analytic_7.png"><img alt="데이터 연결 관리 화면" src="../_images/analytic_7.png" style="width: 750px;" /></a>
+<a class="reference internal image-reference" href="../_images/analytic_7.png"><img alt="데이터 연결 관리 화면" src="../_images/analytic_7.png" style="width: 750px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="7">
 <li><p>연결된 시트로 이동하면 데이터를 가져올 컬럼(입력항목)이 표시된 것을 확인할 수 있습니다. 이후 작성되는 문서의 경우 문서에 데이터가 입력될 때마다 자동으로 업데이트니다.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/analytic_8.png"><img alt="데이터 연결 관리 화면" src="../_images/analytic_8.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/analytic_8.png"><img alt="데이터 연결 관리 화면" src="../_images/analytic_8.png" style="width: 500px;" />
+</a>
 </figure>
 </section>
 </section>
@@ -412,8 +307,8 @@
 
 
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2024, FORCS CO., LTD. All rights reserved..
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    &#169; Copyright 2025, FORCS CO., LTD. All rights reserved..
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     </div>
 
 <p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>

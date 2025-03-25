@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'eformsign User Guide'
-copyright = '2024, FORCS CO., LTD. All rights reserved.'
+copyright = '2025, FORCS CO., LTD. All rights reserved.'
 author = 'FORCS'
 
 # The short X.Y version
-version = 'version 10.2024.1211.209'
+version = 'version 10.2025.0312.203'
 # The full version, including alpha/beta/rc tags
-release = '2024.12.27'
+release = '2025.03.26'
 
 
 # -- General configuration ---------------------------------------------------
@@ -115,6 +115,8 @@ html_css_files = []
 html_theme_options = {
     "navbar_fixed_top": True,
     "show_sidebar": True,
+#    "globaltoc_depth": 2,  # 최대 2depth까지 표시
+#    "globaltoc_includehidden": True,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -122,7 +124,7 @@ html_theme_options = {
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-html_favicon = 'C:\docbook\eformsignkr.github.io\images\\favicon.ico'
+html_favicon = r'C:\docbook\eformsignkr.github.io\images\\favicon.ico'
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
 #
@@ -279,13 +281,13 @@ pygments_style = "stata-dark"
 
 html_theme_options = {
     "source_url": 'https://www.eformsign.com/',
-    "source_icon": "C:\Docbook\eformsignkr.github.io\docs\_static\favicon.png",
-    "banner_text": '<a href="https://www.eformsign.com/">eformsign 바로가기</a>!'
+    "source_icon": r"C:\Docbook\eformsignkr.github.io\docs\_static\favicon.png",
+#    "banner_text": '<a href="https://www.eformsign.com/">eformsign 바로가기</a>!'
 }
 
 
 
-html_logo = "C:\docbook\eformsignkr.github.io\images\\eformsign_guide_logo1.png"
+html_logo = r"C:\docbook\eformsignkr.github.io\images\\eformsign_guide_logo1.png"
 
 #html_logo = "C:\docbook\eformsignkr.github.io\images\\forcs_b.png"
 

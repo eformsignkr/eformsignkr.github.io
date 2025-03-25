@@ -5,13 +5,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>커스터마이즈 &#8212; eformsign User Guide 2024.12.27 documentation</title>
+    <title>커스터마이즈 &#8212; eformsign User Guide 2025.03.26 documentation</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic_mod.css" type="text/css" />
     <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../_static/documentation_options.js?v=5680ed0d"></script>
+    <script src="../_static/documentation_options.js?v=0d0b5286"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/code-tabs.js?v=c983d12e"></script>
@@ -25,123 +25,6 @@
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
-    
-        <div id="notification_banner" data-banner-hiding="temporary" v-show="!permanentlyHidden">
-    <p v-if="visible" id="content"><a href="https://www.eformsign.com/">eformsign 바로가기</a>!</p>
-    <a class="close" href="#" @click.prevent="toggleVisible()">[[ visible ? '&#x25B2; HIDE' : '&#x25BC; SHOW BANNER' ]]</a>
-</div>
-
-<script>
-(function() {
-    const topNav = document.querySelector('#top_nav')
-    const notificationContent = document.querySelector('#notification_banner p#content').innerText
-    const localStorageKey = 'readNotification'
-    const bannerHiding = document.querySelector('#notification_banner').dataset['bannerHiding']
-    const cssVariableName = '--navbarHeight'
-    const rootElement = document.documentElement
-
-    /*************************************************************************/
-    // Local storage for remembering if the user has read the notification.
-
-    function checkAlreadyRead() {
-        return localStorage.getItem(localStorageKey) == notificationContent
-    }
-
-    function setRead() {
-        localStorage.setItem(localStorageKey, notificationContent)
-    }
-
-    function clearRead() {
-        localStorage.removeItem(localStorageKey)
-    }
-
-    const alreadyRead = checkAlreadyRead()
-    const permanentlyHidden = alreadyRead && bannerHiding == 'permanent'
-
-    /*************************************************************************/
-    // Updating a CSS variable so other elements adjust to the nav bar height.
-
-    function updateNavbarHeight() {
-        // Only update it if the delta is significant. Otherwise it causes
-        // unnecessary browser repaints.
-        const documentStyles = getComputedStyle(rootElement)
-        // We store the value in REM, so need to convert to pixels
-        const currentValue = parseFloat(
-            documentStyles.getPropertyValue(cssVariableName)
-        ) * parseFloat(documentStyles.fontSize)
-
-        const newValue = topNav.clientHeight
-
-        if (newValue - 5 > currentValue) {
-            console.log(`Updating ${cssVariableName} - overlapping`)
-            rootElement.style.setProperty(
-                cssVariableName, newValue + "px"
-            );
-        } else if (currentValue - newValue >= 30) {
-            console.log(`Updating ${cssVariableName} - gap too large`)
-            rootElement.style.setProperty(
-                cssVariableName, newValue + "px"
-            );
-        }
-    }
-
-    /*************************************************************************/
-    // After loading the page, and resizing the window, recalculate the nav bar
-    // height.
-
-    if (!permanentlyHidden) {
-        // This height is approximately correct when there's a banner, so
-        // shouldn't require any page reflow:
-        rootElement.style.setProperty(
-            '--navbarHeight', "5.5rem"
-        );
-
-        document.addEventListener("DOMContentLoaded", function() {
-            updateNavbarHeight()
-        });
-
-        var interval = undefined
-
-        window.addEventListener('resize', () => {
-            if (interval) {
-                clearTimeout(interval)
-            }
-            interval = setTimeout(() => {
-                console.log("Finished resizing")
-                updateNavbarHeight()
-            }, 100)
-        })
-    }
-
-    /*************************************************************************/
-
-    PetiteVue.createApp({
-        visible: !alreadyRead,
-        permanentlyHidden: permanentlyHidden,
-        bannerHiding: bannerHiding,
-        $delimiters: ['[[', ']]'],
-        toggleVisible() {
-            this.visible = !this.visible
-
-            if (this.visible) {
-                clearRead()
-            } else {
-                setRead()
-            }
-
-            if (!this.visible && bannerHiding == 'permanent') {
-                this.permanentlyHidden = true
-            }
-
-            // Run this after Vue has had time to update the DOM:
-            setTimeout(
-                updateNavbarHeight,
-                0
-            )
-        }
-    }).mount('#notification_banner')
-})()
-</script>
     
 
     <nav>
@@ -280,7 +163,8 @@
 <p>문서에서 자주 사용되는 회사, 그룹, 사용자에 관한 정보(예. 회사 대표번호, 주소, 대표자 명 등)를 <strong>사용자 정의 정보셋</strong>에서 필드로 추가하고 <strong>템플릿 설정 &gt; 필드 설정</strong>에서 필요 정보를 자동으로 입력되도록 설정할 수 있습니다.</p>
 </div>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/Customfield.PNG"><img alt="회사 관리 &gt; 사용자 정의 필드 관리" src="../_images/Customfield.PNG" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/Customfield.PNG"><img alt="회사 관리 &gt; 사용자 정의 필드 관리" src="../_images/Customfield.PNG" style="width: 700px;" />
+</a>
 </figure>
 <dl>
 <dt><strong>① 사용자 정의 정보셋 관리 &gt; 회사</strong></dt><dd><p>회사 대표, 대표 전화번호, 직인 등 회사와 관련된 필드를 추가하고 값을 설정할 수 있습니다.</p>
@@ -291,7 +175,8 @@
 </dd>
 <dt><strong>④ 필드 추가</strong></dt><dd><p>새로운 필드를 추가합니다. <strong>필드 추가</strong> 버튼을 클릭하면 사용자 정의 필드를 추가할 수 있는 팝업창이 나타납니다. <strong>필드 이름</strong> 과 <strong>필드 타입</strong> (텍스트/ 이미지), <strong>필드 값</strong>을 입력한 다음 확인을 클릭하면 목록에 필드가 추가됩니다. 추가된 필드 확인 후 <strong>저장</strong> 버튼을 눌러 저장합니다.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/customfield-addfield.PNG"><img alt="회사 관리 &gt; 사용자 정의 필드 관리" src="../_images/customfield-addfield.PNG" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/customfield-addfield.PNG"><img alt="회사 관리 &gt; 사용자 정의 필드 관리" src="../_images/customfield-addfield.PNG" style="width: 400px;" />
+</a>
 </figure>
 </dd>
 <dt><strong>⑤ 필드 목록</strong></dt><dd><p>필드 목록에서는 필드 이름과 필드 값을 보여주며, 필드 삭제, 필드값 편집을 할 수 있습니다.</p>
@@ -300,7 +185,8 @@
 <dt><strong>⑥ 필드 편집</strong></dt><dd><p>수정할 필드를 선택하여 수정 아이콘(<img alt="image1" src="../_images/customfield_icon.png" />)을 클릭하면 사용자 정의 필드 수정 팝업창이 표시되어 필드 이름, 타입, 값 등을 수정할 수 있습니다.</p>
 <p>필드의 순서는 해당 필드를 선택한 후 화살표(<img alt="image2" src="../_images/customfield-list-order.PNG" />)를 클릭하여 순서를 조정할 수 있습니다.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/customfield-edit.PNG"><img alt="회사 관리 &gt; 사용자 정의 필드 관리" src="../_images/customfield-edit.PNG" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/customfield-edit.PNG"><img alt="회사 관리 &gt; 사용자 정의 필드 관리" src="../_images/customfield-edit.PNG" style="width: 400px;" />
+</a>
 </figure>
 </dd>
 <dt><strong>⑦ 저장</strong></dt><dd><p>사용자 정의 필드 편집이 완료되면 <strong>저장</strong> 버튼을 클릭해 변경사항을 저장합니다.</p>
@@ -312,7 +198,8 @@
 <p>문서 요청시 발송되는 메일/SMS 템플릿을 회사 맞춤형으로 편집할 수 있습니다.</p>
 <p>알림 템플릿은 <strong>회사 관리 &gt; 알림 템플릿 관리</strong>에서 설정하거나 <strong>템플릿 관리 &gt; 템플릿 설정 &gt; 알림 설정</strong>에서 편집할 수 있습니다.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/notification-template-manage.png"><img alt="회사 관리 &gt; 알림 템플릿 관리" src="../_images/notification-template-manage.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/notification-template-manage.png"><img alt="회사 관리 &gt; 알림 템플릿 관리" src="../_images/notification-template-manage.png" style="width: 700px;" />
+</a>
 </figure>
 <p><strong>회사 관리 &gt; 알림 템플릿 관리</strong>에는 기본적인 메일/SMS 템플릿이 설정되어 있으며, 기본 템플릿의 내용 등 변경 및 새로운 알림 템플릿을 추가할 수 있습니다.</p>
 <section id="id4">
@@ -393,8 +280,8 @@
 
 
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2024, FORCS CO., LTD. All rights reserved..
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    &#169; Copyright 2025, FORCS CO., LTD. All rights reserved..
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     </div>
 
 <p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
