@@ -211,7 +211,7 @@
 
 **내 정보 > 회사 정보**
 
-.. figure:: resources/myinfo-companyinfo.png
+.. figure:: resources/myinfo-companyinfo1.png
    :alt: 내 정보 > 회사 정보 화면
    :width: 730px
 
@@ -1474,13 +1474,13 @@ IP 접속 제어 설정
 
 .. |image1| image:: resources/menu_icon.png
    :width: 20px
-.. |image2| image:: resources/template-create-icon.png
+.. |image2| image:: resources/template-create-icon1.png
    :width: 20px
-.. |image3| image:: resources/template-bulkcreate-icon.png
+.. |image3| image:: resources/template-bulkcreate-icon1.png
    :width: 20px
-.. |image4| image:: resources/favorites-icon.png
+.. |image4| image:: resources/favorites-icon1.png
    :width: 20px
-.. |image5| image:: resources/favorites-added-icon.png
+.. |image5| image:: resources/favorites-added-icon1.png
    :width: 20px
 .. |image6| image:: resources/menu-hamberger-icon.png
    :width: 20px
