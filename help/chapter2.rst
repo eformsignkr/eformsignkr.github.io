@@ -1475,13 +1475,13 @@ IP 접속 제어 설정
 
 .. |image1| image:: resources/menu_icon.png
    :width: 20px
-.. |image2| image:: resources/template-create-icon.PNG
+.. |image2| image:: resources/template-create-icon.png
    :width: 20px
-.. |image3| image:: resources/template-bulkcreate-icon.PNG
+.. |image3| image:: resources/template-bulkcreate-icon.png
    :width: 20px
-.. |image4| image:: resources/favorites-icon.PNG
+.. |image4| image:: resources/favorites-icon.png
    :width: 20px
-.. |image5| image:: resources/favorites-added-icon.PNG
+.. |image5| image:: resources/favorites-added-icon.png
    :width: 20px
 .. |image6| image:: resources/menu-hamberger-icon.png
    :width: 20px
@@ -1489,4 +1489,4 @@ IP 접속 제어 설정
    :width: 700px
 .. |image9| image:: resources/managecompany-companyinfo-edit_1.png
    :width: 700px
-.. |image10| image:: resources/config-icon.PNG
+.. |image10| image:: resources/config-icon.png
