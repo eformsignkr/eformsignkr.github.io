@@ -195,36 +195,49 @@
 </section>
 <section id="notification-template">
 <span id="id3"></span><h2>알림 템플릿 관리<a class="headerlink" href="#notification-template" title="Link to this heading"></a></h2>
-<p>문서 요청시 발송되는 메일/SMS 템플릿을 회사 맞춤형으로 편집할 수 있습니다.</p>
+<p>문서 요청시 발송되는 이메일/SMS 템플릿을 회사 맞춤형으로 편집할 수 있습니다.</p>
 <p>알림 템플릿은 <strong>회사 관리 &gt; 알림 템플릿 관리</strong>에서 설정하거나 <strong>템플릿 관리 &gt; 템플릿 설정 &gt; 알림 설정</strong>에서 편집할 수 있습니다.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/notification-template-manage.png"><img alt="회사 관리 &gt; 알림 템플릿 관리" src="../_images/notification-template-manage.png" style="width: 700px;" />
 </a>
 </figure>
-<p><strong>회사 관리 &gt; 알림 템플릿 관리</strong>에는 기본적인 메일/SMS 템플릿이 설정되어 있으며, 기본 템플릿의 내용 등 변경 및 새로운 알림 템플릿을 추가할 수 있습니다.</p>
+<p><strong>회사 관리 &gt; 알림 템플릿 관리</strong>에는 기본적인 이메일/SMS 템플릿이 설정되어 있으며, 기본 템플릿의 내용 등 변경 및 새로운 알림 템플릿을 추가할 수 있습니다.</p>
 <section id="id4">
 <h3>기본 템플릿 유형<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p>문서 최종 완료 알림</p></li>
-<li><p>문서 반려로 인한 수정 요청 알림</p></li>
-<li><p>문서 상태 알림</p></li>
-<li><p>문서 검토 및 작성 요청</p></li>
+<li><p><strong>문서 전달 알림:</strong> 완료 문서 전달 설정 시 문서가 완료되면 수신자에게 전송되는 알림입니다.</p></li>
+<li><p><strong>문서 열람 요청:</strong> 문서 열람자에게 전송되는 열람 요청 알림입니다.</p></li>
+<li><p><strong>문서 참조 알림(최종 완료):</strong> 문서에 참조자가 설정된 경우, 해당 문서가 완료되면 참조자에게 전송되는 알림입니다.</p></li>
+<li><p><strong>문서 참조 알림:</strong> 문서에 참조자가 설정된 경우, 참조된 시점에 참조자에게 전송되는 알림입니다.</p></li>
+<li><p><strong>문서 검토 및 작성 요청:</strong> 문서의 참여자 및 검토자에게 전송되는 알림입니다.</p></li>
+<li><p><strong>문서 최종 완료 알림:</strong> 문서 완료 알림의 수신자로 설정된 대상자에게 문서 완료 시 전송되는 알림입니다.</p></li>
+<li><p><strong>문서 반려로 인한 수정 요청:</strong> 수신자가 문서를 반려할 경우, 반려 대상자에게 전송되는 알림입니다.</p></li>
+<li><p><strong>문서 상태 알림:</strong> 문서 상태 알림의 수신자로 설정된 대상자에게 문서 상태에 따라 전송되는 알림입니다.</p></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>헤더는 이폼사인의 로고가 기본으로 설정되어 있습니다. <strong>회사 관리 &gt; 회사 정보 &gt;</strong> <a class="reference external" href="chapter2.html#brand">브랜드</a>에서 회사의 로고를 등록하면 이메일 템플릿에 회사의 로고가 함께 적용됩니다</p>
 </div>
 <p id="how-to-add-new-notification-template"><strong>알림 템플릿 추가 방법</strong></p>
-<p>기존에 등록된 메일/SMS 템플릿 외에 새 알림 템플릿을 추가할 수 있습니다.</p>
+<p>기존에 등록된 이메일/SMS 템플릿 외에 새 알림 템플릿을 추가할 수 있습니다.</p>
 <ol class="arabic">
 <li><p>사이드바 메뉴에서 <strong>회사 관리 &gt; 알림 템플릿 관리</strong>를 클릭합니다.</p></li>
 <li><p><strong>알림 템플릿 관리</strong> 화면의 오른쪽 상단에 위치한 <strong>알림 템플릿 추가</strong> 버튼을 클릭합니다.</p></li>
-<li><p><strong>알림 템플릿 이름</strong>을 설정하고 해당하는 <strong>유형</strong>을 선택합니다.</p>
-<p><a class="reference internal" href="../_images/notification-template-new.PNG"><img alt="image3" src="../_images/notification-template-new.PNG" style="width: 700px;" /></a></p>
+<li><p>아래 항목을 입력 및 설정합니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/notification-template-new.PNG"><img alt="회사 관리 &gt; 알림 템플릿 관리 &gt; 추가" src="../_images/notification-template-new.PNG" style="width: 700px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>알림 템플릿 이름:</strong> 알림 템플릿을 식별할 수 있는 이름 입력</p></li>
+<li><p><strong>유형:</strong> 추가할 알림 템플릿이 해당하는 유형 선택(ex. 문서 열람 요청/문서 검토 및 작성 요청 등)</p></li>
+<li><p><strong>알림 언어:</strong> 알림 템플릿을 3개 언어로 설정 및 관리, 각 언어 탭 클릭 후 언어별 내용 편집</p></li>
+<li><p><strong>이메일 제목:</strong> 수신자에게 전송될 이메일 제목 입력</p></li>
+<li><p><strong>SMS 메시지:</strong> 문자 알림 시 전송될 메시지 입력(<a href="#id5"><span class="problematic" id="id6">*</span></a>SMS 메시지는 본문 내용으로 이동할 수 있는 링크와 함께 전송)</p></li>
+<li><p><strong>본문 내용 편집:</strong> 이메일 알림의 본문 및 SMS 전송 시 링크로 전달되는 본문 내용</p></li>
+<li><p><strong>설명:</strong> 템플릿 사용 목적 또는 특이사항 등 설명 입력</p></li>
+</ul>
 </li>
-<li><p>이메일 제목 및 SMS 전송 내용을 입력합니다.
-<strong>SMS 전송 내용</strong>은 문자로 알림 전송 시 전송되는 메시지로 알림 본문 내용으로 이동할 수 있는 URL과 함께 전송됩니다.</p></li>
-<li><p>본문 내용을 작성합니다.</p></li>
 <li><p><strong>저장</strong> 버튼을 클릭하여 템플릿으로 추가합니다.</p></li>
 </ol>
 </section>

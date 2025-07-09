@@ -1138,9 +1138,11 @@ MS Office를 통해 문서에 입력 항목을 올려 편집이 완료된 파일
       :alt: 템플릿의 5가지 설정 항목
       :width: 750px
 
+   ✅ 템플릿 배포에 대한 설명은 `템플릿 배포 <chapter7.html#publish-template>`__\ 를 참고해 주세요.
+
 .. note::
 
-   템플릿 설정 등 템플릿에 대한 상세한 설명은 `MS Office에서 템플릿 만들기 <chapter7.html#template_fb>`__\ 를 참고하시기 바랍니다.
+   템플릿 설정 등 템플릿에 대한 상세한 설명은 `MS Office에서 템플릿 만들기 <chapter7.html#template_fb>`__\ 를 참고해 주세요.
 
 
 
