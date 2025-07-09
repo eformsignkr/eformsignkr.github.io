@@ -37,7 +37,7 @@ eformsign에서 전자문서를 작성 및 전송하는 방법은 내 PC에 저�
 
 2. 원하는 문서 파일을 업로드하거나 내 문서 보관함에 저장된 문서 중 선택합니다.
 
-.. figure:: resources/newfrommyfile-uploadfile1.png
+.. figure:: resources/newfrommyfile-uploadfile_1.png
    :alt: 파일 추가
    :width: 700px
 
