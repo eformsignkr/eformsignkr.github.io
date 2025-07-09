@@ -960,7 +960,7 @@ PC 키보드 환경에서는 입력 항목에 직접 원하는 숫자를 입력�
 -  **알림 설정:** 템플릿으로 생성된 문서에 대한 상태 알림의 수신자를 설정하고 최종 완료 알림 메시지를 편집합니다.
 
 
-.. figure:: resources/component_web_2.png
+.. figure:: resources/template_settings.png
    :alt: 템플릿의 5가지 설정 항목
    :width: 750px
 
