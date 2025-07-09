@@ -518,7 +518,7 @@ eformsign에서는 지정된 관리자만 문서를 삭제할 수 있습니다.
       :width: 700px
 
 
-2. 저장된 문서 목록에서 원하는 문서의 **열기** 버튼을 클릭합니다.
+2. 저장된 파일 목록에서 원하는 파일의 **열기** 버튼을 클릭합니다.
 
 
    .. figure:: resources/myfile-documentlist.png
