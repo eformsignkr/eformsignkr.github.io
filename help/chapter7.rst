@@ -238,7 +238,7 @@ MS Office에서 템플릿 만드는 방법
 문서 제목 규칙을 설정하면 문서 작성 시점의 정보를 바탕으로 문서 제목이 생성되며 이 제목은 모든 문서함(진행 중 문서함, 처리할 문서함, 완료 문서함)과 **문서 관리** 메뉴의 문서 목록에서 확인할 수 있습니다.
 
 
-.. figure:: resources/document-list1.png
+.. figure:: resources/document-list01.png
    :alt: 문서 관리 > 문서 목록
    :width: 700px
 

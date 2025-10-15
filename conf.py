@@ -269,6 +269,7 @@ html_short_title = "eformsign 사용 매뉴얼"
 epub_exclude_files = ['search.html']
 
 html_theme_options = {
+    "navbar_fixed_top": True,
     'logo_only': True, 
     'titles_only': False,
     "globaltoc_collapse": True,
