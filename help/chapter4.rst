@@ -39,9 +39,9 @@
 
 3. **AI 비서** 기능을 사용하고자 할 경우, 분석 유형을 선택한 후 **AI 분석**\ 을 클릭합니다.
 
-.. figure:: resources/AI-assistant-popup.png
-   :alt: AI 비서 팝업
-   :width: 400px
+   .. figure:: resources/AI-assistant-popup.png
+      :alt: AI 비서 팝업
+      :width: 400px
 
 .. Tip::
 
