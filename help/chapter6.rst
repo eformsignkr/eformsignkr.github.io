@@ -46,7 +46,7 @@ eformsign for Microsoft Office를 이용하여 전자문서를 만드는 과정�
 
    .. figure:: resources/eformsignforMSOffice-menu.png
       :alt: eformsign for MS Office 실행 파일2
-      :width: 700px
+      :width: 800px
 
 
 ----------------------------------------
@@ -57,7 +57,7 @@ eformsign for Microsoft Office를 설치한 후 엑셀, 워드, 파워포인트�
 
 .. figure:: resources/eformsignforMSOffice-menu1.png
    :alt: MS Office의 eformsign 리본 메뉴
-   :width: 700px
+   :width: 800px
 
 
 
@@ -394,7 +394,7 @@ MS Office의 **eformsign** 리본 메뉴를 통해 체크박스, 콤보박스, �
 
    .. figure:: resources/text-component-rule-option.png
       :alt: 입력 규칙 설정
-      :width: 300px
+      :width: 250px
 
 
 
@@ -541,12 +541,6 @@ MS Office의 **eformsign** 리본 메뉴를 통해 체크박스, 콤보박스, �
 **체크** 입력 항목은 각 항목의 체크 여부를 확인하고자 할때 사용합니다. 
 
 
-.. tip:: 
-
-   **체크와 선택의 차이!**
-
-   **체크** 입력 항목은 **선택** 입력 항목와 유사하나, 차이가 있습니다!
-   **체크** 입력 항목은 해당 항목의 체크 여부를 확인할 때 사용하고, **선택** 입력 항목은 선택한 항목이 무엇인지 알아야 할 때 사용한다는 차이가 있습니다.
 
 |image18|
 
@@ -583,7 +577,6 @@ MS Office의 **eformsign** 리본 메뉴를 통해 체크박스, 콤보박스, �
 선택되지 않은 항목에 표시될 스타일을 지정할 수 있습니다. 체크박스는 사각형, 라디오 버튼은 원형, 원 표시는 아무것도 표시되지 않습니다.
 
 
-
 **④ 체크박스 위치**
 
 체크박스의 위치를 지정합니다. 
@@ -591,6 +584,12 @@ MS Office의 **eformsign** 리본 메뉴를 통해 체크박스, 콤보박스, �
 - 텍스트 왼쪽: 체크박스 위치를 텍스트의 왼쪽에 위치하도록 설정합니다.
 - 텍스트 오른쪽: 체크박스 위치를 텍스트의 오른쪽에 위치하도록 설정합니다.
 
+.. tip:: 
+
+   **체크와 선택의 차이!**
+
+   **체크** 입력 항목은 **선택** 입력 항목와 유사하나, 차이가 있습니다!
+   **체크** 입력 항목은 해당 항목의 체크 여부를 확인할 때 사용하고, **선택** 입력 항목은 선택한 항목이 무엇인지 알아야 할 때 사용한다는 차이가 있습니다.
 
 
 .. _select:
