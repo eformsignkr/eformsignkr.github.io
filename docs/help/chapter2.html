@@ -214,6 +214,7 @@
 </ul>
 </li>
 <li><p><strong>회사 도장 관리:</strong> 법인인감, 사용인감 등 회사의 공식 도장을 등록하고 각 도장별 사용 권한을 설정할 수 있으며, 도장 사용 내역을 확인할 수 있습니다.</p></li>
+<li><p><strong>워터마크 관리:</strong> 문서에 표시할 워터마크를 등록 및 관리할 수 있습니다.</p></li>
 <li><p><strong>알림 템플릿 관리:</strong> eformsign에서 발송되는 이메일, SMS 알림 템플릿 목록을 확인하고 수정 또는 새로운 알림 템플릿을 추가할 수 있습니다.</p></li>
 <li><p><strong>사용자 정의 정보셋 관리:</strong> 회사, 그룹, 멤버에 대한 추가 정보를 입력하거나 수정할 수 있습니다.</p></li>
 <li><p><strong>보안 설정:</strong> 로그인 2단계 인증, 중복 로그인 제한 등 로그인 관련 보안 설정, IP 접속 제어 설정 등 계정 보호를 위한 보안 기능을 설정할 수 있습니다.</p></li>
@@ -1366,18 +1367,102 @@
 </div>
 </section>
 </section>
+<section id="watermark-settings">
+<span id="id42"></span><h2>워터마크 관리<a class="headerlink" href="#watermark-settings" title="Link to this heading"></a></h2>
+<p>문서에 표시할 워터마크를 등록하고 관리할 수 있습니다.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><strong>대표 관리자</strong> 또는 <strong>회사 관리자</strong>만 메뉴에 접근할 수 있습니다.</p></li>
+<li><p>워터마크 등록 후 활성화하면 설정된 적용 범위 및 시점에 따라 <strong>모든 문서에 자동으로 적용됩니다.</strong></p></li>
+</ul>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/manage-watermarks.png"><img alt="워터마크 관리" src="../_images/manage-watermarks.png" style="width: 700px;" />
+</a>
+</figure>
+<section id="id43">
+<h3>워터마크 등록<a class="headerlink" href="#id43" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p><strong>워터마크 등록</strong> 버튼을 클릭합니다.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/register-watermark.png"><img alt="워터마크 등록" src="../_images/register-watermark.png" style="width: 600px;" />
+</a>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>워터마크 이름과 표시할 텍스트를 입력합니다.</p>
+<ul class="simple">
+<li><p>워터마크 이름: 목록에 표시되는 이름</p></li>
+<li><p>워터마크 텍스트: 워터마크로 문서에 표시되는 텍스트(<a href="#id44"><span class="problematic" id="id45">*</span></a>예약어 활용 팁 참고)</p></li>
+</ul>
+</li>
+<li><p>텍스트의 글꼴, 크기, 색상, 회전, 불투명도 등 상세 속성을 설정합니다.</p></li>
+<li><p>적용 범위 및 시점을 설정합니다.</p>
+<ul class="simple">
+<li><p>적용 범위: <strong>본문, 첨부, 본문+첨부</strong> 중 선택, <strong>모든 페이</strong> 또는 <strong>시작 페이지</strong> 중 선택</p></li>
+<li><p>적용 시점: 문서 상태(진행 중/완료/취소)별 <strong>화면 보기</strong>, <strong>저장</strong>, <strong>인쇄</strong> 시점에 적용</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/register-watermark2.png"><img alt="워터마크 등록" src="../_images/register-watermark2.png" style="width: 400px;" />
+</a>
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>우측 미리보기를 확인하고, <strong>등록</strong> 버튼을 클릭합니다.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>새로 등록한 워터마크는 기본적으로 비활성화 상태로 저장되며, 등록 후 목록에서 상태를 활성화 하면 <strong>모든 문서에 적용됩니다.</strong></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>💡 <strong>워터마크 텍스트 예약어 활용 팁</strong></p>
+<p>예약어를 활용하면 문서마다 다른 정보를 자동으로 표시할 수 있으며, 문서 추적성 및 보안 효과도 높일 수 있습니다.</p>
+<p><strong>활용 예시</strong></p>
+<ul class="simple">
+<li><p>열람일시 및 열람자 정보 표시 - $현재_날짜시간$ $현재_접속자_이름$</p></li>
+<li><p>접근 추적용 표시 - IP: $IP$</p></li>
+<li><p>문서 식별용 표시 - 문서정보: $문서제목$ ($문서번호$/$문서 ID$)</p></li>
+<li><p>보안 문서 표시 - CONFIDENTIAL_$현재_접속자_이름$_$현재_날짜$</p></li>
+</ul>
+</div>
+</section>
+<section id="id46">
+<h3>표시 순서 변경<a class="headerlink" href="#id46" title="Link to this heading"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>💡 <strong>표시 순서란?</strong></p>
+<p>여러 개의 워터마크가 활성화된 경우, 적용 범위와 위치가 겹치는 워터마크에 대하여 상단에 표시되는 순서를 설정합니다. 표시 순서의 번호가 작을 수록 상단에 표시됩니다.</p>
+</div>
+<p><strong>워터마크 관리</strong> 화면 우측 상단의 <strong>표시 순서 변경</strong> 버튼을 클릭한 후, <strong>표시 순서 변경</strong> 팝업에서 순서를 변경할 워터마크를 드래그하여 위치를 변경합니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/watermark-layer.png"><img alt="워터마크 표시 순서" src="../_images/watermark-layer.png" style="width: 400px;" />
+</a>
+</figure>
+</section>
+<section id="id47">
+<h3>워터마크 미리보기<a class="headerlink" href="#id47" title="Link to this heading"></a></h3>
+<p>적용 시점에 따라 표시되는 워터마크를 미리보기할 수 있습니다.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/preview-watermark.png"><img alt="워터마크 미리보기" src="../_images/preview-watermark.png" style="width: 400px;" />
+</a>
+</figure>
+</section>
+</section>
 <section id="security-settings">
-<span id="id42"></span><h2>보안 설정<a class="headerlink" href="#security-settings" title="Link to this heading"></a></h2>
+<span id="id48"></span><h2>보안 설정<a class="headerlink" href="#security-settings" title="Link to this heading"></a></h2>
 <p>이폼사인의 계정 보호를 위해 로그인 시 인증 설정, 접속 IP 설정 등 보안 관련 기능을 설정할 수 있습니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>보안 설정은 <strong>대표 관리자</strong>만 설정할 수 있습니다.</p>
 </div>
-<section id="id43">
-<h3>로그인 설정<a class="headerlink" href="#id43" title="Link to this heading"></a></h3>
+<section id="id49">
+<h3>로그인 설정<a class="headerlink" href="#id49" title="Link to this heading"></a></h3>
 <p>이폼사인 계정 로그인 시 2단계 인증 설정, 중복 로그인 제한, 장기 미접속 로그인 제한을 설정하고 상세 조건을 설정할 수 있습니다.</p>
-<section id="id44">
-<h4>로그인 2단계 인증<a class="headerlink" href="#id44" title="Link to this heading"></a></h4>
+<section id="id50">
+<h4>로그인 2단계 인증<a class="headerlink" href="#id50" title="Link to this heading"></a></h4>
 <p>이폼사인 계정 보호를 위해 로그인 시 2단계 인증 진행 여부 및 인증 수단을 설정할 수 있습니다.</p>
 <ol class="arabic simple">
 <li><p><strong>회사 관리 &gt; 보안 설정</strong> 메뉴로 이동합니다.</p></li>
@@ -1403,7 +1488,7 @@
 Google OTP 인증을 사용하려면 우선 등록 후 사용해야 하며, <strong>Google OTP 앱을 우선 설치</strong>해야 합니다. 앱이 없을 경우, 구글플레이 스토어나 앱스토어에서 Google OTP 또는 Google Authenticator앱을 설치해 주세요.</p>
 </div>
 <section id="google-otp">
-<h5><strong>Google OTP 등록 방법</strong><a class="headerlink" href="#google-otp" title="Link to this heading"></a></h5>
+<h5>Google OTP 등록 방법<a class="headerlink" href="#google-otp" title="Link to this heading"></a></h5>
 <p>2단계 인증 설정 시 기본 인증 수단은 Google OTP 인증으로 설정되어 있습니다. Google OTP 등록방법은 다음과 같습니다.</p>
 <ol class="arabic">
 <li><p>Google OTP 등록을 위해 본인인증을 진행해야 합니다. 등록 팝업에서 연락처 확인 후 <strong>전송</strong> 버튼을 클릭합니다.</p>
@@ -1442,8 +1527,8 @@ Google OTP 인증을 사용하려면 우선 등록 후 사용해야 하며, <str
 </div>
 </section>
 </section>
-<section id="id45">
-<h4>중복 로그인 제한<a class="headerlink" href="#id45" title="Link to this heading"></a></h4>
+<section id="id51">
+<h4>중복 로그인 제한<a class="headerlink" href="#id51" title="Link to this heading"></a></h4>
 <p>이폼사인 계정 보호를 위해 한 계정의 중복 로그인을 제한하도록 설정하며, 로그인 세션 유지 시간을 설정하여 일정 시간이 지나면 자동으로 로그아웃되도록 설정할 수 있습니다.</p>
 <ol class="arabic">
 <li><p><strong>회사 관리&gt; 보안 설정</strong> 메뉴로 이동합니다.</p></li>
@@ -1458,8 +1543,8 @@ Google OTP 인증을 사용하려면 우선 등록 후 사용해야 하며, <str
 <li><p>중복 로그인 제한 설정이 완료되면 마지막으로 로그인한 기기 또는 브라우저만 로그인이 유지되며 나머지 기기에서는 모두 자동 로그아웃됩니다.</p></li>
 </ol>
 </section>
-<section id="id46">
-<h4>장기 미접속 로그인 제한<a class="headerlink" href="#id46" title="Link to this heading"></a></h4>
+<section id="id52">
+<h4>장기 미접속 로그인 제한<a class="headerlink" href="#id52" title="Link to this heading"></a></h4>
 <p>일정 기간 이상 이폼사인 서비스에 로그인하지 않은 계정에 대하여 로그인을 제한하도록 설정할 수 있습니다.</p>
 <ol class="arabic">
 <li><p><strong>회사 관리&gt; 보안 설정</strong> 메뉴로 이동합니다.</p></li>
@@ -1482,12 +1567,29 @@ Google OTP 인증을 사용하려면 우선 등록 후 사용해야 하며, <str
 </figure>
 </div>
 </section>
+<section id="id53">
+<h4>로그인 없이 문서 링크 접근 허용<a class="headerlink" href="#id53" title="Link to this heading"></a></h4>
+<p>이폼사인 멤버가 문서 요청을 받은 경우 해당 문서 링크를 클릭 시 로그인 없이 문서를 열람하고 처리할 수 있도록 설정할 수 있습니다.</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/no-login.png"><img alt="로그인 없이 문서 링크 접근 허용" src="../_images/no-login.png" style="width: 500px;" />
+</a>
+</figure>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>로그인 없이 진행된 문서 처리 이력도 감사추적증명서와 활동이력에 기록됩니다.</p></li>
+<li><p>문서 작성 시 등록된 서명, 도장을 불러오거나 문서 전송 팝업에서 멤버 목록 또는 연락처에 접근하려면 로그인을 해야 합니다.</p></li>
+</ul>
+</div>
+</section>
 </section>
 <section id="ip">
 <h3>IP 접속 제어 설정<a class="headerlink" href="#ip" title="Link to this heading"></a></h3>
 <p>이폼사인의 계정 보안을 위해 권한별로 특정 IP 주소에서만 로그인할 수 있도록 설정할 수 있습니다.</p>
-<section id="id47">
-<h4>권한별 접속 허용 IP 설정 방법<a class="headerlink" href="#id47" title="Link to this heading"></a></h4>
+<section id="id54">
+<h4>권한별 접속 허용 IP 설정 방법<a class="headerlink" href="#id54" title="Link to this heading"></a></h4>
 <ol class="arabic simple">
 <li><p><strong>회사 관리 &gt; 보안 설정</strong> 메뉴로 이동합니다.</p></li>
 </ol>
@@ -1516,7 +1618,7 @@ Google OTP 인증을 사용하려면 우선 등록 후 사용해야 하며, <str
 </section>
 </section>
 <section id="retention">
-<span id="id48"></span><h2>문서 보관 기간 설정<a class="headerlink" href="#retention" title="Link to this heading"></a></h2>
+<span id="id55"></span><h2>문서 보관 기간 설정<a class="headerlink" href="#retention" title="Link to this heading"></a></h2>
 <p>보다 안전하고 효율적인 문서 관리를 위해 문서의 보관 기간을 설정할 수 있습니다.</p>
 <p>문서의 보관 기간은 회사 전체 또는 템플릿별로 설정할 수 있으며 설정된 보관 기간이 지나면 해당 문서는 문서함에서 삭제됩니다.</p>
 <div class="admonition note">
@@ -1567,30 +1669,30 @@ Google OTP 인증을 사용하려면 우선 등록 후 사용해야 하며, <str
 </div>
 </section>
 <section id="activity-log">
-<span id="id49"></span><h2>활동 이력 관리<a class="headerlink" href="#activity-log" title="Link to this heading"></a></h2>
+<span id="id56"></span><h2>활동 이력 관리<a class="headerlink" href="#activity-log" title="Link to this heading"></a></h2>
 <p><strong>회사 관리 &gt; 활동 이력 관리</strong> 메뉴에서는 이폼사인 이용자의 서비스 접속 이력, 정보 수정 이력, 다운로드 이력 등 이용자 활동에 관한 이력을 확인 및 다운로드할 수 있습니다.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>활동 이력 관리</strong> 메뉴는 <strong>대표 관리자 및 회사 관리자</strong>만 접근할 수 있습니다.</p>
 </div>
-<section id="id50">
-<h3>접속 이력<a class="headerlink" href="#id50" title="Link to this heading"></a></h3>
+<section id="id57">
+<h3>접속 이력<a class="headerlink" href="#id57" title="Link to this heading"></a></h3>
 <p>소속된 멤버들의 이폼사인 로그인/로그아웃, 서비스 이용 제한 해제 등 서비스 접속과 관련된 활동 이력을 확인할 수 있습니다. 이력은 최근 2년간의 내용이 보관되며 조회는 최대 3개월까지 가능합니다.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/login-history.png"><img alt="접속 이력" src="../_images/login-history.png" style="width: 700px;" />
 </a>
 </figure>
 </section>
-<section id="id51">
-<h3>정보 수정 이력<a class="headerlink" href="#id51" title="Link to this heading"></a></h3>
+<section id="id58">
+<h3>정보 수정 이력<a class="headerlink" href="#id58" title="Link to this heading"></a></h3>
 <p>소속된 멤버들이 이용자 본인의 개인정보 변경과 관련된 활동 이력을 확인할 수 있습니다. 이력은 최근 2년간의 내용이 보관되며 조회는 최대 3개월까지 가능합니다.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/profile-revision-history.png"><img alt="문서 보관 기간 설정" src="../_images/profile-revision-history.png" style="width: 700px;" />
 </a>
 </figure>
 </section>
-<section id="id52">
-<h3>다운로드 이력<a class="headerlink" href="#id52" title="Link to this heading"></a></h3>
+<section id="id59">
+<h3>다운로드 이력<a class="headerlink" href="#id59" title="Link to this heading"></a></h3>
 <p>소속된 멤버들이 문서함, 멤버 관리, 회사 도장 관리, 이용 현황, 활동 이력 관리 메뉴에서 다운로드 받은 이력 및 사유를 확인할 수 있습니다.
 이력은 최근 2년간의 내용이 보관되며 조회는 최대 3개월까지 가능합니다.</p>
 <figure class="align-default">
@@ -1598,16 +1700,16 @@ Google OTP 인증을 사용하려면 우선 등록 후 사용해야 하며, <str
 </a>
 </figure>
 </section>
-<section id="id53">
-<h3>문서 이력<a class="headerlink" href="#id53" title="Link to this heading"></a></h3>
+<section id="id60">
+<h3>문서 이력<a class="headerlink" href="#id60" title="Link to this heading"></a></h3>
 <p>문서 작성, 열람, 삭제 등 문서와 관련된 활동 이력을 확인할 수 있습니다. 멤버는 물론 문서와 관련된 외부 수신자의 로그까지 모두 기록됩니다. 이력은 최근 2년간의 내용이 보관되며 조회는 최대 3개월까지 가능합니다.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/document-history.png"><img alt="문서 보관 기간 설정" src="../_images/document-history.png" style="width: 700px;" />
 </a>
 </figure>
 </section>
-<section id="id54">
-<h3>권한 관리 이력<a class="headerlink" href="#id54" title="Link to this heading"></a></h3>
+<section id="id61">
+<h3>권한 관리 이력<a class="headerlink" href="#id61" title="Link to this heading"></a></h3>
 <p>멤버에 대한 권한 변경 등 권한 관리 메뉴에서의 활동에 관한 이력을 확인할 수 있습니다. 이력은 최근 5년간의 내용이 보관되며 조회는 최대 3개월까지 가능합니다.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/permission-management-history.png"><img alt="문서 보관 기간 설정" src="../_images/permission-management-history.png" style="width: 700px;" />
@@ -1692,29 +1794,36 @@ Google OTP 인증을 사용하려면 우선 등록 후 사용해야 하며, <str
 <li><a class="reference internal" href="#id41">주석 및 메모</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#security-settings">보안 설정</a><ul>
-<li><a class="reference internal" href="#id43">로그인 설정</a><ul>
-<li><a class="reference internal" href="#id44">로그인 2단계 인증</a><ul>
-<li><a class="reference internal" href="#google-otp"><strong>Google OTP 등록 방법</strong></a></li>
+<li><a class="reference internal" href="#watermark-settings">워터마크 관리</a><ul>
+<li><a class="reference internal" href="#id43">워터마크 등록</a></li>
+<li><a class="reference internal" href="#id46">표시 순서 변경</a></li>
+<li><a class="reference internal" href="#id47">워터마크 미리보기</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id45">중복 로그인 제한</a></li>
-<li><a class="reference internal" href="#id46">장기 미접속 로그인 제한</a></li>
+<li><a class="reference internal" href="#security-settings">보안 설정</a><ul>
+<li><a class="reference internal" href="#id49">로그인 설정</a><ul>
+<li><a class="reference internal" href="#id50">로그인 2단계 인증</a><ul>
+<li><a class="reference internal" href="#google-otp">Google OTP 등록 방법</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id51">중복 로그인 제한</a></li>
+<li><a class="reference internal" href="#id52">장기 미접속 로그인 제한</a></li>
+<li><a class="reference internal" href="#id53">로그인 없이 문서 링크 접근 허용</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#ip">IP 접속 제어 설정</a><ul>
-<li><a class="reference internal" href="#id47">권한별 접속 허용 IP 설정 방법</a></li>
+<li><a class="reference internal" href="#id54">권한별 접속 허용 IP 설정 방법</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><a class="reference internal" href="#retention">문서 보관 기간 설정</a></li>
 <li><a class="reference internal" href="#activity-log">활동 이력 관리</a><ul>
-<li><a class="reference internal" href="#id50">접속 이력</a></li>
-<li><a class="reference internal" href="#id51">정보 수정 이력</a></li>
-<li><a class="reference internal" href="#id52">다운로드 이력</a></li>
-<li><a class="reference internal" href="#id53">문서 이력</a></li>
-<li><a class="reference internal" href="#id54">권한 관리 이력</a></li>
+<li><a class="reference internal" href="#id57">접속 이력</a></li>
+<li><a class="reference internal" href="#id58">정보 수정 이력</a></li>
+<li><a class="reference internal" href="#id59">다운로드 이력</a></li>
+<li><a class="reference internal" href="#id60">문서 이력</a></li>
+<li><a class="reference internal" href="#id61">권한 관리 이력</a></li>
 </ul>
 </li>
 </ul>
