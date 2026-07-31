@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>웹폼 디자이너 소개 &#8212; eformsign User Guide 2025.10.15 documentation</title>
+    <title>웹폼 디자이너 소개 &#8212; eformsign User Guide 2026.07.30 documentation</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic_mod.css" type="text/css" />
     <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
@@ -386,7 +386,7 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>서명에 대한 서명일 및 서명인 자동 입력 설정하기</strong></p>
-<p>서명 입력 항목를 클릭하여 나타나는 아이콘을 클릭하면 서명일 및 서명인을 추가할 수 있습니다.</p>
+<p>서명 입력 항목을 클릭하여 나타나는 아이콘을 클릭하면 서명일 및 서명인을 추가할 수 있습니다.</p>
 <figure class="align-default">
 <img alt="서명일 및 서명인" src="../_images/Signature-component-properties_web_icon.png" />
 </figure>
@@ -485,7 +485,7 @@
 <p><strong>② 펜 두께</strong></p>
 <p>따라쓰기 할 때 표시되는 선의 두께를 설정합니다.</p>
 <p><strong>③ 펜 색</strong></p>
-<p>따라쓰기 할 때 표시되는 선의 색를 설정합니다.</p>
+<p>따라쓰기 할 때 표시되는 선의 색을 설정합니다.</p>
 <p><strong>④ 따라쓰기 텍스트 표시</strong></p>
 <p>아래 입력한 텍스트가 손글씨 입력 항목에 표시되도록 설정합니다.</p>
 <hr class="docutils" />
@@ -645,15 +645,35 @@
 <p><strong>② 기본 값</strong></p>
 <p>기본으로 표시할 날짜를 설정합니다. <strong>오늘 날짜로 설정</strong>에 체크하면 문서를 열었을 때 자동으로 오늘 날짜가 입력됩니다.</p>
 <p><strong>③ 표시형식</strong></p>
-<p>날짜가 표시되는 형식을 지정합니다. 기본 설정값은 date_yyyy-MM-dd입니다.</p>
+<p>날짜가 표시되는 형식을 지정합니다. 기본 설정값은 yyyy-MM-dd입니다.</p>
 <ul class="simple">
 <li><p><strong>yyyy:</strong> 연도를 표시합니다. (yyyy년 = 2020년)</p></li>
 <li><p><strong>MM:</strong> 월을 표시합니다. 반드시 대문자로 표기해야 합니다. (MM월 = 8월)</p></li>
 <li><p><strong>dd:</strong> 일을 표시합니다. (dd일 = 10일)</p></li>
 </ul>
 <p>‘2020년 2월 5일’과 같이 나타나도록 설정하고 싶은 경우, 표시형식에 ‘yyyy년 MM월 dd일’로 입력합니다.</p>
-<p><strong>④ 입력 가능 최소/최대 날짜</strong></p>
+<p><strong>④ 최소/최대 날짜</strong></p>
 <p>날짜 선택 시 선택할 수 있는 최소, 최대 날짜를 지정하여 입력 가능한 날짜의 범위를 설정합니다.</p>
+<p><strong>⑤ 제외 요일</strong></p>
+<p>날짜 선택 시 특정 요일은 선택할 수 없도록 설정합니다.
+제외할 요일은 최대 6개까지 선택할 수 있습니다.</p>
+<p><strong>⑥ 제외 날짜</strong></p>
+<p>날짜 선택 시 특정 날짜는 선택할 수 없도록 설정합니다.
+제외할 날짜는 yyyy-MM-dd 형식으로 직접 입력하며, 여러 날짜는 쉼표(,)로 구분합니다.
+제외 날짜는 개수 제한 없이 입력할 수 있으며, 날짜 형식에 맞지 않게 입력한 값은 자동으로 삭제됩니다.</p>
+<p>예를 들어, 주말과 회사의 창립기념일(3월 5일), 공식 휴가 기간(7월 29일~8월 1일)을 미리 설정하여 선택할 수 없도록 하려면 아래와 같이 설정합니다.</p>
+<ul class="simple">
+<li><p>제외 요일: 토, 일 선택</p></li>
+<li><p>제외 날짜: 2026-03-05, 2026-07-29, 2026-07-30, 2026-07-31, 2026-08-01</p></li>
+</ul>
+<figure class="align-default">
+<img alt="제외 요일 및 제외 날짜 설정 예시" src="../_images/exclude-datetime-sample.png" />
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>제외 요일·제외 날짜 기능은 PC 및 모바일 웹에서만 지원됩니다.
+또한 웹폼 디자이너에서만 지원되며, eformsign for Microsoft Office에는 추후 적용될 예정입니다.</p>
+</div>
 <hr class="docutils" />
 </section>
 <section id="numeric2">
@@ -790,7 +810,7 @@
 <hr class="docutils" />
 <section id="id27">
 <h2>템플릿에 대한 추가 설정<a class="headerlink" href="#id27" title="Link to this heading"></a></h2>
-<p>문서에 입력 항목를 추가하고 나면 템플릿 제목, 문서 번호, 워크플로우 등 템플릿으로 생성되는 문서에 대한 상세 설정을 할 수 있습니다.</p>
+<p>문서에 입력 항목을 추가하고 나면 템플릿 제목, 문서 번호, 워크플로우 등 템플릿으로 생성되는 문서에 대한 상세 설정을 할 수 있습니다.</p>
 <p><strong>폼 디자인하기</strong> 화면에서 <strong>설정하기</strong> 버튼을 눌러 설정하기 화면으로 이동합니다. 설정하기 화면에서는 다음의 5가지 설정을 하여 템플릿을 설정할 수 있습니다.</p>
 <ul class="simple">
 <li><p><strong>일반 설정:</strong> 템플릿 이름, 약칭, 문서 제목, 문서 번호 등을 설정합니다.</p></li>
@@ -902,7 +922,7 @@
 
 
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2025, FORCS CO., LTD. All rights reserved..
+    &#169; Copyright 2026, FORCS CO., LTD. All rights reserved.
       Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     </div>
 

@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'eformsign User Guide'
-copyright = '2025, FORCS CO., LTD. All rights reserved.'
+copyright = '2026, FORCS CO., LTD. All rights reserved'
 author = 'FORCS'
 
 # The short X.Y version
-version = 'version 10.2025.0917.211'
+version = 'version 10.2026.0625'
 # The full version, including alpha/beta/rc tags
-release = '2025.10.15'
+release = '2026.07.30'
 
 
 # -- General configuration ---------------------------------------------------
