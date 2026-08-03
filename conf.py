@@ -115,7 +115,8 @@ html_css_files = []
 html_theme_options = {
     "navbar_fixed_top": True,
     "show_sidebar": True,
-#    "globaltoc_depth": 2,  # 최대 2depth까지 표시
+    "globaltoc_maxdepth": 3,
+    "globaltoc_collapse": False,
 #    "globaltoc_includehidden": True,
 }
 
