@@ -368,7 +368,6 @@ PDF 파일로 다운로드
       :alt: 문서함 목록 100개씩 보기
       :width: 700px
 
-
    2. **50개씩 보기** 또는 **100개씩 보기**\ 를 선택합니다. 
 
    3. 오른쪽 상단의 문서 다운로드(|image12|) 아이콘을 클릭합니다.
@@ -475,6 +474,45 @@ PDF 파일로 다운로드
    .. figure:: resources/edit_reminder.png
       :alt: 리마인더 수
       :width: 400px
+
+
+.. _reminder_list:
+
+리마인더 설정 목록
+-------------------------------
+
+완료 문서함에서 설정한 모든 리마인더를 **리마인더 설정 목록**\ 에서 한 번에 확인하고, 알림 상태에 따라 수정, 삭제, 재등록할 수 있습니다.
+
+1. 완료 문서함으로 이동합니다.
+2. 화면 오른쪽 상단의 리마인더 설정 목록(|image21|) 아이콘을 클릭합니다.
+
+   .. figure:: resources/completed_reminder_list.png
+      :alt: 완료 문서함-리마인더 설정 목록
+      :width: 600px
+
+3. 리마인더 설정 목록 팝업에서 알림 상태(알림 예정 또는 알림 완료)와 기간을 선택합니다.
+
+   .. figure:: resources/reminder_list_status.png
+      :alt: 리마인더 설정 목록-알림 상태
+      :width: 500px
+
+4. 알림 예정인 리마인더는 **수정**\ 을 클릭하여 설정 사항을 변경하거나, **삭제**\ 를 클릭하여 리마인더를 삭제할 수 있습니다.
+
+   .. figure:: resources/reminder_list_scheduled.png
+      :alt: 리마인더 설정 목록-알림 예정
+      :width: 500px
+
+5. 알림 완료된 리마인더는 **재등록**\ 을 클릭하여 같은 문서에 리마인더를 다시 설정할 수 있습니다.
+
+   .. figure:: resources/reminder_list_done.png
+      :alt: 리마인더 설정 목록-알림 완료
+      :width: 500px
+
+.. note::
+
+   - 목록에서 리마인더별 알림일, 알림 수신자, 최근 설정일을 확인할 수 있으며, 알림일까지 30일 이내로 남은 리마인더에는 남은 기간(예: 1일 남음)이, 반복 알림을 설정한 리마인더에는 진행 회차(예: 5회 중 2회 알림 완료)가 함께 표시됩니다.
+   - 같은 문서에 알림 예정인 리마인더가 있으면 재등록할 수 없습니다.
+
 
 
 .. _document_delete:
@@ -798,3 +836,5 @@ eformsign에서는 지정된 관리자만 문서를 삭제할 수 있습니다.
    :width: 25px   
 .. |image20| image:: resources/sorting_icon.png
    :width: 25px   
+.. |image21| image:: resources/reminder_list_icon.png
+   :width: 25px

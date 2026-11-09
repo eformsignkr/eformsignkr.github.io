@@ -89,7 +89,7 @@ html_theme = 'piccolo_theme'
 #
 # html_theme_options = {}
 
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+# html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]  # deprecated, not needed for piccolo_theme
 
 html_css_files = []
 
@@ -380,14 +380,12 @@ class AllPdfBuilder(LaTeXBuilder):
     def get_outdated_docs(self):
         return 'all documents'
 
-def setup(app):
-    app.add_builder(AllPdfBuilder)
-
-
-
 def remove_query_string(app, pagename, templatename, context, doctree):
     css_files = context.get('css_files', [])
-    context['css_files'] = [css.split('?')[0] for css in css_files]
+    # Sphinx 7.2+ passes stylesheet objects instead of strings
+    context['css_files'] = [css.split('?')[0] if isinstance(css, str) else css
+                            for css in css_files]
 
 def setup(app):
+    app.add_builder(AllPdfBuilder)
     app.connect('html-page-context', remove_query_string)
